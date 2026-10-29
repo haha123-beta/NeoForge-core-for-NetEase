@@ -1,0 +1,1 @@
+{"required":true,"minVersion":"0.8.7","compatibilityLevel":"JAVA_21","package":"demo","mixins":["Hooks"],"injectors":{"defaultRequire":1}}

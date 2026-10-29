@@ -1,0 +1,9 @@
+{
+  "input": "examples/java_translation_job",
+  "output_root": "builds/translation_jobs",
+  "distribution": {
+    "pack_id": "demo_content",
+    "entrypoints": {"demo_mod": "demo.Main:Main.start"},
+    "side": "BOTH"
+  }
+}

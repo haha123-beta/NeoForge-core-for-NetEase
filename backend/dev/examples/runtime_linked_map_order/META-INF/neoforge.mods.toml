@@ -1,0 +1,7 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="runtime_linked_map_example"
+version="1.0.0"
+displayName="NeoCore generic access-order map fixture"

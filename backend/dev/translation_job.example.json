@@ -1,0 +1,9 @@
+{
+  "input": "C:/path/to/extracted_mod",
+  "output_root": "C:/path/to/neocore_outputs",
+  "distribution": {
+    "pack_id": "example_content",
+    "entrypoints": {"example_mod": "example.Main:start"},
+    "side": "BOTH"
+  }
+}

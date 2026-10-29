@@ -1,0 +1,1 @@
+package argdemo;public class Target {private static int bias=3;public static int run(){return Sink.accept(1,2);}}

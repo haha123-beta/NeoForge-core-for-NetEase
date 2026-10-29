@@ -1,0 +1,4 @@
+{
+  "dev_root": "<absolute path to this checkout>/backend/dev",
+  "python2": "<optional absolute Python 2 executable>"
+}

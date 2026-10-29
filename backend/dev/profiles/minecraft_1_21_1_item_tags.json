@@ -1,0 +1,5477 @@
+{
+  "source": {
+    "kind": "version-locked Minecraft 1.21.1 plus NeoForge 21.1.233 merged item tags",
+    "sources": [
+      {
+        "path": "D:\\NeoCore工具\\dev\\references\\minecraft-1.21.1\\client.jar",
+        "exists": true,
+        "sha256": "499f6897d1837516680f3114072d8106e11c9adcd933fe5cf051b551089b0c99",
+        "bytes": 26836906,
+        "item_tag_count": 147,
+        "item_tag_paths": [
+          "data/minecraft/tags/item/acacia_logs.json",
+          "data/minecraft/tags/item/anvil.json",
+          "data/minecraft/tags/item/armadillo_food.json",
+          "data/minecraft/tags/item/arrows.json",
+          "data/minecraft/tags/item/axes.json",
+          "data/minecraft/tags/item/axolotl_food.json",
+          "data/minecraft/tags/item/bamboo_blocks.json",
+          "data/minecraft/tags/item/banners.json",
+          "data/minecraft/tags/item/beacon_payment_items.json",
+          "data/minecraft/tags/item/beds.json",
+          "data/minecraft/tags/item/bee_food.json",
+          "data/minecraft/tags/item/birch_logs.json",
+          "data/minecraft/tags/item/boats.json",
+          "data/minecraft/tags/item/bookshelf_books.json",
+          "data/minecraft/tags/item/breaks_decorated_pots.json",
+          "data/minecraft/tags/item/buttons.json",
+          "data/minecraft/tags/item/camel_food.json",
+          "data/minecraft/tags/item/candles.json",
+          "data/minecraft/tags/item/cat_food.json",
+          "data/minecraft/tags/item/cherry_logs.json",
+          "data/minecraft/tags/item/chest_armor.json",
+          "data/minecraft/tags/item/chest_boats.json",
+          "data/minecraft/tags/item/chicken_food.json",
+          "data/minecraft/tags/item/cluster_max_harvestables.json",
+          "data/minecraft/tags/item/coal_ores.json",
+          "data/minecraft/tags/item/coals.json",
+          "data/minecraft/tags/item/compasses.json",
+          "data/minecraft/tags/item/completes_find_tree_tutorial.json",
+          "data/minecraft/tags/item/copper_ores.json",
+          "data/minecraft/tags/item/cow_food.json",
+          "data/minecraft/tags/item/creeper_drop_music_discs.json",
+          "data/minecraft/tags/item/creeper_igniters.json",
+          "data/minecraft/tags/item/crimson_stems.json",
+          "data/minecraft/tags/item/dampens_vibrations.json",
+          "data/minecraft/tags/item/dark_oak_logs.json",
+          "data/minecraft/tags/item/decorated_pot_ingredients.json",
+          "data/minecraft/tags/item/decorated_pot_sherds.json",
+          "data/minecraft/tags/item/diamond_ores.json",
+          "data/minecraft/tags/item/dirt.json",
+          "data/minecraft/tags/item/doors.json",
+          "data/minecraft/tags/item/dyeable.json",
+          "data/minecraft/tags/item/emerald_ores.json",
+          "data/minecraft/tags/item/enchantable/armor.json",
+          "data/minecraft/tags/item/enchantable/bow.json",
+          "data/minecraft/tags/item/enchantable/chest_armor.json",
+          "data/minecraft/tags/item/enchantable/crossbow.json",
+          "data/minecraft/tags/item/enchantable/durability.json",
+          "data/minecraft/tags/item/enchantable/equippable.json",
+          "data/minecraft/tags/item/enchantable/fire_aspect.json",
+          "data/minecraft/tags/item/enchantable/fishing.json",
+          "data/minecraft/tags/item/enchantable/foot_armor.json",
+          "data/minecraft/tags/item/enchantable/head_armor.json",
+          "data/minecraft/tags/item/enchantable/leg_armor.json",
+          "data/minecraft/tags/item/enchantable/mace.json",
+          "data/minecraft/tags/item/enchantable/mining.json",
+          "data/minecraft/tags/item/enchantable/mining_loot.json",
+          "data/minecraft/tags/item/enchantable/sharp_weapon.json",
+          "data/minecraft/tags/item/enchantable/sword.json",
+          "data/minecraft/tags/item/enchantable/trident.json",
+          "data/minecraft/tags/item/enchantable/vanishing.json",
+          "data/minecraft/tags/item/enchantable/weapon.json",
+          "data/minecraft/tags/item/fence_gates.json",
+          "data/minecraft/tags/item/fences.json",
+          "data/minecraft/tags/item/fishes.json",
+          "data/minecraft/tags/item/flowers.json",
+          "data/minecraft/tags/item/foot_armor.json",
+          "data/minecraft/tags/item/fox_food.json",
+          "data/minecraft/tags/item/freeze_immune_wearables.json",
+          "data/minecraft/tags/item/frog_food.json",
+          "data/minecraft/tags/item/goat_food.json",
+          "data/minecraft/tags/item/gold_ores.json",
+          "data/minecraft/tags/item/hanging_signs.json",
+          "data/minecraft/tags/item/head_armor.json",
+          "data/minecraft/tags/item/hoes.json",
+          "data/minecraft/tags/item/hoglin_food.json",
+          "data/minecraft/tags/item/horse_food.json",
+          "data/minecraft/tags/item/horse_tempt_items.json",
+          "data/minecraft/tags/item/ignored_by_piglin_babies.json",
+          "data/minecraft/tags/item/iron_ores.json",
+          "data/minecraft/tags/item/jungle_logs.json",
+          "data/minecraft/tags/item/lapis_ores.json",
+          "data/minecraft/tags/item/leaves.json",
+          "data/minecraft/tags/item/lectern_books.json",
+          "data/minecraft/tags/item/leg_armor.json",
+          "data/minecraft/tags/item/llama_food.json",
+          "data/minecraft/tags/item/llama_tempt_items.json",
+          "data/minecraft/tags/item/logs.json",
+          "data/minecraft/tags/item/logs_that_burn.json",
+          "data/minecraft/tags/item/mangrove_logs.json",
+          "data/minecraft/tags/item/meat.json",
+          "data/minecraft/tags/item/non_flammable_wood.json",
+          "data/minecraft/tags/item/noteblock_top_instruments.json",
+          "data/minecraft/tags/item/oak_logs.json",
+          "data/minecraft/tags/item/ocelot_food.json",
+          "data/minecraft/tags/item/panda_food.json",
+          "data/minecraft/tags/item/parrot_food.json",
+          "data/minecraft/tags/item/parrot_poisonous_food.json",
+          "data/minecraft/tags/item/pickaxes.json",
+          "data/minecraft/tags/item/pig_food.json",
+          "data/minecraft/tags/item/piglin_food.json",
+          "data/minecraft/tags/item/piglin_loved.json",
+          "data/minecraft/tags/item/piglin_repellents.json",
+          "data/minecraft/tags/item/planks.json",
+          "data/minecraft/tags/item/rabbit_food.json",
+          "data/minecraft/tags/item/rails.json",
+          "data/minecraft/tags/item/redstone_ores.json",
+          "data/minecraft/tags/item/sand.json",
+          "data/minecraft/tags/item/saplings.json",
+          "data/minecraft/tags/item/sheep_food.json",
+          "data/minecraft/tags/item/shovels.json",
+          "data/minecraft/tags/item/signs.json",
+          "data/minecraft/tags/item/skulls.json",
+          "data/minecraft/tags/item/slabs.json",
+          "data/minecraft/tags/item/small_flowers.json",
+          "data/minecraft/tags/item/smelts_to_glass.json",
+          "data/minecraft/tags/item/sniffer_food.json",
+          "data/minecraft/tags/item/soul_fire_base_blocks.json",
+          "data/minecraft/tags/item/spruce_logs.json",
+          "data/minecraft/tags/item/stairs.json",
+          "data/minecraft/tags/item/stone_bricks.json",
+          "data/minecraft/tags/item/stone_buttons.json",
+          "data/minecraft/tags/item/stone_crafting_materials.json",
+          "data/minecraft/tags/item/stone_tool_materials.json",
+          "data/minecraft/tags/item/strider_food.json",
+          "data/minecraft/tags/item/strider_tempt_items.json",
+          "data/minecraft/tags/item/swords.json",
+          "data/minecraft/tags/item/tall_flowers.json",
+          "data/minecraft/tags/item/terracotta.json",
+          "data/minecraft/tags/item/trapdoors.json",
+          "data/minecraft/tags/item/trim_materials.json",
+          "data/minecraft/tags/item/trim_templates.json",
+          "data/minecraft/tags/item/trimmable_armor.json",
+          "data/minecraft/tags/item/turtle_food.json",
+          "data/minecraft/tags/item/villager_plantable_seeds.json",
+          "data/minecraft/tags/item/walls.json",
+          "data/minecraft/tags/item/warped_stems.json",
+          "data/minecraft/tags/item/wart_blocks.json",
+          "data/minecraft/tags/item/wolf_food.json",
+          "data/minecraft/tags/item/wooden_buttons.json",
+          "data/minecraft/tags/item/wooden_doors.json",
+          "data/minecraft/tags/item/wooden_fences.json",
+          "data/minecraft/tags/item/wooden_pressure_plates.json",
+          "data/minecraft/tags/item/wooden_slabs.json",
+          "data/minecraft/tags/item/wooden_stairs.json",
+          "data/minecraft/tags/item/wooden_trapdoors.json",
+          "data/minecraft/tags/item/wool.json",
+          "data/minecraft/tags/item/wool_carpets.json"
+        ],
+        "version": {
+          "id": "1.21.1",
+          "name": "1.21.1",
+          "world_version": 3955,
+          "series_id": "main",
+          "protocol_version": 767,
+          "pack_version": {
+            "resource": 34,
+            "data": 48
+          },
+          "build_time": "2024-08-08T12:21:55+00:00",
+          "java_component": "java-runtime-delta",
+          "java_version": 21,
+          "stable": true,
+          "use_editor": false
+        }
+      },
+      {
+        "path": "D:\\NeoCore工具\\neoforge官方文件\\neoforge-21.1.233-universal.jar",
+        "sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d",
+        "neoforge": "21.1.233",
+        "tag_files": 244
+      }
+    ]
+  },
+  "tags": {
+    "data/minecraft/tags/item/acacia_logs.json": {
+      "sha256": "a3fe4062ef8bb3451c897eb79914295a11f65798067f46125973c6fcbc38cd4a",
+      "data": {
+        "values": [
+          "minecraft:acacia_log",
+          "minecraft:acacia_wood",
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_acacia_wood"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/anvil.json": {
+      "sha256": "35b635afc68b437deab9e22b105f2157142f3c8982e9ae58768fce792794d9f9",
+      "data": {
+        "values": [
+          "minecraft:anvil",
+          "minecraft:chipped_anvil",
+          "minecraft:damaged_anvil"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/armadillo_food.json": {
+      "sha256": "3e6246b2e7a0e6bf041443fa426421617311decd1722597945b2563ba83f369c",
+      "data": {
+        "values": [
+          "minecraft:spider_eye"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/arrows.json": {
+      "sha256": "e29a91d0d0bb56a23c1931f5eb269dee801e983e6d3d32f6afeb23cbf333ead7",
+      "data": {
+        "values": [
+          "minecraft:arrow",
+          "minecraft:tipped_arrow",
+          "minecraft:spectral_arrow"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/axes.json": {
+      "sha256": "3be0e54f8291b4890ab6cf43698e1f4ae856906c89895f839a2508e44c45cd2b",
+      "data": {
+        "values": [
+          "minecraft:diamond_axe",
+          "minecraft:stone_axe",
+          "minecraft:golden_axe",
+          "minecraft:netherite_axe",
+          "minecraft:wooden_axe",
+          "minecraft:iron_axe"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/axolotl_food.json": {
+      "sha256": "1837c9b0861b8b966c68d968fca51a14402523beb6feaa1d806c8534975d409a",
+      "data": {
+        "values": [
+          "minecraft:tropical_fish_bucket"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/bamboo_blocks.json": {
+      "sha256": "d31d10554cafb75ae74d3b753d985f2cbd7446902097581021666da9934e0d3c",
+      "data": {
+        "values": [
+          "minecraft:bamboo_block",
+          "minecraft:stripped_bamboo_block"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/banners.json": {
+      "sha256": "688c77fed1dd1d61f96177df2627aefda7bda84202d46cf424eb2042193ccd92",
+      "data": {
+        "values": [
+          "minecraft:white_banner",
+          "minecraft:orange_banner",
+          "minecraft:magenta_banner",
+          "minecraft:light_blue_banner",
+          "minecraft:yellow_banner",
+          "minecraft:lime_banner",
+          "minecraft:pink_banner",
+          "minecraft:gray_banner",
+          "minecraft:light_gray_banner",
+          "minecraft:cyan_banner",
+          "minecraft:purple_banner",
+          "minecraft:blue_banner",
+          "minecraft:brown_banner",
+          "minecraft:green_banner",
+          "minecraft:red_banner",
+          "minecraft:black_banner"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/beacon_payment_items.json": {
+      "sha256": "9ee05bc0e24666629e8acc51da261a9863d89514d4f41b31fc1c9c10cf22de00",
+      "data": {
+        "values": [
+          "minecraft:netherite_ingot",
+          "minecraft:emerald",
+          "minecraft:diamond",
+          "minecraft:gold_ingot",
+          "minecraft:iron_ingot"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/beds.json": {
+      "sha256": "aeab40ccdf3fa735e4229bad0a60b604e0930bdfd368037d6346ab300fa8b73c",
+      "data": {
+        "values": [
+          "minecraft:red_bed",
+          "minecraft:black_bed",
+          "minecraft:blue_bed",
+          "minecraft:brown_bed",
+          "minecraft:cyan_bed",
+          "minecraft:gray_bed",
+          "minecraft:green_bed",
+          "minecraft:light_blue_bed",
+          "minecraft:light_gray_bed",
+          "minecraft:lime_bed",
+          "minecraft:magenta_bed",
+          "minecraft:orange_bed",
+          "minecraft:pink_bed",
+          "minecraft:purple_bed",
+          "minecraft:white_bed",
+          "minecraft:yellow_bed"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/bee_food.json": {
+      "sha256": "ffbdc6f68fda4fed3e690a55e4cecab59e01218772b30294a6fccd9c3aabbfa2",
+      "data": {
+        "values": [
+          "#minecraft:flowers"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/birch_logs.json": {
+      "sha256": "2a11ab5f2ebe93d1711c665f111b5ff2d64506a6df2a3fc74c0052ebefa18430",
+      "data": {
+        "values": [
+          "minecraft:birch_log",
+          "minecraft:birch_wood",
+          "minecraft:stripped_birch_log",
+          "minecraft:stripped_birch_wood"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/boats.json": {
+      "sha256": "d6676ed42e172f4c0a5defc406ff365cb9e857b91c1278dba9b708fac948d9d6",
+      "data": {
+        "values": [
+          "minecraft:oak_boat",
+          "minecraft:spruce_boat",
+          "minecraft:birch_boat",
+          "minecraft:jungle_boat",
+          "minecraft:acacia_boat",
+          "minecraft:dark_oak_boat",
+          "minecraft:mangrove_boat",
+          "minecraft:bamboo_raft",
+          "minecraft:cherry_boat",
+          "#minecraft:chest_boats"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/bookshelf_books.json": {
+      "sha256": "f1858d2eead0b7d9460c771da7603a99675a29f67a0e467f0bf9bd2c8e3fe031",
+      "data": {
+        "values": [
+          "minecraft:book",
+          "minecraft:written_book",
+          "minecraft:enchanted_book",
+          "minecraft:writable_book",
+          "minecraft:knowledge_book"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/breaks_decorated_pots.json": {
+      "sha256": "6537803b2a15637fc23c1bce23ae805db610e1c838fdd61ceb2423c40d26be93",
+      "data": {
+        "values": [
+          "#minecraft:swords",
+          "#minecraft:axes",
+          "#minecraft:pickaxes",
+          "#minecraft:shovels",
+          "#minecraft:hoes",
+          "minecraft:trident",
+          "minecraft:mace"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/buttons.json": {
+      "sha256": "6f2192e09f74a817ba9861e0cb374e6859ef94cfd584f3d5945bb4b8ce15f360",
+      "data": {
+        "values": [
+          "#minecraft:wooden_buttons",
+          "#minecraft:stone_buttons"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/camel_food.json": {
+      "sha256": "392d214058749c4adf748d4ac86acf50f8e0a42b5183c43a29758f5d037c7a25",
+      "data": {
+        "values": [
+          "minecraft:cactus"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/candles.json": {
+      "sha256": "dc2341cd97a3d8dc1df1d442bacb0a911d1f81c25df08710eea0d7253415f345",
+      "data": {
+        "values": [
+          "minecraft:candle",
+          "minecraft:white_candle",
+          "minecraft:orange_candle",
+          "minecraft:magenta_candle",
+          "minecraft:light_blue_candle",
+          "minecraft:yellow_candle",
+          "minecraft:lime_candle",
+          "minecraft:pink_candle",
+          "minecraft:gray_candle",
+          "minecraft:light_gray_candle",
+          "minecraft:cyan_candle",
+          "minecraft:purple_candle",
+          "minecraft:blue_candle",
+          "minecraft:brown_candle",
+          "minecraft:green_candle",
+          "minecraft:red_candle",
+          "minecraft:black_candle"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/cat_food.json": {
+      "sha256": "30450b0eeae7db7c8c4b25721be3c9e52ad91046450bec940648b653f3b3266a",
+      "data": {
+        "values": [
+          "minecraft:cod",
+          "minecraft:salmon"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/cherry_logs.json": {
+      "sha256": "651f86e2ab999dcd89ca1bdf2e0cf8ed532b15e65d6a71bb6ea4dda59ebcc49e",
+      "data": {
+        "values": [
+          "minecraft:cherry_log",
+          "minecraft:cherry_wood",
+          "minecraft:stripped_cherry_log",
+          "minecraft:stripped_cherry_wood"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/chest_armor.json": {
+      "sha256": "7edc2f7ea6e603602fa13fd3144d96bf6c2201b5fc1add0cec8601e9ab59b9b0",
+      "data": {
+        "values": [
+          "minecraft:leather_chestplate",
+          "minecraft:chainmail_chestplate",
+          "minecraft:golden_chestplate",
+          "minecraft:iron_chestplate",
+          "minecraft:diamond_chestplate",
+          "minecraft:netherite_chestplate"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/chest_boats.json": {
+      "sha256": "70290385fba70f02b8542b493c30eec13080e1c2949fd672555b6bfc0399fb34",
+      "data": {
+        "values": [
+          "minecraft:oak_chest_boat",
+          "minecraft:spruce_chest_boat",
+          "minecraft:birch_chest_boat",
+          "minecraft:jungle_chest_boat",
+          "minecraft:acacia_chest_boat",
+          "minecraft:dark_oak_chest_boat",
+          "minecraft:mangrove_chest_boat",
+          "minecraft:bamboo_chest_raft",
+          "minecraft:cherry_chest_boat"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/chicken_food.json": {
+      "sha256": "50489663e4790fe35119e611c7e1365f64bdd4c742dc4b765ca84d380904dd4b",
+      "data": {
+        "values": [
+          "minecraft:wheat_seeds",
+          "minecraft:melon_seeds",
+          "minecraft:pumpkin_seeds",
+          "minecraft:beetroot_seeds",
+          "minecraft:torchflower_seeds",
+          "minecraft:pitcher_pod"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/cluster_max_harvestables.json": {
+      "sha256": "c2e85735370569c6c3fb6de2dfce9199ec1d04b82c497b726703b454c42cb891",
+      "data": {
+        "values": [
+          "minecraft:diamond_pickaxe",
+          "minecraft:golden_pickaxe",
+          "minecraft:iron_pickaxe",
+          "minecraft:netherite_pickaxe",
+          "minecraft:stone_pickaxe",
+          "minecraft:wooden_pickaxe"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/coal_ores.json": {
+      "sha256": "a6d65d25fbfef911eb3df9b2fb2eb6412cafefda7e4b0dd3df3cda7d1fcb1df9",
+      "data": {
+        "values": [
+          "minecraft:coal_ore",
+          "minecraft:deepslate_coal_ore"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/coals.json": {
+      "sha256": "ce7fec5f862b13e249d30e19a7d7221b3cbfabb8cc8842a969e429a90b9485a3",
+      "data": {
+        "values": [
+          "minecraft:coal",
+          "minecraft:charcoal"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/compasses.json": {
+      "sha256": "0882fcc442dcd1c4f1201c43ed6b5751db9fc6accd676706faefd9f7acddcd64",
+      "data": {
+        "values": [
+          "minecraft:compass",
+          "minecraft:recovery_compass"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/completes_find_tree_tutorial.json": {
+      "sha256": "0ba6fb9b71c4350443fc0c9e0a5c2155b95ecf3a13f855e4a58714b9a4955711",
+      "data": {
+        "values": [
+          "#minecraft:logs",
+          "#minecraft:leaves",
+          "#minecraft:wart_blocks"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/copper_ores.json": {
+      "sha256": "d89eef2319cb6ee0c5dbd39e1750557ee92c7d94d262354f941fd5dbc323dc5b",
+      "data": {
+        "values": [
+          "minecraft:copper_ore",
+          "minecraft:deepslate_copper_ore"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/cow_food.json": {
+      "sha256": "738f6fea58ccc54211ea33b9482a19108fb26a930e475566be060f7b21d8e3c5",
+      "data": {
+        "values": [
+          "minecraft:wheat"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/creeper_drop_music_discs.json": {
+      "sha256": "f88723f0777ca199b0f7ab9728c2ca667733af472906452a1eced00222552899",
+      "data": {
+        "values": [
+          "minecraft:music_disc_13",
+          "minecraft:music_disc_cat",
+          "minecraft:music_disc_blocks",
+          "minecraft:music_disc_chirp",
+          "minecraft:music_disc_far",
+          "minecraft:music_disc_mall",
+          "minecraft:music_disc_mellohi",
+          "minecraft:music_disc_stal",
+          "minecraft:music_disc_strad",
+          "minecraft:music_disc_ward",
+          "minecraft:music_disc_11",
+          "minecraft:music_disc_wait"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/creeper_igniters.json": {
+      "sha256": "a6624f170d6118eff6c59cd1ab5326fd7a7e303d9a61e8714d5ae790d974cc30",
+      "data": {
+        "values": [
+          "minecraft:flint_and_steel",
+          "minecraft:fire_charge"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/crimson_stems.json": {
+      "sha256": "d8a1ace15b4c981ad4e454dc064c7551e31f40430c93efadca268a008bcf8fbd",
+      "data": {
+        "values": [
+          "minecraft:crimson_stem",
+          "minecraft:stripped_crimson_stem",
+          "minecraft:crimson_hyphae",
+          "minecraft:stripped_crimson_hyphae"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/dampens_vibrations.json": {
+      "sha256": "3277c622eedd7806030feee3a6c18f1feeeef3db1b98af59a1a092e31921805c",
+      "data": {
+        "values": [
+          "#minecraft:wool",
+          "#minecraft:wool_carpets"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/dark_oak_logs.json": {
+      "sha256": "482327a22a5acf4dcd54076ae08ef869c3a05b4ebc3c41eec4349c1c0af8fc6d",
+      "data": {
+        "values": [
+          "minecraft:dark_oak_log",
+          "minecraft:dark_oak_wood",
+          "minecraft:stripped_dark_oak_log",
+          "minecraft:stripped_dark_oak_wood"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/decorated_pot_ingredients.json": {
+      "sha256": "8a9a4a1c856d80727a1997b9c56b07becda973960f342bd7d79f162cc9d64554",
+      "data": {
+        "values": [
+          "minecraft:brick",
+          "#minecraft:decorated_pot_sherds"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/decorated_pot_sherds.json": {
+      "sha256": "948b54ed87a00e7bb57b2c6540ced1af4e6f0fd5b77ece739c04be72ddcb77e4",
+      "data": {
+        "values": [
+          "minecraft:angler_pottery_sherd",
+          "minecraft:archer_pottery_sherd",
+          "minecraft:arms_up_pottery_sherd",
+          "minecraft:blade_pottery_sherd",
+          "minecraft:brewer_pottery_sherd",
+          "minecraft:burn_pottery_sherd",
+          "minecraft:danger_pottery_sherd",
+          "minecraft:explorer_pottery_sherd",
+          "minecraft:friend_pottery_sherd",
+          "minecraft:heart_pottery_sherd",
+          "minecraft:heartbreak_pottery_sherd",
+          "minecraft:howl_pottery_sherd",
+          "minecraft:miner_pottery_sherd",
+          "minecraft:mourner_pottery_sherd",
+          "minecraft:plenty_pottery_sherd",
+          "minecraft:prize_pottery_sherd",
+          "minecraft:sheaf_pottery_sherd",
+          "minecraft:shelter_pottery_sherd",
+          "minecraft:skull_pottery_sherd",
+          "minecraft:snort_pottery_sherd",
+          "minecraft:flow_pottery_sherd",
+          "minecraft:guster_pottery_sherd",
+          "minecraft:scrape_pottery_sherd"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/diamond_ores.json": {
+      "sha256": "6061b325909705037f8418bedc24508519507cace911b79369b9c8a2006d4b04",
+      "data": {
+        "values": [
+          "minecraft:diamond_ore",
+          "minecraft:deepslate_diamond_ore"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/dirt.json": {
+      "sha256": "77d47648ca0b4aeba6a00c948b9a45ed6366040eba93c8f73feb07c1a3777c02",
+      "data": {
+        "values": [
+          "minecraft:dirt",
+          "minecraft:grass_block",
+          "minecraft:podzol",
+          "minecraft:coarse_dirt",
+          "minecraft:mycelium",
+          "minecraft:rooted_dirt",
+          "minecraft:moss_block",
+          "minecraft:mud",
+          "minecraft:muddy_mangrove_roots"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/doors.json": {
+      "sha256": "07865a23bdc74e0f220b6dc7dbd96bb913f7bf243e71376983de0856e93720d1",
+      "data": {
+        "values": [
+          "#minecraft:wooden_doors",
+          "minecraft:copper_door",
+          "minecraft:exposed_copper_door",
+          "minecraft:weathered_copper_door",
+          "minecraft:oxidized_copper_door",
+          "minecraft:waxed_copper_door",
+          "minecraft:waxed_exposed_copper_door",
+          "minecraft:waxed_weathered_copper_door",
+          "minecraft:waxed_oxidized_copper_door",
+          "minecraft:iron_door"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/dyeable.json": {
+      "sha256": "c824d6df0b011d888fc80ede561835db0131fc23d4e9aff07b340cdca19cb7f0",
+      "data": {
+        "values": [
+          "minecraft:leather_helmet",
+          "minecraft:leather_chestplate",
+          "minecraft:leather_leggings",
+          "minecraft:leather_boots",
+          "minecraft:leather_horse_armor",
+          "minecraft:wolf_armor"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/emerald_ores.json": {
+      "sha256": "9c4bfb7344364eb612ab4a0cff87356d8538aa508ae0dae134806b946207b6d7",
+      "data": {
+        "values": [
+          "minecraft:emerald_ore",
+          "minecraft:deepslate_emerald_ore"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/armor.json": {
+      "sha256": "9c90eb2c840b66d6abff0a17ff6dd9b4e455e193dbd31f5cc1d5c10ee829fd1f",
+      "data": {
+        "values": [
+          "#minecraft:enchantable/foot_armor",
+          "#minecraft:enchantable/leg_armor",
+          "#minecraft:enchantable/chest_armor",
+          "#minecraft:enchantable/head_armor"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/bow.json": {
+      "sha256": "28abfba45e3d4df0a42599be07bf20baf20bb1ed939767dfb90069c32e21cbde",
+      "data": {
+        "values": [
+          "minecraft:bow"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/chest_armor.json": {
+      "sha256": "cd6d9feabaf81aff9f9aa03daa167a6983a02a33b6d0a4f9248df473bd0607ac",
+      "data": {
+        "values": [
+          "#minecraft:chest_armor"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/crossbow.json": {
+      "sha256": "fcedcf93c400d817260ab32259f9473880db9c2286d97bb8c0aed777c340b556",
+      "data": {
+        "values": [
+          "minecraft:crossbow"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/durability.json": {
+      "sha256": "9f59faf0dc909977159a1b7140b45f72bce124359459198cdcba26eb44fb5b1c",
+      "data": {
+        "values": [
+          "#minecraft:foot_armor",
+          "#minecraft:leg_armor",
+          "#minecraft:chest_armor",
+          "#minecraft:head_armor",
+          "minecraft:elytra",
+          "minecraft:shield",
+          "#minecraft:swords",
+          "#minecraft:axes",
+          "#minecraft:pickaxes",
+          "#minecraft:shovels",
+          "#minecraft:hoes",
+          "minecraft:bow",
+          "minecraft:crossbow",
+          "minecraft:trident",
+          "minecraft:flint_and_steel",
+          "minecraft:shears",
+          "minecraft:brush",
+          "minecraft:fishing_rod",
+          "minecraft:carrot_on_a_stick",
+          "minecraft:warped_fungus_on_a_stick",
+          "minecraft:mace"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/equippable.json": {
+      "sha256": "97050cc03bd933a642109b283fbcfa1885b31e5975cfbc0180604a917d57b9c8",
+      "data": {
+        "values": [
+          "#minecraft:foot_armor",
+          "#minecraft:leg_armor",
+          "#minecraft:chest_armor",
+          "#minecraft:head_armor",
+          "minecraft:elytra",
+          "#minecraft:skulls",
+          "minecraft:carved_pumpkin"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/fire_aspect.json": {
+      "sha256": "0014bc5ae67bd3d3bf4fd7451bfeb083de83b939eae6aab8c4a7df6fc3c3d943",
+      "data": {
+        "values": [
+          "#minecraft:enchantable/sword",
+          "minecraft:mace"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/fishing.json": {
+      "sha256": "445e21a24270f0a5cb7d4f4f540ec20729a97468043f21ba071dc4e55c4f81fa",
+      "data": {
+        "values": [
+          "minecraft:fishing_rod"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/foot_armor.json": {
+      "sha256": "849645e1ac79d7b11ad1c06dd370ab00ee05e237ae47634caf829446e1f98d45",
+      "data": {
+        "values": [
+          "#minecraft:foot_armor"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/head_armor.json": {
+      "sha256": "bc2bbdd62819641bf89d7699db629bff502f382f6159ca06bc175486b1cd52ee",
+      "data": {
+        "values": [
+          "#minecraft:head_armor"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/leg_armor.json": {
+      "sha256": "eb588169cf0b0cf65673b607740792413be94efc19fa9c8ebc84f55626c0f468",
+      "data": {
+        "values": [
+          "#minecraft:leg_armor"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/mace.json": {
+      "sha256": "8678d6ef9b0cd32527d2b49f7e0230b26f18f5409de32bb9c4e7b603882f5306",
+      "data": {
+        "values": [
+          "minecraft:mace"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/mining.json": {
+      "sha256": "25c10a21a66a70cf08ea593131fb6364dfee41c47866303deb6d1632ab88d619",
+      "data": {
+        "values": [
+          "#minecraft:axes",
+          "#minecraft:pickaxes",
+          "#minecraft:shovels",
+          "#minecraft:hoes",
+          "minecraft:shears"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/mining_loot.json": {
+      "sha256": "b915f701b89d6f2addd95ed1d68bf7498ef18849a71c8e7d9d18ce8d5eb71e08",
+      "data": {
+        "values": [
+          "#minecraft:axes",
+          "#minecraft:pickaxes",
+          "#minecraft:shovels",
+          "#minecraft:hoes"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/sharp_weapon.json": {
+      "sha256": "e5c5616705b4685bb2bb11cf068150a3462bb6d2704fbdcf065aaf32bb8dedcb",
+      "data": {
+        "values": [
+          "#minecraft:swords",
+          "#minecraft:axes"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/sword.json": {
+      "sha256": "18c94bdd9c37c13d9a1de6b4d52df2ae2d195e3a264fd0b7bdef016f9a2035a2",
+      "data": {
+        "values": [
+          "#minecraft:swords"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/trident.json": {
+      "sha256": "5cd0a665d2a509b7c56276975e35911e142c966766c03d16c00debc6fcdd8b0a",
+      "data": {
+        "values": [
+          "minecraft:trident"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/vanishing.json": {
+      "sha256": "c9c100920f875a4c6582ec3f3be6bb7ae376e1ae58b54095318691eca1a70b79",
+      "data": {
+        "values": [
+          "#minecraft:enchantable/durability",
+          "minecraft:compass",
+          "minecraft:carved_pumpkin",
+          "#minecraft:skulls"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/enchantable/weapon.json": {
+      "sha256": "4bac4e231383da37b8d75594afe08f3a34e653240a57200549ca08f68298afc2",
+      "data": {
+        "values": [
+          "#minecraft:enchantable/sharp_weapon",
+          "minecraft:mace"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/fence_gates.json": {
+      "sha256": "74e678aeccb4046cd8dee8d56d8c33a12381c3f859cfd30a4506f6deb4ab0d43",
+      "data": {
+        "values": [
+          "minecraft:acacia_fence_gate",
+          "minecraft:birch_fence_gate",
+          "minecraft:dark_oak_fence_gate",
+          "minecraft:jungle_fence_gate",
+          "minecraft:oak_fence_gate",
+          "minecraft:spruce_fence_gate",
+          "minecraft:crimson_fence_gate",
+          "minecraft:warped_fence_gate",
+          "minecraft:mangrove_fence_gate",
+          "minecraft:bamboo_fence_gate",
+          "minecraft:cherry_fence_gate"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/fences.json": {
+      "sha256": "214462701d11703b222317fb7d470caa40e017b5036b127db242986b92fb30cd",
+      "data": {
+        "values": [
+          "#minecraft:wooden_fences",
+          "minecraft:nether_brick_fence"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/fishes.json": {
+      "sha256": "f1b63901b91991c259523ba75a0fe5a142cdc6af276368a32f9b5f4c7d12d9e7",
+      "data": {
+        "values": [
+          "minecraft:cod",
+          "minecraft:cooked_cod",
+          "minecraft:salmon",
+          "minecraft:cooked_salmon",
+          "minecraft:pufferfish",
+          "minecraft:tropical_fish"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/flowers.json": {
+      "sha256": "bbe31d1024c021e0ab4a315c1b3eef853360195b3d07215e3859287b8a6bf7ec",
+      "data": {
+        "values": [
+          "#minecraft:small_flowers",
+          "#minecraft:tall_flowers",
+          "minecraft:flowering_azalea_leaves",
+          "minecraft:flowering_azalea",
+          "minecraft:mangrove_propagule",
+          "minecraft:cherry_leaves",
+          "minecraft:pink_petals",
+          "minecraft:chorus_flower",
+          "minecraft:spore_blossom"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/foot_armor.json": {
+      "sha256": "8d8cc28d2199e4121f5083dd74141ac506b7f1e36937806e65e55078558c0110",
+      "data": {
+        "values": [
+          "minecraft:leather_boots",
+          "minecraft:chainmail_boots",
+          "minecraft:golden_boots",
+          "minecraft:iron_boots",
+          "minecraft:diamond_boots",
+          "minecraft:netherite_boots"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/fox_food.json": {
+      "sha256": "1deeb30da15862de1357f4a956638fe9a47794da6b2df5110503151e95c77bf3",
+      "data": {
+        "values": [
+          "minecraft:sweet_berries",
+          "minecraft:glow_berries"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/freeze_immune_wearables.json": {
+      "sha256": "8df0fa68f14a7f9705df39043a43c0b07abf3c30642608ec47c52f78a3ee0c3d",
+      "data": {
+        "values": [
+          "minecraft:leather_boots",
+          "minecraft:leather_leggings",
+          "minecraft:leather_chestplate",
+          "minecraft:leather_helmet",
+          "minecraft:leather_horse_armor"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/frog_food.json": {
+      "sha256": "2ff7ffdfdfc56f229a7814c4dd889d8bfb968b0203ee1abee7694501ea6967c7",
+      "data": {
+        "values": [
+          "minecraft:slime_ball"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/goat_food.json": {
+      "sha256": "738f6fea58ccc54211ea33b9482a19108fb26a930e475566be060f7b21d8e3c5",
+      "data": {
+        "values": [
+          "minecraft:wheat"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/gold_ores.json": {
+      "sha256": "65ad25a49ab9172921f468a528cb1a14de1c4f46b14cf275434cbe3e8d069bf0",
+      "data": {
+        "values": [
+          "minecraft:gold_ore",
+          "minecraft:nether_gold_ore",
+          "minecraft:deepslate_gold_ore"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/hanging_signs.json": {
+      "sha256": "381578c7b09718041882d145449d9df54c6eabfd045026c33ecf7765f8e5ca5a",
+      "data": {
+        "values": [
+          "minecraft:oak_hanging_sign",
+          "minecraft:spruce_hanging_sign",
+          "minecraft:birch_hanging_sign",
+          "minecraft:acacia_hanging_sign",
+          "minecraft:cherry_hanging_sign",
+          "minecraft:jungle_hanging_sign",
+          "minecraft:dark_oak_hanging_sign",
+          "minecraft:crimson_hanging_sign",
+          "minecraft:warped_hanging_sign",
+          "minecraft:mangrove_hanging_sign",
+          "minecraft:bamboo_hanging_sign"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/head_armor.json": {
+      "sha256": "7d697007c34716c989292140130635f8ca5de540aacffcacbaef99b6f8672fbd",
+      "data": {
+        "values": [
+          "minecraft:leather_helmet",
+          "minecraft:chainmail_helmet",
+          "minecraft:golden_helmet",
+          "minecraft:iron_helmet",
+          "minecraft:diamond_helmet",
+          "minecraft:netherite_helmet",
+          "minecraft:turtle_helmet"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/hoes.json": {
+      "sha256": "ec9bc1ff7756c325d6edf1d27e243a8228edb5ad7e5e2bdaed9511685003165f",
+      "data": {
+        "values": [
+          "minecraft:diamond_hoe",
+          "minecraft:stone_hoe",
+          "minecraft:golden_hoe",
+          "minecraft:netherite_hoe",
+          "minecraft:wooden_hoe",
+          "minecraft:iron_hoe"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/hoglin_food.json": {
+      "sha256": "c870c27bef023b4d37db8b5cd4702d8ffc473ff65812d5321d56330aacb3b0a1",
+      "data": {
+        "values": [
+          "minecraft:crimson_fungus"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/horse_food.json": {
+      "sha256": "bc874ce7f592600054accb695b16ae270ebf1c142bbe65890e5b81e422632e91",
+      "data": {
+        "values": [
+          "minecraft:wheat",
+          "minecraft:sugar",
+          "minecraft:hay_block",
+          "minecraft:apple",
+          "minecraft:golden_carrot",
+          "minecraft:golden_apple",
+          "minecraft:enchanted_golden_apple"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/horse_tempt_items.json": {
+      "sha256": "b215d642a4e1916c644fb7dd0e438a133428a1acdd5a4cff3c92591334debf71",
+      "data": {
+        "values": [
+          "minecraft:golden_carrot",
+          "minecraft:golden_apple",
+          "minecraft:enchanted_golden_apple"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/ignored_by_piglin_babies.json": {
+      "sha256": "0b0603ab485ff97f761247c495f97c635f6732dd8dd81da398f51e61330b4c68",
+      "data": {
+        "values": [
+          "minecraft:leather"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/iron_ores.json": {
+      "sha256": "2f6f3610e361a06ca72bda39893431eeebc864dcf389cb0c4c55826ebe6bb587",
+      "data": {
+        "values": [
+          "minecraft:iron_ore",
+          "minecraft:deepslate_iron_ore"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/jungle_logs.json": {
+      "sha256": "4ae9b365f5d403065b424f54a80018da98fbc73dd9b21564dca5a0ed77e89f2d",
+      "data": {
+        "values": [
+          "minecraft:jungle_log",
+          "minecraft:jungle_wood",
+          "minecraft:stripped_jungle_log",
+          "minecraft:stripped_jungle_wood"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/lapis_ores.json": {
+      "sha256": "2c986a71c5f2819549e17647415b6911250ddba23f03d9720fd10b6ad7c066d4",
+      "data": {
+        "values": [
+          "minecraft:lapis_ore",
+          "minecraft:deepslate_lapis_ore"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/leaves.json": {
+      "sha256": "10d8ae242355649bb013266d0e5ab5af3e114a700ed290e7a059f19cb8e1df1f",
+      "data": {
+        "values": [
+          "minecraft:jungle_leaves",
+          "minecraft:oak_leaves",
+          "minecraft:spruce_leaves",
+          "minecraft:dark_oak_leaves",
+          "minecraft:acacia_leaves",
+          "minecraft:birch_leaves",
+          "minecraft:azalea_leaves",
+          "minecraft:flowering_azalea_leaves",
+          "minecraft:mangrove_leaves",
+          "minecraft:cherry_leaves"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/lectern_books.json": {
+      "sha256": "b325dc52becd926be586257d4c76800ad06a3de452e72770acf3fc80b90979b6",
+      "data": {
+        "values": [
+          "minecraft:written_book",
+          "minecraft:writable_book"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/leg_armor.json": {
+      "sha256": "6b757043346bbf76cf181d9241940277c2608b69b5b6e475e8a6079f6deaab6f",
+      "data": {
+        "values": [
+          "minecraft:leather_leggings",
+          "minecraft:chainmail_leggings",
+          "minecraft:golden_leggings",
+          "minecraft:iron_leggings",
+          "minecraft:diamond_leggings",
+          "minecraft:netherite_leggings"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/llama_food.json": {
+      "sha256": "0044105e9a3b153fad6b75f43eebe8a7b4e0526b08d582bdb04f41f18c897b04",
+      "data": {
+        "values": [
+          "minecraft:wheat",
+          "minecraft:hay_block"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/llama_tempt_items.json": {
+      "sha256": "a7a0955638accdf3c39900fc14fcf9d74dd4aa0f997584bd256eb872a189706c",
+      "data": {
+        "values": [
+          "minecraft:hay_block"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/logs.json": {
+      "sha256": "439a696d433df1387db440b32017d1ae9a5b1ffad9ffce5d5c9cdc3a02b29484",
+      "data": {
+        "values": [
+          "#minecraft:logs_that_burn",
+          "#minecraft:crimson_stems",
+          "#minecraft:warped_stems"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/logs_that_burn.json": {
+      "sha256": "5fdfb9547b884e8fa1c474a2f2c4bc92a565caaa1cb185dddb07b3e286416f3c",
+      "data": {
+        "values": [
+          "#minecraft:dark_oak_logs",
+          "#minecraft:oak_logs",
+          "#minecraft:acacia_logs",
+          "#minecraft:birch_logs",
+          "#minecraft:jungle_logs",
+          "#minecraft:spruce_logs",
+          "#minecraft:mangrove_logs",
+          "#minecraft:cherry_logs"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/mangrove_logs.json": {
+      "sha256": "0e314f82ca811b358eac141f3fd65b5f886ca1de9a5055a370901118c4096f1e",
+      "data": {
+        "values": [
+          "minecraft:mangrove_log",
+          "minecraft:mangrove_wood",
+          "minecraft:stripped_mangrove_log",
+          "minecraft:stripped_mangrove_wood"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/meat.json": {
+      "sha256": "ee497645221d7f13a23231fd31dead5fccfd68d16a9ed01c7f67c4e7b55b4c58",
+      "data": {
+        "values": [
+          "minecraft:beef",
+          "minecraft:chicken",
+          "minecraft:cooked_beef",
+          "minecraft:cooked_chicken",
+          "minecraft:cooked_mutton",
+          "minecraft:cooked_porkchop",
+          "minecraft:cooked_rabbit",
+          "minecraft:mutton",
+          "minecraft:porkchop",
+          "minecraft:rabbit",
+          "minecraft:rotten_flesh"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/non_flammable_wood.json": {
+      "sha256": "c2355378a016cd872bbb80c70bfecfcea61faa363a23ae719d8c14b58cf71b86",
+      "data": {
+        "values": [
+          "minecraft:warped_stem",
+          "minecraft:stripped_warped_stem",
+          "minecraft:warped_hyphae",
+          "minecraft:stripped_warped_hyphae",
+          "minecraft:crimson_stem",
+          "minecraft:stripped_crimson_stem",
+          "minecraft:crimson_hyphae",
+          "minecraft:stripped_crimson_hyphae",
+          "minecraft:crimson_planks",
+          "minecraft:warped_planks",
+          "minecraft:crimson_slab",
+          "minecraft:warped_slab",
+          "minecraft:crimson_pressure_plate",
+          "minecraft:warped_pressure_plate",
+          "minecraft:crimson_fence",
+          "minecraft:warped_fence",
+          "minecraft:crimson_trapdoor",
+          "minecraft:warped_trapdoor",
+          "minecraft:crimson_fence_gate",
+          "minecraft:warped_fence_gate",
+          "minecraft:crimson_stairs",
+          "minecraft:warped_stairs",
+          "minecraft:crimson_button",
+          "minecraft:warped_button",
+          "minecraft:crimson_door",
+          "minecraft:warped_door",
+          "minecraft:crimson_sign",
+          "minecraft:warped_sign",
+          "minecraft:warped_hanging_sign",
+          "minecraft:crimson_hanging_sign"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/noteblock_top_instruments.json": {
+      "sha256": "3e0b8f356f1ebea41668a7dd065e0a7e4de8e10fa3c37642a5eee72054ee5969",
+      "data": {
+        "values": [
+          "minecraft:zombie_head",
+          "minecraft:skeleton_skull",
+          "minecraft:creeper_head",
+          "minecraft:dragon_head",
+          "minecraft:wither_skeleton_skull",
+          "minecraft:piglin_head",
+          "minecraft:player_head"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/oak_logs.json": {
+      "sha256": "939819db71415f16498a0f19ab34e80c9cd60e08a507b31f60d49762575613e0",
+      "data": {
+        "values": [
+          "minecraft:oak_log",
+          "minecraft:oak_wood",
+          "minecraft:stripped_oak_log",
+          "minecraft:stripped_oak_wood"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/ocelot_food.json": {
+      "sha256": "30450b0eeae7db7c8c4b25721be3c9e52ad91046450bec940648b653f3b3266a",
+      "data": {
+        "values": [
+          "minecraft:cod",
+          "minecraft:salmon"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/panda_food.json": {
+      "sha256": "9530b5e1d6d9fe995b58c00430b9a9f46dafcb195eb2d14417fcc7ecd80364a3",
+      "data": {
+        "values": [
+          "minecraft:bamboo"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/parrot_food.json": {
+      "sha256": "50489663e4790fe35119e611c7e1365f64bdd4c742dc4b765ca84d380904dd4b",
+      "data": {
+        "values": [
+          "minecraft:wheat_seeds",
+          "minecraft:melon_seeds",
+          "minecraft:pumpkin_seeds",
+          "minecraft:beetroot_seeds",
+          "minecraft:torchflower_seeds",
+          "minecraft:pitcher_pod"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/parrot_poisonous_food.json": {
+      "sha256": "73081db8e81552990c7061b465ee92c101f51d822f55abe9e33a50a17d5e991a",
+      "data": {
+        "values": [
+          "minecraft:cookie"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/pickaxes.json": {
+      "sha256": "8b5665f4dc57dd29b891255e64be88a91e66440e2bc91541feecbf87e79f0951",
+      "data": {
+        "values": [
+          "minecraft:diamond_pickaxe",
+          "minecraft:stone_pickaxe",
+          "minecraft:golden_pickaxe",
+          "minecraft:netherite_pickaxe",
+          "minecraft:wooden_pickaxe",
+          "minecraft:iron_pickaxe"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/pig_food.json": {
+      "sha256": "baa0cd32d32c9c9280f3160066705d714e5d3958d4e9fae13daa567181c1b3ac",
+      "data": {
+        "values": [
+          "minecraft:carrot",
+          "minecraft:potato",
+          "minecraft:beetroot"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/piglin_food.json": {
+      "sha256": "f0b6cccff3b1c47bcc0d7a040435ee5128c9d88db47acce44db3716f33f1d774",
+      "data": {
+        "values": [
+          "minecraft:porkchop",
+          "minecraft:cooked_porkchop"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/piglin_loved.json": {
+      "sha256": "dfde95ba24d25ae73b9d2136cd20586bdebb2a1be1f57ae8dccdee179a65a576",
+      "data": {
+        "values": [
+          "#minecraft:gold_ores",
+          "minecraft:gold_block",
+          "minecraft:gilded_blackstone",
+          "minecraft:light_weighted_pressure_plate",
+          "minecraft:gold_ingot",
+          "minecraft:bell",
+          "minecraft:clock",
+          "minecraft:golden_carrot",
+          "minecraft:glistering_melon_slice",
+          "minecraft:golden_apple",
+          "minecraft:enchanted_golden_apple",
+          "minecraft:golden_helmet",
+          "minecraft:golden_chestplate",
+          "minecraft:golden_leggings",
+          "minecraft:golden_boots",
+          "minecraft:golden_horse_armor",
+          "minecraft:golden_sword",
+          "minecraft:golden_pickaxe",
+          "minecraft:golden_shovel",
+          "minecraft:golden_axe",
+          "minecraft:golden_hoe",
+          "minecraft:raw_gold",
+          "minecraft:raw_gold_block"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/piglin_repellents.json": {
+      "sha256": "0916e2e2ff7f39e867f9f272ab2f87e2b16eaf93f9f28f36274de4b5dcb17254",
+      "data": {
+        "values": [
+          "minecraft:soul_torch",
+          "minecraft:soul_lantern",
+          "minecraft:soul_campfire"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/planks.json": {
+      "sha256": "13bf47a72182ae4d1267c3657602b49adb8e415a69ed6ac105c77d5a4943c328",
+      "data": {
+        "values": [
+          "minecraft:oak_planks",
+          "minecraft:spruce_planks",
+          "minecraft:birch_planks",
+          "minecraft:jungle_planks",
+          "minecraft:acacia_planks",
+          "minecraft:dark_oak_planks",
+          "minecraft:crimson_planks",
+          "minecraft:warped_planks",
+          "minecraft:mangrove_planks",
+          "minecraft:bamboo_planks",
+          "minecraft:cherry_planks"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/rabbit_food.json": {
+      "sha256": "5b1ffc67122a05c5acae6be297dcedde45f01e2eced0299836cca25dec57b0d6",
+      "data": {
+        "values": [
+          "minecraft:carrot",
+          "minecraft:golden_carrot",
+          "minecraft:dandelion"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/rails.json": {
+      "sha256": "fa33f7e0ee5381b318e70b3a0a96a73ea420c75355ac77e9ae69933491585a99",
+      "data": {
+        "values": [
+          "minecraft:rail",
+          "minecraft:powered_rail",
+          "minecraft:detector_rail",
+          "minecraft:activator_rail"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/redstone_ores.json": {
+      "sha256": "7884553e4f4b0ac64a7dfdf172271b870ada01b0fbdfbc8a4af3bb8db6ab974b",
+      "data": {
+        "values": [
+          "minecraft:redstone_ore",
+          "minecraft:deepslate_redstone_ore"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/sand.json": {
+      "sha256": "b2fc30bdbba92b54708302ce61cc9eea8d75ccc856c6c5d5e820e054e131a58a",
+      "data": {
+        "values": [
+          "minecraft:sand",
+          "minecraft:red_sand",
+          "minecraft:suspicious_sand",
+          "minecraft:suspicious_sand"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/saplings.json": {
+      "sha256": "da3a4b51c2c0c5c72de82353b5d2198a29601e1c79a0fcadb76b2e8a851ae70d",
+      "data": {
+        "values": [
+          "minecraft:oak_sapling",
+          "minecraft:spruce_sapling",
+          "minecraft:birch_sapling",
+          "minecraft:jungle_sapling",
+          "minecraft:acacia_sapling",
+          "minecraft:dark_oak_sapling",
+          "minecraft:azalea",
+          "minecraft:flowering_azalea",
+          "minecraft:mangrove_propagule",
+          "minecraft:cherry_sapling"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/sheep_food.json": {
+      "sha256": "738f6fea58ccc54211ea33b9482a19108fb26a930e475566be060f7b21d8e3c5",
+      "data": {
+        "values": [
+          "minecraft:wheat"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/shovels.json": {
+      "sha256": "efcd90ed0b2cacdc33a551aa24f33291b4601e598b639dea4145ac37226e3a5c",
+      "data": {
+        "values": [
+          "minecraft:diamond_shovel",
+          "minecraft:stone_shovel",
+          "minecraft:golden_shovel",
+          "minecraft:netherite_shovel",
+          "minecraft:wooden_shovel",
+          "minecraft:iron_shovel"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/signs.json": {
+      "sha256": "e71e5fb811f46d15fe3ab6f1f74263675fe361c75cf0fc6bdc922e5cd4aa897a",
+      "data": {
+        "values": [
+          "minecraft:oak_sign",
+          "minecraft:spruce_sign",
+          "minecraft:birch_sign",
+          "minecraft:acacia_sign",
+          "minecraft:jungle_sign",
+          "minecraft:dark_oak_sign",
+          "minecraft:crimson_sign",
+          "minecraft:warped_sign",
+          "minecraft:mangrove_sign",
+          "minecraft:bamboo_sign",
+          "minecraft:cherry_sign"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/skulls.json": {
+      "sha256": "9d95ce3eff65efe58e979dd82eb66fcbf224c8d583a28a12f6f9ed8499e2c987",
+      "data": {
+        "values": [
+          "minecraft:player_head",
+          "minecraft:creeper_head",
+          "minecraft:zombie_head",
+          "minecraft:skeleton_skull",
+          "minecraft:wither_skeleton_skull",
+          "minecraft:dragon_head",
+          "minecraft:piglin_head"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/slabs.json": {
+      "sha256": "b33115adbff0822566a7f606fe8abc1f21382f1794c33b4d2258eb48e07c7bff",
+      "data": {
+        "values": [
+          "#minecraft:wooden_slabs",
+          "minecraft:bamboo_mosaic_slab",
+          "minecraft:stone_slab",
+          "minecraft:smooth_stone_slab",
+          "minecraft:stone_brick_slab",
+          "minecraft:sandstone_slab",
+          "minecraft:purpur_slab",
+          "minecraft:quartz_slab",
+          "minecraft:red_sandstone_slab",
+          "minecraft:brick_slab",
+          "minecraft:cobblestone_slab",
+          "minecraft:nether_brick_slab",
+          "minecraft:petrified_oak_slab",
+          "minecraft:prismarine_slab",
+          "minecraft:prismarine_brick_slab",
+          "minecraft:dark_prismarine_slab",
+          "minecraft:polished_granite_slab",
+          "minecraft:smooth_red_sandstone_slab",
+          "minecraft:mossy_stone_brick_slab",
+          "minecraft:polished_diorite_slab",
+          "minecraft:mossy_cobblestone_slab",
+          "minecraft:end_stone_brick_slab",
+          "minecraft:smooth_sandstone_slab",
+          "minecraft:smooth_quartz_slab",
+          "minecraft:granite_slab",
+          "minecraft:andesite_slab",
+          "minecraft:red_nether_brick_slab",
+          "minecraft:polished_andesite_slab",
+          "minecraft:diorite_slab",
+          "minecraft:cut_sandstone_slab",
+          "minecraft:cut_red_sandstone_slab",
+          "minecraft:blackstone_slab",
+          "minecraft:polished_blackstone_brick_slab",
+          "minecraft:polished_blackstone_slab",
+          "minecraft:cobbled_deepslate_slab",
+          "minecraft:polished_deepslate_slab",
+          "minecraft:deepslate_tile_slab",
+          "minecraft:deepslate_brick_slab",
+          "minecraft:waxed_weathered_cut_copper_slab",
+          "minecraft:waxed_exposed_cut_copper_slab",
+          "minecraft:waxed_cut_copper_slab",
+          "minecraft:oxidized_cut_copper_slab",
+          "minecraft:weathered_cut_copper_slab",
+          "minecraft:exposed_cut_copper_slab",
+          "minecraft:cut_copper_slab",
+          "minecraft:waxed_oxidized_cut_copper_slab",
+          "minecraft:mud_brick_slab",
+          "minecraft:tuff_slab",
+          "minecraft:polished_tuff_slab",
+          "minecraft:tuff_brick_slab"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/small_flowers.json": {
+      "sha256": "4fc1ae0b1bf81d9e9b074c2f6c06b82901578aa92d09fa9604e1dc8e19743fe8",
+      "data": {
+        "values": [
+          "minecraft:dandelion",
+          "minecraft:poppy",
+          "minecraft:blue_orchid",
+          "minecraft:allium",
+          "minecraft:azure_bluet",
+          "minecraft:red_tulip",
+          "minecraft:orange_tulip",
+          "minecraft:white_tulip",
+          "minecraft:pink_tulip",
+          "minecraft:oxeye_daisy",
+          "minecraft:cornflower",
+          "minecraft:lily_of_the_valley",
+          "minecraft:wither_rose",
+          "minecraft:torchflower"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/smelts_to_glass.json": {
+      "sha256": "f32f9a585b721d552bdddd85e3ae92515b24f320508be56e79da1b5dfbe40126",
+      "data": {
+        "values": [
+          "minecraft:sand",
+          "minecraft:red_sand"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/sniffer_food.json": {
+      "sha256": "3f9d397d9199ab76d2b14bbba8193d3ce8d8ffeb882aad02b635d407a628d3f0",
+      "data": {
+        "values": [
+          "minecraft:torchflower_seeds"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/soul_fire_base_blocks.json": {
+      "sha256": "8ba7eac6f7c74d25601ef4455b71e3947fdb8e51b8fafd55dddee48397b144b6",
+      "data": {
+        "values": [
+          "minecraft:soul_sand",
+          "minecraft:soul_soil"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/spruce_logs.json": {
+      "sha256": "129c6d79945e1bc246fb8ff32b8a6848035c6ba63f0a6d65c18adfbd41111307",
+      "data": {
+        "values": [
+          "minecraft:spruce_log",
+          "minecraft:spruce_wood",
+          "minecraft:stripped_spruce_log",
+          "minecraft:stripped_spruce_wood"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/stairs.json": {
+      "sha256": "02b39ae8f3e2d36ed0018b3513ee39bbf1f3688450d9864c5bef576e6be0b4c7",
+      "data": {
+        "values": [
+          "#minecraft:wooden_stairs",
+          "minecraft:bamboo_mosaic_stairs",
+          "minecraft:cobblestone_stairs",
+          "minecraft:sandstone_stairs",
+          "minecraft:nether_brick_stairs",
+          "minecraft:stone_brick_stairs",
+          "minecraft:brick_stairs",
+          "minecraft:purpur_stairs",
+          "minecraft:quartz_stairs",
+          "minecraft:red_sandstone_stairs",
+          "minecraft:prismarine_brick_stairs",
+          "minecraft:prismarine_stairs",
+          "minecraft:dark_prismarine_stairs",
+          "minecraft:polished_granite_stairs",
+          "minecraft:smooth_red_sandstone_stairs",
+          "minecraft:mossy_stone_brick_stairs",
+          "minecraft:polished_diorite_stairs",
+          "minecraft:mossy_cobblestone_stairs",
+          "minecraft:end_stone_brick_stairs",
+          "minecraft:stone_stairs",
+          "minecraft:smooth_sandstone_stairs",
+          "minecraft:smooth_quartz_stairs",
+          "minecraft:granite_stairs",
+          "minecraft:andesite_stairs",
+          "minecraft:red_nether_brick_stairs",
+          "minecraft:polished_andesite_stairs",
+          "minecraft:diorite_stairs",
+          "minecraft:blackstone_stairs",
+          "minecraft:polished_blackstone_brick_stairs",
+          "minecraft:polished_blackstone_stairs",
+          "minecraft:cobbled_deepslate_stairs",
+          "minecraft:polished_deepslate_stairs",
+          "minecraft:deepslate_tile_stairs",
+          "minecraft:deepslate_brick_stairs",
+          "minecraft:oxidized_cut_copper_stairs",
+          "minecraft:weathered_cut_copper_stairs",
+          "minecraft:exposed_cut_copper_stairs",
+          "minecraft:cut_copper_stairs",
+          "minecraft:waxed_weathered_cut_copper_stairs",
+          "minecraft:waxed_exposed_cut_copper_stairs",
+          "minecraft:waxed_cut_copper_stairs",
+          "minecraft:waxed_oxidized_cut_copper_stairs",
+          "minecraft:mud_brick_stairs",
+          "minecraft:tuff_stairs",
+          "minecraft:polished_tuff_stairs",
+          "minecraft:tuff_brick_stairs"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/stone_bricks.json": {
+      "sha256": "61f8c78df54ce0d2af255dfda5d13d9768c82817518122b77a27da6d5f62e924",
+      "data": {
+        "values": [
+          "minecraft:stone_bricks",
+          "minecraft:mossy_stone_bricks",
+          "minecraft:cracked_stone_bricks",
+          "minecraft:chiseled_stone_bricks"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/stone_buttons.json": {
+      "sha256": "1ebb5c3d79c2828ace64c52636451f05ea536411050c3d198646dc60d367051c",
+      "data": {
+        "values": [
+          "minecraft:stone_button",
+          "minecraft:polished_blackstone_button"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/stone_crafting_materials.json": {
+      "sha256": "a487c80a5e1e83e4bf8bf6ae0f0ea05acd91b6ee28066648f27df1808b56fa6b",
+      "data": {
+        "values": [
+          "minecraft:cobblestone",
+          "minecraft:blackstone",
+          "minecraft:cobbled_deepslate"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/stone_tool_materials.json": {
+      "sha256": "a487c80a5e1e83e4bf8bf6ae0f0ea05acd91b6ee28066648f27df1808b56fa6b",
+      "data": {
+        "values": [
+          "minecraft:cobblestone",
+          "minecraft:blackstone",
+          "minecraft:cobbled_deepslate"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/strider_food.json": {
+      "sha256": "62eff6f650ea8e911824901cf0573be914326e7fcd871ffab42d461a4ed67d0b",
+      "data": {
+        "values": [
+          "minecraft:warped_fungus"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/strider_tempt_items.json": {
+      "sha256": "402fc3e3c82614ad87ccc012196e8cf4fe420a8b2afe7a3094dc6de906dd9256",
+      "data": {
+        "values": [
+          "#minecraft:strider_food",
+          "minecraft:warped_fungus_on_a_stick"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/swords.json": {
+      "sha256": "a5e79163f00b315930a3911600cd266e133e934da376947188d75ec357a86313",
+      "data": {
+        "values": [
+          "minecraft:diamond_sword",
+          "minecraft:stone_sword",
+          "minecraft:golden_sword",
+          "minecraft:netherite_sword",
+          "minecraft:wooden_sword",
+          "minecraft:iron_sword"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/tall_flowers.json": {
+      "sha256": "eb6c34b1a416bbd712e6ea9f4593ad72ffcf05feef979ebe739639c23ab77593",
+      "data": {
+        "values": [
+          "minecraft:sunflower",
+          "minecraft:lilac",
+          "minecraft:peony",
+          "minecraft:rose_bush",
+          "minecraft:pitcher_plant"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/terracotta.json": {
+      "sha256": "d05ea6b1a2f1e794ff11745534938eaf024ac9debed7b29ef272aba4f1b648b9",
+      "data": {
+        "values": [
+          "minecraft:terracotta",
+          "minecraft:white_terracotta",
+          "minecraft:orange_terracotta",
+          "minecraft:magenta_terracotta",
+          "minecraft:light_blue_terracotta",
+          "minecraft:yellow_terracotta",
+          "minecraft:lime_terracotta",
+          "minecraft:pink_terracotta",
+          "minecraft:gray_terracotta",
+          "minecraft:light_gray_terracotta",
+          "minecraft:cyan_terracotta",
+          "minecraft:purple_terracotta",
+          "minecraft:blue_terracotta",
+          "minecraft:brown_terracotta",
+          "minecraft:green_terracotta",
+          "minecraft:red_terracotta",
+          "minecraft:black_terracotta"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/trapdoors.json": {
+      "sha256": "0b72384f2da185aa3727914af7c4b72eb09574b1f3319a8bfd38b7899e77871d",
+      "data": {
+        "values": [
+          "#minecraft:wooden_trapdoors",
+          "minecraft:iron_trapdoor",
+          "minecraft:copper_trapdoor",
+          "minecraft:exposed_copper_trapdoor",
+          "minecraft:weathered_copper_trapdoor",
+          "minecraft:oxidized_copper_trapdoor",
+          "minecraft:waxed_copper_trapdoor",
+          "minecraft:waxed_exposed_copper_trapdoor",
+          "minecraft:waxed_weathered_copper_trapdoor",
+          "minecraft:waxed_oxidized_copper_trapdoor"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/trim_materials.json": {
+      "sha256": "b260bf9b567a9a28e3a3f0aadd381bb45eec9be9291c748bb08a0adf92c80599",
+      "data": {
+        "values": [
+          "minecraft:iron_ingot",
+          "minecraft:copper_ingot",
+          "minecraft:gold_ingot",
+          "minecraft:lapis_lazuli",
+          "minecraft:emerald",
+          "minecraft:diamond",
+          "minecraft:netherite_ingot",
+          "minecraft:redstone",
+          "minecraft:quartz",
+          "minecraft:amethyst_shard"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/trim_templates.json": {
+      "sha256": "0edbf39eddae703f0667b5887d3cbf46a3ea04f050f3740883c40c6102c8f6ef",
+      "data": {
+        "values": [
+          "minecraft:ward_armor_trim_smithing_template",
+          "minecraft:spire_armor_trim_smithing_template",
+          "minecraft:coast_armor_trim_smithing_template",
+          "minecraft:eye_armor_trim_smithing_template",
+          "minecraft:dune_armor_trim_smithing_template",
+          "minecraft:wild_armor_trim_smithing_template",
+          "minecraft:rib_armor_trim_smithing_template",
+          "minecraft:tide_armor_trim_smithing_template",
+          "minecraft:sentry_armor_trim_smithing_template",
+          "minecraft:vex_armor_trim_smithing_template",
+          "minecraft:snout_armor_trim_smithing_template",
+          "minecraft:wayfinder_armor_trim_smithing_template",
+          "minecraft:shaper_armor_trim_smithing_template",
+          "minecraft:silence_armor_trim_smithing_template",
+          "minecraft:raiser_armor_trim_smithing_template",
+          "minecraft:host_armor_trim_smithing_template",
+          "minecraft:flow_armor_trim_smithing_template",
+          "minecraft:bolt_armor_trim_smithing_template"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/trimmable_armor.json": {
+      "sha256": "76e82639caddb7cb304527512fae1dde494fbebbb4d42b12f02035e7cd3f2506",
+      "data": {
+        "values": [
+          "#minecraft:foot_armor",
+          "#minecraft:leg_armor",
+          "#minecraft:chest_armor",
+          "#minecraft:head_armor"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/turtle_food.json": {
+      "sha256": "8710b01e92d49f2137fedce05a40cae0b4f19549358bb1ef32f470a23725c5a8",
+      "data": {
+        "values": [
+          "minecraft:seagrass"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/villager_plantable_seeds.json": {
+      "sha256": "ac4666ae419e4190b8755904d90f35107ef61d2ad260195ad5ca4de5024b9dd9",
+      "data": {
+        "values": [
+          "minecraft:wheat_seeds",
+          "minecraft:potato",
+          "minecraft:carrot",
+          "minecraft:beetroot_seeds",
+          "minecraft:torchflower_seeds",
+          "minecraft:pitcher_pod"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/walls.json": {
+      "sha256": "f6eb92fb38b0122f7d18c3b1a9a234848493a5ab3727961f460ebe6e3160a822",
+      "data": {
+        "values": [
+          "minecraft:cobblestone_wall",
+          "minecraft:mossy_cobblestone_wall",
+          "minecraft:brick_wall",
+          "minecraft:prismarine_wall",
+          "minecraft:red_sandstone_wall",
+          "minecraft:mossy_stone_brick_wall",
+          "minecraft:granite_wall",
+          "minecraft:stone_brick_wall",
+          "minecraft:nether_brick_wall",
+          "minecraft:andesite_wall",
+          "minecraft:red_nether_brick_wall",
+          "minecraft:sandstone_wall",
+          "minecraft:end_stone_brick_wall",
+          "minecraft:diorite_wall",
+          "minecraft:blackstone_wall",
+          "minecraft:polished_blackstone_brick_wall",
+          "minecraft:polished_blackstone_wall",
+          "minecraft:cobbled_deepslate_wall",
+          "minecraft:polished_deepslate_wall",
+          "minecraft:deepslate_tile_wall",
+          "minecraft:deepslate_brick_wall",
+          "minecraft:mud_brick_wall",
+          "minecraft:tuff_wall",
+          "minecraft:polished_tuff_wall",
+          "minecraft:tuff_brick_wall"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/warped_stems.json": {
+      "sha256": "7515406d2b3d3f41697dc6b31579d2750730de34638196df3b9ba1618e3afbaa",
+      "data": {
+        "values": [
+          "minecraft:warped_stem",
+          "minecraft:stripped_warped_stem",
+          "minecraft:warped_hyphae",
+          "minecraft:stripped_warped_hyphae"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/wart_blocks.json": {
+      "sha256": "548bc2c73a5292d7beab476a32329866c2a5c870ae5d537eb20c459578f06b28",
+      "data": {
+        "values": [
+          "minecraft:nether_wart_block",
+          "minecraft:warped_wart_block"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/wolf_food.json": {
+      "sha256": "6d4809334c93e282af8c0adfee978614d188f726cdfdb121a4a0780c6484b8fb",
+      "data": {
+        "values": [
+          "#minecraft:meat"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/wooden_buttons.json": {
+      "sha256": "05a4d19dc5d68f4a5521c09d87add77c616aac889dc4e73cd65cf19e5867b3a8",
+      "data": {
+        "values": [
+          "minecraft:oak_button",
+          "minecraft:spruce_button",
+          "minecraft:birch_button",
+          "minecraft:jungle_button",
+          "minecraft:acacia_button",
+          "minecraft:dark_oak_button",
+          "minecraft:crimson_button",
+          "minecraft:warped_button",
+          "minecraft:mangrove_button",
+          "minecraft:bamboo_button",
+          "minecraft:cherry_button"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/wooden_doors.json": {
+      "sha256": "7275ea3ddf3eef6f81da6c85fd91bd4206ba16a2283ac149e35ef3e99e54757e",
+      "data": {
+        "values": [
+          "minecraft:oak_door",
+          "minecraft:spruce_door",
+          "minecraft:birch_door",
+          "minecraft:jungle_door",
+          "minecraft:acacia_door",
+          "minecraft:dark_oak_door",
+          "minecraft:crimson_door",
+          "minecraft:warped_door",
+          "minecraft:mangrove_door",
+          "minecraft:bamboo_door",
+          "minecraft:cherry_door"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/wooden_fences.json": {
+      "sha256": "f06b73683a9c2b16577fa3ed76476e3d9463967c6723df11756508bfdd6e9e49",
+      "data": {
+        "values": [
+          "minecraft:oak_fence",
+          "minecraft:acacia_fence",
+          "minecraft:dark_oak_fence",
+          "minecraft:spruce_fence",
+          "minecraft:birch_fence",
+          "minecraft:jungle_fence",
+          "minecraft:crimson_fence",
+          "minecraft:warped_fence",
+          "minecraft:mangrove_fence",
+          "minecraft:bamboo_fence",
+          "minecraft:cherry_fence"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/wooden_pressure_plates.json": {
+      "sha256": "f414cfb14fc83a620f15dae25cf191e2ccc866776846313f5a88bfdc48f8adb8",
+      "data": {
+        "values": [
+          "minecraft:oak_pressure_plate",
+          "minecraft:spruce_pressure_plate",
+          "minecraft:birch_pressure_plate",
+          "minecraft:jungle_pressure_plate",
+          "minecraft:acacia_pressure_plate",
+          "minecraft:dark_oak_pressure_plate",
+          "minecraft:crimson_pressure_plate",
+          "minecraft:warped_pressure_plate",
+          "minecraft:mangrove_pressure_plate",
+          "minecraft:bamboo_pressure_plate",
+          "minecraft:cherry_pressure_plate"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/wooden_slabs.json": {
+      "sha256": "ea3676a3c2ebc2a13ae7ab5afb406bb78d61ee34cfa19bbefd16258845e30eb5",
+      "data": {
+        "values": [
+          "minecraft:oak_slab",
+          "minecraft:spruce_slab",
+          "minecraft:birch_slab",
+          "minecraft:jungle_slab",
+          "minecraft:acacia_slab",
+          "minecraft:dark_oak_slab",
+          "minecraft:crimson_slab",
+          "minecraft:warped_slab",
+          "minecraft:mangrove_slab",
+          "minecraft:bamboo_slab",
+          "minecraft:cherry_slab"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/wooden_stairs.json": {
+      "sha256": "07c3807016ea3797d0307c05b873cdcb1a76c00c7540f02c88230e53a4d84529",
+      "data": {
+        "values": [
+          "minecraft:oak_stairs",
+          "minecraft:spruce_stairs",
+          "minecraft:birch_stairs",
+          "minecraft:jungle_stairs",
+          "minecraft:acacia_stairs",
+          "minecraft:dark_oak_stairs",
+          "minecraft:crimson_stairs",
+          "minecraft:warped_stairs",
+          "minecraft:mangrove_stairs",
+          "minecraft:bamboo_stairs",
+          "minecraft:cherry_stairs"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/wooden_trapdoors.json": {
+      "sha256": "924c2c2680b95506c3c986f376ef279d126ba7647d9981407963759450f63cc3",
+      "data": {
+        "values": [
+          "minecraft:acacia_trapdoor",
+          "minecraft:birch_trapdoor",
+          "minecraft:dark_oak_trapdoor",
+          "minecraft:jungle_trapdoor",
+          "minecraft:oak_trapdoor",
+          "minecraft:spruce_trapdoor",
+          "minecraft:crimson_trapdoor",
+          "minecraft:warped_trapdoor",
+          "minecraft:mangrove_trapdoor",
+          "minecraft:bamboo_trapdoor",
+          "minecraft:cherry_trapdoor"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/wool.json": {
+      "sha256": "02dba7a59e67c70ea0c21e21ff9b081047f9d6f0d39b5b6ad8d95d53eff28ca4",
+      "data": {
+        "values": [
+          "minecraft:white_wool",
+          "minecraft:orange_wool",
+          "minecraft:magenta_wool",
+          "minecraft:light_blue_wool",
+          "minecraft:yellow_wool",
+          "minecraft:lime_wool",
+          "minecraft:pink_wool",
+          "minecraft:gray_wool",
+          "minecraft:light_gray_wool",
+          "minecraft:cyan_wool",
+          "minecraft:purple_wool",
+          "minecraft:blue_wool",
+          "minecraft:brown_wool",
+          "minecraft:green_wool",
+          "minecraft:red_wool",
+          "minecraft:black_wool"
+        ]
+      }
+    },
+    "data/minecraft/tags/item/wool_carpets.json": {
+      "sha256": "bcf8ca0da1842f340fbb23f7582913a0ede9f33c6b99149fde3cb944c4bef545",
+      "data": {
+        "values": [
+          "minecraft:white_carpet",
+          "minecraft:orange_carpet",
+          "minecraft:magenta_carpet",
+          "minecraft:light_blue_carpet",
+          "minecraft:yellow_carpet",
+          "minecraft:lime_carpet",
+          "minecraft:pink_carpet",
+          "minecraft:gray_carpet",
+          "minecraft:light_gray_carpet",
+          "minecraft:cyan_carpet",
+          "minecraft:purple_carpet",
+          "minecraft:blue_carpet",
+          "minecraft:brown_carpet",
+          "minecraft:green_carpet",
+          "minecraft:red_carpet",
+          "minecraft:black_carpet"
+        ]
+      }
+    },
+    "data/c/tags/item/animal_foods.json": {
+      "data": {
+        "values": [
+          "#minecraft:armadillo_food",
+          "#minecraft:axolotl_food",
+          "#minecraft:bee_food",
+          "#minecraft:camel_food",
+          "#minecraft:cat_food",
+          "#minecraft:chicken_food",
+          "#minecraft:cow_food",
+          "#minecraft:fox_food",
+          "#minecraft:frog_food",
+          "#minecraft:goat_food",
+          "#minecraft:hoglin_food",
+          "#minecraft:horse_food",
+          "#minecraft:llama_food",
+          "#minecraft:ocelot_food",
+          "#minecraft:panda_food",
+          "#minecraft:parrot_food",
+          "#minecraft:pig_food",
+          "#minecraft:piglin_food",
+          "#minecraft:rabbit_food",
+          "#minecraft:sheep_food",
+          "#minecraft:sniffer_food",
+          "#minecraft:strider_food",
+          "#minecraft:turtle_food",
+          "#minecraft:wolf_food"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/armors.json": {
+      "data": {
+        "values": [
+          "#minecraft:head_armor",
+          "#minecraft:chest_armor",
+          "#minecraft:leg_armor",
+          "#minecraft:foot_armor",
+          {
+            "id": "#forge:armors",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/barrels.json": {
+      "data": {
+        "values": [
+          "#c:barrels/wooden",
+          {
+            "id": "#forge:barrels",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/barrels/wooden.json": {
+      "data": {
+        "values": [
+          "minecraft:barrel",
+          {
+            "id": "#forge:barrels/wooden",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/bones.json": {
+      "data": {
+        "values": [
+          "minecraft:bone",
+          {
+            "id": "#forge:bones",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/bookshelves.json": {
+      "data": {
+        "values": [
+          "minecraft:bookshelf",
+          {
+            "id": "#forge:bookshelves",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/bricks.json": {
+      "data": {
+        "values": [
+          "#c:bricks/normal",
+          "#c:bricks/nether"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/bricks/nether.json": {
+      "data": {
+        "values": [
+          "minecraft:nether_brick",
+          {
+            "id": "#forge:ingots/nether_brick",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/bricks/normal.json": {
+      "data": {
+        "values": [
+          "minecraft:brick",
+          {
+            "id": "#forge:ingots/brick",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/buckets.json": {
+      "data": {
+        "values": [
+          "#c:buckets/empty",
+          "#c:buckets/water",
+          "#c:buckets/lava",
+          "#c:buckets/milk",
+          "#c:buckets/powder_snow",
+          "#c:buckets/entity_water"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/buckets/empty.json": {
+      "data": {
+        "values": [
+          "minecraft:bucket"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/buckets/entity_water.json": {
+      "data": {
+        "values": [
+          "minecraft:axolotl_bucket",
+          "minecraft:cod_bucket",
+          "minecraft:pufferfish_bucket",
+          "minecraft:tadpole_bucket",
+          "minecraft:tropical_fish_bucket",
+          "minecraft:salmon_bucket"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/buckets/lava.json": {
+      "data": {
+        "values": [
+          "minecraft:lava_bucket"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/buckets/milk.json": {
+      "data": {
+        "values": [
+          "minecraft:milk_bucket"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/buckets/powder_snow.json": {
+      "data": {
+        "values": [
+          "minecraft:powder_snow_bucket"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/buckets/water.json": {
+      "data": {
+        "values": [
+          "minecraft:water_bucket"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/budding_blocks.json": {
+      "data": {
+        "values": [
+          "minecraft:budding_amethyst"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/buds.json": {
+      "data": {
+        "values": [
+          "minecraft:small_amethyst_bud",
+          "minecraft:medium_amethyst_bud",
+          "minecraft:large_amethyst_bud"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/chains.json": {
+      "data": {
+        "values": [
+          "minecraft:chain"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/chests.json": {
+      "data": {
+        "values": [
+          "#c:chests/ender",
+          "#c:chests/trapped",
+          "#c:chests/wooden",
+          {
+            "id": "#forge:chests",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/chests/ender.json": {
+      "data": {
+        "values": [
+          "minecraft:ender_chest",
+          {
+            "id": "#forge:chests/ender",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/chests/trapped.json": {
+      "data": {
+        "values": [
+          "minecraft:trapped_chest",
+          {
+            "id": "#forge:chests/trapped",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/chests/wooden.json": {
+      "data": {
+        "values": [
+          "minecraft:chest",
+          "minecraft:trapped_chest",
+          {
+            "id": "#forge:chests/wooden",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/clusters.json": {
+      "data": {
+        "values": [
+          "minecraft:amethyst_cluster"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/cobblestones.json": {
+      "data": {
+        "values": [
+          "#c:cobblestones/normal",
+          "#c:cobblestones/infested",
+          "#c:cobblestones/mossy",
+          "#c:cobblestones/deepslate",
+          {
+            "id": "#forge:cobblestone",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/cobblestones/deepslate.json": {
+      "data": {
+        "values": [
+          "minecraft:cobbled_deepslate",
+          {
+            "id": "#forge:cobblestone/deepslate",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/cobblestones/infested.json": {
+      "data": {
+        "values": [
+          "minecraft:infested_cobblestone",
+          {
+            "id": "#forge:cobblestone/infested",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/cobblestones/mossy.json": {
+      "data": {
+        "values": [
+          "minecraft:mossy_cobblestone",
+          {
+            "id": "#forge:cobblestone/mossy",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/cobblestones/normal.json": {
+      "data": {
+        "values": [
+          "minecraft:cobblestone",
+          {
+            "id": "#forge:cobblestone/normal",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/concrete_powders.json": {
+      "data": {
+        "values": [
+          "minecraft:white_concrete_powder",
+          "minecraft:orange_concrete_powder",
+          "minecraft:magenta_concrete_powder",
+          "minecraft:light_blue_concrete_powder",
+          "minecraft:yellow_concrete_powder",
+          "minecraft:lime_concrete_powder",
+          "minecraft:pink_concrete_powder",
+          "minecraft:gray_concrete_powder",
+          "minecraft:light_gray_concrete_powder",
+          "minecraft:cyan_concrete_powder",
+          "minecraft:purple_concrete_powder",
+          "minecraft:blue_concrete_powder",
+          "minecraft:brown_concrete_powder",
+          "minecraft:green_concrete_powder",
+          "minecraft:red_concrete_powder",
+          "minecraft:black_concrete_powder"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/concretes.json": {
+      "data": {
+        "values": [
+          "minecraft:white_concrete",
+          "minecraft:orange_concrete",
+          "minecraft:magenta_concrete",
+          "minecraft:light_blue_concrete",
+          "minecraft:yellow_concrete",
+          "minecraft:lime_concrete",
+          "minecraft:pink_concrete",
+          "minecraft:gray_concrete",
+          "minecraft:light_gray_concrete",
+          "minecraft:cyan_concrete",
+          "minecraft:purple_concrete",
+          "minecraft:blue_concrete",
+          "minecraft:brown_concrete",
+          "minecraft:green_concrete",
+          "minecraft:red_concrete",
+          "minecraft:black_concrete"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/crops.json": {
+      "data": {
+        "values": [
+          "#c:crops/beetroot",
+          "#c:crops/cactus",
+          "#c:crops/carrot",
+          "#c:crops/cocoa_bean",
+          "#c:crops/melon",
+          "#c:crops/nether_wart",
+          "#c:crops/potato",
+          "#c:crops/pumpkin",
+          "#c:crops/sugar_cane",
+          "#c:crops/wheat",
+          {
+            "id": "#forge:crops",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/crops/beetroot.json": {
+      "data": {
+        "values": [
+          "minecraft:beetroot",
+          {
+            "id": "#forge:crops/beetroot",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/crops/cactus.json": {
+      "data": {
+        "values": [
+          "minecraft:cactus"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/crops/carrot.json": {
+      "data": {
+        "values": [
+          "minecraft:carrot",
+          {
+            "id": "#forge:crops/carrot",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/crops/cocoa_bean.json": {
+      "data": {
+        "values": [
+          "minecraft:cocoa_beans"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/crops/melon.json": {
+      "data": {
+        "values": [
+          "minecraft:melon"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/crops/nether_wart.json": {
+      "data": {
+        "values": [
+          "minecraft:nether_wart",
+          {
+            "id": "#forge:crops/nether_wart",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/crops/potato.json": {
+      "data": {
+        "values": [
+          "minecraft:potato",
+          {
+            "id": "#forge:crops/potato",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/crops/pumpkin.json": {
+      "data": {
+        "values": [
+          "minecraft:pumpkin"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/crops/sugar_cane.json": {
+      "data": {
+        "values": [
+          "minecraft:sugar_cane"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/crops/wheat.json": {
+      "data": {
+        "values": [
+          "minecraft:wheat",
+          {
+            "id": "#forge:crops/wheat",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/drinks.json": {
+      "data": {
+        "values": [
+          "#c:drinks/water",
+          "#c:drinks/watery",
+          "#c:drinks/milk",
+          "#c:drinks/honey",
+          "#c:drinks/magic",
+          "#c:drinks/ominous",
+          "#c:drinks/juice"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/drinks/honey.json": {
+      "data": {
+        "values": [
+          "minecraft:honey_bottle"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/drinks/juice.json": {
+      "data": {
+        "values": []
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/drinks/magic.json": {
+      "data": {
+        "values": [
+          "minecraft:potion",
+          "#c:drinks/ominous"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/drinks/milk.json": {
+      "data": {
+        "values": [
+          "minecraft:milk_bucket"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/drinks/ominous.json": {
+      "data": {
+        "values": [
+          "minecraft:ominous_bottle"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/drinks/water.json": {
+      "data": {
+        "values": []
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/drinks/watery.json": {
+      "data": {
+        "values": [
+          "minecraft:potion",
+          "#c:drinks/water"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dusts.json": {
+      "data": {
+        "values": [
+          "#c:dusts/glowstone",
+          "#c:dusts/redstone",
+          {
+            "id": "#forge:dusts",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dusts/glowstone.json": {
+      "data": {
+        "values": [
+          "minecraft:glowstone_dust",
+          {
+            "id": "#forge:dusts/glowstone",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dusts/redstone.json": {
+      "data": {
+        "values": [
+          "minecraft:redstone",
+          {
+            "id": "#forge:dusts/redstone",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed.json": {
+      "data": {
+        "values": [
+          "#c:dyed/white",
+          "#c:dyed/orange",
+          "#c:dyed/magenta",
+          "#c:dyed/light_blue",
+          "#c:dyed/yellow",
+          "#c:dyed/lime",
+          "#c:dyed/pink",
+          "#c:dyed/gray",
+          "#c:dyed/light_gray",
+          "#c:dyed/cyan",
+          "#c:dyed/purple",
+          "#c:dyed/blue",
+          "#c:dyed/brown",
+          "#c:dyed/green",
+          "#c:dyed/red",
+          "#c:dyed/black"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/black.json": {
+      "data": {
+        "values": [
+          "minecraft:black_banner",
+          "minecraft:black_bed",
+          "minecraft:black_candle",
+          "minecraft:black_carpet",
+          "minecraft:black_concrete",
+          "minecraft:black_concrete_powder",
+          "minecraft:black_glazed_terracotta",
+          "minecraft:black_shulker_box",
+          "minecraft:black_stained_glass",
+          "minecraft:black_stained_glass_pane",
+          "minecraft:black_terracotta",
+          "minecraft:black_wool",
+          {
+            "id": "#forge:glass/black",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/black",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/blue.json": {
+      "data": {
+        "values": [
+          "minecraft:blue_banner",
+          "minecraft:blue_bed",
+          "minecraft:blue_candle",
+          "minecraft:blue_carpet",
+          "minecraft:blue_concrete",
+          "minecraft:blue_concrete_powder",
+          "minecraft:blue_glazed_terracotta",
+          "minecraft:blue_shulker_box",
+          "minecraft:blue_stained_glass",
+          "minecraft:blue_stained_glass_pane",
+          "minecraft:blue_terracotta",
+          "minecraft:blue_wool",
+          {
+            "id": "#forge:glass/blue",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/blue",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/brown.json": {
+      "data": {
+        "values": [
+          "minecraft:brown_banner",
+          "minecraft:brown_bed",
+          "minecraft:brown_candle",
+          "minecraft:brown_carpet",
+          "minecraft:brown_concrete",
+          "minecraft:brown_concrete_powder",
+          "minecraft:brown_glazed_terracotta",
+          "minecraft:brown_shulker_box",
+          "minecraft:brown_stained_glass",
+          "minecraft:brown_stained_glass_pane",
+          "minecraft:brown_terracotta",
+          "minecraft:brown_wool",
+          {
+            "id": "#forge:glass/brown",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/brown",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/cyan.json": {
+      "data": {
+        "values": [
+          "minecraft:cyan_banner",
+          "minecraft:cyan_bed",
+          "minecraft:cyan_candle",
+          "minecraft:cyan_carpet",
+          "minecraft:cyan_concrete",
+          "minecraft:cyan_concrete_powder",
+          "minecraft:cyan_glazed_terracotta",
+          "minecraft:cyan_shulker_box",
+          "minecraft:cyan_stained_glass",
+          "minecraft:cyan_stained_glass_pane",
+          "minecraft:cyan_terracotta",
+          "minecraft:cyan_wool",
+          {
+            "id": "#forge:glass/cyan",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/cyan",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/gray.json": {
+      "data": {
+        "values": [
+          "minecraft:gray_banner",
+          "minecraft:gray_bed",
+          "minecraft:gray_candle",
+          "minecraft:gray_carpet",
+          "minecraft:gray_concrete",
+          "minecraft:gray_concrete_powder",
+          "minecraft:gray_glazed_terracotta",
+          "minecraft:gray_shulker_box",
+          "minecraft:gray_stained_glass",
+          "minecraft:gray_stained_glass_pane",
+          "minecraft:gray_terracotta",
+          "minecraft:gray_wool",
+          {
+            "id": "#forge:glass/gray",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/gray",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/green.json": {
+      "data": {
+        "values": [
+          "minecraft:green_banner",
+          "minecraft:green_bed",
+          "minecraft:green_candle",
+          "minecraft:green_carpet",
+          "minecraft:green_concrete",
+          "minecraft:green_concrete_powder",
+          "minecraft:green_glazed_terracotta",
+          "minecraft:green_shulker_box",
+          "minecraft:green_stained_glass",
+          "minecraft:green_stained_glass_pane",
+          "minecraft:green_terracotta",
+          "minecraft:green_wool",
+          {
+            "id": "#forge:glass/green",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/green",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/light_blue.json": {
+      "data": {
+        "values": [
+          "minecraft:light_blue_banner",
+          "minecraft:light_blue_bed",
+          "minecraft:light_blue_candle",
+          "minecraft:light_blue_carpet",
+          "minecraft:light_blue_concrete",
+          "minecraft:light_blue_concrete_powder",
+          "minecraft:light_blue_glazed_terracotta",
+          "minecraft:light_blue_shulker_box",
+          "minecraft:light_blue_stained_glass",
+          "minecraft:light_blue_stained_glass_pane",
+          "minecraft:light_blue_terracotta",
+          "minecraft:light_blue_wool",
+          {
+            "id": "#forge:glass/light_blue",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/light_blue",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/light_gray.json": {
+      "data": {
+        "values": [
+          "minecraft:light_gray_banner",
+          "minecraft:light_gray_bed",
+          "minecraft:light_gray_candle",
+          "minecraft:light_gray_carpet",
+          "minecraft:light_gray_concrete",
+          "minecraft:light_gray_concrete_powder",
+          "minecraft:light_gray_glazed_terracotta",
+          "minecraft:light_gray_shulker_box",
+          "minecraft:light_gray_stained_glass",
+          "minecraft:light_gray_stained_glass_pane",
+          "minecraft:light_gray_terracotta",
+          "minecraft:light_gray_wool",
+          {
+            "id": "#forge:glass/light_gray",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/light_gray",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/lime.json": {
+      "data": {
+        "values": [
+          "minecraft:lime_banner",
+          "minecraft:lime_bed",
+          "minecraft:lime_candle",
+          "minecraft:lime_carpet",
+          "minecraft:lime_concrete",
+          "minecraft:lime_concrete_powder",
+          "minecraft:lime_glazed_terracotta",
+          "minecraft:lime_shulker_box",
+          "minecraft:lime_stained_glass",
+          "minecraft:lime_stained_glass_pane",
+          "minecraft:lime_terracotta",
+          "minecraft:lime_wool",
+          {
+            "id": "#forge:glass/lime",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/lime",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/magenta.json": {
+      "data": {
+        "values": [
+          "minecraft:magenta_banner",
+          "minecraft:magenta_bed",
+          "minecraft:magenta_candle",
+          "minecraft:magenta_carpet",
+          "minecraft:magenta_concrete",
+          "minecraft:magenta_concrete_powder",
+          "minecraft:magenta_glazed_terracotta",
+          "minecraft:magenta_shulker_box",
+          "minecraft:magenta_stained_glass",
+          "minecraft:magenta_stained_glass_pane",
+          "minecraft:magenta_terracotta",
+          "minecraft:magenta_wool",
+          {
+            "id": "#forge:glass/magenta",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/magenta",
+            "required": false
+          },
+          {
+            "id": "#forge:glass/magenta",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/magenta",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/orange.json": {
+      "data": {
+        "values": [
+          "minecraft:orange_banner",
+          "minecraft:orange_bed",
+          "minecraft:orange_candle",
+          "minecraft:orange_carpet",
+          "minecraft:orange_concrete",
+          "minecraft:orange_concrete_powder",
+          "minecraft:orange_glazed_terracotta",
+          "minecraft:orange_shulker_box",
+          "minecraft:orange_stained_glass",
+          "minecraft:orange_stained_glass_pane",
+          "minecraft:orange_terracotta",
+          "minecraft:orange_wool",
+          {
+            "id": "#forge:glass/orange",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/orange",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/pink.json": {
+      "data": {
+        "values": [
+          "minecraft:pink_banner",
+          "minecraft:pink_bed",
+          "minecraft:pink_candle",
+          "minecraft:pink_carpet",
+          "minecraft:pink_concrete",
+          "minecraft:pink_concrete_powder",
+          "minecraft:pink_glazed_terracotta",
+          "minecraft:pink_shulker_box",
+          "minecraft:pink_stained_glass",
+          "minecraft:pink_stained_glass_pane",
+          "minecraft:pink_terracotta",
+          "minecraft:pink_wool",
+          {
+            "id": "#forge:glass/pink",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/pink",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/purple.json": {
+      "data": {
+        "values": [
+          "minecraft:purple_banner",
+          "minecraft:purple_bed",
+          "minecraft:purple_candle",
+          "minecraft:purple_carpet",
+          "minecraft:purple_concrete",
+          "minecraft:purple_concrete_powder",
+          "minecraft:purple_glazed_terracotta",
+          "minecraft:purple_shulker_box",
+          "minecraft:purple_stained_glass",
+          "minecraft:purple_stained_glass_pane",
+          "minecraft:purple_terracotta",
+          "minecraft:purple_wool",
+          {
+            "id": "#forge:glass/purple",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/purple",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/red.json": {
+      "data": {
+        "values": [
+          "minecraft:red_banner",
+          "minecraft:red_bed",
+          "minecraft:red_candle",
+          "minecraft:red_carpet",
+          "minecraft:red_concrete",
+          "minecraft:red_concrete_powder",
+          "minecraft:red_glazed_terracotta",
+          "minecraft:red_shulker_box",
+          "minecraft:red_stained_glass",
+          "minecraft:red_stained_glass_pane",
+          "minecraft:red_terracotta",
+          "minecraft:red_wool",
+          {
+            "id": "#forge:glass/red",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/red",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/white.json": {
+      "data": {
+        "values": [
+          "minecraft:white_banner",
+          "minecraft:white_bed",
+          "minecraft:white_candle",
+          "minecraft:white_carpet",
+          "minecraft:white_concrete",
+          "minecraft:white_concrete_powder",
+          "minecraft:white_glazed_terracotta",
+          "minecraft:white_shulker_box",
+          "minecraft:white_stained_glass",
+          "minecraft:white_stained_glass_pane",
+          "minecraft:white_terracotta",
+          "minecraft:white_wool",
+          {
+            "id": "#forge:glass/white",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/white",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyed/yellow.json": {
+      "data": {
+        "values": [
+          "minecraft:yellow_banner",
+          "minecraft:yellow_bed",
+          "minecraft:yellow_candle",
+          "minecraft:yellow_carpet",
+          "minecraft:yellow_concrete",
+          "minecraft:yellow_concrete_powder",
+          "minecraft:yellow_glazed_terracotta",
+          "minecraft:yellow_shulker_box",
+          "minecraft:yellow_stained_glass",
+          "minecraft:yellow_stained_glass_pane",
+          "minecraft:yellow_terracotta",
+          "minecraft:yellow_wool",
+          {
+            "id": "#forge:glass/yellow",
+            "required": false
+          },
+          {
+            "id": "#forge:stained_glass/yellow",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes.json": {
+      "data": {
+        "values": [
+          "#c:dyes/white",
+          "#c:dyes/orange",
+          "#c:dyes/magenta",
+          "#c:dyes/light_blue",
+          "#c:dyes/yellow",
+          "#c:dyes/lime",
+          "#c:dyes/pink",
+          "#c:dyes/gray",
+          "#c:dyes/light_gray",
+          "#c:dyes/cyan",
+          "#c:dyes/purple",
+          "#c:dyes/blue",
+          "#c:dyes/brown",
+          "#c:dyes/green",
+          "#c:dyes/red",
+          "#c:dyes/black"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/black.json": {
+      "data": {
+        "values": [
+          "minecraft:black_dye",
+          {
+            "id": "#forge:dyes/black",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/blue.json": {
+      "data": {
+        "values": [
+          "minecraft:blue_dye",
+          {
+            "id": "#forge:dyes/blue",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/brown.json": {
+      "data": {
+        "values": [
+          "minecraft:brown_dye",
+          {
+            "id": "#forge:dyes/brown",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/cyan.json": {
+      "data": {
+        "values": [
+          "minecraft:cyan_dye",
+          {
+            "id": "#forge:dyes/cyan",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/gray.json": {
+      "data": {
+        "values": [
+          "minecraft:gray_dye",
+          {
+            "id": "#forge:dyes/gray",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/green.json": {
+      "data": {
+        "values": [
+          "minecraft:green_dye",
+          {
+            "id": "#forge:dyes/green",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/light_blue.json": {
+      "data": {
+        "values": [
+          "minecraft:light_blue_dye",
+          {
+            "id": "#forge:dyes/light_blue",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/light_gray.json": {
+      "data": {
+        "values": [
+          "minecraft:light_gray_dye",
+          {
+            "id": "#forge:dyes/light_gray",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/lime.json": {
+      "data": {
+        "values": [
+          "minecraft:lime_dye",
+          {
+            "id": "#forge:dyes/lime",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/magenta.json": {
+      "data": {
+        "values": [
+          "minecraft:magenta_dye",
+          {
+            "id": "#forge:dyes/magenta",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/orange.json": {
+      "data": {
+        "values": [
+          "minecraft:orange_dye",
+          {
+            "id": "#forge:dyes/orange",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/pink.json": {
+      "data": {
+        "values": [
+          "minecraft:pink_dye",
+          {
+            "id": "#forge:dyes/pink",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/purple.json": {
+      "data": {
+        "values": [
+          "minecraft:purple_dye",
+          {
+            "id": "#forge:dyes/purple",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/red.json": {
+      "data": {
+        "values": [
+          "minecraft:red_dye",
+          {
+            "id": "#forge:dyes/red",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/white.json": {
+      "data": {
+        "values": [
+          "minecraft:white_dye",
+          {
+            "id": "#forge:dyes/white",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/dyes/yellow.json": {
+      "data": {
+        "values": [
+          "minecraft:yellow_dye",
+          {
+            "id": "#forge:dyes/yellow",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/eggs.json": {
+      "data": {
+        "values": [
+          "minecraft:egg"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/enchantables.json": {
+      "data": {
+        "values": [
+          "#minecraft:enchantable/armor",
+          "#minecraft:enchantable/equippable",
+          "#minecraft:enchantable/weapon",
+          "#minecraft:enchantable/sword",
+          "#minecraft:enchantable/mining",
+          "#minecraft:enchantable/mining_loot",
+          "#minecraft:enchantable/fishing",
+          "#minecraft:enchantable/trident",
+          "#minecraft:enchantable/bow",
+          "#minecraft:enchantable/crossbow",
+          "#minecraft:enchantable/mace",
+          "#minecraft:enchantable/fire_aspect",
+          "#minecraft:enchantable/durability",
+          "#minecraft:enchantable/vanishing"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/end_stones.json": {
+      "data": {
+        "values": [
+          "minecraft:end_stone",
+          {
+            "id": "#forge:end_stones",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ender_pearls.json": {
+      "data": {
+        "values": [
+          "minecraft:ender_pearl",
+          {
+            "id": "#forge:ender_pearls",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/feathers.json": {
+      "data": {
+        "values": [
+          "minecraft:feather",
+          {
+            "id": "#forge:feathers",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/fence_gates.json": {
+      "data": {
+        "values": [
+          "#c:fence_gates/wooden",
+          {
+            "id": "#forge:fence_gates",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/fence_gates/wooden.json": {
+      "data": {
+        "values": [
+          "minecraft:oak_fence_gate",
+          "minecraft:spruce_fence_gate",
+          "minecraft:birch_fence_gate",
+          "minecraft:jungle_fence_gate",
+          "minecraft:acacia_fence_gate",
+          "minecraft:dark_oak_fence_gate",
+          "minecraft:crimson_fence_gate",
+          "minecraft:warped_fence_gate",
+          "minecraft:mangrove_fence_gate",
+          "minecraft:bamboo_fence_gate",
+          "minecraft:cherry_fence_gate",
+          {
+            "id": "#forge:fence_gates/wooden",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/fences.json": {
+      "data": {
+        "values": [
+          "#c:fences/nether_brick",
+          "#c:fences/wooden",
+          {
+            "id": "#forge:fences",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/fences/nether_brick.json": {
+      "data": {
+        "values": [
+          "minecraft:nether_brick_fence",
+          {
+            "id": "#forge:fences/nether_brick",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/fences/wooden.json": {
+      "data": {
+        "values": [
+          "#minecraft:wooden_fences",
+          {
+            "id": "#forge:fences/wooden",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/fertilizers.json": {
+      "data": {
+        "values": [
+          "minecraft:bone_meal"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods.json": {
+      "data": {
+        "values": [
+          "minecraft:baked_potato",
+          "minecraft:pumpkin_pie",
+          "minecraft:honey_bottle",
+          "minecraft:ominous_bottle",
+          "minecraft:dried_kelp",
+          "#c:foods/fruit",
+          "#c:foods/vegetable",
+          "#c:foods/berry",
+          "#c:foods/bread",
+          "#c:foods/cookie",
+          "#c:foods/dough",
+          "#c:foods/raw_meat",
+          "#c:foods/raw_fish",
+          "#c:foods/cooked_meat",
+          "#c:foods/cooked_fish",
+          "#c:foods/soup",
+          "#c:foods/candy",
+          "#c:foods/pie",
+          "#c:foods/golden",
+          "#c:foods/edible_when_placed",
+          "#c:foods/food_poisoning"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/berry.json": {
+      "data": {
+        "values": [
+          "minecraft:sweet_berries",
+          "minecraft:glow_berries",
+          {
+            "id": "#c:foods/berries",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/bread.json": {
+      "data": {
+        "values": [
+          "minecraft:bread",
+          {
+            "id": "#c:foods/breads",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/candy.json": {
+      "data": {
+        "values": [
+          {
+            "id": "#c:foods/candies",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/cooked_fish.json": {
+      "data": {
+        "values": [
+          "minecraft:cooked_cod",
+          "minecraft:cooked_salmon",
+          {
+            "id": "#c:foods/cooked_fishes",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/cooked_meat.json": {
+      "data": {
+        "values": [
+          "minecraft:cooked_beef",
+          "minecraft:cooked_porkchop",
+          "minecraft:cooked_chicken",
+          "minecraft:cooked_rabbit",
+          "minecraft:cooked_mutton",
+          {
+            "id": "#c:foods/cooked_meats",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/cookie.json": {
+      "data": {
+        "values": [
+          "minecraft:cookie",
+          {
+            "id": "#c:foods/cookies",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/dough.json": {
+      "data": {
+        "values": [
+          {
+            "id": "#c:foods/doughs",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/edible_when_placed.json": {
+      "data": {
+        "values": [
+          "minecraft:cake"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/food_poisoning.json": {
+      "data": {
+        "values": [
+          "minecraft:poisonous_potato",
+          "minecraft:pufferfish",
+          "minecraft:spider_eye",
+          "minecraft:chicken",
+          "minecraft:rotten_flesh"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/fruit.json": {
+      "data": {
+        "values": [
+          "minecraft:apple",
+          "minecraft:golden_apple",
+          "minecraft:enchanted_golden_apple",
+          "minecraft:chorus_fruit",
+          "minecraft:melon_slice",
+          {
+            "id": "#c:foods/fruits",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/golden.json": {
+      "data": {
+        "values": [
+          "minecraft:golden_apple",
+          "minecraft:enchanted_golden_apple",
+          "minecraft:golden_carrot"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/pie.json": {
+      "data": {
+        "values": [
+          "minecraft:pumpkin_pie"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/raw_fish.json": {
+      "data": {
+        "values": [
+          "minecraft:cod",
+          "minecraft:salmon",
+          "minecraft:tropical_fish",
+          "minecraft:pufferfish",
+          {
+            "id": "#c:foods/raw_fishes",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/raw_meat.json": {
+      "data": {
+        "values": [
+          "minecraft:beef",
+          "minecraft:porkchop",
+          "minecraft:chicken",
+          "minecraft:rabbit",
+          "minecraft:mutton",
+          {
+            "id": "#c:foods/raw_meats",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/soup.json": {
+      "data": {
+        "values": [
+          "minecraft:beetroot_soup",
+          "minecraft:mushroom_stew",
+          "minecraft:rabbit_stew",
+          "minecraft:suspicious_stew",
+          {
+            "id": "#c:foods/soups",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/foods/vegetable.json": {
+      "data": {
+        "values": [
+          "minecraft:carrot",
+          "minecraft:golden_carrot",
+          "minecraft:potato",
+          "minecraft:beetroot",
+          {
+            "id": "#c:foods/vegetables",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/gems.json": {
+      "data": {
+        "values": [
+          "#c:gems/amethyst",
+          "#c:gems/diamond",
+          "#c:gems/emerald",
+          "#c:gems/lapis",
+          "#c:gems/prismarine",
+          "#c:gems/quartz",
+          {
+            "id": "#forge:gems",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/gems/amethyst.json": {
+      "data": {
+        "values": [
+          "minecraft:amethyst_shard",
+          {
+            "id": "#forge:gems/amethyst",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/gems/diamond.json": {
+      "data": {
+        "values": [
+          "minecraft:diamond",
+          {
+            "id": "#forge:gems/diamond",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/gems/emerald.json": {
+      "data": {
+        "values": [
+          "minecraft:emerald",
+          {
+            "id": "#forge:gems/emerald",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/gems/lapis.json": {
+      "data": {
+        "values": [
+          "minecraft:lapis_lazuli",
+          {
+            "id": "#forge:gems/lapis",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/gems/prismarine.json": {
+      "data": {
+        "values": [
+          "minecraft:prismarine_crystals",
+          {
+            "id": "#forge:gems/prismarine",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/gems/quartz.json": {
+      "data": {
+        "values": [
+          "minecraft:quartz",
+          {
+            "id": "#forge:gems/quartz",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/glass_blocks.json": {
+      "data": {
+        "values": [
+          "#c:glass_blocks/colorless",
+          "#c:glass_blocks/cheap",
+          "#c:glass_blocks/tinted",
+          {
+            "id": "#forge:glass",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/glass_blocks/cheap.json": {
+      "data": {
+        "values": [
+          "minecraft:glass",
+          "minecraft:white_stained_glass",
+          "minecraft:orange_stained_glass",
+          "minecraft:magenta_stained_glass",
+          "minecraft:light_blue_stained_glass",
+          "minecraft:yellow_stained_glass",
+          "minecraft:lime_stained_glass",
+          "minecraft:pink_stained_glass",
+          "minecraft:gray_stained_glass",
+          "minecraft:light_gray_stained_glass",
+          "minecraft:cyan_stained_glass",
+          "minecraft:purple_stained_glass",
+          "minecraft:blue_stained_glass",
+          "minecraft:brown_stained_glass",
+          "minecraft:green_stained_glass",
+          "minecraft:red_stained_glass",
+          "minecraft:black_stained_glass",
+          {
+            "id": "#forge:glass_silica",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/glass_blocks/colorless.json": {
+      "data": {
+        "values": [
+          "minecraft:glass",
+          {
+            "id": "#forge:glass_colorless",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/glass_blocks/tinted.json": {
+      "data": {
+        "values": [
+          "minecraft:tinted_glass",
+          {
+            "id": "#forge:glass_tinted",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/glass_panes.json": {
+      "data": {
+        "values": [
+          "#c:glass_panes/colorless",
+          "minecraft:white_stained_glass_pane",
+          "minecraft:orange_stained_glass_pane",
+          "minecraft:magenta_stained_glass_pane",
+          "minecraft:light_blue_stained_glass_pane",
+          "minecraft:yellow_stained_glass_pane",
+          "minecraft:lime_stained_glass_pane",
+          "minecraft:pink_stained_glass_pane",
+          "minecraft:gray_stained_glass_pane",
+          "minecraft:light_gray_stained_glass_pane",
+          "minecraft:cyan_stained_glass_pane",
+          "minecraft:purple_stained_glass_pane",
+          "minecraft:blue_stained_glass_pane",
+          "minecraft:brown_stained_glass_pane",
+          "minecraft:green_stained_glass_pane",
+          "minecraft:red_stained_glass_pane",
+          "minecraft:black_stained_glass_pane"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/glass_panes/colorless.json": {
+      "data": {
+        "values": [
+          "minecraft:glass_pane",
+          {
+            "id": "#forge:glass_panes_colorless",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/glazed_terracottas.json": {
+      "data": {
+        "values": [
+          "minecraft:white_glazed_terracotta",
+          "minecraft:orange_glazed_terracotta",
+          "minecraft:magenta_glazed_terracotta",
+          "minecraft:light_blue_glazed_terracotta",
+          "minecraft:yellow_glazed_terracotta",
+          "minecraft:lime_glazed_terracotta",
+          "minecraft:pink_glazed_terracotta",
+          "minecraft:gray_glazed_terracotta",
+          "minecraft:light_gray_glazed_terracotta",
+          "minecraft:cyan_glazed_terracotta",
+          "minecraft:purple_glazed_terracotta",
+          "minecraft:blue_glazed_terracotta",
+          "minecraft:brown_glazed_terracotta",
+          "minecraft:green_glazed_terracotta",
+          "minecraft:red_glazed_terracotta",
+          "minecraft:black_glazed_terracotta"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/gravels.json": {
+      "data": {
+        "values": [
+          "minecraft:gravel",
+          {
+            "id": "#forge:gravel",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/gunpowders.json": {
+      "data": {
+        "values": [
+          "minecraft:gunpowder",
+          {
+            "id": "#forge:gunpowder",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/hidden_from_recipe_viewers.json": {
+      "data": {
+        "values": []
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ingots.json": {
+      "data": {
+        "values": [
+          "#c:ingots/copper",
+          "#c:ingots/gold",
+          "#c:ingots/iron",
+          "#c:ingots/netherite",
+          {
+            "id": "#forge:ingots",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ingots/copper.json": {
+      "data": {
+        "values": [
+          "minecraft:copper_ingot",
+          {
+            "id": "#forge:ingots/copper",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ingots/gold.json": {
+      "data": {
+        "values": [
+          "minecraft:gold_ingot",
+          {
+            "id": "#forge:ingots/gold",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ingots/iron.json": {
+      "data": {
+        "values": [
+          "minecraft:iron_ingot",
+          {
+            "id": "#forge:ingots/iron",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ingots/netherite.json": {
+      "data": {
+        "values": [
+          "minecraft:netherite_ingot",
+          {
+            "id": "#forge:ingots/netherite",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/leathers.json": {
+      "data": {
+        "values": [
+          "minecraft:leather",
+          {
+            "id": "#forge:leather",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/loom_patterns.json": {
+      "data": {
+        "values": [
+          "minecraft:flower_banner_pattern",
+          "minecraft:creeper_banner_pattern",
+          "minecraft:skull_banner_pattern",
+          "minecraft:mojang_banner_pattern",
+          "minecraft:globe_banner_pattern",
+          "minecraft:piglin_banner_pattern",
+          "minecraft:flow_banner_pattern",
+          "minecraft:guster_banner_pattern"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/mushrooms.json": {
+      "data": {
+        "values": [
+          "minecraft:brown_mushroom",
+          "minecraft:red_mushroom",
+          {
+            "id": "#forge:mushrooms",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/music_discs.json": {
+      "data": {
+        "values": [
+          "minecraft:music_disc_13",
+          "minecraft:music_disc_cat",
+          "minecraft:music_disc_blocks",
+          "minecraft:music_disc_chirp",
+          "minecraft:music_disc_far",
+          "minecraft:music_disc_mall",
+          "minecraft:music_disc_mellohi",
+          "minecraft:music_disc_stal",
+          "minecraft:music_disc_strad",
+          "minecraft:music_disc_ward",
+          "minecraft:music_disc_11",
+          "minecraft:music_disc_wait",
+          "minecraft:music_disc_otherside",
+          "minecraft:music_disc_5",
+          "minecraft:music_disc_pigstep",
+          "minecraft:music_disc_relic",
+          "minecraft:music_disc_creator",
+          "minecraft:music_disc_creator_music_box",
+          "minecraft:music_disc_precipice"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/nether_stars.json": {
+      "data": {
+        "values": [
+          "minecraft:nether_star",
+          {
+            "id": "#forge:nether_stars",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/netherracks.json": {
+      "data": {
+        "values": [
+          "minecraft:netherrack",
+          {
+            "id": "#forge:netherrack",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/nuggets.json": {
+      "data": {
+        "values": [
+          "#c:nuggets/gold",
+          "#c:nuggets/iron",
+          {
+            "id": "#forge:nuggets",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/nuggets/gold.json": {
+      "data": {
+        "values": [
+          "minecraft:gold_nugget",
+          {
+            "id": "#forge:nuggets/gold",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/nuggets/iron.json": {
+      "data": {
+        "values": [
+          "minecraft:iron_nugget",
+          {
+            "id": "#forge:nuggets/iron",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/obsidians.json": {
+      "data": {
+        "values": [
+          "#c:obsidians/normal",
+          "#c:obsidians/crying",
+          {
+            "id": "#forge:obsidian",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/obsidians/crying.json": {
+      "data": {
+        "values": [
+          "minecraft:crying_obsidian"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/obsidians/normal.json": {
+      "data": {
+        "values": [
+          "minecraft:obsidian"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ore_bearing_ground/deepslate.json": {
+      "data": {
+        "values": [
+          "minecraft:deepslate",
+          {
+            "id": "#forge:ore_bearing_ground/deepslate",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ore_bearing_ground/netherrack.json": {
+      "data": {
+        "values": [
+          "minecraft:netherrack",
+          {
+            "id": "#forge:ore_bearing_ground/netherrack",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ore_bearing_ground/stone.json": {
+      "data": {
+        "values": [
+          "minecraft:stone",
+          {
+            "id": "#forge:ore_bearing_ground/stone",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ore_rates/dense.json": {
+      "data": {
+        "values": [
+          "minecraft:copper_ore",
+          "minecraft:deepslate_copper_ore",
+          "minecraft:deepslate_lapis_ore",
+          "minecraft:deepslate_redstone_ore",
+          "minecraft:lapis_ore",
+          "minecraft:redstone_ore",
+          {
+            "id": "#forge:ore_rates/dense",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ore_rates/singular.json": {
+      "data": {
+        "values": [
+          "minecraft:ancient_debris",
+          "minecraft:coal_ore",
+          "minecraft:deepslate_coal_ore",
+          "minecraft:deepslate_diamond_ore",
+          "minecraft:deepslate_emerald_ore",
+          "minecraft:deepslate_gold_ore",
+          "minecraft:deepslate_iron_ore",
+          "minecraft:diamond_ore",
+          "minecraft:emerald_ore",
+          "minecraft:gold_ore",
+          "minecraft:iron_ore",
+          "minecraft:nether_quartz_ore",
+          {
+            "id": "#forge:ore_rates/singular",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ore_rates/sparse.json": {
+      "data": {
+        "values": [
+          "minecraft:nether_gold_ore",
+          {
+            "id": "#forge:ore_rates/sparse",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores.json": {
+      "data": {
+        "values": [
+          "#c:ores/coal",
+          "#c:ores/copper",
+          "#c:ores/diamond",
+          "#c:ores/emerald",
+          "#c:ores/gold",
+          "#c:ores/iron",
+          "#c:ores/lapis",
+          "#c:ores/netherite_scrap",
+          "#c:ores/redstone",
+          "#c:ores/quartz",
+          {
+            "id": "#forge:ores",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores/coal.json": {
+      "data": {
+        "values": [
+          "#minecraft:coal_ores",
+          {
+            "id": "#forge:ores/coal",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores/copper.json": {
+      "data": {
+        "values": [
+          "#minecraft:copper_ores",
+          {
+            "id": "#forge:ores/copper",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores/diamond.json": {
+      "data": {
+        "values": [
+          "#minecraft:diamond_ores",
+          {
+            "id": "#forge:ores/diamond",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores/emerald.json": {
+      "data": {
+        "values": [
+          "#minecraft:emerald_ores",
+          {
+            "id": "#forge:ores/emerald",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores/gold.json": {
+      "data": {
+        "values": [
+          "#minecraft:gold_ores",
+          {
+            "id": "#forge:ores/gold",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores/iron.json": {
+      "data": {
+        "values": [
+          "#minecraft:iron_ores",
+          {
+            "id": "#forge:ores/iron",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores/lapis.json": {
+      "data": {
+        "values": [
+          "#minecraft:lapis_ores",
+          {
+            "id": "#forge:ores/lapis",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores/netherite_scrap.json": {
+      "data": {
+        "values": [
+          "minecraft:ancient_debris",
+          {
+            "id": "#forge:ores/netherite_scrap",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores/quartz.json": {
+      "data": {
+        "values": [
+          "minecraft:nether_quartz_ore",
+          {
+            "id": "#forge:ores/quartz",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores/redstone.json": {
+      "data": {
+        "values": [
+          "#minecraft:redstone_ores",
+          {
+            "id": "#forge:ores/redstone",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores_in_ground/deepslate.json": {
+      "data": {
+        "values": [
+          "minecraft:deepslate_coal_ore",
+          "minecraft:deepslate_copper_ore",
+          "minecraft:deepslate_diamond_ore",
+          "minecraft:deepslate_emerald_ore",
+          "minecraft:deepslate_gold_ore",
+          "minecraft:deepslate_iron_ore",
+          "minecraft:deepslate_lapis_ore",
+          "minecraft:deepslate_redstone_ore",
+          {
+            "id": "#forge:ores_in_ground/deepslate",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores_in_ground/netherrack.json": {
+      "data": {
+        "values": [
+          "minecraft:nether_gold_ore",
+          "minecraft:nether_quartz_ore",
+          {
+            "id": "#forge:ores_in_ground/netherrack",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ores_in_ground/stone.json": {
+      "data": {
+        "values": [
+          "minecraft:coal_ore",
+          "minecraft:copper_ore",
+          "minecraft:diamond_ore",
+          "minecraft:emerald_ore",
+          "minecraft:gold_ore",
+          "minecraft:iron_ore",
+          "minecraft:lapis_ore",
+          "minecraft:redstone_ore",
+          {
+            "id": "#forge:ores_in_ground/stone",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/player_workstations/crafting_tables.json": {
+      "data": {
+        "values": [
+          "minecraft:crafting_table"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/player_workstations/furnaces.json": {
+      "data": {
+        "values": [
+          "minecraft:furnace"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/potions.json": {
+      "data": {
+        "values": [
+          "#c:potions/bottle"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/potions/bottle.json": {
+      "data": {
+        "values": [
+          "minecraft:potion",
+          "minecraft:splash_potion",
+          "minecraft:lingering_potion"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/pumpkins.json": {
+      "data": {
+        "values": [
+          "#c:pumpkins/normal",
+          "#c:pumpkins/carved",
+          "#c:pumpkins/jack_o_lanterns"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/pumpkins/carved.json": {
+      "data": {
+        "values": [
+          "minecraft:carved_pumpkin"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/pumpkins/jack_o_lanterns.json": {
+      "data": {
+        "values": [
+          "minecraft:jack_o_lantern"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/pumpkins/normal.json": {
+      "data": {
+        "values": [
+          "minecraft:pumpkin"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/raw_materials.json": {
+      "data": {
+        "values": [
+          "#c:raw_materials/copper",
+          "#c:raw_materials/gold",
+          "#c:raw_materials/iron",
+          {
+            "id": "#forge:raw_materials",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/raw_materials/copper.json": {
+      "data": {
+        "values": [
+          "minecraft:raw_copper",
+          {
+            "id": "#forge:raw_materials/copper",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/raw_materials/gold.json": {
+      "data": {
+        "values": [
+          "minecraft:raw_gold",
+          {
+            "id": "#forge:raw_materials/gold",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/raw_materials/iron.json": {
+      "data": {
+        "values": [
+          "minecraft:raw_iron",
+          {
+            "id": "#forge:raw_materials/iron",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/rods.json": {
+      "data": {
+        "values": [
+          "#c:rods/wooden",
+          "#c:rods/blaze",
+          "#c:rods/breeze",
+          {
+            "id": "#forge:rods",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/rods/blaze.json": {
+      "data": {
+        "values": [
+          "minecraft:blaze_rod",
+          {
+            "id": "#forge:rods/blaze",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/rods/breeze.json": {
+      "data": {
+        "values": [
+          "minecraft:breeze_rod"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/rods/wooden.json": {
+      "data": {
+        "values": [
+          "minecraft:stick",
+          {
+            "id": "#forge:rods/wooden",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/ropes.json": {
+      "data": {
+        "values": []
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sands.json": {
+      "data": {
+        "values": [
+          "#c:sands/colorless",
+          "#c:sands/red",
+          {
+            "id": "#forge:sand",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sands/colorless.json": {
+      "data": {
+        "values": [
+          "minecraft:sand",
+          {
+            "id": "#forge:sand/colorless",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sands/red.json": {
+      "data": {
+        "values": [
+          "minecraft:red_sand",
+          {
+            "id": "#forge:sand/red",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sandstone/blocks.json": {
+      "data": {
+        "values": [
+          "#c:sandstone/red_blocks",
+          "#c:sandstone/uncolored_blocks",
+          {
+            "id": "#forge:sandstone",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sandstone/red_blocks.json": {
+      "data": {
+        "values": [
+          "minecraft:red_sandstone",
+          "minecraft:cut_red_sandstone",
+          "minecraft:chiseled_red_sandstone",
+          "minecraft:smooth_red_sandstone"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sandstone/red_slabs.json": {
+      "data": {
+        "values": [
+          "minecraft:red_sandstone_slab",
+          "minecraft:cut_red_sandstone_slab",
+          "minecraft:smooth_red_sandstone_slab"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sandstone/red_stairs.json": {
+      "data": {
+        "values": [
+          "minecraft:red_sandstone_stairs",
+          "minecraft:smooth_red_sandstone_stairs"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sandstone/slabs.json": {
+      "data": {
+        "values": [
+          "#c:sandstone/red_slabs",
+          "#c:sandstone/uncolored_slabs"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sandstone/stairs.json": {
+      "data": {
+        "values": [
+          "#c:sandstone/red_stairs",
+          "#c:sandstone/uncolored_stairs"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sandstone/uncolored_blocks.json": {
+      "data": {
+        "values": [
+          "minecraft:sandstone",
+          "minecraft:cut_sandstone",
+          "minecraft:chiseled_sandstone",
+          "minecraft:smooth_sandstone"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sandstone/uncolored_slabs.json": {
+      "data": {
+        "values": [
+          "minecraft:sandstone_slab",
+          "minecraft:cut_sandstone_slab",
+          "minecraft:smooth_sandstone_slab"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/sandstone/uncolored_stairs.json": {
+      "data": {
+        "values": [
+          "minecraft:sandstone_stairs",
+          "minecraft:smooth_sandstone_stairs"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/seeds.json": {
+      "data": {
+        "values": [
+          "#c:seeds/beetroot",
+          "#c:seeds/melon",
+          "#c:seeds/pumpkin",
+          "#c:seeds/torchflower",
+          "#c:seeds/wheat",
+          {
+            "id": "#forge:seeds",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/seeds/beetroot.json": {
+      "data": {
+        "values": [
+          "minecraft:beetroot_seeds",
+          {
+            "id": "#forge:seeds/beetroot",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/seeds/melon.json": {
+      "data": {
+        "values": [
+          "minecraft:melon_seeds",
+          {
+            "id": "#forge:seeds/melon",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/seeds/pumpkin.json": {
+      "data": {
+        "values": [
+          "minecraft:pumpkin_seeds",
+          {
+            "id": "#forge:seeds/pumpkin",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/seeds/torchflower.json": {
+      "data": {
+        "values": [
+          "minecraft:torchflower_seeds"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/seeds/wheat.json": {
+      "data": {
+        "values": [
+          "minecraft:wheat_seeds",
+          {
+            "id": "#forge:seeds/wheat",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/shulker_boxes.json": {
+      "data": {
+        "values": [
+          "minecraft:shulker_box",
+          "minecraft:white_shulker_box",
+          "minecraft:orange_shulker_box",
+          "minecraft:magenta_shulker_box",
+          "minecraft:light_blue_shulker_box",
+          "minecraft:yellow_shulker_box",
+          "minecraft:lime_shulker_box",
+          "minecraft:pink_shulker_box",
+          "minecraft:gray_shulker_box",
+          "minecraft:light_gray_shulker_box",
+          "minecraft:cyan_shulker_box",
+          "minecraft:purple_shulker_box",
+          "minecraft:blue_shulker_box",
+          "minecraft:brown_shulker_box",
+          "minecraft:green_shulker_box",
+          "minecraft:red_shulker_box",
+          "minecraft:black_shulker_box"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/slime_balls.json": {
+      "data": {
+        "values": [
+          "minecraft:slime_ball",
+          {
+            "id": "#c:slimeballs",
+            "required": false
+          },
+          {
+            "id": "#forge:slime_balls",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/slimeballs.json": {
+      "data": {
+        "values": [
+          "minecraft:slime_ball"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/stones.json": {
+      "data": {
+        "values": [
+          "minecraft:andesite",
+          "minecraft:diorite",
+          "minecraft:granite",
+          "minecraft:stone",
+          "minecraft:deepslate",
+          "minecraft:tuff",
+          {
+            "id": "#forge:stone",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks.json": {
+      "data": {
+        "values": [
+          "#c:storage_blocks/bone_meal",
+          "#c:storage_blocks/coal",
+          "#c:storage_blocks/copper",
+          "#c:storage_blocks/diamond",
+          "#c:storage_blocks/dried_kelp",
+          "#c:storage_blocks/emerald",
+          "#c:storage_blocks/gold",
+          "#c:storage_blocks/iron",
+          "#c:storage_blocks/lapis",
+          "#c:storage_blocks/netherite",
+          "#c:storage_blocks/raw_copper",
+          "#c:storage_blocks/raw_gold",
+          "#c:storage_blocks/raw_iron",
+          "#c:storage_blocks/redstone",
+          "#c:storage_blocks/slime",
+          "#c:storage_blocks/wheat",
+          {
+            "id": "#forge:storage_blocks",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/bone_meal.json": {
+      "data": {
+        "values": [
+          "minecraft:bone_block"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/coal.json": {
+      "data": {
+        "values": [
+          "minecraft:coal_block",
+          {
+            "id": "#forge:storage_blocks/coal",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/copper.json": {
+      "data": {
+        "values": [
+          "minecraft:copper_block",
+          {
+            "id": "#forge:storage_blocks/copper",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/diamond.json": {
+      "data": {
+        "values": [
+          "minecraft:diamond_block",
+          {
+            "id": "#forge:storage_blocks/diamond",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/dried_kelp.json": {
+      "data": {
+        "values": [
+          "minecraft:dried_kelp_block"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/emerald.json": {
+      "data": {
+        "values": [
+          "minecraft:emerald_block",
+          {
+            "id": "#forge:storage_blocks/emerald",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/gold.json": {
+      "data": {
+        "values": [
+          "minecraft:gold_block",
+          {
+            "id": "#forge:storage_blocks/gold",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/iron.json": {
+      "data": {
+        "values": [
+          "minecraft:iron_block",
+          {
+            "id": "#forge:storage_blocks/iron",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/lapis.json": {
+      "data": {
+        "values": [
+          "minecraft:lapis_block",
+          {
+            "id": "#forge:storage_blocks/lapis",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/netherite.json": {
+      "data": {
+        "values": [
+          "minecraft:netherite_block",
+          {
+            "id": "#forge:storage_blocks/netherite",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/raw_copper.json": {
+      "data": {
+        "values": [
+          "minecraft:raw_copper_block",
+          {
+            "id": "#forge:storage_blocks/raw_copper",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/raw_gold.json": {
+      "data": {
+        "values": [
+          "minecraft:raw_gold_block",
+          {
+            "id": "#forge:storage_blocks/raw_gold",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/raw_iron.json": {
+      "data": {
+        "values": [
+          "minecraft:raw_iron_block",
+          {
+            "id": "#forge:storage_blocks/raw_iron",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/redstone.json": {
+      "data": {
+        "values": [
+          "minecraft:redstone_block",
+          {
+            "id": "#forge:storage_blocks/redstone",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/slime.json": {
+      "data": {
+        "values": [
+          "minecraft:slime_block"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/storage_blocks/wheat.json": {
+      "data": {
+        "values": [
+          "minecraft:hay_block"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/strings.json": {
+      "data": {
+        "values": [
+          "minecraft:string",
+          {
+            "id": "#forge:strings",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/stripped_logs.json": {
+      "data": {
+        "values": [
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_bamboo_block",
+          "minecraft:stripped_birch_log",
+          "minecraft:stripped_cherry_log",
+          "minecraft:stripped_dark_oak_log",
+          "minecraft:stripped_jungle_log",
+          "minecraft:stripped_mangrove_log",
+          "minecraft:stripped_oak_log",
+          "minecraft:stripped_spruce_log",
+          "minecraft:stripped_crimson_stem",
+          "minecraft:stripped_warped_stem"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/stripped_woods.json": {
+      "data": {
+        "values": [
+          "minecraft:stripped_acacia_wood",
+          "minecraft:stripped_birch_wood",
+          "minecraft:stripped_cherry_wood",
+          "minecraft:stripped_dark_oak_wood",
+          "minecraft:stripped_jungle_wood",
+          "minecraft:stripped_mangrove_wood",
+          "minecraft:stripped_oak_wood",
+          "minecraft:stripped_spruce_wood",
+          "minecraft:stripped_crimson_hyphae",
+          "minecraft:stripped_warped_hyphae"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools.json": {
+      "data": {
+        "values": [
+          "#minecraft:axes",
+          "#minecraft:hoes",
+          "#minecraft:pickaxes",
+          "#minecraft:shovels",
+          "#minecraft:swords",
+          "#c:tools/bow",
+          "#c:tools/brush",
+          "#c:tools/crossbow",
+          "#c:tools/fishing_rod",
+          "#c:tools/igniter",
+          "#c:tools/shear",
+          "#c:tools/shield",
+          "#c:tools/spear",
+          "#c:tools/mace",
+          "#c:tools/wrench",
+          "#c:tools/mining_tool",
+          "#c:tools/melee_weapon",
+          "#c:tools/ranged_weapon",
+          {
+            "id": "#forge:tools",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/bow.json": {
+      "data": {
+        "values": [
+          "minecraft:bow",
+          {
+            "id": "#forge:tools/bows",
+            "required": false
+          },
+          {
+            "id": "#c:tools/bows",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/brush.json": {
+      "data": {
+        "values": [
+          "minecraft:brush",
+          {
+            "id": "#forge:tools/brushes",
+            "required": false
+          },
+          {
+            "id": "#c:tools/brushes",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/crossbow.json": {
+      "data": {
+        "values": [
+          "minecraft:crossbow",
+          {
+            "id": "#forge:tools/crossbows",
+            "required": false
+          },
+          {
+            "id": "#c:tools/crossbows",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/fishing_rod.json": {
+      "data": {
+        "values": [
+          "minecraft:fishing_rod",
+          {
+            "id": "#forge:tools/fishing_rods",
+            "required": false
+          },
+          {
+            "id": "#c:tools/fishing_rods",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/igniter.json": {
+      "data": {
+        "values": [
+          "minecraft:flint_and_steel"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/mace.json": {
+      "data": {
+        "values": [
+          "minecraft:mace"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/melee_weapon.json": {
+      "data": {
+        "values": [
+          "minecraft:mace",
+          "minecraft:trident",
+          "minecraft:wooden_sword",
+          "minecraft:stone_sword",
+          "minecraft:golden_sword",
+          "minecraft:iron_sword",
+          "minecraft:diamond_sword",
+          "minecraft:netherite_sword",
+          "minecraft:wooden_axe",
+          "minecraft:stone_axe",
+          "minecraft:golden_axe",
+          "minecraft:iron_axe",
+          "minecraft:diamond_axe",
+          "minecraft:netherite_axe"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/mining_tool.json": {
+      "data": {
+        "values": [
+          "minecraft:wooden_pickaxe",
+          "minecraft:stone_pickaxe",
+          "minecraft:golden_pickaxe",
+          "minecraft:iron_pickaxe",
+          "minecraft:diamond_pickaxe",
+          "minecraft:netherite_pickaxe"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/ranged_weapon.json": {
+      "data": {
+        "values": [
+          "minecraft:bow",
+          "minecraft:crossbow",
+          "minecraft:trident"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/shear.json": {
+      "data": {
+        "values": [
+          "minecraft:shears",
+          {
+            "id": "#forge:shears",
+            "required": false
+          },
+          {
+            "id": "#forge:tools/shears",
+            "required": false
+          },
+          {
+            "id": "#c:tools/shears",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/shield.json": {
+      "data": {
+        "values": [
+          "minecraft:shield",
+          {
+            "id": "#forge:tools/shields",
+            "required": false
+          },
+          {
+            "id": "#c:tools/shields",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/spear.json": {
+      "data": {
+        "values": [
+          "minecraft:trident",
+          {
+            "id": "#forge:tools/tridents",
+            "required": false
+          },
+          {
+            "id": "#forge:tools/tridents",
+            "required": false
+          },
+          {
+            "id": "#c:tools/tridents",
+            "required": false
+          }
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/tools/wrench.json": {
+      "data": {
+        "values": []
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/c/tags/item/villager_job_sites.json": {
+      "data": {
+        "values": [
+          "minecraft:barrel",
+          "minecraft:blast_furnace",
+          "minecraft:brewing_stand",
+          "minecraft:cartography_table",
+          "minecraft:cauldron",
+          "minecraft:composter",
+          "minecraft:fletching_table",
+          "minecraft:grindstone",
+          "minecraft:lectern",
+          "minecraft:loom",
+          "minecraft:smithing_table",
+          "minecraft:smoker",
+          "minecraft:stonecutter"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    },
+    "data/neoforge/tags/item/enchanting_fuels.json": {
+      "data": {
+        "values": [
+          "#c:gems/lapis"
+        ]
+      },
+      "source_jar_sha256": "ff997bfd7db9735755545a0d073bfb56bef55a8c9dd17bc1bba215a5dd55fc0d"
+    }
+  }
+}

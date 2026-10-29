@@ -1,0 +1,1 @@
+package cfsource;public class Target {public static int run(int n){return n+1;}}

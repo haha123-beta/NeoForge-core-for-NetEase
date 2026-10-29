@@ -1,0 +1,8 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="runtime_mixin_fields_example"
+version="1.0"
+[[mixins]]
+config="fields.mixins.json"

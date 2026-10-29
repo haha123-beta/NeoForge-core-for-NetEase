@@ -1,0 +1,1 @@
+package demo; public class Audit {public static int heads=0;public static int bodies=0;public static int returns=0;public static void head(){heads=heads+1;}public static void body(){bodies=bodies+1;}public static void tail(){returns=returns+1;}}

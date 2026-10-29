@@ -1,0 +1,5846 @@
+{
+  "schema_version": 1,
+  "java_types": [
+    "com.google.common.collect.ImmutableMap",
+    "com.google.common.collect.ImmutableMap$Builder",
+    "com.mojang.blaze3d.platform.WindowEventHandler",
+    "com.mojang.blaze3d.shaders.Shader",
+    "com.mojang.blaze3d.vertex.DefaultVertexFormat",
+    "com.mojang.blaze3d.vertex.VertexFormat",
+    "com.mojang.blaze3d.vertex.VertexFormat$Builder",
+    "com.mojang.blaze3d.vertex.VertexFormat$IndexType",
+    "com.mojang.blaze3d.vertex.VertexFormat$Mode",
+    "com.mojang.blaze3d.vertex.VertexFormatElement",
+    "com.mojang.blaze3d.vertex.VertexFormatElement$Type",
+    "com.mojang.blaze3d.vertex.VertexFormatElement$Usage",
+    "com.mojang.blaze3d.vertex.VertexSorting",
+    "com.mojang.blaze3d.vertex.VertexSorting.DistanceFunction",
+    "com.mojang.logging.LogUtils",
+    "com.mojang.math.Transformation",
+    "io.netty.buffer.ByteBuf",
+    "io.netty.buffer.Unpooled",
+    "io.netty.handler.codec.DecoderException",
+    "io.netty.handler.codec.EncoderException",
+    "java.io.ByteArrayInputStream",
+    "java.io.ByteArrayOutputStream",
+    "java.io.Closeable",
+    "java.io.IOException",
+    "java.io.UnsupportedEncodingException",
+    "java.lang.ArithmeticException",
+    "java.lang.ArrayIndexOutOfBoundsException",
+    "java.lang.ArrayStoreException",
+    "java.lang.AssertionError",
+    "java.lang.AutoCloseable",
+    "java.lang.Boolean",
+    "java.lang.Byte",
+    "java.lang.CharSequence",
+    "java.lang.Character",
+    "java.lang.ClassCastException",
+    "java.lang.CloneNotSupportedException",
+    "java.lang.Comparable",
+    "java.lang.Double",
+    "java.lang.Enum",
+    "java.lang.Error",
+    "java.lang.Exception",
+    "java.lang.Float",
+    "java.lang.IllegalArgumentException",
+    "java.lang.IllegalStateException",
+    "java.lang.IndexOutOfBoundsException",
+    "java.lang.Integer",
+    "java.lang.Iterable",
+    "java.lang.Long",
+    "java.lang.Math",
+    "java.lang.NegativeArraySizeException",
+    "java.lang.NullPointerException",
+    "java.lang.Number",
+    "java.lang.NumberFormatException",
+    "java.lang.Object",
+    "java.lang.Record",
+    "java.lang.Runnable",
+    "java.lang.RuntimeException",
+    "java.lang.Short",
+    "java.lang.String",
+    "java.lang.StringBuffer",
+    "java.lang.StringBuilder",
+    "java.lang.StringIndexOutOfBoundsException",
+    "java.lang.System",
+    "java.lang.ThreadLocal",
+    "java.lang.Throwable",
+    "java.lang.UnsupportedOperationException",
+    "java.net.URLDecoder",
+    "java.nio.charset.Charset",
+    "java.nio.charset.IllegalCharsetNameException",
+    "java.nio.charset.StandardCharsets",
+    "java.nio.charset.UnsupportedCharsetException",
+    "java.util.AbstractList",
+    "java.util.AbstractMap",
+    "java.util.AbstractSet",
+    "java.util.ArrayList",
+    "java.util.Arrays",
+    "java.util.Collection",
+    "java.util.Collections",
+    "java.util.ConcurrentModificationException",
+    "java.util.EnumMap",
+    "java.util.EnumSet",
+    "java.util.HashMap",
+    "java.util.HashSet",
+    "java.util.Iterator",
+    "java.util.LinkedHashMap",
+    "java.util.LinkedHashSet",
+    "java.util.LinkedList",
+    "java.util.List",
+    "java.util.ListIterator",
+    "java.util.Map",
+    "java.util.Map$Entry",
+    "java.util.Map.Entry",
+    "java.util.NoSuchElementException",
+    "java.util.Objects",
+    "java.util.Optional",
+    "java.util.OptionalInt",
+    "java.util.Random",
+    "java.util.Set",
+    "java.util.Stack",
+    "java.util.TreeMap",
+    "java.util.TreeSet",
+    "java.util.UUID",
+    "java.util.Vector",
+    "java.util.WeakHashMap",
+    "java.util.concurrent.ConcurrentHashMap",
+    "java.util.function.BiConsumer",
+    "java.util.function.BiFunction",
+    "java.util.function.Consumer",
+    "java.util.function.Function",
+    "java.util.function.Predicate",
+    "java.util.function.Supplier",
+    "java.util.stream.LongStream",
+    "java.util.stream.Stream",
+    "java.util.stream.StreamSupport",
+    "neocore.ILevelAccess",
+    "neocore.InMemoryLevelAccess",
+    "neocore.runtime.EnumSets",
+    "neocore.runtime.Functional",
+    "neocore.runtime.GoalSchedulers",
+    "neocore.runtime.Int32",
+    "neocore.runtime.JavaArrays",
+    "neocore.runtime.JavaCollections",
+    "neocore.runtime.JavaExceptions",
+    "neocore.runtime.JavaRecords",
+    "neocore.runtime.MixinCallbacks",
+    "neocore.runtime.MixinHooks",
+    "neocore.runtime.ModEntrypoints",
+    "neocore.runtime.PrimitiveMath",
+    "neocore.runtime.Profilers",
+    "neocore.runtime.RuntimeClasses",
+    "net.minecraft.advancements.CriteriaTriggers",
+    "net.minecraft.advancements.CriterionTrigger",
+    "net.minecraft.client.DeltaTracker",
+    "net.minecraft.client.gui.ComponentPath",
+    "net.minecraft.client.gui.components.Button.CreateNarration",
+    "net.minecraft.client.gui.components.Button.OnPress",
+    "net.minecraft.client.gui.components.Renderable",
+    "net.minecraft.client.gui.components.TabOrderedElement",
+    "net.minecraft.client.gui.components.events.GuiEventListener",
+    "net.minecraft.client.gui.narration.NarratableEntry",
+    "net.minecraft.client.gui.narration.NarrationSupplier",
+    "net.minecraft.client.gui.navigation.ScreenAxis",
+    "net.minecraft.client.gui.navigation.ScreenDirection",
+    "net.minecraft.client.gui.navigation.ScreenPosition",
+    "net.minecraft.client.gui.navigation.ScreenRectangle",
+    "net.minecraft.client.gui.screens.inventory.MenuAccess",
+    "net.minecraft.client.gui.screens.recipebook.RecipeShownListener",
+    "net.minecraft.client.gui.screens.recipebook.RecipeUpdateListener",
+    "net.minecraft.client.model.ArmedModel",
+    "net.minecraft.client.model.HeadedModel",
+    "net.minecraft.client.renderer.MultiBufferSource",
+    "net.minecraft.client.renderer.RenderStateShard",
+    "net.minecraft.client.renderer.ShaderInstance",
+    "net.minecraft.client.renderer.blockentity.BlockEntityRenderer",
+    "net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider",
+    "net.minecraft.client.renderer.entity.EntityRendererProvider",
+    "net.minecraft.client.renderer.item.ItemPropertyFunction",
+    "net.minecraft.client.renderer.texture.Dumpable",
+    "net.minecraft.client.renderer.texture.Tickable",
+    "net.minecraft.client.resources.language.I18n",
+    "net.minecraft.client.resources.model.BakedModel",
+    "net.minecraft.client.resources.model.ModelState",
+    "net.minecraft.client.resources.sounds.SoundInstance",
+    "net.minecraft.commands.CommandSource",
+    "net.minecraft.core.BlockPos",
+    "net.minecraft.core.BlockPos$MutableBlockPos",
+    "net.minecraft.core.Direction",
+    "net.minecraft.core.Holder",
+    "net.minecraft.core.Holder$Direct",
+    "net.minecraft.core.Holder$Reference",
+    "net.minecraft.core.HolderGetter",
+    "net.minecraft.core.HolderLookup",
+    "net.minecraft.core.HolderLookup$Provider",
+    "net.minecraft.core.HolderSet",
+    "net.minecraft.core.HolderSet$Direct",
+    "net.minecraft.core.HolderSet$Named",
+    "net.minecraft.core.NonNullList",
+    "net.minecraft.core.Position",
+    "net.minecraft.core.Registry",
+    "net.minecraft.core.RegistryAccess",
+    "net.minecraft.core.UUIDUtil",
+    "net.minecraft.core.Vec3i",
+    "net.minecraft.core.particles.ParticleOptions",
+    "net.minecraft.core.registries.BuiltInRegistries",
+    "net.minecraft.core.registries.Registries",
+    "net.minecraft.data.DataProvider",
+    "net.minecraft.data.loot.LootTableSubProvider",
+    "net.minecraft.nbt.CompoundTag",
+    "net.minecraft.nbt.CompoundTag$1",
+    "net.minecraft.nbt.IntTag",
+    "net.minecraft.nbt.ListTag",
+    "net.minecraft.nbt.Tag",
+    "net.minecraft.nbt.TagTypes",
+    "net.minecraft.network.FriendlyByteBuf",
+    "net.minecraft.network.RegistryFriendlyByteBuf",
+    "net.minecraft.network.chat.Component",
+    "net.minecraft.network.chat.MutableComponent",
+    "net.minecraft.network.codec.ByteBufCodecs",
+    "net.minecraft.network.codec.StreamCodec",
+    "net.minecraft.network.codec.StreamDecoder",
+    "net.minecraft.network.codec.StreamEncoder",
+    "net.minecraft.network.protocol.PacketFlow",
+    "net.minecraft.network.protocol.common.custom.CustomPacketPayload",
+    "net.minecraft.network.protocol.common.custom.CustomPacketPayload$Type",
+    "net.minecraft.network.syncher.EntityDataAccessor",
+    "net.minecraft.network.syncher.EntityDataSerializer",
+    "net.minecraft.network.syncher.EntityDataSerializers",
+    "net.minecraft.network.syncher.SyncedDataHolder",
+    "net.minecraft.network.syncher.SynchedEntityData",
+    "net.minecraft.network.syncher.SynchedEntityData$Builder",
+    "net.minecraft.resources.ResourceKey",
+    "net.minecraft.resources.ResourceLocation",
+    "net.minecraft.server.level.ServerLevel",
+    "net.minecraft.server.level.ServerPlayer",
+    "net.minecraft.server.packs.resources.PreparableReloadListener",
+    "net.minecraft.server.packs.resources.ResourceProvider",
+    "net.minecraft.sounds.SoundEvent",
+    "net.minecraft.sounds.SoundEvents",
+    "net.minecraft.sounds.SoundSource",
+    "net.minecraft.stats.Stat",
+    "net.minecraft.stats.StatType",
+    "net.minecraft.stats.Stats",
+    "net.minecraft.tags.BlockTags",
+    "net.minecraft.tags.Tag",
+    "net.minecraft.tags.TagKey",
+    "net.minecraft.util.Mth",
+    "net.minecraft.util.OptionEnum",
+    "net.minecraft.util.RandomSource",
+    "net.minecraft.util.StringRepresentable",
+    "net.minecraft.util.profiling.EmptyProfileResults",
+    "net.minecraft.util.profiling.InactiveProfiler",
+    "net.minecraft.util.profiling.ProfileCollector",
+    "net.minecraft.util.profiling.ProfileResults",
+    "net.minecraft.util.profiling.ProfilerFiller",
+    "net.minecraft.util.profiling.metrics.MetricCategory",
+    "net.minecraft.world.Clearable",
+    "net.minecraft.world.Container",
+    "net.minecraft.world.Containers",
+    "net.minecraft.world.InteractionHand",
+    "net.minecraft.world.InteractionResult",
+    "net.minecraft.world.InteractionResultHolder",
+    "net.minecraft.world.MenuProvider",
+    "net.minecraft.world.Nameable",
+    "net.minecraft.world.SimpleContainer",
+    "net.minecraft.world.WorldlyContainer",
+    "net.minecraft.world.damagesource.DamageSource",
+    "net.minecraft.world.damagesource.DamageSources",
+    "net.minecraft.world.entity.Attackable",
+    "net.minecraft.world.entity.Entity",
+    "net.minecraft.world.entity.EntityType",
+    "net.minecraft.world.entity.EntityType$Builder",
+    "net.minecraft.world.entity.EntityType$EntityFactory",
+    "net.minecraft.world.entity.LivingEntity",
+    "net.minecraft.world.entity.Mob",
+    "net.minecraft.world.entity.MobCategory",
+    "net.minecraft.world.entity.PathfinderMob",
+    "net.minecraft.world.entity.TraceableEntity",
+    "net.minecraft.world.entity.ai.attributes.Attribute",
+    "net.minecraft.world.entity.ai.attributes.AttributeInstance",
+    "net.minecraft.world.entity.ai.attributes.AttributeMap",
+    "net.minecraft.world.entity.ai.attributes.AttributeModifier",
+    "net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation",
+    "net.minecraft.world.entity.ai.attributes.AttributeSupplier",
+    "net.minecraft.world.entity.ai.attributes.AttributeSupplier$Builder",
+    "net.minecraft.world.entity.ai.attributes.Attributes",
+    "net.minecraft.world.entity.ai.attributes.RangedAttribute",
+    "net.minecraft.world.entity.ai.control.LookControl",
+    "net.minecraft.world.entity.ai.goal.Goal",
+    "net.minecraft.world.entity.ai.goal.Goal$Flag",
+    "net.minecraft.world.entity.ai.goal.GoalSelector",
+    "net.minecraft.world.entity.ai.goal.MeleeAttackGoal",
+    "net.minecraft.world.entity.ai.goal.RandomStrollGoal",
+    "net.minecraft.world.entity.ai.goal.WrappedGoal",
+    "net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal",
+    "net.minecraft.world.entity.ai.navigation.FlyingPathNavigation",
+    "net.minecraft.world.entity.ai.navigation.GroundPathNavigation",
+    "net.minecraft.world.entity.ai.navigation.PathNavigation",
+    "net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation",
+    "net.minecraft.world.entity.monster.Enemy",
+    "net.minecraft.world.entity.monster.Monster",
+    "net.minecraft.world.entity.npc.VillagerTrades",
+    "net.minecraft.world.entity.npc.VillagerTrades.ItemListing",
+    "net.minecraft.world.entity.player.Abilities",
+    "net.minecraft.world.entity.player.Inventory",
+    "net.minecraft.world.entity.player.Player",
+    "net.minecraft.world.flag.FeatureElement",
+    "net.minecraft.world.flag.FeatureFlag",
+    "net.minecraft.world.flag.FeatureFlagSet",
+    "net.minecraft.world.flag.FeatureFlags",
+    "net.minecraft.world.inventory.AbstractContainerMenu",
+    "net.minecraft.world.inventory.ContainerData",
+    "net.minecraft.world.inventory.ContainerListener",
+    "net.minecraft.world.inventory.ContainerSynchronizer",
+    "net.minecraft.world.inventory.DataSlot",
+    "net.minecraft.world.inventory.MenuConstructor",
+    "net.minecraft.world.inventory.MenuType",
+    "net.minecraft.world.inventory.MenuType.MenuSupplier",
+    "net.minecraft.world.inventory.MerchantContainer",
+    "net.minecraft.world.inventory.MerchantResultSlot",
+    "net.minecraft.world.inventory.RecipeBookMenu",
+    "net.minecraft.world.inventory.SimpleContainerData",
+    "net.minecraft.world.inventory.Slot",
+    "net.minecraft.world.inventory.StackedContentsCompatible",
+    "net.minecraft.world.item.BlockItem",
+    "net.minecraft.world.item.CreativeModeTabs",
+    "net.minecraft.world.item.DiggerItem",
+    "net.minecraft.world.item.Item",
+    "net.minecraft.world.item.Item$Properties",
+    "net.minecraft.world.item.ItemDisplayContext",
+    "net.minecraft.world.item.ItemStack",
+    "net.minecraft.world.item.Items",
+    "net.minecraft.world.item.Rarity",
+    "net.minecraft.world.item.SwordItem",
+    "net.minecraft.world.item.Tier",
+    "net.minecraft.world.item.TieredItem",
+    "net.minecraft.world.item.TooltipFlag",
+    "net.minecraft.world.item.component.Tool",
+    "net.minecraft.world.item.component.Tool$Rule",
+    "net.minecraft.world.item.component.TooltipProvider",
+    "net.minecraft.world.item.context.BlockPlaceContext",
+    "net.minecraft.world.item.context.UseOnContext",
+    "net.minecraft.world.item.crafting.AbstractCookingRecipe",
+    "net.minecraft.world.item.crafting.CraftingInput",
+    "net.minecraft.world.item.crafting.CraftingRecipe",
+    "net.minecraft.world.item.crafting.Ingredient",
+    "net.minecraft.world.item.crafting.Recipe",
+    "net.minecraft.world.item.crafting.RecipeHolder",
+    "net.minecraft.world.item.crafting.RecipeInput",
+    "net.minecraft.world.item.crafting.RecipeManager",
+    "net.minecraft.world.item.crafting.RecipeSerializer",
+    "net.minecraft.world.item.crafting.RecipeType",
+    "net.minecraft.world.item.crafting.RecipeTypes",
+    "net.minecraft.world.item.crafting.SingleRecipeInput",
+    "net.minecraft.world.item.trading.ItemCost",
+    "net.minecraft.world.item.trading.Merchant",
+    "net.minecraft.world.item.trading.MerchantOffer",
+    "net.minecraft.world.item.trading.MerchantOffers",
+    "net.minecraft.world.level.BlockGetter",
+    "net.minecraft.world.level.CollisionContext",
+    "net.minecraft.world.level.ItemLike",
+    "net.minecraft.world.level.Level",
+    "net.minecraft.world.level.LevelAccessor",
+    "net.minecraft.world.level.LevelHeightAccessor",
+    "net.minecraft.world.level.LevelReader",
+    "net.minecraft.world.level.LevelWriter",
+    "net.minecraft.world.level.biome.BiomeManager.NoiseBiomeSource",
+    "net.minecraft.world.level.block.Block",
+    "net.minecraft.world.level.block.Blocks",
+    "net.minecraft.world.level.block.BonemealableBlock",
+    "net.minecraft.world.level.block.BonemealableBlock$Type",
+    "net.minecraft.world.level.block.BucketPickup",
+    "net.minecraft.world.level.block.LiquidBlockContainer",
+    "net.minecraft.world.level.block.Mirror",
+    "net.minecraft.world.level.block.RenderShape",
+    "net.minecraft.world.level.block.Rotation",
+    "net.minecraft.world.level.block.SoundType",
+    "net.minecraft.world.level.block.entity.BaseContainerBlockEntity",
+    "net.minecraft.world.level.block.entity.BlockEntity",
+    "net.minecraft.world.level.block.entity.BlockEntityTicker",
+    "net.minecraft.world.level.block.entity.BlockEntityType",
+    "net.minecraft.world.level.block.entity.BlockEntityType$Builder",
+    "net.minecraft.world.level.block.entity.ContainerHelper",
+    "net.minecraft.world.level.block.state.BlockBehaviour",
+    "net.minecraft.world.level.block.state.BlockBehaviour$Properties",
+    "net.minecraft.world.level.block.state.BlockState",
+    "net.minecraft.world.level.block.state.StateDefinition",
+    "net.minecraft.world.level.block.state.StateDefinition$Builder",
+    "net.minecraft.world.level.block.state.properties.BlockStateProperties",
+    "net.minecraft.world.level.block.state.properties.BooleanProperty",
+    "net.minecraft.world.level.block.state.properties.DirectionProperty",
+    "net.minecraft.world.level.block.state.properties.EnumProperty",
+    "net.minecraft.world.level.block.state.properties.IntegerProperty",
+    "net.minecraft.world.level.block.state.properties.Property",
+    "net.minecraft.world.level.entity.EntityAccess",
+    "net.minecraft.world.level.entity.EntityInLevelCallback",
+    "net.minecraft.world.level.entity.EntityTypeTest",
+    "net.minecraft.world.level.gameevent.GameEvent",
+    "net.minecraft.world.level.gameevent.GameEvent$Context",
+    "net.minecraft.world.level.material.Fluid",
+    "net.minecraft.world.level.material.FluidState",
+    "net.minecraft.world.level.material.Fluids",
+    "net.minecraft.world.level.pathfinder.PathComputationType",
+    "net.minecraft.world.level.storage.loot.LootContextUser",
+    "net.minecraft.world.level.storage.loot.LootParams",
+    "net.minecraft.world.level.storage.loot.LootParams$Builder",
+    "net.minecraft.world.level.storage.loot.parameters.LootContextParamSet",
+    "net.minecraft.world.level.storage.loot.parameters.LootContextParamSets",
+    "net.minecraft.world.level.storage.loot.providers.number.NumberProvider",
+    "net.minecraft.world.phys.AABB",
+    "net.minecraft.world.phys.BlockHitResult",
+    "net.minecraft.world.phys.EntityHitResult",
+    "net.minecraft.world.phys.HitResult",
+    "net.minecraft.world.phys.HitResult$Type",
+    "net.minecraft.world.phys.Vec3",
+    "net.minecraft.world.phys.shapes.CollisionContext",
+    "net.minecraft.world.phys.shapes.Shapes",
+    "net.minecraft.world.phys.shapes.VoxelShape",
+    "net.neoforged.api.distmarker.Dist",
+    "net.neoforged.api.distmarker.OnlyIn",
+    "net.neoforged.bus.api.CancelableEvent",
+    "net.neoforged.bus.api.Event",
+    "net.neoforged.bus.api.EventPriority",
+    "net.neoforged.bus.api.IEventBus",
+    "net.neoforged.bus.api.SubscribeEvent",
+    "net.neoforged.fml.ModContainer",
+    "net.neoforged.fml.common.EventBusSubscriber",
+    "net.neoforged.fml.config.IConfigSpec",
+    "net.neoforged.fml.config.ModConfig",
+    "net.neoforged.fml.config.ModConfig$Type",
+    "net.neoforged.fml.event.config.ModConfigEvent",
+    "net.neoforged.fml.event.config.ModConfigEvent$Loading",
+    "net.neoforged.fml.event.config.ModConfigEvent$Reloading",
+    "net.neoforged.fml.event.config.ModConfigEvent$Unloading",
+    "net.neoforged.fml.event.lifecycle.FMLClientSetupEvent",
+    "net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent",
+    "net.neoforged.fml.event.lifecycle.FMLDedicatedServerSetupEvent",
+    "net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent",
+    "net.neoforged.fml.event.lifecycle.InterModEnqueueEvent",
+    "net.neoforged.fml.event.lifecycle.InterModProcessEvent",
+    "net.neoforged.fml.event.lifecycle.ParallelDispatchEvent",
+    "net.neoforged.fml.javafmlmod.FMLModContainer",
+    "net.neoforged.fml.loading.FMLEnvironment",
+    "net.neoforged.neoforge.attachment.AttachmentHolder",
+    "net.neoforged.neoforge.attachment.AttachmentSyncHandler",
+    "net.neoforged.neoforge.attachment.AttachmentType",
+    "net.neoforged.neoforge.attachment.AttachmentType$Builder",
+    "net.neoforged.neoforge.attachment.IAttachmentCopyHandler",
+    "net.neoforged.neoforge.attachment.IAttachmentHolder",
+    "net.neoforged.neoforge.attachment.IAttachmentSerializer",
+    "net.neoforged.neoforge.capabilities.BlockCapability",
+    "net.neoforged.neoforge.capabilities.Capabilities",
+    "net.neoforged.neoforge.capabilities.Capabilities$EnergyStorage",
+    "net.neoforged.neoforge.capabilities.Capabilities$FluidHandler",
+    "net.neoforged.neoforge.capabilities.Capabilities$ItemHandler",
+    "net.neoforged.neoforge.capabilities.EntityCapability",
+    "net.neoforged.neoforge.capabilities.IBlockCapabilityProvider",
+    "net.neoforged.neoforge.capabilities.ICapabilityProvider",
+    "net.neoforged.neoforge.capabilities.ItemCapability",
+    "net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent",
+    "net.neoforged.neoforge.client.event.ClientTickEvent",
+    "net.neoforged.neoforge.client.event.ClientTickEvent$Post",
+    "net.neoforged.neoforge.client.event.ClientTickEvent$Pre",
+    "net.neoforged.neoforge.client.event.InputEvent",
+    "net.neoforged.neoforge.client.event.InputEvent$Key",
+    "net.neoforged.neoforge.client.event.RegisterShadersEvent",
+    "net.neoforged.neoforge.client.event.RenderFrameEvent",
+    "net.neoforged.neoforge.client.event.RenderFrameEvent$Post",
+    "net.neoforged.neoforge.client.event.RenderFrameEvent$Pre",
+    "net.neoforged.neoforge.common.ItemAbilities",
+    "net.neoforged.neoforge.common.ItemAbility",
+    "net.neoforged.neoforge.common.ModConfigSpec",
+    "net.neoforged.neoforge.common.ModConfigSpec$BooleanValue",
+    "net.neoforged.neoforge.common.ModConfigSpec$Builder",
+    "net.neoforged.neoforge.common.ModConfigSpec$ConfigValue",
+    "net.neoforged.neoforge.common.ModConfigSpec$DoubleValue",
+    "net.neoforged.neoforge.common.ModConfigSpec$IntValue",
+    "net.neoforged.neoforge.common.ModConfigSpec$LongValue",
+    "net.neoforged.neoforge.common.NeoForge",
+    "net.neoforged.neoforge.common.extensions.IMenuTypeExtension",
+    "net.neoforged.neoforge.common.util.EventResult",
+    "net.neoforged.neoforge.common.util.INBTSerializable",
+    "net.neoforged.neoforge.common.util.TriState",
+    "net.neoforged.neoforge.energy.EnergyStorage",
+    "net.neoforged.neoforge.energy.IEnergyStorage",
+    "net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent",
+    "net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent",
+    "net.neoforged.neoforge.event.entity.EntityEvent",
+    "net.neoforged.neoforge.event.entity.EntityJoinLevelEvent",
+    "net.neoforged.neoforge.event.entity.EntityLeaveLevelEvent",
+    "net.neoforged.neoforge.event.entity.living.LivingDeathEvent",
+    "net.neoforged.neoforge.event.entity.living.LivingDropsEvent",
+    "net.neoforged.neoforge.event.entity.living.LivingEvent",
+    "net.neoforged.neoforge.event.entity.living.LivingEvent$LivingTickEvent",
+    "net.neoforged.neoforge.event.entity.living.LivingExperienceDropEvent",
+    "net.neoforged.neoforge.event.entity.living.LivingFallEvent",
+    "net.neoforged.neoforge.event.entity.living.LivingHealEvent",
+    "net.neoforged.neoforge.event.entity.living.LivingHurtEvent",
+    "net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent",
+    "net.neoforged.neoforge.event.entity.living.LivingKnockBackEvent",
+    "net.neoforged.neoforge.event.entity.player.AttackEntityEvent",
+    "net.neoforged.neoforge.event.entity.player.ItemTooltipEvent",
+    "net.neoforged.neoforge.event.entity.player.PlayerEvent",
+    "net.neoforged.neoforge.event.entity.player.PlayerEvent$Clone",
+    "net.neoforged.neoforge.event.entity.player.PlayerEvent$PlayerChangedDimensionEvent",
+    "net.neoforged.neoforge.event.entity.player.PlayerEvent$PlayerLoggedInEvent",
+    "net.neoforged.neoforge.event.entity.player.PlayerEvent$PlayerLoggedOutEvent",
+    "net.neoforged.neoforge.event.entity.player.PlayerEvent$PlayerRespawnEvent",
+    "net.neoforged.neoforge.event.entity.player.PlayerInteractEvent",
+    "net.neoforged.neoforge.event.entity.player.PlayerInteractEvent$LeftClickBlock",
+    "net.neoforged.neoforge.event.entity.player.PlayerInteractEvent$RightClickBlock",
+    "net.neoforged.neoforge.event.entity.player.PlayerInteractEvent$RightClickItem",
+    "net.neoforged.neoforge.event.level.BlockEvent",
+    "net.neoforged.neoforge.event.level.BlockEvent$BlockToolModificationEvent",
+    "net.neoforged.neoforge.event.level.BlockEvent$BreakEvent",
+    "net.neoforged.neoforge.event.level.BlockEvent$EntityPlaceEvent",
+    "net.neoforged.neoforge.event.level.BlockEvent$PlaceEvent",
+    "net.neoforged.neoforge.event.server.ServerLifecycleEvent",
+    "net.neoforged.neoforge.event.server.ServerStartingEvent",
+    "net.neoforged.neoforge.event.tick.LevelTickEvent",
+    "net.neoforged.neoforge.event.tick.LevelTickEvent$Post",
+    "net.neoforged.neoforge.event.tick.LevelTickEvent$Pre",
+    "net.neoforged.neoforge.event.tick.PlayerTickEvent",
+    "net.neoforged.neoforge.event.tick.PlayerTickEvent$Post",
+    "net.neoforged.neoforge.event.tick.PlayerTickEvent$Pre",
+    "net.neoforged.neoforge.event.tick.ServerTickEvent",
+    "net.neoforged.neoforge.event.tick.ServerTickEvent$Post",
+    "net.neoforged.neoforge.event.tick.ServerTickEvent$Pre",
+    "net.neoforged.neoforge.event.tick.TickEvent",
+    "net.neoforged.neoforge.event.village.VillagerTradesEvent",
+    "net.neoforged.neoforge.event.village.WandererTradesEvent",
+    "net.neoforged.neoforge.fluids.FluidStack",
+    "net.neoforged.neoforge.fluids.IFluidTank",
+    "net.neoforged.neoforge.fluids.capability.IFluidHandler",
+    "net.neoforged.neoforge.fluids.capability.IFluidHandler$FluidAction",
+    "net.neoforged.neoforge.fluids.capability.IFluidHandlerItem",
+    "net.neoforged.neoforge.fluids.capability.templates.FluidTank",
+    "net.neoforged.neoforge.items.IItemHandler",
+    "net.neoforged.neoforge.items.IItemHandlerModifiable",
+    "net.neoforged.neoforge.items.ItemStackHandler",
+    "net.neoforged.neoforge.network.IContainerFactory",
+    "net.neoforged.neoforge.network.PacketDistributor",
+    "net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent",
+    "net.neoforged.neoforge.network.handling.IPayloadContext",
+    "net.neoforged.neoforge.network.handling.IPayloadHandler",
+    "net.neoforged.neoforge.network.registration.PacketFlow",
+    "net.neoforged.neoforge.network.registration.PayloadRegistrar",
+    "net.neoforged.neoforge.registries.DeferredBlock",
+    "net.neoforged.neoforge.registries.DeferredHolder",
+    "net.neoforged.neoforge.registries.DeferredItem",
+    "net.neoforged.neoforge.registries.DeferredRegister",
+    "net.neoforged.neoforge.registries.DeferredRegister$Blocks",
+    "net.neoforged.neoforge.registries.DeferredRegister$Items",
+    "net.neoforged.neoforge.registries.NeoForgeRegistries",
+    "org.joml.Matrix4f",
+    "org.joml.Vector3f",
+    "org.slf4j.Logger",
+    "org.spongepowered.asm.mixin.injection.callback.CallbackInfo",
+    "org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable",
+    "org.spongepowered.asm.mixin.injection.callback.CancellationException"
+  ],
+  "runtime_enum_types": {
+    "net.minecraft.world.entity.MobCategory": {
+      "constants": [
+        "MONSTER",
+        "CREATURE",
+        "AMBIENT",
+        "AXOLOTLS",
+        "UNDERGROUND_WATER_CREATURE",
+        "WATER_CREATURE",
+        "WATER_AMBIENT",
+        "MISC"
+      ]
+    },
+    "net.minecraft.world.entity.ai.goal.Goal.Flag": {
+      "constants": [
+        "MOVE",
+        "LOOK",
+        "JUMP",
+        "TARGET"
+      ]
+    },
+    "net.minecraft.client.gui.navigation.ScreenAxis": {
+      "constants": [
+        "HORIZONTAL",
+        "VERTICAL"
+      ]
+    },
+    "net.minecraft.client.gui.navigation.ScreenDirection": {
+      "constants": [
+        "UP",
+        "DOWN",
+        "LEFT",
+        "RIGHT"
+      ]
+    },
+    "net.minecraft.world.item.ItemDisplayContext": {
+      "constants": [
+        "NONE",
+        "THIRD_PERSON_LEFT_HAND",
+        "THIRD_PERSON_RIGHT_HAND",
+        "FIRST_PERSON_LEFT_HAND",
+        "FIRST_PERSON_RIGHT_HAND",
+        "HEAD",
+        "GUI",
+        "GROUND",
+        "FIXED"
+      ]
+    },
+    "net.minecraft.util.profiling.metrics.MetricCategory": {
+      "constants": [
+        "PATH_FINDING",
+        "EVENT_LOOPS",
+        "MAIL_BOXES",
+        "TICK_LOOP",
+        "JVM",
+        "CHUNK_RENDERING",
+        "CHUNK_RENDERING_DISPATCHING",
+        "CPU",
+        "GPU"
+      ]
+    },
+    "com.mojang.blaze3d.vertex.VertexFormat.Mode": {
+      "constants": [
+        "LINES",
+        "LINE_STRIP",
+        "DEBUG_LINES",
+        "DEBUG_LINE_STRIP",
+        "TRIANGLES",
+        "TRIANGLE_STRIP",
+        "TRIANGLE_FAN",
+        "QUADS"
+      ]
+    },
+    "com.mojang.blaze3d.vertex.VertexFormat.IndexType": {
+      "constants": [
+        "SHORT",
+        "INT"
+      ]
+    },
+    "com.mojang.blaze3d.vertex.VertexFormatElement.Type": {
+      "constants": [
+        "FLOAT",
+        "UBYTE",
+        "BYTE",
+        "USHORT",
+        "SHORT",
+        "UINT",
+        "INT"
+      ]
+    },
+    "com.mojang.blaze3d.vertex.VertexFormatElement.Usage": {
+      "constants": [
+        "POSITION",
+        "NORMAL",
+        "COLOR",
+        "UV",
+        "GENERIC"
+      ]
+    },
+    "net.minecraft.world.level.block.BonemealableBlock.Type": {
+      "constants": [
+        "NEIGHBOR_SPREADER",
+        "GROWER"
+      ]
+    }
+  },
+  "runtime_superclasses": {
+    "net.minecraft.world.entity.ai.goal.Goal": {
+      "abi": 1,
+      "java_name": "net.minecraft.world.entity.ai.goal.Goal",
+      "abstract": true,
+      "constructors": [
+        []
+      ],
+      "constructor_visibility": "public",
+      "methods": [
+        {
+          "name": "canUse",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "canContinueToUse",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isInterruptable",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "requiresUpdateEveryTick",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "start",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "stop",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "tick",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "setFlags",
+          "parameters": [
+            "java.util.EnumSet"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getFlags",
+          "parameters": [],
+          "return_type": "java.util.EnumSet<net.minecraft.world.entity.ai.goal.Goal.Flag>",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "adjustedTickDelay",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "protected"
+        },
+        {
+          "name": "reducedTickDelay",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "int",
+          "static": true,
+          "abstract": false,
+          "visibility": "protected"
+        }
+      ],
+      "reserved_members": [
+        "_flags",
+        "_nc_RuntimeSuperclassABI"
+      ]
+    },
+    "net.minecraft.world.entity.Entity": {
+      "abi": 1,
+      "helper_abi": 3,
+      "java_name": "net.minecraft.world.entity.Entity",
+      "abstract": true,
+      "constructors": [
+        [
+          "net.minecraft.world.entity.EntityType",
+          "net.minecraft.world.level.Level"
+        ]
+      ],
+      "constructor_visibility": "public",
+      "methods": [
+        {
+          "name": "defineSynchedData",
+          "parameters": [
+            "net.minecraft.network.syncher.SynchedEntityData.Builder"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "protected"
+        },
+        {
+          "name": "readAdditionalSaveData",
+          "parameters": [
+            "net.minecraft.nbt.CompoundTag"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "protected"
+        },
+        {
+          "name": "addAdditionalSaveData",
+          "parameters": [
+            "net.minecraft.nbt.CompoundTag"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "protected"
+        },
+        {
+          "name": "tick",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public",
+          "final": false
+        },
+        {
+          "name": "level",
+          "parameters": [],
+          "return_type": "net.minecraft.world.level.Level",
+          "static": false,
+          "abstract": false,
+          "visibility": "public",
+          "final": false
+        },
+        {
+          "name": "getType",
+          "parameters": [],
+          "return_type": "net.minecraft.world.entity.EntityType",
+          "static": false,
+          "abstract": false,
+          "visibility": "public",
+          "final": false
+        },
+        {
+          "name": "isRemoved",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public",
+          "final": true
+        },
+        {
+          "name": "discard",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public",
+          "final": true
+        },
+        {
+          "name": "saveWithoutId",
+          "parameters": [
+            "net.minecraft.nbt.CompoundTag"
+          ],
+          "return_type": "net.minecraft.nbt.CompoundTag",
+          "static": false,
+          "abstract": false,
+          "visibility": "public",
+          "final": false
+        },
+        {
+          "name": "save",
+          "parameters": [
+            "net.minecraft.nbt.CompoundTag"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public",
+          "final": false
+        },
+        {
+          "name": "load",
+          "parameters": [
+            "net.minecraft.nbt.CompoundTag"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public",
+          "final": false
+        }
+      ],
+      "reserved_members": [
+        "__eq__",
+        "__hash__",
+        "__init__",
+        "__ne__",
+        "__repr__",
+        "__str__",
+        "_entity_data",
+        "_entity_type",
+        "_id",
+        "_identifier",
+        "_level_access",
+        "_nc_RuntimeSuperclassABI",
+        "_nc_attachments",
+        "_persistent_data",
+        "_position",
+        "_removed",
+        "_uuid",
+        "_x_rot",
+        "_y_rot",
+        "blockPosition",
+        "copyAttachmentsFrom",
+        "distanceTo",
+        "distanceToSqr",
+        "equals",
+        "getBoundingBox",
+        "getCapability",
+        "getEntityData",
+        "getEyeHeight",
+        "getEyePosition",
+        "getHeight",
+        "getId",
+        "getIdentifier",
+        "getLevel",
+        "getLevelAccess",
+        "getPersistentData",
+        "getUUID",
+        "getViewVector",
+        "getWidth",
+        "getX",
+        "getXRot",
+        "getY",
+        "getYRot",
+        "getZ",
+        "hashCode",
+        "isAlive",
+        "onSyncedDataUpdated",
+        "position",
+        "remove",
+        "setIdentifier",
+        "setLevelAccess",
+        "setPos",
+        "setUUID",
+        "setXRot",
+        "setYRot",
+        "tickCount",
+        "_invoke_entity_hook",
+        "_level_wrapper",
+        "_neocore_attachments",
+        "_attachment_types",
+        "_registry_provider",
+        "_event_bus"
+      ]
+    },
+    "net.minecraft.world.inventory.AbstractContainerMenu": {
+      "abi": 1,
+      "helper_abi": 4,
+      "java_name": "net.minecraft.world.inventory.AbstractContainerMenu",
+      "abstract": true,
+      "constructors": [
+        [
+          "net.minecraft.world.inventory.MenuType",
+          "int"
+        ]
+      ],
+      "constructor_visibility": "protected",
+      "methods": [
+        {
+          "name": "quickMoveStack",
+          "parameters": [
+            "net.minecraft.world.entity.player.Player",
+            "int"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "stillValid",
+          "parameters": [
+            "net.minecraft.world.entity.player.Player"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getType",
+          "parameters": [],
+          "return_type": "net.minecraft.world.inventory.MenuType<?>",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getStateId",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "incrementStateId",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isValidSlotIndex",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getItems",
+          "parameters": [],
+          "return_type": "net.minecraft.core.NonNullList<net.minecraft.world.item.ItemStack>",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "setItem",
+          "parameters": [
+            "int",
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "initializeContents",
+          "parameters": [
+            "int",
+            "java.util.List<net.minecraft.world.item.ItemStack>",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "setRemoteSlot",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "setRemoteSlotNoCopy",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "setRemoteCarried",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "sendAllDataToRemote",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "broadcastFullState",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "suppressRemoteUpdates",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "resumeRemoteUpdates",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getSlot",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "net.minecraft.world.inventory.Slot",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "addSlot",
+          "parameters": [
+            "net.minecraft.world.inventory.Slot"
+          ],
+          "return_type": "net.minecraft.world.inventory.Slot",
+          "static": false,
+          "abstract": false,
+          "visibility": "protected"
+        },
+        {
+          "name": "addDataSlot",
+          "parameters": [
+            "net.minecraft.world.inventory.DataSlot"
+          ],
+          "return_type": "net.minecraft.world.inventory.DataSlot",
+          "static": false,
+          "abstract": false,
+          "visibility": "protected"
+        },
+        {
+          "name": "getCarried",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "setCarried",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "removed",
+          "parameters": [
+            "net.minecraft.world.entity.player.Player"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "broadcastChanges",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "moveItemStackTo",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack",
+            "int",
+            "int",
+            "boolean"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "protected"
+        }
+      ],
+      "fields": [
+        {
+          "name": "containerId",
+          "declared_type": "int",
+          "static": false,
+          "final": true,
+          "modifiers": [
+            "public",
+            "final"
+          ],
+          "line": 1
+        }
+      ],
+      "reserved_members": [
+        "__firstlineno__",
+        "__init__",
+        "__repr__",
+        "__static_attributes__",
+        "__str__",
+        "_carried",
+        "_container",
+        "_container_id",
+        "_data_slots",
+        "_flat_data_slots",
+        "_inventory",
+        "_last_slots",
+        "_listeners",
+        "_menu_type",
+        "_nc_RuntimeSuperclassABI",
+        "_next_id",
+        "_quick_move_calls",
+        "_remote_carried",
+        "_remote_data",
+        "_remote_slots",
+        "_removed",
+        "_sameStack",
+        "_state_id",
+        "_suppress_remote_updates",
+        "_synchronizeSlotToRemote",
+        "_synchronizer",
+        "_title",
+        "_triggerSlotListeners",
+        "_updateDataSlotListeners",
+        "addDataSlots",
+        "addSlotListener",
+        "containerId",
+        "getContainer",
+        "getContainerId",
+        "getDataSlotCount",
+        "getInventory",
+        "getSlotCount",
+        "getTitle",
+        "isRemoved",
+        "menuType",
+        "removeSlotListener",
+        "setData",
+        "setSynchronizer",
+        "slots",
+        "toString"
+      ]
+    },
+    "net.minecraft.world.item.Item": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.item.Item",
+      "abstract": false,
+      "constructors": [
+        [
+          "net.minecraft.world.item.Item.Properties"
+        ]
+      ],
+      "constructor_visibility": "public",
+      "methods": [
+        {
+          "name": "asItem",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Item",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getDefaultMaxStackSize",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getCraftingRemainingItem",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Item",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getDefaultInstance",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getEnchantmentValue",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isValidRepairItem",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ],
+      "reserved_members": [
+        "ABSOLUTE_MAX_STACK_SIZE",
+        "Properties",
+        "__dict__",
+        "__doc__",
+        "__eq__",
+        "__firstlineno__",
+        "__hash__",
+        "__init__",
+        "__module__",
+        "__ne__",
+        "__repr__",
+        "__static_attributes__",
+        "__weakref__",
+        "_id",
+        "_identifier",
+        "_nc_RuntimeSuperclassABI",
+        "_next_id",
+        "_registry_name",
+        "getMaxDamage",
+        "getMaxStackSize",
+        "getRegistryName",
+        "id",
+        "isDamageable",
+        "isFireResistant",
+        "onCraftedBy",
+        "onCraftedPostProcess",
+        "properties",
+        "setRegistryName"
+      ]
+    },
+    "net.minecraft.world.item.BlockItem": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.item.BlockItem",
+      "abstract": false,
+      "constructors": [
+        [
+          "net.minecraft.world.level.block.Block",
+          "net.minecraft.world.item.Item.Properties"
+        ]
+      ],
+      "constructor_visibility": "public",
+      "methods": [
+        {
+          "name": "asItem",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Item",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getDefaultMaxStackSize",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getCraftingRemainingItem",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Item",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getDefaultInstance",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getEnchantmentValue",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isValidRepairItem",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getBlock",
+          "parameters": [],
+          "return_type": "net.minecraft.world.level.block.Block",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "updatePlacementContext",
+          "parameters": [
+            "net.minecraft.world.item.context.BlockPlaceContext"
+          ],
+          "return_type": "net.minecraft.world.item.context.BlockPlaceContext",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ],
+      "reserved_members": [
+        "ABSOLUTE_MAX_STACK_SIZE",
+        "Properties",
+        "__dict__",
+        "__doc__",
+        "__eq__",
+        "__firstlineno__",
+        "__hash__",
+        "__init__",
+        "__module__",
+        "__ne__",
+        "__repr__",
+        "__static_attributes__",
+        "__weakref__",
+        "_block",
+        "_id",
+        "_identifier",
+        "_nc_RuntimeSuperclassABI",
+        "_next_id",
+        "_registry_name",
+        "getMaxDamage",
+        "getMaxStackSize",
+        "getRegistryName",
+        "id",
+        "isDamageable",
+        "isFireResistant",
+        "onCraftedBy",
+        "onCraftedPostProcess",
+        "properties",
+        "setRegistryName"
+      ]
+    },
+    "net.minecraft.world.item.TieredItem": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.item.TieredItem",
+      "abstract": false,
+      "superclass": "net.minecraft.world.item.Item",
+      "constructors": [
+        [
+          "net.minecraft.world.item.Tier",
+          "net.minecraft.world.item.Item.Properties"
+        ]
+      ],
+      "constructor_visibility": "public",
+      "methods": [
+        {
+          "name": "asItem",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Item",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getDefaultMaxStackSize",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getCraftingRemainingItem",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Item",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getDefaultInstance",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getEnchantmentValue",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isValidRepairItem",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getTier",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Tier",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ],
+      "reserved_members": [
+        "ABSOLUTE_MAX_STACK_SIZE",
+        "Properties",
+        "__dict__",
+        "__doc__",
+        "__eq__",
+        "__firstlineno__",
+        "__hash__",
+        "__init__",
+        "__module__",
+        "__ne__",
+        "__repr__",
+        "__static_attributes__",
+        "__weakref__",
+        "_id",
+        "_identifier",
+        "_nc_RuntimeSuperclassABI",
+        "_next_id",
+        "_registry_name",
+        "_tier",
+        "getMaxDamage",
+        "getMaxStackSize",
+        "getRegistryName",
+        "id",
+        "isDamageable",
+        "isFireResistant",
+        "onCraftedBy",
+        "onCraftedPostProcess",
+        "properties",
+        "setRegistryName"
+      ]
+    },
+    "net.minecraft.world.item.DiggerItem": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.item.DiggerItem",
+      "abstract": false,
+      "superclass": "net.minecraft.world.item.TieredItem",
+      "constructors": [
+        [
+          "net.minecraft.world.item.Tier",
+          "net.minecraft.tags.TagKey<net.minecraft.world.level.block.Block>",
+          "net.minecraft.world.item.Item.Properties"
+        ]
+      ],
+      "constructor_visibility": "protected",
+      "methods": [
+        {
+          "name": "asItem",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Item",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getDefaultMaxStackSize",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getCraftingRemainingItem",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Item",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getDefaultInstance",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getEnchantmentValue",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isValidRepairItem",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getTier",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Tier",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "hurtEnemy",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack",
+            "net.minecraft.world.entity.LivingEntity",
+            "net.minecraft.world.entity.LivingEntity"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ],
+      "reserved_members": [
+        "ABSOLUTE_MAX_STACK_SIZE",
+        "Properties",
+        "__dict__",
+        "__doc__",
+        "__eq__",
+        "__firstlineno__",
+        "__hash__",
+        "__init__",
+        "__module__",
+        "__ne__",
+        "__repr__",
+        "__static_attributes__",
+        "__weakref__",
+        "_id",
+        "_identifier",
+        "_nc_RuntimeSuperclassABI",
+        "_next_id",
+        "_registry_name",
+        "_tier",
+        "getMaxDamage",
+        "getMaxStackSize",
+        "getRegistryName",
+        "id",
+        "isDamageable",
+        "isFireResistant",
+        "onCraftedBy",
+        "onCraftedPostProcess",
+        "properties",
+        "setRegistryName"
+      ]
+    },
+    "net.minecraft.world.item.SwordItem": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.item.SwordItem",
+      "abstract": false,
+      "superclass": "net.minecraft.world.item.TieredItem",
+      "constructors": [
+        [
+          "net.minecraft.world.item.Tier",
+          "net.minecraft.world.item.Item.Properties"
+        ]
+      ],
+      "constructor_visibility": "public",
+      "methods": [
+        {
+          "name": "asItem",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Item",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getDefaultMaxStackSize",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getCraftingRemainingItem",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Item",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getDefaultInstance",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getEnchantmentValue",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isValidRepairItem",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getTier",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Tier",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "hurtEnemy",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack",
+            "net.minecraft.world.entity.LivingEntity",
+            "net.minecraft.world.entity.LivingEntity"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ],
+      "reserved_members": [
+        "ABSOLUTE_MAX_STACK_SIZE",
+        "Properties",
+        "__dict__",
+        "__doc__",
+        "__eq__",
+        "__firstlineno__",
+        "__hash__",
+        "__init__",
+        "__module__",
+        "__ne__",
+        "__repr__",
+        "__static_attributes__",
+        "__weakref__",
+        "_id",
+        "_identifier",
+        "_nc_RuntimeSuperclassABI",
+        "_next_id",
+        "_registry_name",
+        "_tier",
+        "getMaxDamage",
+        "getMaxStackSize",
+        "getRegistryName",
+        "id",
+        "isDamageable",
+        "isFireResistant",
+        "onCraftedBy",
+        "onCraftedPostProcess",
+        "properties",
+        "setRegistryName"
+      ]
+    },
+    "net.minecraft.world.level.block.entity.BlockEntity": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.block.entity.BlockEntity",
+      "abstract": true,
+      "constructors": [
+        [
+          "net.minecraft.world.level.block.entity.BlockEntityType",
+          "net.minecraft.core.BlockPos",
+          "net.minecraft.world.level.block.state.BlockState"
+        ]
+      ],
+      "constructor_visibility": "public",
+      "methods": [
+        {
+          "name": "getBlockPos",
+          "parameters": [],
+          "return_type": "net.minecraft.core.BlockPos",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "getBlockState",
+          "parameters": [],
+          "return_type": "net.minecraft.world.level.block.state.BlockState",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "getType",
+          "parameters": [],
+          "return_type": "net.minecraft.world.level.block.entity.BlockEntityType",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "getLevel",
+          "parameters": [],
+          "return_type": "net.minecraft.world.level.Level",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "setLevel",
+          "parameters": [
+            "net.minecraft.world.level.Level"
+          ],
+          "return_type": "void",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "hasLevel",
+          "parameters": [],
+          "return_type": "boolean",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "isValidBlockState",
+          "parameters": [
+            "net.minecraft.world.level.block.state.BlockState"
+          ],
+          "return_type": "boolean",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "setBlockState",
+          "parameters": [
+            "net.minecraft.world.level.block.state.BlockState"
+          ],
+          "return_type": "void",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "isRemoved",
+          "parameters": [],
+          "return_type": "boolean",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "setRemoved",
+          "parameters": [],
+          "return_type": "void",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "clearRemoved",
+          "parameters": [],
+          "return_type": "void",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "loadAdditional",
+          "parameters": [
+            "net.minecraft.nbt.CompoundTag",
+            "net.minecraft.core.HolderLookup.Provider"
+          ],
+          "return_type": "void",
+          "visibility": "protected",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "saveAdditional",
+          "parameters": [
+            "net.minecraft.nbt.CompoundTag",
+            "net.minecraft.core.HolderLookup.Provider"
+          ],
+          "return_type": "void",
+          "visibility": "protected",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "getUpdateTag",
+          "parameters": [
+            "net.minecraft.core.HolderLookup.Provider"
+          ],
+          "return_type": "net.minecraft.nbt.CompoundTag",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "triggerEvent",
+          "parameters": [
+            "int",
+            "int"
+          ],
+          "return_type": "boolean",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        },
+        {
+          "name": "onlyOpCanSetNbt",
+          "parameters": [],
+          "return_type": "boolean",
+          "visibility": "public",
+          "static": false,
+          "abstract": false
+        }
+      ],
+      "reserved_members": [
+        "__dict__",
+        "__doc__",
+        "__eq__",
+        "__firstlineno__",
+        "__hash__",
+        "__init__",
+        "__module__",
+        "__ne__",
+        "__repr__",
+        "__static_attributes__",
+        "__weakref__",
+        "_block_state",
+        "_level",
+        "_nc_RuntimeSuperclassABI",
+        "_pos",
+        "_removed",
+        "_type",
+        "equals",
+        "getDisplayName",
+        "getUpdatePacket",
+        "hashCode",
+        "setBlockPos",
+        "setChanged"
+      ]
+    }
+  },
+  "runtime_generic_interfaces": {
+    "net.minecraft.network.codec.StreamCodec": {
+      "abi": 1,
+      "java_name": "net.minecraft.network.codec.StreamCodec",
+      "type_parameters": [
+        "B",
+        "V"
+      ],
+      "methods": [
+        {
+          "name": "decode",
+          "parameters": [
+            "B"
+          ],
+          "return_type": "V",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "encode",
+          "parameters": [
+            "B",
+            "V"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.level.block.entity.BlockEntityTicker": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.level.block.entity.BlockEntityTicker",
+      "methods": [
+        {
+          "name": "tick",
+          "parameters": [
+            "net.minecraft.world.level.Level",
+            "net.minecraft.core.BlockPos",
+            "net.minecraft.world.level.block.state.BlockState",
+            "T"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "type_bounds": {
+        "T": "net.minecraft.world.level.block.entity.BlockEntity"
+      }
+    },
+    "net.minecraft.network.codec.StreamEncoder": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.network.codec.StreamEncoder",
+      "methods": [
+        {
+          "name": "encode",
+          "parameters": [
+            "O",
+            "T"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "O",
+        "T"
+      ]
+    },
+    "net.minecraft.network.codec.StreamDecoder": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.network.codec.StreamDecoder",
+      "methods": [
+        {
+          "name": "decode",
+          "parameters": [
+            "I"
+          ],
+          "return_type": "T",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "I",
+        "T"
+      ]
+    },
+    "net.minecraft.client.gui.screens.inventory.MenuAccess": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.gui.screens.inventory.MenuAccess",
+      "methods": [
+        {
+          "name": "getMenu",
+          "parameters": [],
+          "return_type": "T",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "type_bounds": {
+        "T": "net.minecraft.world.inventory.AbstractContainerMenu"
+      }
+    },
+    "net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider",
+      "methods": [
+        {
+          "name": "create",
+          "parameters": [
+            "net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider.Context"
+          ],
+          "return_type": "net.minecraft.client.renderer.blockentity.BlockEntityRenderer<T>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "type_bounds": {
+        "T": "net.minecraft.world.level.block.entity.BlockEntity"
+      }
+    },
+    "net.minecraft.client.renderer.entity.EntityRendererProvider": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.renderer.entity.EntityRendererProvider",
+      "methods": [
+        {
+          "name": "create",
+          "parameters": [
+            "net.minecraft.client.renderer.entity.EntityRendererProvider.Context"
+          ],
+          "return_type": "net.minecraft.client.renderer.entity.EntityRenderer<T>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "type_bounds": {
+        "T": "net.minecraft.world.entity.Entity"
+      }
+    },
+    "net.minecraft.world.level.entity.EntityTypeTest": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.entity.EntityTypeTest",
+      "methods": [
+        {
+          "name": "tryCast",
+          "parameters": [
+            "B"
+          ],
+          "return_type": "T",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getBaseClass",
+          "parameters": [],
+          "return_type": "java.lang.Class<? extends B>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "B",
+        "T"
+      ],
+      "type_bounds": {
+        "T": "B"
+      }
+    },
+    "net.neoforged.neoforge.common.util.INBTSerializable": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.common.util.INBTSerializable",
+      "type_parameters": [
+        "T"
+      ],
+      "type_bounds": {
+        "T": "net.minecraft.nbt.Tag"
+      },
+      "methods": [
+        {
+          "name": "serializeNBT",
+          "parameters": [
+            "net.minecraft.core.HolderLookup.Provider"
+          ],
+          "return_type": "T",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "deserializeNBT",
+          "parameters": [
+            "net.minecraft.core.HolderLookup.Provider",
+            "T"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.neoforged.neoforge.attachment.IAttachmentCopyHandler": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.attachment.IAttachmentCopyHandler",
+      "type_parameters": [
+        "T"
+      ],
+      "type_bounds": {},
+      "methods": [
+        {
+          "name": "copy",
+          "parameters": [
+            "T",
+            "net.neoforged.neoforge.attachment.IAttachmentHolder",
+            "net.minecraft.core.HolderLookup.Provider"
+          ],
+          "return_type": "T",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.neoforged.neoforge.capabilities.ICapabilityProvider": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.capabilities.ICapabilityProvider",
+      "type_parameters": [
+        "O",
+        "C",
+        "T"
+      ],
+      "type_bounds": {},
+      "methods": [
+        {
+          "name": "getCapability",
+          "parameters": [
+            "O",
+            "C"
+          ],
+          "return_type": "T",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.neoforged.neoforge.attachment.AttachmentSyncHandler": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.attachment.AttachmentSyncHandler",
+      "methods": [
+        {
+          "name": "sendToPlayer",
+          "parameters": [
+            "net.neoforged.neoforge.attachment.IAttachmentHolder",
+            "net.minecraft.server.level.ServerPlayer"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "write",
+          "parameters": [
+            "net.minecraft.network.RegistryFriendlyByteBuf",
+            "T",
+            "boolean"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "read",
+          "parameters": [
+            "net.neoforged.neoforge.attachment.IAttachmentHolder",
+            "net.minecraft.network.RegistryFriendlyByteBuf",
+            "T"
+          ],
+          "return_type": "T",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "T"
+      ]
+    },
+    "net.neoforged.neoforge.network.handling.IPayloadHandler": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.network.handling.IPayloadHandler",
+      "methods": [
+        {
+          "name": "handle",
+          "parameters": [
+            "T",
+            "net.neoforged.neoforge.network.handling.IPayloadContext"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "type_bounds": {
+        "T": "net.minecraft.network.protocol.common.custom.CustomPacketPayload"
+      }
+    },
+    "net.minecraft.client.renderer.blockentity.BlockEntityRenderer": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.renderer.blockentity.BlockEntityRenderer",
+      "methods": [
+        {
+          "name": "render",
+          "parameters": [
+            "T",
+            "float",
+            "com.mojang.blaze3d.vertex.PoseStack",
+            "net.minecraft.client.renderer.MultiBufferSource",
+            "int",
+            "int"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "shouldRenderOffScreen",
+          "parameters": [
+            "T"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getViewDistance",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "shouldRender",
+          "parameters": [
+            "T",
+            "net.minecraft.world.phys.Vec3"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "type_bounds": {
+        "T": "net.minecraft.world.level.block.entity.BlockEntity"
+      }
+    },
+    "net.minecraft.world.inventory.MenuType.MenuSupplier": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.inventory.MenuType.MenuSupplier",
+      "methods": [
+        {
+          "name": "create",
+          "parameters": [
+            "int",
+            "net.minecraft.world.entity.player.Inventory"
+          ],
+          "return_type": "T",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "type_bounds": {
+        "T": "net.minecraft.world.inventory.AbstractContainerMenu"
+      }
+    },
+    "net.neoforged.neoforge.network.IContainerFactory": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.network.IContainerFactory",
+      "methods": [
+        {
+          "name": "create",
+          "parameters": [
+            "int",
+            "net.minecraft.world.entity.player.Inventory"
+          ],
+          "return_type": "T",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "create",
+          "parameters": [
+            "int",
+            "net.minecraft.world.entity.player.Inventory",
+            "net.minecraft.network.RegistryFriendlyByteBuf"
+          ],
+          "return_type": "T",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "type_bounds": {
+        "T": "net.minecraft.world.inventory.AbstractContainerMenu"
+      },
+      "superinterfaces": [
+        "net.minecraft.world.inventory.MenuType.MenuSupplier"
+      ]
+    },
+    "net.neoforged.neoforge.common.extensions.IMenuTypeExtension": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.common.extensions.IMenuTypeExtension",
+      "methods": [
+        {
+          "name": "create",
+          "parameters": [
+            "int",
+            "net.minecraft.world.entity.player.Inventory",
+            "net.minecraft.network.RegistryFriendlyByteBuf"
+          ],
+          "return_type": "T",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "T"
+      ]
+    },
+    "net.minecraft.core.HolderGetter": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.core.HolderGetter",
+      "methods": [
+        {
+          "name": "get",
+          "parameters": [
+            "net.minecraft.resources.ResourceKey<T>"
+          ],
+          "return_type": "java.util.Optional<net.minecraft.core.Holder.Reference<T>>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getOrThrow",
+          "parameters": [
+            "net.minecraft.resources.ResourceKey<T>"
+          ],
+          "return_type": "net.minecraft.core.Holder.Reference<T>",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "get",
+          "parameters": [
+            "net.minecraft.tags.TagKey<T>"
+          ],
+          "return_type": "java.util.Optional<net.minecraft.core.HolderSet.Named<T>>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getOrThrow",
+          "parameters": [
+            "net.minecraft.tags.TagKey<T>"
+          ],
+          "return_type": "net.minecraft.core.HolderSet.Named<T>",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ],
+      "type_parameters": [
+        "T"
+      ]
+    }
+  },
+  "runtime_interface_contracts": {
+    "net.minecraft.client.gui.screens.recipebook.RecipeUpdateListener": {
+      "abi": 1,
+      "java_name": "net.minecraft.client.gui.screens.recipebook.RecipeUpdateListener",
+      "methods": [
+        {
+          "name": "recipesUpdated",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getRecipeBookComponent",
+          "parameters": [],
+          "return_type": "net.minecraft.client.gui.screens.recipebook.RecipeBookComponent",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.network.protocol.common.custom.CustomPacketPayload": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.network.protocol.common.custom.CustomPacketPayload",
+      "methods": [
+        {
+          "name": "type",
+          "parameters": [],
+          "return_type": "net.minecraft.network.protocol.common.custom.CustomPacketPayload.Type<? extends net.minecraft.network.protocol.common.custom.CustomPacketPayload>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.Clearable": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.Clearable",
+      "methods": [
+        {
+          "name": "clearContent",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.inventory.ContainerData": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.inventory.ContainerData",
+      "methods": [
+        {
+          "name": "get",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "set",
+          "parameters": [
+            "int",
+            "int"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getCount",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.inventory.ContainerListener": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.inventory.ContainerListener",
+      "methods": [
+        {
+          "name": "slotChanged",
+          "parameters": [
+            "net.minecraft.world.inventory.AbstractContainerMenu",
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "dataChanged",
+          "parameters": [
+            "net.minecraft.world.inventory.AbstractContainerMenu",
+            "int",
+            "int"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.inventory.ContainerSynchronizer": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.inventory.ContainerSynchronizer",
+      "methods": [
+        {
+          "name": "sendInitialData",
+          "parameters": [
+            "net.minecraft.world.inventory.AbstractContainerMenu",
+            "net.minecraft.core.NonNullList<net.minecraft.world.item.ItemStack>",
+            "net.minecraft.world.item.ItemStack",
+            "int[]"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "sendSlotChange",
+          "parameters": [
+            "net.minecraft.world.inventory.AbstractContainerMenu",
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "sendCarriedChange",
+          "parameters": [
+            "net.minecraft.world.inventory.AbstractContainerMenu",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "sendDataChange",
+          "parameters": [
+            "net.minecraft.world.inventory.AbstractContainerMenu",
+            "int",
+            "int"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.inventory.MenuConstructor": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.inventory.MenuConstructor",
+      "methods": [
+        {
+          "name": "createMenu",
+          "parameters": [
+            "int",
+            "net.minecraft.world.entity.player.Inventory",
+            "net.minecraft.world.entity.player.Player"
+          ],
+          "return_type": "net.minecraft.world.inventory.AbstractContainerMenu",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.MenuProvider": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.MenuProvider",
+      "methods": [
+        {
+          "name": "createMenu",
+          "parameters": [
+            "int",
+            "net.minecraft.world.entity.player.Inventory",
+            "net.minecraft.world.entity.player.Player"
+          ],
+          "return_type": "net.minecraft.world.inventory.AbstractContainerMenu",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getDisplayName",
+          "parameters": [],
+          "return_type": "net.minecraft.network.chat.Component",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "superinterfaces": [
+        "net.minecraft.world.inventory.MenuConstructor"
+      ]
+    },
+    "net.minecraft.world.level.ItemLike": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.level.ItemLike",
+      "methods": [
+        {
+          "name": "asItem",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.Item",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.core.Position": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.core.Position",
+      "methods": [
+        {
+          "name": "x",
+          "parameters": [],
+          "return_type": "double",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "y",
+          "parameters": [],
+          "return_type": "double",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "z",
+          "parameters": [],
+          "return_type": "double",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.gui.components.Button.OnPress": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.client.gui.components.Button.OnPress",
+      "methods": [
+        {
+          "name": "onPress",
+          "parameters": [
+            "net.minecraft.client.gui.components.Button"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.gui.components.Button.CreateNarration": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.client.gui.components.Button.CreateNarration",
+      "methods": [
+        {
+          "name": "createNarrationMessage",
+          "parameters": [
+            "java.util.function.Supplier<net.minecraft.network.chat.MutableComponent>"
+          ],
+          "return_type": "net.minecraft.network.chat.MutableComponent",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.item.component.TooltipProvider": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.item.component.TooltipProvider",
+      "methods": [
+        {
+          "name": "addToTooltip",
+          "parameters": [
+            "net.minecraft.world.item.Item.TooltipContext",
+            "java.util.function.Consumer<net.minecraft.network.chat.Component>",
+            "net.minecraft.world.item.TooltipFlag"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.util.StringRepresentable": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.util.StringRepresentable",
+      "methods": [
+        {
+          "name": "getSerializedName",
+          "parameters": [],
+          "return_type": "java.lang.String",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.resources.model.BakedModel": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.client.resources.model.BakedModel",
+      "methods": [
+        {
+          "name": "getQuads",
+          "parameters": [
+            "net.minecraft.world.level.block.state.BlockState",
+            "net.minecraft.core.Direction",
+            "net.minecraft.util.RandomSource"
+          ],
+          "return_type": "java.util.List<net.minecraft.client.renderer.block.model.BakedQuad>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "useAmbientOcclusion",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isGui3d",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "usesBlockLight",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isCustomRenderer",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getParticleIcon",
+          "parameters": [],
+          "return_type": "net.minecraft.client.renderer.texture.TextureAtlasSprite",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getTransforms",
+          "parameters": [],
+          "return_type": "net.minecraft.client.renderer.block.model.ItemTransforms",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getOverrides",
+          "parameters": [],
+          "return_type": "net.minecraft.client.renderer.block.model.ItemOverrides",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.Nameable": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.Nameable",
+      "methods": [
+        {
+          "name": "getName",
+          "parameters": [],
+          "return_type": "net.minecraft.network.chat.Component",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "hasCustomName",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getDisplayName",
+          "parameters": [],
+          "return_type": "net.minecraft.network.chat.Component",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getCustomName",
+          "parameters": [],
+          "return_type": "net.minecraft.network.chat.Component",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.item.crafting.RecipeInput": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.world.item.crafting.RecipeInput",
+      "methods": [
+        {
+          "name": "getItem",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "size",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isEmpty",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.gui.components.Renderable": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.client.gui.components.Renderable",
+      "methods": [
+        {
+          "name": "render",
+          "parameters": [
+            "net.minecraft.client.gui.GuiGraphics",
+            "int",
+            "int",
+            "float"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.gui.narration.NarrationSupplier": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.client.gui.narration.NarrationSupplier",
+      "methods": [
+        {
+          "name": "updateNarration",
+          "parameters": [
+            "net.minecraft.client.gui.narration.NarrationElementOutput"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.gui.components.TabOrderedElement": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.client.gui.components.TabOrderedElement",
+      "methods": [
+        {
+          "name": "getTabOrderGroup",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.gui.narration.NarratableEntry": {
+      "abi": 1,
+      "helper_abi": 6,
+      "java_name": "net.minecraft.client.gui.narration.NarratableEntry",
+      "methods": [
+        {
+          "name": "narrationPriority",
+          "parameters": [],
+          "return_type": "net.minecraft.client.gui.narration.NarratableEntry.NarrationPriority",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "updateNarration",
+          "parameters": [
+            "net.minecraft.client.gui.narration.NarrationElementOutput"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getTabOrderGroup",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isActive",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ],
+      "superinterfaces": [
+        "net.minecraft.client.gui.components.TabOrderedElement",
+        "net.minecraft.client.gui.narration.NarrationSupplier"
+      ]
+    },
+    "net.minecraft.world.Container": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.Container",
+      "methods": [
+        {
+          "name": "clearContent",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getContainerSize",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isEmpty",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getItem",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "removeItem",
+          "parameters": [
+            "int",
+            "int"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "removeItemNoUpdate",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "setItem",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "setChanged",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "stillValid",
+          "parameters": [
+            "net.minecraft.world.entity.player.Player"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getMaxStackSize",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getMaxStackSize",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "startOpen",
+          "parameters": [
+            "net.minecraft.world.entity.player.Player"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "stopOpen",
+          "parameters": [
+            "net.minecraft.world.entity.player.Player"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "canPlaceItem",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "canTakeItem",
+          "parameters": [
+            "net.minecraft.world.Container",
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "countItem",
+          "parameters": [
+            "net.minecraft.world.item.Item"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "hasAnyOf",
+          "parameters": [
+            "java.util.Set<net.minecraft.world.item.Item>"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "hasAnyMatching",
+          "parameters": [
+            "java.util.function.Predicate<net.minecraft.world.item.ItemStack>"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ],
+      "superinterfaces": [
+        "net.minecraft.world.Clearable"
+      ]
+    },
+    "net.minecraft.world.WorldlyContainer": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.WorldlyContainer",
+      "methods": [
+        {
+          "name": "clearContent",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getContainerSize",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isEmpty",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getItem",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "removeItem",
+          "parameters": [
+            "int",
+            "int"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "removeItemNoUpdate",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "setItem",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "setChanged",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "stillValid",
+          "parameters": [
+            "net.minecraft.world.entity.player.Player"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getMaxStackSize",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getMaxStackSize",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "startOpen",
+          "parameters": [
+            "net.minecraft.world.entity.player.Player"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "stopOpen",
+          "parameters": [
+            "net.minecraft.world.entity.player.Player"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "canPlaceItem",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "canTakeItem",
+          "parameters": [
+            "net.minecraft.world.Container",
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "countItem",
+          "parameters": [
+            "net.minecraft.world.item.Item"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "hasAnyOf",
+          "parameters": [
+            "java.util.Set<net.minecraft.world.item.Item>"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "hasAnyMatching",
+          "parameters": [
+            "java.util.function.Predicate<net.minecraft.world.item.ItemStack>"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getSlotsForFace",
+          "parameters": [
+            "net.minecraft.core.Direction"
+          ],
+          "return_type": "int[]",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "canPlaceItemThroughFace",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack",
+            "net.minecraft.core.Direction"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "canTakeItemThroughFace",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack",
+            "net.minecraft.core.Direction"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "superinterfaces": [
+        "net.minecraft.world.Clearable",
+        "net.minecraft.world.Container"
+      ]
+    },
+    "com.mojang.blaze3d.platform.WindowEventHandler": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "com.mojang.blaze3d.platform.WindowEventHandler",
+      "methods": [
+        {
+          "name": "setWindowActive",
+          "parameters": [
+            "boolean"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "resizeDisplay",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "cursorEntered",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "com.mojang.blaze3d.shaders.Shader": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "com.mojang.blaze3d.shaders.Shader",
+      "methods": [
+        {
+          "name": "getId",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "markDirty",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getVertexProgram",
+          "parameters": [],
+          "return_type": "com.mojang.blaze3d.shaders.Program",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getFragmentProgram",
+          "parameters": [],
+          "return_type": "com.mojang.blaze3d.shaders.Program",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "attachToProgram",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.gui.screens.recipebook.RecipeShownListener": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.gui.screens.recipebook.RecipeShownListener",
+      "methods": [
+        {
+          "name": "recipesShown",
+          "parameters": [
+            "java.util.List<net.minecraft.world.item.crafting.RecipeHolder<?>>"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.model.ArmedModel": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.model.ArmedModel",
+      "methods": [
+        {
+          "name": "translateToHand",
+          "parameters": [
+            "net.minecraft.world.entity.HumanoidArm",
+            "com.mojang.blaze3d.vertex.PoseStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.model.HeadedModel": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.model.HeadedModel",
+      "methods": [
+        {
+          "name": "getHead",
+          "parameters": [],
+          "return_type": "net.minecraft.client.model.geom.ModelPart",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.renderer.MultiBufferSource": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.renderer.MultiBufferSource",
+      "methods": [
+        {
+          "name": "getBuffer",
+          "parameters": [
+            "net.minecraft.client.renderer.RenderType"
+          ],
+          "return_type": "com.mojang.blaze3d.vertex.VertexConsumer",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.renderer.item.ItemPropertyFunction": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.renderer.item.ItemPropertyFunction",
+      "methods": [
+        {
+          "name": "call",
+          "parameters": [
+            "net.minecraft.world.item.ItemStack",
+            "net.minecraft.client.multiplayer.ClientLevel",
+            "net.minecraft.world.entity.LivingEntity",
+            "int"
+          ],
+          "return_type": "float",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.renderer.texture.Tickable": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.renderer.texture.Tickable",
+      "methods": [
+        {
+          "name": "tick",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.core.particles.ParticleOptions": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.core.particles.ParticleOptions",
+      "methods": [
+        {
+          "name": "getType",
+          "parameters": [],
+          "return_type": "net.minecraft.core.particles.ParticleType<?>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.data.DataProvider": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.data.DataProvider",
+      "methods": [
+        {
+          "name": "run",
+          "parameters": [
+            "net.minecraft.data.CachedOutput"
+          ],
+          "return_type": "java.util.concurrent.CompletableFuture<?>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getName",
+          "parameters": [],
+          "return_type": "java.lang.String",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.data.loot.LootTableSubProvider": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.data.loot.LootTableSubProvider",
+      "methods": [
+        {
+          "name": "generate",
+          "parameters": [
+            "java.util.function.BiConsumer<net.minecraft.resources.ResourceKey<net.minecraft.world.level.storage.loot.LootTable>,net.minecraft.world.level.storage.loot.LootTable.Builder>"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.entity.Attackable": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.entity.Attackable",
+      "methods": [
+        {
+          "name": "getLastAttacker",
+          "parameters": [],
+          "return_type": "net.minecraft.world.entity.LivingEntity",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.entity.TraceableEntity": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.entity.TraceableEntity",
+      "methods": [
+        {
+          "name": "getOwner",
+          "parameters": [],
+          "return_type": "net.minecraft.world.entity.Entity",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.inventory.StackedContentsCompatible": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.inventory.StackedContentsCompatible",
+      "methods": [
+        {
+          "name": "fillStackedContents",
+          "parameters": [
+            "net.minecraft.world.entity.player.StackedContents"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.level.block.BucketPickup": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.block.BucketPickup",
+      "methods": [
+        {
+          "name": "pickupBlock",
+          "parameters": [
+            "net.minecraft.world.entity.player.Player",
+            "net.minecraft.world.level.LevelAccessor",
+            "net.minecraft.core.BlockPos",
+            "net.minecraft.world.level.block.state.BlockState"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getPickupSound",
+          "parameters": [],
+          "return_type": "java.util.Optional<net.minecraft.sounds.SoundEvent>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.level.block.LiquidBlockContainer": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.block.LiquidBlockContainer",
+      "methods": [
+        {
+          "name": "canPlaceLiquid",
+          "parameters": [
+            "net.minecraft.world.entity.player.Player",
+            "net.minecraft.world.level.BlockGetter",
+            "net.minecraft.core.BlockPos",
+            "net.minecraft.world.level.block.state.BlockState",
+            "net.minecraft.world.level.material.Fluid"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "placeLiquid",
+          "parameters": [
+            "net.minecraft.world.level.LevelAccessor",
+            "net.minecraft.core.BlockPos",
+            "net.minecraft.world.level.block.state.BlockState",
+            "net.minecraft.world.level.material.FluidState"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.level.entity.EntityAccess": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.entity.EntityAccess",
+      "methods": [
+        {
+          "name": "getId",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getUUID",
+          "parameters": [],
+          "return_type": "java.util.UUID",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "blockPosition",
+          "parameters": [],
+          "return_type": "net.minecraft.core.BlockPos",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getBoundingBox",
+          "parameters": [],
+          "return_type": "net.minecraft.world.phys.AABB",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "setLevelCallback",
+          "parameters": [
+            "net.minecraft.world.level.entity.EntityInLevelCallback"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getSelfAndPassengers",
+          "parameters": [],
+          "return_type": "java.util.stream.Stream<? extends net.minecraft.world.level.entity.EntityAccess>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getPassengersAndSelf",
+          "parameters": [],
+          "return_type": "java.util.stream.Stream<? extends net.minecraft.world.level.entity.EntityAccess>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "setRemoved",
+          "parameters": [
+            "net.minecraft.world.entity.Entity.RemovalReason"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "shouldBeSaved",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isAlwaysTicking",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.level.entity.EntityInLevelCallback": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.entity.EntityInLevelCallback",
+      "methods": [
+        {
+          "name": "onMove",
+          "parameters": [],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "onRemove",
+          "parameters": [
+            "net.minecraft.world.entity.Entity.RemovalReason"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.phys.shapes.CollisionContext": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.phys.shapes.CollisionContext",
+      "methods": [
+        {
+          "name": "isDescending",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isAbove",
+          "parameters": [
+            "net.minecraft.world.phys.shapes.VoxelShape",
+            "net.minecraft.core.BlockPos",
+            "boolean"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isHoldingItem",
+          "parameters": [
+            "net.minecraft.world.item.Item"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "canStandOnFluid",
+          "parameters": [
+            "net.minecraft.world.level.material.FluidState",
+            "net.minecraft.world.level.material.FluidState"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.entity.npc.VillagerTrades.ItemListing": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.entity.npc.VillagerTrades.ItemListing",
+      "methods": [
+        {
+          "name": "getOffer",
+          "parameters": [
+            "net.minecraft.world.entity.Entity",
+            "net.minecraft.util.RandomSource"
+          ],
+          "return_type": "net.minecraft.world.item.trading.MerchantOffer",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.gui.components.events.GuiEventListener": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.gui.components.events.GuiEventListener",
+      "methods": [
+        {
+          "name": "setFocused",
+          "parameters": [
+            "boolean"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isFocused",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "mouseMoved",
+          "parameters": [
+            "double",
+            "double"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "mouseClicked",
+          "parameters": [
+            "double",
+            "double",
+            "int"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "mouseReleased",
+          "parameters": [
+            "double",
+            "double",
+            "int"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "mouseDragged",
+          "parameters": [
+            "double",
+            "double",
+            "int",
+            "double",
+            "double"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "mouseScrolled",
+          "parameters": [
+            "double",
+            "double",
+            "double",
+            "double"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "keyPressed",
+          "parameters": [
+            "int",
+            "int",
+            "int"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "keyReleased",
+          "parameters": [
+            "int",
+            "int",
+            "int"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "charTyped",
+          "parameters": [
+            "char",
+            "int"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "nextFocusPath",
+          "parameters": [
+            "net.minecraft.client.gui.navigation.FocusNavigationEvent"
+          ],
+          "return_type": "net.minecraft.client.gui.ComponentPath",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isMouseOver",
+          "parameters": [
+            "double",
+            "double"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getCurrentFocusPath",
+          "parameters": [],
+          "return_type": "net.minecraft.client.gui.ComponentPath",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getRectangle",
+          "parameters": [],
+          "return_type": "net.minecraft.client.gui.navigation.ScreenRectangle",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ],
+      "fields": [
+        {
+          "name": "DOUBLE_CLICK_THRESHOLD_MS",
+          "declared_type": "long",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        }
+      ]
+    },
+    "net.minecraft.client.gui.ComponentPath": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.gui.ComponentPath",
+      "methods": [
+        {
+          "name": "component",
+          "parameters": [],
+          "return_type": "net.minecraft.client.gui.components.events.GuiEventListener",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "applyFocus",
+          "parameters": [
+            "boolean"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.DeltaTracker": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.DeltaTracker",
+      "methods": [
+        {
+          "name": "getGameTimeDeltaTicks",
+          "parameters": [],
+          "return_type": "float",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getGameTimeDeltaPartialTick",
+          "parameters": [
+            "boolean"
+          ],
+          "return_type": "float",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getRealtimeDeltaTicks",
+          "parameters": [],
+          "return_type": "float",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "fields": [
+        {
+          "name": "ZERO",
+          "declared_type": "net.minecraft.client.DeltaTracker",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        },
+        {
+          "name": "ONE",
+          "declared_type": "net.minecraft.client.DeltaTracker",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        }
+      ]
+    },
+    "net.minecraft.client.resources.sounds.SoundInstance": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.resources.sounds.SoundInstance",
+      "methods": [
+        {
+          "name": "getLocation",
+          "parameters": [],
+          "return_type": "net.minecraft.resources.ResourceLocation",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "resolve",
+          "parameters": [
+            "net.minecraft.client.sounds.SoundManager"
+          ],
+          "return_type": "net.minecraft.client.sounds.WeighedSoundEvents",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getSound",
+          "parameters": [],
+          "return_type": "net.minecraft.client.resources.sounds.Sound",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getSource",
+          "parameters": [],
+          "return_type": "net.minecraft.sounds.SoundSource",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isLooping",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isRelative",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getDelay",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getVolume",
+          "parameters": [],
+          "return_type": "float",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getPitch",
+          "parameters": [],
+          "return_type": "float",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getX",
+          "parameters": [],
+          "return_type": "double",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getY",
+          "parameters": [],
+          "return_type": "double",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getZ",
+          "parameters": [],
+          "return_type": "double",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getAttenuation",
+          "parameters": [],
+          "return_type": "net.minecraft.client.resources.sounds.SoundInstance.Attenuation",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "canStartSilent",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "canPlaySound",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.commands.CommandSource": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.commands.CommandSource",
+      "methods": [
+        {
+          "name": "sendSystemMessage",
+          "parameters": [
+            "net.minecraft.network.chat.Component"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "acceptsSuccess",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "acceptsFailure",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "shouldInformAdmins",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "alwaysAccepts",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ],
+      "fields": [
+        {
+          "name": "NULL",
+          "declared_type": "net.minecraft.commands.CommandSource",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        }
+      ]
+    },
+    "net.minecraft.server.packs.resources.PreparableReloadListener": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.server.packs.resources.PreparableReloadListener",
+      "methods": [
+        {
+          "name": "reload",
+          "parameters": [
+            "net.minecraft.server.packs.resources.PreparableReloadListener.PreparationBarrier",
+            "net.minecraft.server.packs.resources.ResourceManager",
+            "net.minecraft.util.profiling.ProfilerFiller",
+            "net.minecraft.util.profiling.ProfilerFiller",
+            "java.util.concurrent.Executor",
+            "java.util.concurrent.Executor"
+          ],
+          "return_type": "java.util.concurrent.CompletableFuture<java.lang.Void>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getName",
+          "parameters": [],
+          "return_type": "java.lang.String",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.util.OptionEnum": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.util.OptionEnum",
+      "methods": [
+        {
+          "name": "getId",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getKey",
+          "parameters": [],
+          "return_type": "java.lang.String",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getCaption",
+          "parameters": [],
+          "return_type": "net.minecraft.network.chat.Component",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.level.storage.loot.LootContextUser": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.storage.loot.LootContextUser",
+      "methods": [
+        {
+          "name": "getReferencedContextParams",
+          "parameters": [],
+          "return_type": "java.util.Set<net.minecraft.world.level.storage.loot.parameters.LootContextParam<?>>",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "validate",
+          "parameters": [
+            "net.minecraft.world.level.storage.loot.ValidationContext"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.level.storage.loot.providers.number.NumberProvider": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.storage.loot.providers.number.NumberProvider",
+      "methods": [
+        {
+          "name": "getReferencedContextParams",
+          "parameters": [],
+          "return_type": "java.util.Set<net.minecraft.world.level.storage.loot.parameters.LootContextParam<?>>",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "validate",
+          "parameters": [
+            "net.minecraft.world.level.storage.loot.ValidationContext"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getFloat",
+          "parameters": [
+            "net.minecraft.world.level.storage.loot.LootContext"
+          ],
+          "return_type": "float",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getInt",
+          "parameters": [
+            "net.minecraft.world.level.storage.loot.LootContext"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getType",
+          "parameters": [],
+          "return_type": "net.minecraft.world.level.storage.loot.providers.number.LootNumberProviderType",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "superinterfaces": [
+        "net.minecraft.world.level.storage.loot.LootContextUser"
+      ]
+    },
+    "net.minecraft.world.flag.FeatureElement": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.flag.FeatureElement",
+      "methods": [
+        {
+          "name": "requiredFeatures",
+          "parameters": [],
+          "return_type": "net.minecraft.world.flag.FeatureFlagSet",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isEnabled",
+          "parameters": [
+            "net.minecraft.world.flag.FeatureFlagSet"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.item.Tier": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.item.Tier",
+      "methods": [
+        {
+          "name": "getUses",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getSpeed",
+          "parameters": [],
+          "return_type": "float",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getAttackDamageBonus",
+          "parameters": [],
+          "return_type": "float",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getIncorrectBlocksForDrops",
+          "parameters": [],
+          "return_type": "net.minecraft.tags.TagKey<net.minecraft.world.level.block.Block>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getEnchantmentValue",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getRepairIngredient",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.crafting.Ingredient",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "createToolProperties",
+          "parameters": [
+            "net.minecraft.tags.TagKey<net.minecraft.world.level.block.Block>"
+          ],
+          "return_type": "net.minecraft.world.item.component.Tool",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.level.LevelWriter": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.LevelWriter",
+      "methods": [
+        {
+          "name": "setBlock",
+          "parameters": [
+            "net.minecraft.core.BlockPos",
+            "net.minecraft.world.level.block.state.BlockState",
+            "int",
+            "int"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "setBlock",
+          "parameters": [
+            "net.minecraft.core.BlockPos",
+            "net.minecraft.world.level.block.state.BlockState",
+            "int"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "removeBlock",
+          "parameters": [
+            "net.minecraft.core.BlockPos",
+            "boolean"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "destroyBlock",
+          "parameters": [
+            "net.minecraft.core.BlockPos",
+            "boolean"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "destroyBlock",
+          "parameters": [
+            "net.minecraft.core.BlockPos",
+            "boolean",
+            "net.minecraft.world.entity.Entity"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "destroyBlock",
+          "parameters": [
+            "net.minecraft.core.BlockPos",
+            "boolean",
+            "net.minecraft.world.entity.Entity",
+            "int"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "addFreshEntity",
+          "parameters": [
+            "net.minecraft.world.entity.Entity"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.entity.monster.Enemy": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.entity.monster.Enemy",
+      "methods": [],
+      "fields": [
+        {
+          "name": "XP_REWARD_BOSS",
+          "declared_type": "int",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        },
+        {
+          "name": "XP_REWARD_HUGE",
+          "declared_type": "int",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        },
+        {
+          "name": "XP_REWARD_LARGE",
+          "declared_type": "int",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        },
+        {
+          "name": "XP_REWARD_MEDIUM",
+          "declared_type": "int",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        },
+        {
+          "name": "XP_REWARD_NONE",
+          "declared_type": "int",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        },
+        {
+          "name": "XP_REWARD_SMALL",
+          "declared_type": "int",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        }
+      ]
+    },
+    "net.minecraft.world.level.block.BonemealableBlock": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.block.BonemealableBlock",
+      "methods": [
+        {
+          "name": "isValidBonemealTarget",
+          "parameters": [
+            "net.minecraft.world.level.LevelReader",
+            "net.minecraft.core.BlockPos",
+            "net.minecraft.world.level.block.state.BlockState"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isBonemealSuccess",
+          "parameters": [
+            "net.minecraft.world.level.Level",
+            "net.minecraft.util.RandomSource",
+            "net.minecraft.core.BlockPos",
+            "net.minecraft.world.level.block.state.BlockState"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "performBonemeal",
+          "parameters": [
+            "net.minecraft.server.level.ServerLevel",
+            "net.minecraft.util.RandomSource",
+            "net.minecraft.core.BlockPos",
+            "net.minecraft.world.level.block.state.BlockState"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getParticlePos",
+          "parameters": [
+            "net.minecraft.core.BlockPos"
+          ],
+          "return_type": "net.minecraft.core.BlockPos",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getType",
+          "parameters": [],
+          "return_type": "net.minecraft.world.level.block.BonemealableBlock.Type",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.resources.model.ModelState": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.resources.model.ModelState",
+      "methods": [
+        {
+          "name": "getRotation",
+          "parameters": [],
+          "return_type": "com.mojang.math.Transformation",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isUvLocked",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "com.mojang.blaze3d.vertex.VertexSorting": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "com.mojang.blaze3d.vertex.VertexSorting",
+      "methods": [
+        {
+          "name": "sort",
+          "parameters": [
+            "org.joml.Vector3f[]"
+          ],
+          "return_type": "int[]",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "fields": [
+        {
+          "name": "DISTANCE_TO_ORIGIN",
+          "declared_type": "com.mojang.blaze3d.vertex.VertexSorting",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        },
+        {
+          "name": "ORTHOGRAPHIC_Z",
+          "declared_type": "com.mojang.blaze3d.vertex.VertexSorting",
+          "static": true,
+          "final": true,
+          "modifiers": [
+            "public",
+            "static",
+            "final"
+          ],
+          "line": 1
+        }
+      ]
+    },
+    "com.mojang.blaze3d.vertex.VertexSorting.DistanceFunction": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "com.mojang.blaze3d.vertex.VertexSorting.DistanceFunction",
+      "methods": [
+        {
+          "name": "apply",
+          "parameters": [
+            "org.joml.Vector3f"
+          ],
+          "return_type": "float",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.level.LevelHeightAccessor": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.LevelHeightAccessor",
+      "methods": [
+        {
+          "name": "getHeight",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getMinBuildHeight",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getMaxBuildHeight",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getSectionsCount",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getMinSection",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getMaxSection",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isOutsideBuildHeight",
+          "parameters": [
+            "net.minecraft.core.BlockPos"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "isOutsideBuildHeight",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getSectionIndex",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getSectionIndexFromSectionY",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        },
+        {
+          "name": "getSectionYFromSectionIndex",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": false,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.client.renderer.texture.Dumpable": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.client.renderer.texture.Dumpable",
+      "methods": [
+        {
+          "name": "dumpContents",
+          "parameters": [
+            "net.minecraft.resources.ResourceLocation",
+            "java.nio.file.Path"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.network.syncher.SyncedDataHolder": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.network.syncher.SyncedDataHolder",
+      "methods": [
+        {
+          "name": "onSyncedDataUpdated",
+          "parameters": [
+            "net.minecraft.network.syncher.EntityDataAccessor<?>"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "onSyncedDataUpdated",
+          "parameters": [
+            "java.util.List<net.minecraft.network.syncher.SynchedEntityData.DataValue<?>>"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.minecraft.world.level.biome.BiomeManager.NoiseBiomeSource": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.minecraft.world.level.biome.BiomeManager.NoiseBiomeSource",
+      "methods": [
+        {
+          "name": "getNoiseBiome",
+          "parameters": [
+            "int",
+            "int",
+            "int"
+          ],
+          "return_type": "net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ]
+    },
+    "net.neoforged.neoforge.items.IItemHandler": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.items.IItemHandler",
+      "methods": [
+        {
+          "name": "getSlots",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getStackInSlot",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "insertItem",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack",
+            "boolean"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "extractItem",
+          "parameters": [
+            "int",
+            "int",
+            "boolean"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getSlotLimit",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isItemValid",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "superinterfaces": []
+    },
+    "net.neoforged.neoforge.items.IItemHandlerModifiable": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.items.IItemHandlerModifiable",
+      "methods": [
+        {
+          "name": "getSlots",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getStackInSlot",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "insertItem",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack",
+            "boolean"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "extractItem",
+          "parameters": [
+            "int",
+            "int",
+            "boolean"
+          ],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getSlotLimit",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isItemValid",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "setStackInSlot",
+          "parameters": [
+            "int",
+            "net.minecraft.world.item.ItemStack"
+          ],
+          "return_type": "void",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "superinterfaces": [
+        "net.neoforged.neoforge.items.IItemHandler"
+      ]
+    },
+    "net.neoforged.neoforge.energy.IEnergyStorage": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.energy.IEnergyStorage",
+      "methods": [
+        {
+          "name": "receiveEnergy",
+          "parameters": [
+            "int",
+            "boolean"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "extractEnergy",
+          "parameters": [
+            "int",
+            "boolean"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getEnergyStored",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getMaxEnergyStored",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "canExtract",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "canReceive",
+          "parameters": [],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "superinterfaces": []
+    },
+    "net.neoforged.neoforge.fluids.capability.IFluidHandler": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.fluids.capability.IFluidHandler",
+      "methods": [
+        {
+          "name": "getTanks",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getFluidInTank",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "net.neoforged.neoforge.fluids.FluidStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getTankCapacity",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isFluidValid",
+          "parameters": [
+            "int",
+            "net.neoforged.neoforge.fluids.FluidStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "fill",
+          "parameters": [
+            "net.neoforged.neoforge.fluids.FluidStack",
+            "net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "drain",
+          "parameters": [
+            "net.neoforged.neoforge.fluids.FluidStack",
+            "net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction"
+          ],
+          "return_type": "net.neoforged.neoforge.fluids.FluidStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "drain",
+          "parameters": [
+            "int",
+            "net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction"
+          ],
+          "return_type": "net.neoforged.neoforge.fluids.FluidStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "superinterfaces": []
+    },
+    "net.neoforged.neoforge.fluids.capability.IFluidHandlerItem": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.fluids.capability.IFluidHandlerItem",
+      "methods": [
+        {
+          "name": "getTanks",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getFluidInTank",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "net.neoforged.neoforge.fluids.FluidStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getTankCapacity",
+          "parameters": [
+            "int"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isFluidValid",
+          "parameters": [
+            "int",
+            "net.neoforged.neoforge.fluids.FluidStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "fill",
+          "parameters": [
+            "net.neoforged.neoforge.fluids.FluidStack",
+            "net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "drain",
+          "parameters": [
+            "net.neoforged.neoforge.fluids.FluidStack",
+            "net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction"
+          ],
+          "return_type": "net.neoforged.neoforge.fluids.FluidStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "drain",
+          "parameters": [
+            "int",
+            "net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction"
+          ],
+          "return_type": "net.neoforged.neoforge.fluids.FluidStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getContainer",
+          "parameters": [],
+          "return_type": "net.minecraft.world.item.ItemStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "superinterfaces": [
+        "net.neoforged.neoforge.fluids.capability.IFluidHandler"
+      ]
+    },
+    "net.neoforged.neoforge.fluids.IFluidTank": {
+      "abi": 1,
+      "helper_abi": 7,
+      "java_name": "net.neoforged.neoforge.fluids.IFluidTank",
+      "methods": [
+        {
+          "name": "getFluid",
+          "parameters": [],
+          "return_type": "net.neoforged.neoforge.fluids.FluidStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getFluidAmount",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "getCapacity",
+          "parameters": [],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "isFluidValid",
+          "parameters": [
+            "net.neoforged.neoforge.fluids.FluidStack"
+          ],
+          "return_type": "boolean",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "fill",
+          "parameters": [
+            "net.neoforged.neoforge.fluids.FluidStack",
+            "net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction"
+          ],
+          "return_type": "int",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "drain",
+          "parameters": [
+            "net.neoforged.neoforge.fluids.FluidStack",
+            "net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction"
+          ],
+          "return_type": "net.neoforged.neoforge.fluids.FluidStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        },
+        {
+          "name": "drain",
+          "parameters": [
+            "int",
+            "net.neoforged.neoforge.fluids.capability.IFluidHandler.FluidAction"
+          ],
+          "return_type": "net.neoforged.neoforge.fluids.FluidStack",
+          "static": false,
+          "abstract": true,
+          "visibility": "public"
+        }
+      ],
+      "superinterfaces": []
+    }
+  },
+  "limits": [
+    "A mapped type does not prove all its methods are implemented."
+  ],
+  "runtime_sha256": {
+    "__init__.py": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0",
+    "container/__init__.py": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0",
+    "container/lifecycle.py": "7382a8ada3f1acd10ca54acd6cd88336207a2693776303c9a8637fb227d02c3b",
+    "container/mod_instance.py": "5cf4918bcfccbc0e11ce0aac2e6d4a4debb847aaa8d44f51d679f2e2857e739b",
+    "core/__init__.py": "f04f27a4d3f50290b352dea58043d64668c917af8fde1c8b91312899902d0257",
+    "core/alpha_neoforge.py": "fe1e92bf71c39879d707b25fe0065c972fd7355dc42017c119dfff3a17f949c7",
+    "core/block_content.py": "de0c7e5aa4c787e62e58bddba142005cc3a38be98593561836852cdd2eec29b8",
+    "core/bundled_mods.py": "dd4a84c58584d9061da5711aa112d8e2eefa7270712125ec596d8c7a69af890c",
+    "core/config_session.py": "791f6b21a1771aed63f982532568f872cf67096b9776254428a409b012e46fb7",
+    "core/content_events.py": "479fa61a78f50c2b9646b53fbc759cae9dca6df0a7254d08e7a2872f851fd9dc",
+    "core/content_registry.py": "c97a02789b294b1a71760e321af167ce37fb28a7cf12e4c54634d6787952340e",
+    "core/entity_demo.py": "ead753e54236b09b72e84dd7dca25a1776c029f80bdae5cf425ec839a1c9c8ff",
+    "core/entity_runtime.py": "dab819c2ce16768d3fc2481a1bb650492a6f97f5b2df3670b8217e745f1ab97d",
+    "core/extracted_mods.py": "f3b076c866879daaa2e676c744f1b05a039a84d81276fc68f0d2467a443dd562",
+    "core/injector.py": "fd18a100477a79125a4bb0d09ff090d1422f63329dfd2713618def9539a83cab",
+    "core/item_content.py": "1d69d6f3fb827319641d452cc312c87683d1ac23b50864d5efa45c6e4fd1ff13",
+    "core/java_api.py": "20a6604ca1d086c00378fdf2ae8bf812b065599c2e7d257c3790ba923f4bd28e",
+    "core/java_api_catalog.py": "3ab056f0961728b8e264a6f1422ba0e89aa5ff99b7f3bffe0edb52f20dc7bd47",
+    "core/java_names.py": "457b62e2f717f3c26b661f58a6079b34ab74a4fdb1fc48615cb1ac4be2091650",
+    "core/keyword_renames.py": "a222b03e4ff35d848891ad35efc57d9cc0562b5347039802b12476d501e7df40",
+    "core/mod_versions.py": "69c95ecd7456dddf63eb3023b3e0afdd34bcd27fd1cef9ca51d4f746139101e6",
+    "core/modsdk_entity.py": "fec96dad362463d23e6f621dfe366267352d16d1bf71006f483936d46cd912de",
+    "core/modsdk_network.py": "0d016b5b18d781042c3a95c0062bcfdae89d9839bf2dcb0f1d97b8a5ed6a7833",
+    "core/network_session.py": "bfb36bc8a0b045483612d803ab32f0b9a13fb780456d3cd068d34d82d01ec2ef",
+    "core/python_hooks.py": "8258b40c14cb60950006ef39505f141924799aa118185c40a2ea04087476dffb",
+    "core/resource_content.py": "753e063783e6c5dbddbc19af493150166effca65d8b66cff2b23a9e5300c1cb5",
+    "core/runtime_host.py": "205afca38fe5305cb5c13831ff4dd8c8219af61f24b89a9f323ec2302a57bd97",
+    "core/runtime_requirements.py": "a1aa3e3fe444904bed3cd7202838782a554b63465862ada1c7518084281bbeb4",
+    "core/source_modules.py": "ade69a3f17fce2ade4de13f0990c8f5e44b7fd05ed4237b51a38f3854509840a",
+    "core/translated_loader.py": "878f2390af2814033a53eaab7c5de76f3c93d763ed73d4f2efdb70c926a76201",
+    "core/接口.py": "cef224c7609b38f8baa294aeb1b2bfa01222c7a97ea863e57417a0b6e55a7ed7",
+    "java_stdlib/__init__.py": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0",
+    "java_stdlib/_base.py": "31ab6582070166b2916f344d2b8a1138190468fa22a3572d4ec27b3dd4c900fc",
+    "java_stdlib/_boxing.py": "95dc9ae9947035174e4caf4fff6e9ec401c21b6a239bfa12e77da463b5c6546d",
+    "java_stdlib/byte_buffer.py": "27aa358fb54f8e07ef591618a0cfa1497cb8c82783c8760327bb7d4111d02eb1",
+    "java_stdlib/enum_sets.py": "5a10feec03257499a05aa4ccc3851cbe5c537783f363a2a42b4babe7d741856c",
+    "java_stdlib/function.py": "fe15522c623df4fd33958ac2d2b5a1406f470746b7a821b706b16cd83d11cb88",
+    "java_stdlib/guava_map.py": "2b6cb579908844b3c4325e01638cda6cf9f5f4573f78d11b29cbfd87d09611eb",
+    "java_stdlib/io.py": "072cd6f081c040ac2fa570486e956b9de148eca6cb072db516c1c295612ecc2a",
+    "java_stdlib/java_arrays.py": "5de62a4dfe6ca17fa48293285be9ce9a3f190db19e500949cca935731b0b8628",
+    "java_stdlib/java_auto_closeable.py": "f6d64ec5de3c7d52f3064b8cc75e7e1b99dc76622b6849fc2762b0433de34651",
+    "java_stdlib/java_exceptions.py": "80c01eab91ae6d8d6a75fd622181a2c884779ef34c185e2dcc720a591da8beca",
+    "java_stdlib/lang.py": "66778708715a8cf3f357f863d70dd14722759f41123417e728c76f87cbcb3d55",
+    "java_stdlib/logging.py": "cb43214be8f56e215792884f28f6fb625070b52ff52f335aecd4487a180a0846",
+    "java_stdlib/memory_streams.py": "f2d454706946eb41bb8630dae38f4259dcac0e24edfd7f3d0546a8f51f7db106",
+    "java_stdlib/net.py": "1b721fcfdc5a96518451b9f20169a4ce1f4ea6784328d4486fee9ec06e199458",
+    "java_stdlib/primitives.py": "c6c77252b34dbcfd31a4b38178196e7785efc5bd6bddee37efa94ed7767dbe58",
+    "java_stdlib/records.py": "ac4909cf13ca0880ba142ba04d81887d9caa92565b85ca05a6a47282c3ff5e4a",
+    "java_stdlib/time.py": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0",
+    "java_stdlib/type_relations.py": "21fb406b65af9769c4ade342afab8f7fd5b3b26adf1be4938f16ca5d380401f1",
+    "java_stdlib/util.py": "aeb6e2a10ff2159e91f4998044cc3a83470777d8e5ecf1492deb37096311ffb1",
+    "launcher_skip/__init__.py": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0",
+    "launcher_skip/asm.py": "2212be540006cd0b8f28f0528b4b86cf66220885d1c27074bfaf21f55d010ba2",
+    "launcher_skip/mixin.py": "c2cd89949448f16fefc9524c3c7fe038279bca19d52d2f3d8c9a29f6da779cf3",
+    "launcher_skip/modlauncher.py": "15252d0c0bfd9ba0f1c5e353a3efceba5fe5593e4dc4f748ee9fdc30cb141ed4",
+    "launcher_skip/rules.py": "c245ebb47510cb91f8097e87080eb15caceaa10b2358aab0a7c2fbfb402c20ab",
+    "launcher_skip/sequence.py": "6c6d4bc62d3410952ce039180c6b155eb65d6a01d1b3ffe2bf4e68fec6352589",
+    "minecraft/__init__.py": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0",
+    "minecraft/advancement.py": "e2aefde0ad9356711cbdaafabecdf250e07b4b4bc1bd64445f2bdd0c1f059c89",
+    "minecraft/attributes.py": "357060ac55228dcaf8b1a66ae6b54b3345171919043f36f80c569dd970777c37",
+    "minecraft/block.py": "d0ce6fd5be0337ea1e5f5e15bf56a70805daecb6de04d3704b6349109c5fd68c",
+    "minecraft/block_entity.py": "14ae368aae93322c0f447f66ad12343b339ace4569b72eb92fd7905ad10da472",
+    "minecraft/block_extra.py": "b196eeb5a7f2b798c3c8f6ae92849ac93ecdce3613c1f91cef37826dade13783",
+    "minecraft/block_tag_data.py": "08d1ff562e2c1cad20d9009eba14dbdf2723099d7dd80b9946b1472b1c3b863c",
+    "minecraft/callback_contracts.py": "a37754acc2428f26bac548901ccb239fe27c0dba1373a9b307ca912f6bbb9a8e",
+    "minecraft/client/__init__.py": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0",
+    "minecraft/client/gui.py": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0",
+    "minecraft/client/model.py": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0",
+    "minecraft/combat.py": "4007a4cfd4119a52900c183e35087a1e1eb9de348cd7a24529c78a23c242b94a",
+    "minecraft/common_goals.py": "f4a12ee5ba93ec2a2ef7e69e484f14fa16299b834b1ddf047a1ae2741eab2640",
+    "minecraft/component.py": "df2781450ea873178a2c356dc0a2e45ad4830b09cc0c4b449b2fbcad55164dfc",
+    "minecraft/container_contracts.py": "3f024362c1c0dac99e11a75aaf21203688b598d0f568be1cdad8def04a25c799",
+    "minecraft/core.py": "fa0b9186f6971f34cf2e87b4a3bb2e4f81cde21bf1df8955c2b8dd7be7b2170a",
+    "minecraft/crafting.py": "264578cded292ef76e71de7a7c8b35effc3f9389460f424265755881daa5908c",
+    "minecraft/entity.py": "6171a4c366bcc1bdd9f0f01148e827caccc5f6477723946cd203aec12d6c0aa9",
+    "minecraft/entity_storage.py": "b58b79c265139225c91ccfc4305c4e1d7c6f8dc9f8703a2940d843810e349606",
+    "minecraft/feature_flags.py": "afa7876d918133e9911bce621b3f953dfe911391775fd15ff1c11f68114af1d5",
+    "minecraft/goals.py": "f6227a865f5ab412d83e2c347538174a7b23de81bf7e0a758344c881d97bfc9c",
+    "minecraft/gui_contracts.py": "08b4102f20c7cff6083c001b4bf4cd21180e945937a8b4f46490191333f3a52f",
+    "minecraft/gui_input_contracts.py": "79c8a578d024d8eeb24375ddf1ecd8bed13e1570f7848699216207e4f17f41a3",
+    "minecraft/gui_navigation.py": "c93511fd0d220e8fe8df2c654decf58835ef0128245b12c6becf87b0f2ededf4",
+    "minecraft/holder_contracts.py": "11773da08e00c872915e904581ddee13e86aeeb70d0e66c871e711305e0b2809",
+    "minecraft/holder_sets.py": "0893c9afea78ac116ba7faf2dbd4588ac7959cab75511597bcd5aa7565c9afa9",
+    "minecraft/item.py": "7b7f00d357d8be8d2f585935ecac1d3b9dc4778b6cea227def71cbac79d97d30",
+    "minecraft/item_context.py": "c6b22c8f1e16be9b86c34cedab9720393412b997d882981c820d4d722b268dd9",
+    "minecraft/level.py": "e3692ae70c4f475c1e868fba3ca4a19acfca7a7b4bb0325987f2e2944657bf8f",
+    "minecraft/level_access.py": "f4619a5652905fdb5c6e5994b6fca91497a2a24396e3bfcb47fa72c11d8eb066",
+    "minecraft/menu.py": "b35d4c523081b64532e017d09c4affa5598c7d7112fec345be08bcc1f5ee0275",
+    "minecraft/merchant_container.py": "07b83b8f462d3e85f4061f8e508474c285f29018c6fa2ba217a0589606afaad8",
+    "minecraft/merchant_result_slot.py": "5c9d72c8cf3686680db6e11888ace56ee6afba9e0ef72d4417216bd71f2989c5",
+    "minecraft/model_math.py": "eee99f7ec40e5fcf4800a8037c2b2f0a0abb1db66a7f23891c6ba0dac0c6e88f",
+    "minecraft/modsdk_container.py": "45719745544b03114b5102d490687046d799fffc25637bbe4086302c61b1b912",
+    "minecraft/modsdk_entity_access.py": "cda6374687e7616ebc6dff177f46d057deac675a426a67c17ec50546494ad896",
+    "minecraft/modsdk_world_access.py": "56995ca2b9a0ec7c7e5e33ad6bc50cc394692495720be7862ca29c4e765add71",
+    "minecraft/navigation.py": "8f2c8aa7e0e1f00093664d9c78f74d2e976adbc3566af558a3da34eafd63542f",
+    "minecraft/nbt.py": "0d2ba79f98b382beff53540b2f402d1315c262b1ecce1005dd4b4252248ca0e7",
+    "minecraft/network.py": "46e0c6d8166abe893c23fe03ba4cef15e80634f66742743dea70e5600553d24c",
+    "minecraft/network_codecs.py": "fe896aa4aaf2b6bcf2e5b47d30bb50cc1b71341ddd20c78ce8d3333f0c01eb8c",
+    "minecraft/network_contracts.py": "85935b251935947f567fb4ace857d8fe7914eaf58d61584fe5f6284032d4298c",
+    "minecraft/official_interfaces.py": "ed9be9504c89dd20ce98b1737bf0ccc02351ce3c6ae8b2732caa9f8abf94a99f",
+    "minecraft/physics.py": "b6ff52830045208e21c4b30327128aca917dc2952fa5e4970ace21f8ccf8b238",
+    "minecraft/profiling.py": "5255d356c38cbda938a877d3a9f60540156ec439c02329da6fa31dfdeab46528",
+    "minecraft/registries.py": "a8f328f54d645de80e9520f7cd9579a6cfd87f644bf463cafc1642438b78adf5",
+    "minecraft/resources.py": "7216f41c7c39029c4ed6b6df02fd6628e26e56766bf600f46d579c15be068f32",
+    "minecraft/runtime_classes.py": "8328d5e34fbec09fd6736283e38d19c582d134b793142b8169883bed5f8de55d",
+    "minecraft/shapes.py": "d23e3dcdc5782c81e2c5b7230c032fb845150f2c2ca584b75ec0ad67e2d2e61d",
+    "minecraft/sound.py": "eeee6db38c43a21199f1f224af356f3a2d999aaeea9dd3de98e594dda0400e4f",
+    "minecraft/synched_entity_data.py": "d5eaa087aac934f99d3b27f740880276fb00ef3689604cdfa86bae5f526f1c97",
+    "minecraft/tags.py": "b63d111b096a7d2840d52be8db93a978f886472d8ebc29de8230f7a88159e3e3",
+    "minecraft/tiered_item.py": "a7edff0dd4baa50d6a16d0ae05dabdef4ee81f2702ede5f6cc98114505a508be",
+    "minecraft/tool_rules.py": "6449b16dc260a8fe406f292abe4490aa9974ad90ff6d9b8c02dd694bd41ee8ef",
+    "minecraft/trading.py": "e1a91370ef3fde86be6d2b4281c07a2c7d50f00cc9a5f811ee69c2c27935caf0",
+    "minecraft/utf8_codec.py": "b128928361799e2fbf930f57507f92433df49205acfcdb51ce563e2638544313",
+    "minecraft/util.py": "770b16202ce442a1987d13fb91642b1abc9cb780a2d4b7aa053cbb74b436adb5",
+    "minecraft/utility_contracts.py": "9d45ecbcf2948cbf3b258b03feb5ce4ac2fcc22e7d1a24d8bf3bf67f2722d321",
+    "minecraft/vertex_format.py": "f7a85b8b87379459d39874250f66e5200d21d51aa6d6ba96497b56d1baad048f",
+    "minecraft/vertex_sorting.py": "184527eed1aa5fd2ec6b48ec464fb884270bc9b6c8b69fc299c3ac0ab25b4dd0",
+    "minecraft/world_contracts.py": "c5b07b3e9eb002b1888b42bdaa89d5fe46ba77a735868ec8ae978fdb8a994fd5",
+    "minecraft/writer_contracts.py": "239de3c6050271ebfb8d9b613c30174ac61194a5ce844488f768de2db1c3c175",
+    "modMain.py": "13827e3a4a2fc8b6d0904203436c7d3131acac6473b3deaa33d38400570a1b84",
+    "neocore_config.py": "5691ac36603a87ae3f2cf855c2229d0986e24a47debeecbbfe18c89ef8402479",
+    "neoforge/__init__.py": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0",
+    "neoforge/attachment.py": "cebf3a398b67bccf91591757205189a14b6c634eea193873cf054451031284d2",
+    "neoforge/capabilities.py": "7a8e5f2c15388f75f92e2c0d73835e75b3966e54bc8b2d58c46ba3cf3725ccd5",
+    "neoforge/common.py": "fa959791701fb73b95bb75241737df4e05784c3c8da0278561a6ad2cef8260db",
+    "neoforge/config.py": "3d6606de7f62a7d068432d70b512606c648838eeedb62f483e580402ec0e32c2",
+    "neoforge/creative.py": "108f15c168a72aaf05e24c8bb52da166f38b9001d4b48683790363b0ac3292e8",
+    "neoforge/energy.py": "aada8ddb7848a2eafdfb29059b2feea7826fa485b6de0d5da1ed3f76ecb31f20",
+    "neoforge/event/__init__.py": "e493eda8160509a3be8a86f3ea2a5686cceae8f61bb67895a04a449971095eac",
+    "neoforge/event/base.py": "d66b968cdeb907fe62dbb733ef3fb2b1bace974733adcfbd0ea36ba71b9a9173",
+    "neoforge/event/client.py": "927d817695cfd319e8fd41a8f8d5e29cbdfb737b9a7eab3d90afd3ccbe2ef8cd",
+    "neoforge/event/entity/__init__.py": "e3ff477a770305a0f861581fc54393a52de102da6e8f055ffbe567a4581bcedd",
+    "neoforge/event/entity/base.py": "ba58e9ee8689c8b05dc1b7965fb2607ac15339046e4175b3842c8d2e10bc1b33",
+    "neoforge/event/entity/living.py": "2c2e8f72bf0a6ba9cb6ec33b05dd314da11cd08a0c9903103f484022974e28ed",
+    "neoforge/event/entity/player.py": "1e0331ab3c4c60bfa33ab12ed2e98f34e7f012587b57959dbf036ecb177091ce",
+    "neoforge/event/entity/registration.py": "8c66d4ece5a07635823ce1b4bb951c2da75697249992d582e89e4afcb0a35061",
+    "neoforge/event/fml/__init__.py": "c6f9d1bc1b36d1b70648b49b1891eeddf57eb412bd472862ff9fbc0d10dc824b",
+    "neoforge/event/fml/config.py": "a10650c14b7118096212948d8f7f915e4c3729f41b9c61066e71959be7125d3a",
+    "neoforge/event/fml/lifecycle.py": "c41541851c404e5dcf2737d88ce61e029864c9a2f086be3b61bc610b2e144382",
+    "neoforge/event/level.py": "98fc983dda2b491d004edf57e1a209efe3d1f8bad27195f05e7ec91ecb1fea2a",
+    "neoforge/event/server.py": "0bf4cbe186344db278370a8cdcb826ca33a7466f6d8d4bdfd46dba0ebecab322",
+    "neoforge/event/tick.py": "a7a85e53ba60bb07b0c514433f78682bc5a85aef1fac48345d52460c91e0f83f",
+    "neoforge/event/village.py": "70221f10a4450059b4a936e5865653d0d8ec1c7b15b1437bc3f153620fad6ce5",
+    "neoforge/fluid.py": "61a598dc8fd4ec31f897b38e5fc363066f570bf2f263b5c441c843c6db9f951b",
+    "neoforge/fluid_handler.py": "42055b6c7aa04a967473746b261113920e976e0cd88eaeb62a711212cf2c2937",
+    "neoforge/interface_contracts.py": "5e74720c3e226361090fc11171ec21623bcb66e3af9e1a37e3fa4b058ead54f8",
+    "neoforge/items.py": "e608d4ede8c09e37ff79e55a6e4a762f329a7fb87e274e29cde4329fe21d2cdf",
+    "neoforge/menu_interfaces.py": "e4e62bc78983656b7c85439c4af4c935a9d2a6ac183eab97c4c6ba333550e98f",
+    "neoforge/misc.py": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0",
+    "neoforge/mixin_callbacks.py": "988f2ac0d308cb65959aea0a3e2e1dc2525f51f7b89489a6e713531090467d43",
+    "neoforge/mixin_hooks.py": "9c3225f5cfd6486733b6a90d4d762d2639412bb962550bdc79ad371ca4b9e558",
+    "neoforge/mod_entrypoints.py": "805842ac9937f69bf2d73e3f98b56d4cc5da4fe974c44ea015a98fc7115c8405",
+    "neoforge/network.py": "86d7246333eb300c665ceee2c5a82b88f8e8a1804796743008148112a3e36467",
+    "neoforge/registries.py": "3264535e2b18c04e62c5b8d29287a0f4b206d66e4428c442155351aedab4368a",
+    "prepared_mods.py": "10dfbb4958775161ce8bd166f617a089df3a24251d60fc535608abb162de4d54",
+    "shader/__init__.py": "ce35ead82bec335c9b6526bccf0922801f501570fbe26a717d0737997ae390bc",
+    "shader/material.py": "3c3cb235a02b647f1381516f52b498186a5518a47468a1512b8a4ef73e1453c1",
+    "shader/opengl.py": "412ebf6864a527ee7578c57476bcb310d0e1a0a7b743d22f268ccc3c5b78b853",
+    "shader/uniform.py": "83d25413146038026873e77bf1f7ab82ba046cafdb53a3afa5ed3c752bdeaabb",
+    "未映射api/__init__.py": "c168d6e6ef93c6e06b9f1fbf965c07881414aa1200067a13e5665099d20bf4b8",
+    "未映射api/fallback.py": "5cd370206b39a91e1433f4fd9e0a6b01cb17615e557768a2b4dd81651ccf5846",
+    "未映射api/logger.py": "bea3ff3f66acb29f27e87d00ed5e77d9944a2e555dfc7d3f0e2d0e66523da03e"
+  }
+}

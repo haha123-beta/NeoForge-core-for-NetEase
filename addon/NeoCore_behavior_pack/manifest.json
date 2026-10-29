@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "neocore",
+    "description": "NeoCore source distribution: engine validation pending",
+    "uuid": "b7747bdd-4788-5bb6-a00a-503718895642",
+    "version": [
+      0,
+      9,
+      8
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "4e824a4a-d42a-5127-9517-bd878f689686",
+      "version": [
+        0,
+        9,
+        8
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "b43f862c-ce81-4239-baeb-2af8ec2073c4",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

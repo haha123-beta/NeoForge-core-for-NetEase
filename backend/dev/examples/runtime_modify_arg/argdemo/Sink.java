@@ -1,0 +1,1 @@
+package argdemo;public class Sink {public static int accept(int a,int b){return a*10+b;}}

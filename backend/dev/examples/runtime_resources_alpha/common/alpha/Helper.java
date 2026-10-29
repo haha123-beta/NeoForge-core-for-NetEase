@@ -1,0 +1,1 @@
+package common.alpha;public class Helper {public static int compute(int n){return n*7+2;}}

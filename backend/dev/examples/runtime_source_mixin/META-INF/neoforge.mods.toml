@@ -1,0 +1,8 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="runtime_source_mixin_example"
+version="1.0"
+[[mixins]]
+config="demo.mixins.json"

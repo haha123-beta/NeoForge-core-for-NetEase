@@ -1,0 +1,8 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="runtime_modify_arg_example"
+version="1"
+[[mixins]]
+config="args.mixins.json"

@@ -1,0 +1,7 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="runtime_map_example"
+version="1.0.0"
+displayName="NeoCore generic map contract fixture"

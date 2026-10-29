@@ -1,0 +1,8 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+[[mods]]
+modId="cfr_source_example"
+version="1.0"
+[[mixins]]
+config="source.mixins.json"

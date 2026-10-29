@@ -1,0 +1,4011 @@
+{
+  "version": "0.9.8",
+  "creators": [
+    "haha123-beta",
+    "ChatGPT (OpenAI AI assistant)"
+  ],
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "scope": "Necessary source, core AddOn, loader and documentation. Third-party licenses retained. Manifest excludes itself.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 76,
+      "sha256": "222bd6a9168fcb55f49a10ef7c1e31de4b9c42d60aa644ecc585d0620f12942f"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 384,
+      "sha256": "8f8f408f518ef6c71e5ef130fe2fa757ff8ee1130303a01f2228e2bc1f9dd8f5"
+    },
+    {
+      "path": "addon/AUTHORS.md",
+      "bytes": 458,
+      "sha256": "737f54671762490e637f7ee307c0cfaf66b94d3e4003702097bb0c947585aee1"
+    },
+    {
+      "path": "addon/LICENSE",
+      "bytes": 4563,
+      "sha256": "c0ea4a896d2c8c394b29f9427589996db826cd501c512279ff0ed3ef48fabbe5"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/entities/neocore_training_mob.json",
+      "bytes": 859,
+      "sha256": "ad4acd6ea9e26268116c1050d9502dd8ff0a14fdd72b36777d876aa91e52457b"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/manifest.json",
+      "bytes": 662,
+      "sha256": "78417a659e86352462fe4805e806977e9fec4af7e3130169335e93f7480e281a"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/modMain.py",
+      "bytes": 1427,
+      "sha256": "befb078c54d2b0e7fa092d601bc933d189d612e79a18c573c9e6bd83dc7f3055"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/runtime_host.py",
+      "bytes": 5950,
+      "sha256": "205afca38fe5305cb5c13831ff4dd8c8219af61f24b89a9f323ec2302a57bd97"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/source_modules.py",
+      "bytes": 7505,
+      "sha256": "ade69a3f17fce2ade4de13f0990c8f5e44b7fd05ed4237b51a38f3854509840a"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/source_snapshot.py",
+      "bytes": 1673629,
+      "sha256": "5ad99fb10eed18ead56b1c27a1af5207c571bc75016ccec2809aba66bf719fce"
+    },
+    {
+      "path": "addon/NeoCore_resource_pack/entity/neocore_training_mob.entity.json",
+      "bytes": 552,
+      "sha256": "746626f1ea0f28246493516650876c1ac6f4528b95f9fff908ff28e98b32ad39"
+    },
+    {
+      "path": "addon/NeoCore_resource_pack/manifest.json",
+      "bytes": 561,
+      "sha256": "14ac214d5b119c08a7d7be5e990ccffc2f96ed4d4d1b814cfb6e57a7a97bff8c"
+    },
+    {
+      "path": "addon/NeoCore_resource_pack/models/entity/neocore_training_mob.geo.json",
+      "bytes": 3536,
+      "sha256": "9811749e70ad1eac51788fd36b56e8b527c73e04a26e928585deada7a29aa210"
+    },
+    {
+      "path": "addon/NeoCore_resource_pack/render_controllers/neocore_training_mob.render_controllers.json",
+      "bytes": 292,
+      "sha256": "2ce325bb5d2e3301fce27f0736e5a7b03d1ef08010b0016880d426bac0c8de82"
+    },
+    {
+      "path": "addon/NOTICE",
+      "bytes": 446,
+      "sha256": "b73c35c72dfc7663120ff0e81eaaaee062f53a8ec94d19d3b98ad3343fdecf48"
+    },
+    {
+      "path": "addon/README.md",
+      "bytes": 1447,
+      "sha256": "a2b251ce1f83c8c7c77883078e7be5b0fb55abfaf16ba92a5eb9f9a835e54bf5"
+    },
+    {
+      "path": "app.py",
+      "bytes": 29924,
+      "sha256": "c0a1b060e0c8fdcd9c245c06d2985a8bd83908e0bfbe68e270052cb625c6e257"
+    },
+    {
+      "path": "AUTHORS.md",
+      "bytes": 458,
+      "sha256": "737f54671762490e637f7ee307c0cfaf66b94d3e4003702097bb0c947585aee1"
+    },
+    {
+      "path": "backend/core/entities/neocore_training_mob.json",
+      "bytes": 859,
+      "sha256": "ad4acd6ea9e26268116c1050d9502dd8ff0a14fdd72b36777d876aa91e52457b"
+    },
+    {
+      "path": "backend/core/manifest.json",
+      "bytes": 623,
+      "sha256": "2b3b5e7fc7ac9a5b7a70ac68c5b973e286ed2f4d159b82daaa846f9cd722a4c6"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/__init__.py",
+      "bytes": 26,
+      "sha256": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/container/__init__.py",
+      "bytes": 26,
+      "sha256": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/container/lifecycle.py",
+      "bytes": 15781,
+      "sha256": "7382a8ada3f1acd10ca54acd6cd88336207a2693776303c9a8637fb227d02c3b"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/container/mod_instance.py",
+      "bytes": 11750,
+      "sha256": "5cf4918bcfccbc0e11ce0aac2e6d4a4debb847aaa8d44f51d679f2e2857e739b"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/__init__.py",
+      "bytes": 40,
+      "sha256": "f04f27a4d3f50290b352dea58043d64668c917af8fde1c8b91312899902d0257"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/alpha_neoforge.py",
+      "bytes": 29377,
+      "sha256": "fe1e92bf71c39879d707b25fe0065c972fd7355dc42017c119dfff3a17f949c7"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/block_content.py",
+      "bytes": 3889,
+      "sha256": "de0c7e5aa4c787e62e58bddba142005cc3a38be98593561836852cdd2eec29b8"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/bundled_mods.py",
+      "bytes": 9396,
+      "sha256": "dd4a84c58584d9061da5711aa112d8e2eefa7270712125ec596d8c7a69af890c"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/config_session.py",
+      "bytes": 1700,
+      "sha256": "791f6b21a1771aed63f982532568f872cf67096b9776254428a409b012e46fb7"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/content_events.py",
+      "bytes": 2080,
+      "sha256": "479fa61a78f50c2b9646b53fbc759cae9dca6df0a7254d08e7a2872f851fd9dc"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/content_registry.py",
+      "bytes": 13411,
+      "sha256": "c97a02789b294b1a71760e321af167ce37fb28a7cf12e4c54634d6787952340e"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/entity_demo.py",
+      "bytes": 2547,
+      "sha256": "ead753e54236b09b72e84dd7dca25a1776c029f80bdae5cf425ec839a1c9c8ff"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/entity_runtime.py",
+      "bytes": 5699,
+      "sha256": "dab819c2ce16768d3fc2481a1bb650492a6f97f5b2df3670b8217e745f1ab97d"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/extracted_mods.py",
+      "bytes": 6646,
+      "sha256": "f3b076c866879daaa2e676c744f1b05a039a84d81276fc68f0d2467a443dd562"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/injector.py",
+      "bytes": 14771,
+      "sha256": "fd18a100477a79125a4bb0d09ff090d1422f63329dfd2713618def9539a83cab"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/item_content.py",
+      "bytes": 7679,
+      "sha256": "1d69d6f3fb827319641d452cc312c87683d1ac23b50864d5efa45c6e4fd1ff13"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/java_api.py",
+      "bytes": 6900,
+      "sha256": "20a6604ca1d086c00378fdf2ae8bf812b065599c2e7d257c3790ba923f4bd28e"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/java_api_catalog.py",
+      "bytes": 2874,
+      "sha256": "3ab056f0961728b8e264a6f1422ba0e89aa5ff99b7f3bffe0edb52f20dc7bd47"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/java_names.py",
+      "bytes": 1670,
+      "sha256": "457b62e2f717f3c26b661f58a6079b34ab74a4fdb1fc48615cb1ac4be2091650"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/keyword_renames.py",
+      "bytes": 4537,
+      "sha256": "a222b03e4ff35d848891ad35efc57d9cc0562b5347039802b12476d501e7df40"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/mod_versions.py",
+      "bytes": 1957,
+      "sha256": "69c95ecd7456dddf63eb3023b3e0afdd34bcd27fd1cef9ca51d4f746139101e6"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/modsdk_entity.py",
+      "bytes": 9327,
+      "sha256": "fec96dad362463d23e6f621dfe366267352d16d1bf71006f483936d46cd912de"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/modsdk_network.py",
+      "bytes": 9512,
+      "sha256": "0d016b5b18d781042c3a95c0062bcfdae89d9839bf2dcb0f1d97b8a5ed6a7833"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/network_session.py",
+      "bytes": 13872,
+      "sha256": "bfb36bc8a0b045483612d803ab32f0b9a13fb780456d3cd068d34d82d01ec2ef"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/python_hooks.py",
+      "bytes": 4064,
+      "sha256": "8258b40c14cb60950006ef39505f141924799aa118185c40a2ea04087476dffb"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/resource_content.py",
+      "bytes": 3840,
+      "sha256": "753e063783e6c5dbddbc19af493150166effca65d8b66cff2b23a9e5300c1cb5"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/runtime_host.py",
+      "bytes": 5950,
+      "sha256": "205afca38fe5305cb5c13831ff4dd8c8219af61f24b89a9f323ec2302a57bd97"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/runtime_requirements.py",
+      "bytes": 5285,
+      "sha256": "a1aa3e3fe444904bed3cd7202838782a554b63465862ada1c7518084281bbeb4"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/source_modules.py",
+      "bytes": 7505,
+      "sha256": "ade69a3f17fce2ade4de13f0990c8f5e44b7fd05ed4237b51a38f3854509840a"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/translated_loader.py",
+      "bytes": 22485,
+      "sha256": "878f2390af2814033a53eaab7c5de76f3c93d763ed73d4f2efdb70c926a76201"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/core/接口.py",
+      "bytes": 3089,
+      "sha256": "cef224c7609b38f8baa294aeb1b2bfa01222c7a97ea863e57417a0b6e55a7ed7"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/__init__.py",
+      "bytes": 26,
+      "sha256": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/_base.py",
+      "bytes": 18035,
+      "sha256": "31ab6582070166b2916f344d2b8a1138190468fa22a3572d4ec27b3dd4c900fc"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/_boxing.py",
+      "bytes": 5288,
+      "sha256": "95dc9ae9947035174e4caf4fff6e9ec401c21b6a239bfa12e77da463b5c6546d"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/byte_buffer.py",
+      "bytes": 5066,
+      "sha256": "27aa358fb54f8e07ef591618a0cfa1497cb8c82783c8760327bb7d4111d02eb1"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/enum_sets.py",
+      "bytes": 10809,
+      "sha256": "5a10feec03257499a05aa4ccc3851cbe5c537783f363a2a42b4babe7d741856c"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/function.py",
+      "bytes": 14165,
+      "sha256": "fe15522c623df4fd33958ac2d2b5a1406f470746b7a821b706b16cd83d11cb88"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/guava_map.py",
+      "bytes": 2171,
+      "sha256": "2b6cb579908844b3c4325e01638cda6cf9f5f4573f78d11b29cbfd87d09611eb"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/io.py",
+      "bytes": 155,
+      "sha256": "072cd6f081c040ac2fa570486e956b9de148eca6cb072db516c1c295612ecc2a"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/java_arrays.py",
+      "bytes": 10071,
+      "sha256": "5de62a4dfe6ca17fa48293285be9ce9a3f190db19e500949cca935731b0b8628"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/java_auto_closeable.py",
+      "bytes": 444,
+      "sha256": "f6d64ec5de3c7d52f3064b8cc75e7e1b99dc76622b6849fc2762b0433de34651"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/java_exceptions.py",
+      "bytes": 7775,
+      "sha256": "80c01eab91ae6d8d6a75fd622181a2c884779ef34c185e2dcc720a591da8beca"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/lang.py",
+      "bytes": 66935,
+      "sha256": "66778708715a8cf3f357f863d70dd14722759f41123417e728c76f87cbcb3d55"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/logging.py",
+      "bytes": 668,
+      "sha256": "cb43214be8f56e215792884f28f6fb625070b52ff52f335aecd4487a180a0846"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/memory_streams.py",
+      "bytes": 4061,
+      "sha256": "f2d454706946eb41bb8630dae38f4259dcac0e24edfd7f3d0546a8f51f7db106"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/net.py",
+      "bytes": 4985,
+      "sha256": "1b721fcfdc5a96518451b9f20169a4ce1f4ea6784328d4486fee9ec06e199458"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/primitives.py",
+      "bytes": 4717,
+      "sha256": "c6c77252b34dbcfd31a4b38178196e7785efc5bd6bddee37efa94ed7767dbe58"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/records.py",
+      "bytes": 4815,
+      "sha256": "ac4909cf13ca0880ba142ba04d81887d9caa92565b85ca05a6a47282c3ff5e4a"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/time.py",
+      "bytes": 26,
+      "sha256": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/type_relations.py",
+      "bytes": 51924,
+      "sha256": "21fb406b65af9769c4ade342afab8f7fd5b3b26adf1be4938f16ca5d380401f1"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/java_stdlib/util.py",
+      "bytes": 82337,
+      "sha256": "aeb6e2a10ff2159e91f4998044cc3a83470777d8e5ecf1492deb37096311ffb1"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/launcher_skip/__init__.py",
+      "bytes": 26,
+      "sha256": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/launcher_skip/asm.py",
+      "bytes": 370,
+      "sha256": "2212be540006cd0b8f28f0528b4b86cf66220885d1c27074bfaf21f55d010ba2"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/launcher_skip/mixin.py",
+      "bytes": 382,
+      "sha256": "c2cd89949448f16fefc9524c3c7fe038279bca19d52d2f3d8c9a29f6da779cf3"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/launcher_skip/modlauncher.py",
+      "bytes": 386,
+      "sha256": "15252d0c0bfd9ba0f1c5e353a3efceba5fe5593e4dc4f748ee9fdc30cb141ed4"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/launcher_skip/rules.py",
+      "bytes": 13386,
+      "sha256": "c245ebb47510cb91f8097e87080eb15caceaa10b2358aab0a7c2fbfb402c20ab"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/launcher_skip/sequence.py",
+      "bytes": 17570,
+      "sha256": "6c6d4bc62d3410952ce039180c6b155eb65d6a01d1b3ffe2bf4e68fec6352589"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/__init__.py",
+      "bytes": 26,
+      "sha256": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/advancement.py",
+      "bytes": 21934,
+      "sha256": "e2aefde0ad9356711cbdaafabecdf250e07b4b4bc1bd64445f2bdd0c1f059c89"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/attributes.py",
+      "bytes": 8599,
+      "sha256": "357060ac55228dcaf8b1a66ae6b54b3345171919043f36f80c569dd970777c37"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/block.py",
+      "bytes": 32076,
+      "sha256": "d0ce6fd5be0337ea1e5f5e15bf56a70805daecb6de04d3704b6349109c5fd68c"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/block_entity.py",
+      "bytes": 34786,
+      "sha256": "14ae368aae93322c0f447f66ad12343b339ace4569b72eb92fd7905ad10da472"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/block_extra.py",
+      "bytes": 14991,
+      "sha256": "b196eeb5a7f2b798c3c8f6ae92849ac93ecdce3613c1f91cef37826dade13783"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/block_tag_data.py",
+      "bytes": 9299,
+      "sha256": "08d1ff562e2c1cad20d9009eba14dbdf2723099d7dd80b9946b1472b1c3b863c"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/callback_contracts.py",
+      "bytes": 6370,
+      "sha256": "a37754acc2428f26bac548901ccb239fe27c0dba1373a9b307ca912f6bbb9a8e"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/client/__init__.py",
+      "bytes": 26,
+      "sha256": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/client/gui.py",
+      "bytes": 26,
+      "sha256": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/client/model.py",
+      "bytes": 26,
+      "sha256": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/combat.py",
+      "bytes": 3964,
+      "sha256": "4007a4cfd4119a52900c183e35087a1e1eb9de348cd7a24529c78a23c242b94a"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/common_goals.py",
+      "bytes": 3394,
+      "sha256": "f4a12ee5ba93ec2a2ef7e69e484f14fa16299b834b1ddf047a1ae2741eab2640"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/component.py",
+      "bytes": 206,
+      "sha256": "df2781450ea873178a2c356dc0a2e45ad4830b09cc0c4b449b2fbcad55164dfc"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/container_contracts.py",
+      "bytes": 3984,
+      "sha256": "3f024362c1c0dac99e11a75aaf21203688b598d0f568be1cdad8def04a25c799"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/core.py",
+      "bytes": 31026,
+      "sha256": "fa0b9186f6971f34cf2e87b4a3bb2e4f81cde21bf1df8955c2b8dd7be7b2170a"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/crafting.py",
+      "bytes": 21757,
+      "sha256": "264578cded292ef76e71de7a7c8b35effc3f9389460f424265755881daa5908c"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/entity.py",
+      "bytes": 41360,
+      "sha256": "6171a4c366bcc1bdd9f0f01148e827caccc5f6477723946cd203aec12d6c0aa9"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/entity_storage.py",
+      "bytes": 6691,
+      "sha256": "b58b79c265139225c91ccfc4305c4e1d7c6f8dc9f8703a2940d843810e349606"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/feature_flags.py",
+      "bytes": 4368,
+      "sha256": "afa7876d918133e9911bce621b3f953dfe911391775fd15ff1c11f68114af1d5"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/goals.py",
+      "bytes": 12764,
+      "sha256": "f6227a865f5ab412d83e2c347538174a7b23de81bf7e0a758344c881d97bfc9c"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/gui_contracts.py",
+      "bytes": 1234,
+      "sha256": "08b4102f20c7cff6083c001b4bf4cd21180e945937a8b4f46490191333f3a52f"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/gui_input_contracts.py",
+      "bytes": 3171,
+      "sha256": "79c8a578d024d8eeb24375ddf1ecd8bed13e1570f7848699216207e4f17f41a3"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/gui_navigation.py",
+      "bytes": 7188,
+      "sha256": "c93511fd0d220e8fe8df2c654decf58835ef0128245b12c6becf87b0f2ededf4"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/holder_contracts.py",
+      "bytes": 1506,
+      "sha256": "11773da08e00c872915e904581ddee13e86aeeb70d0e66c871e711305e0b2809"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/holder_sets.py",
+      "bytes": 2688,
+      "sha256": "0893c9afea78ac116ba7faf2dbd4588ac7959cab75511597bcd5aa7565c9afa9"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/item.py",
+      "bytes": 25547,
+      "sha256": "7b7f00d357d8be8d2f585935ecac1d3b9dc4778b6cea227def71cbac79d97d30"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/item_context.py",
+      "bytes": 10744,
+      "sha256": "c6b22c8f1e16be9b86c34cedab9720393412b997d882981c820d4d722b268dd9"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/level.py",
+      "bytes": 18168,
+      "sha256": "e3692ae70c4f475c1e868fba3ca4a19acfca7a7b4bb0325987f2e2944657bf8f"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/level_access.py",
+      "bytes": 17438,
+      "sha256": "f4619a5652905fdb5c6e5994b6fca91497a2a24396e3bfcb47fa72c11d8eb066"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/menu.py",
+      "bytes": 30889,
+      "sha256": "b35d4c523081b64532e017d09c4affa5598c7d7112fec345be08bcc1f5ee0275"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/merchant_container.py",
+      "bytes": 5022,
+      "sha256": "07b83b8f462d3e85f4061f8e508474c285f29018c6fa2ba217a0589606afaad8"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/merchant_result_slot.py",
+      "bytes": 2132,
+      "sha256": "5c9d72c8cf3686680db6e11888ace56ee6afba9e0ef72d4417216bd71f2989c5"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/model_math.py",
+      "bytes": 4654,
+      "sha256": "eee99f7ec40e5fcf4800a8037c2b2f0a0abb1db66a7f23891c6ba0dac0c6e88f"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/modsdk_container.py",
+      "bytes": 10049,
+      "sha256": "45719745544b03114b5102d490687046d799fffc25637bbe4086302c61b1b912"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/modsdk_entity_access.py",
+      "bytes": 18422,
+      "sha256": "cda6374687e7616ebc6dff177f46d057deac675a426a67c17ec50546494ad896"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/modsdk_world_access.py",
+      "bytes": 7028,
+      "sha256": "56995ca2b9a0ec7c7e5e33ad6bc50cc394692495720be7862ca29c4e765add71"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/navigation.py",
+      "bytes": 6427,
+      "sha256": "8f2c8aa7e0e1f00093664d9c78f74d2e976adbc3566af558a3da34eafd63542f"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/nbt.py",
+      "bytes": 16869,
+      "sha256": "0d2ba79f98b382beff53540b2f402d1315c262b1ecce1005dd4b4252248ca0e7"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/network.py",
+      "bytes": 220,
+      "sha256": "46e0c6d8166abe893c23fe03ba4cef15e80634f66742743dea70e5600553d24c"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/network_codecs.py",
+      "bytes": 3217,
+      "sha256": "fe896aa4aaf2b6bcf2e5b47d30bb50cc1b71341ddd20c78ce8d3333f0c01eb8c"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/network_contracts.py",
+      "bytes": 3169,
+      "sha256": "85935b251935947f567fb4ace857d8fe7914eaf58d61584fe5f6284032d4298c"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/official_interfaces.py",
+      "bytes": 8413,
+      "sha256": "ed9be9504c89dd20ce98b1737bf0ccc02351ce3c6ae8b2732caa9f8abf94a99f"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/physics.py",
+      "bytes": 6690,
+      "sha256": "b6ff52830045208e21c4b30327128aca917dc2952fa5e4970ace21f8ccf8b238"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/profiling.py",
+      "bytes": 7328,
+      "sha256": "5255d356c38cbda938a877d3a9f60540156ec439c02329da6fa31dfdeab46528"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/registries.py",
+      "bytes": 19018,
+      "sha256": "a8f328f54d645de80e9520f7cd9579a6cfd87f644bf463cafc1642438b78adf5"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/resources.py",
+      "bytes": 253,
+      "sha256": "7216f41c7c39029c4ed6b6df02fd6628e26e56766bf600f46d579c15be068f32"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/runtime_classes.py",
+      "bytes": 28171,
+      "sha256": "8328d5e34fbec09fd6736283e38d19c582d134b793142b8169883bed5f8de55d"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/shapes.py",
+      "bytes": 9719,
+      "sha256": "d23e3dcdc5782c81e2c5b7230c032fb845150f2c2ca584b75ec0ad67e2d2e61d"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/sound.py",
+      "bytes": 13936,
+      "sha256": "eeee6db38c43a21199f1f224af356f3a2d999aaeea9dd3de98e594dda0400e4f"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/synched_entity_data.py",
+      "bytes": 5582,
+      "sha256": "d5eaa087aac934f99d3b27f740880276fb00ef3689604cdfa86bae5f526f1c97"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/tags.py",
+      "bytes": 206,
+      "sha256": "b63d111b096a7d2840d52be8db93a978f886472d8ebc29de8230f7a88159e3e3"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/tiered_item.py",
+      "bytes": 2171,
+      "sha256": "a7edff0dd4baa50d6a16d0ae05dabdef4ee81f2702ede5f6cc98114505a508be"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/tool_rules.py",
+      "bytes": 7436,
+      "sha256": "6449b16dc260a8fe406f292abe4490aa9974ad90ff6d9b8c02dd694bd41ee8ef"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/trading.py",
+      "bytes": 6030,
+      "sha256": "e1a91370ef3fde86be6d2b4281c07a2c7d50f00cc9a5f811ee69c2c27935caf0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/utf8_codec.py",
+      "bytes": 3096,
+      "sha256": "b128928361799e2fbf930f57507f92433df49205acfcdb51ce563e2638544313"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/util.py",
+      "bytes": 16871,
+      "sha256": "770b16202ce442a1987d13fb91642b1abc9cb780a2d4b7aa053cbb74b436adb5"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/utility_contracts.py",
+      "bytes": 5612,
+      "sha256": "9d45ecbcf2948cbf3b258b03feb5ce4ac2fcc22e7d1a24d8bf3bf67f2722d321"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/vertex_format.py",
+      "bytes": 10702,
+      "sha256": "f7a85b8b87379459d39874250f66e5200d21d51aa6d6ba96497b56d1baad048f"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/vertex_sorting.py",
+      "bytes": 4041,
+      "sha256": "184527eed1aa5fd2ec6b48ec464fb884270bc9b6c8b69fc299c3ac0ab25b4dd0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/world_contracts.py",
+      "bytes": 4583,
+      "sha256": "c5b07b3e9eb002b1888b42bdaa89d5fe46ba77a735868ec8ae978fdb8a994fd5"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/minecraft/writer_contracts.py",
+      "bytes": 3761,
+      "sha256": "239de3c6050271ebfb8d9b613c30174ac61194a5ce844488f768de2db1c3c175"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/modMain.py",
+      "bytes": 13047,
+      "sha256": "13827e3a4a2fc8b6d0904203436c7d3131acac6473b3deaa33d38400570a1b84"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neocore_config.py",
+      "bytes": 200,
+      "sha256": "5691ac36603a87ae3f2cf855c2229d0986e24a47debeecbbfe18c89ef8402479"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/__init__.py",
+      "bytes": 26,
+      "sha256": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/attachment.py",
+      "bytes": 8351,
+      "sha256": "cebf3a398b67bccf91591757205189a14b6c634eea193873cf054451031284d2"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/capabilities.py",
+      "bytes": 13652,
+      "sha256": "7a8e5f2c15388f75f92e2c0d73835e75b3966e54bc8b2d58c46ba3cf3725ccd5"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/common.py",
+      "bytes": 11181,
+      "sha256": "fa959791701fb73b95bb75241737df4e05784c3c8da0278561a6ad2cef8260db"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/config.py",
+      "bytes": 28310,
+      "sha256": "3d6606de7f62a7d068432d70b512606c648838eeedb62f483e580402ec0e32c2"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/creative.py",
+      "bytes": 2837,
+      "sha256": "108f15c168a72aaf05e24c8bb52da166f38b9001d4b48683790363b0ac3292e8"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/energy.py",
+      "bytes": 2643,
+      "sha256": "aada8ddb7848a2eafdfb29059b2feea7826fa485b6de0d5da1ed3f76ecb31f20"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/__init__.py",
+      "bytes": 7305,
+      "sha256": "e493eda8160509a3be8a86f3ea2a5686cceae8f61bb67895a04a449971095eac"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/base.py",
+      "bytes": 23253,
+      "sha256": "d66b968cdeb907fe62dbb733ef3fb2b1bace974733adcfbd0ea36ba71b9a9173"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/client.py",
+      "bytes": 6104,
+      "sha256": "927d817695cfd319e8fd41a8f8d5e29cbdfb737b9a7eab3d90afd3ccbe2ef8cd"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/entity/__init__.py",
+      "bytes": 2349,
+      "sha256": "e3ff477a770305a0f861581fc54393a52de102da6e8f055ffbe567a4581bcedd"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/entity/base.py",
+      "bytes": 3413,
+      "sha256": "ba58e9ee8689c8b05dc1b7965fb2607ac15339046e4175b3842c8d2e10bc1b33"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/entity/living.py",
+      "bytes": 10051,
+      "sha256": "2c2e8f72bf0a6ba9cb6ec33b05dd314da11cd08a0c9903103f484022974e28ed"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/entity/player.py",
+      "bytes": 11579,
+      "sha256": "1e0331ab3c4c60bfa33ab12ed2e98f34e7f012587b57959dbf036ecb177091ce"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/entity/registration.py",
+      "bytes": 1990,
+      "sha256": "8c66d4ece5a07635823ce1b4bb951c2da75697249992d582e89e4afcb0a35061"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/fml/__init__.py",
+      "bytes": 1061,
+      "sha256": "c6f9d1bc1b36d1b70648b49b1891eeddf57eb412bd472862ff9fbc0d10dc824b"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/fml/config.py",
+      "bytes": 2041,
+      "sha256": "a10650c14b7118096212948d8f7f915e4c3729f41b9c61066e71959be7125d3a"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/fml/lifecycle.py",
+      "bytes": 5269,
+      "sha256": "c41541851c404e5dcf2737d88ce61e029864c9a2f086be3b61bc610b2e144382"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/level.py",
+      "bytes": 5582,
+      "sha256": "98fc983dda2b491d004edf57e1a209efe3d1f8bad27195f05e7ec91ecb1fea2a"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/server.py",
+      "bytes": 790,
+      "sha256": "0bf4cbe186344db278370a8cdcb826ca33a7466f6d8d4bdfd46dba0ebecab322"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/tick.py",
+      "bytes": 4405,
+      "sha256": "a7a85e53ba60bb07b0c514433f78682bc5a85aef1fac48345d52460c91e0f83f"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/event/village.py",
+      "bytes": 3721,
+      "sha256": "70221f10a4450059b4a936e5865653d0d8ec1c7b15b1437bc3f153620fad6ce5"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/fluid.py",
+      "bytes": 2969,
+      "sha256": "61a598dc8fd4ec31f897b38e5fc363066f570bf2f263b5c441c843c6db9f951b"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/fluid_handler.py",
+      "bytes": 5625,
+      "sha256": "42055b6c7aa04a967473746b261113920e976e0cd88eaeb62a711212cf2c2937"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/interface_contracts.py",
+      "bytes": 4588,
+      "sha256": "5e74720c3e226361090fc11171ec21623bcb66e3af9e1a37e3fa4b058ead54f8"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/items.py",
+      "bytes": 4769,
+      "sha256": "e608d4ede8c09e37ff79e55a6e4a762f329a7fb87e274e29cde4329fe21d2cdf"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/menu_interfaces.py",
+      "bytes": 1980,
+      "sha256": "e4e62bc78983656b7c85439c4af4c935a9d2a6ac183eab97c4c6ba333550e98f"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/misc.py",
+      "bytes": 26,
+      "sha256": "3d19b0fb4719bd31ad99e963edc55449473a5631ebc799b3ee66be38c3742ca0"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/mixin_callbacks.py",
+      "bytes": 1929,
+      "sha256": "988f2ac0d308cb65959aea0a3e2e1dc2525f51f7b89489a6e713531090467d43"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/mixin_hooks.py",
+      "bytes": 3615,
+      "sha256": "9c3225f5cfd6486733b6a90d4d762d2639412bb962550bdc79ad371ca4b9e558"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/mod_entrypoints.py",
+      "bytes": 6010,
+      "sha256": "805842ac9937f69bf2d73e3f98b56d4cc5da4fe974c44ea015a98fc7115c8405"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/network.py",
+      "bytes": 35205,
+      "sha256": "86d7246333eb300c665ceee2c5a82b88f8e8a1804796743008148112a3e36467"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/neoforge/registries.py",
+      "bytes": 35002,
+      "sha256": "3264535e2b18c04e62c5b8d29287a0f4b206d66e4428c442155351aedab4368a"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/prepared_mods.py",
+      "bytes": 172,
+      "sha256": "10dfbb4958775161ce8bd166f617a089df3a24251d60fc535608abb162de4d54"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/shader/__init__.py",
+      "bytes": 5138,
+      "sha256": "ce35ead82bec335c9b6526bccf0922801f501570fbe26a717d0737997ae390bc"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/shader/material.py",
+      "bytes": 14335,
+      "sha256": "3c3cb235a02b647f1381516f52b498186a5518a47468a1512b8a4ef73e1453c1"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/shader/opengl.py",
+      "bytes": 6749,
+      "sha256": "412ebf6864a527ee7578c57476bcb310d0e1a0a7b743d22f268ccc3c5b78b853"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/shader/uniform.py",
+      "bytes": 12353,
+      "sha256": "83d25413146038026873e77bf1f7ab82ba046cafdb53a3afa5ed3c752bdeaabb"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/未映射api/__init__.py",
+      "bytes": 1918,
+      "sha256": "c168d6e6ef93c6e06b9f1fbf965c07881414aa1200067a13e5665099d20bf4b8"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/未映射api/fallback.py",
+      "bytes": 20628,
+      "sha256": "5cd370206b39a91e1433f4fd9e0a6b01cb17615e557768a2b4dd81651ccf5846"
+    },
+    {
+      "path": "backend/core/NeoForgeCoreScripts/未映射api/logger.py",
+      "bytes": 6420,
+      "sha256": "bea3ff3f66acb29f27e87d00ed5e77d9944a2e555dfc7d3f0e2d0e66523da03e"
+    },
+    {
+      "path": "backend/dev/api_coverage.py",
+      "bytes": 10018,
+      "sha256": "57c767d94e3d16dd0158995c96a2ee9fea1bc153e13d02b7f5e3fb88078e54be"
+    },
+    {
+      "path": "backend/dev/audit_access_transformers.py",
+      "bytes": 2838,
+      "sha256": "f0a5643d5d8d7ee362bf4b203fb565fc1b48c4fe4b473e331003500e834ff3ec"
+    },
+    {
+      "path": "backend/dev/audit_runtime_gaps.py",
+      "bytes": 2888,
+      "sha256": "b0f47e2390338ec2a4028d94a9ca615d4c00f682d8e213409fd0ac46a873f67a"
+    },
+    {
+      "path": "backend/dev/backup_neocore.py",
+      "bytes": 10122,
+      "sha256": "0ec7367ab490199a76f472263b3994b9196bec9f12c8970aa6efd1125489ac84"
+    },
+    {
+      "path": "backend/dev/build_block_content.py",
+      "bytes": 5269,
+      "sha256": "bc0c9d304f18db6c190e7fe6ad8cd4356c30548a9510695a087891b49b95937d"
+    },
+    {
+      "path": "backend/dev/build_distribution.py",
+      "bytes": 21707,
+      "sha256": "4c235cb5697be0760bd0b41bafc00c01ffb4b9a2f3fe48eebe5c1972e35c70db"
+    },
+    {
+      "path": "backend/dev/build_entity_visuals.py",
+      "bytes": 10084,
+      "sha256": "a22393d191575cdbc242d2c45e9a6b4c01a265deea2b195d6c1d44c5e2919820"
+    },
+    {
+      "path": "backend/dev/build_item_content.py",
+      "bytes": 13660,
+      "sha256": "f4952a27cf3f8519ee56d1c4e6537d4916fb72a768cd063a5a48e8b01c0a5f60"
+    },
+    {
+      "path": "backend/dev/build_java_grammar.py",
+      "bytes": 2006,
+      "sha256": "ed35634f079e92e1df8ca81692ead71c887f4a2a77a77adfd155eee358905206"
+    },
+    {
+      "path": "backend/dev/build_localization.py",
+      "bytes": 2292,
+      "sha256": "55de3c1a01a2ac926516f85213bab9862c160da67c7a22226b24f03a136a360e"
+    },
+    {
+      "path": "backend/dev/build_resources.py",
+      "bytes": 5061,
+      "sha256": "bde8afafca61f8c289c5daef6991eb7d31fbb4d1390bbddff00c4c1af8d450e7"
+    },
+    {
+      "path": "backend/dev/build_source_bundle.py",
+      "bytes": 6933,
+      "sha256": "06b4f89e1c8f44cafd133431398119fadc9795cb90265ae51a16be842c532ac7"
+    },
+    {
+      "path": "backend/dev/collect_item_content.py",
+      "bytes": 2785,
+      "sha256": "2770947f81a5d7b635a6507b1b90eddd64512152cf69825fa75c8af36d7932f7"
+    },
+    {
+      "path": "backend/dev/compatibility_mining.py",
+      "bytes": 2727,
+      "sha256": "859da7ed52deaf61117a4fc54dce5058f7693b7e821e185dad43315cd99de48e"
+    },
+    {
+      "path": "backend/dev/conversion_benchmark.py",
+      "bytes": 2671,
+      "sha256": "152bdc9dc2d62da8e1ecae3b48d7b42c1fd46f91a2051480263f993cd799bf4c"
+    },
+    {
+      "path": "backend/dev/data_only094.py",
+      "bytes": 6322,
+      "sha256": "8db1584408be48a8c8b3556d318106b1c04c9bd724e7e77a2c85c5de3a4a22f7"
+    },
+    {
+      "path": "backend/dev/decompile_mod.py",
+      "bytes": 7690,
+      "sha256": "b9dcfd2d5ddf6ac5cf3949cc33f720d6d0fcc1e301c3ef4602e42e7d6f33eb18"
+    },
+    {
+      "path": "backend/dev/dependency_abi.py",
+      "bytes": 10274,
+      "sha256": "cd8ce27f93221f200c8903de0efd18456ffa46d4d216f22314b05d2819f87213"
+    },
+    {
+      "path": "backend/dev/examples/entity_static_layer/Model.java",
+      "bytes": 966,
+      "sha256": "1e72b92a1d073c54f8213ed854359789eafe824dc76dc9f99555d7d9b698dee8"
+    },
+    {
+      "path": "backend/dev/examples/entity_static_layer/README.md",
+      "bytes": 216,
+      "sha256": "153ff736411bc46a306523b3070a5c330e6dba81933e4056b657eaf08f032dd1"
+    },
+    {
+      "path": "backend/dev/examples/entity_static_layer/texture.png",
+      "bytes": 84,
+      "sha256": "55a70e92d9d4e15e34e2c19e2b022aed8d0ed49b681c612b15c9567ad4a05069"
+    },
+    {
+      "path": "backend/dev/examples/ExampleContentScripts/modMain.py",
+      "bytes": 2879,
+      "sha256": "4def76abd6713a164e7ee080688127bf02995e2c66b83c347e20503d9c45db8b"
+    },
+    {
+      "path": "backend/dev/examples/java_codegen/sample_box/sample/Box.java",
+      "bytes": 246,
+      "sha256": "f1d193752a4906701176fe5092586576172016bf52a9f36e6829f1a330018542"
+    },
+    {
+      "path": "backend/dev/examples/java_translation_job/demo/Main.java",
+      "bytes": 166,
+      "sha256": "703ae04d7b826a430bb1696563783366f814e1f84c3dfbd5de6b3eccebde1daf"
+    },
+    {
+      "path": "backend/dev/examples/java_translation_job/META-INF/neoforge.mods.toml",
+      "bytes": 146,
+      "sha256": "8f6909d6ff9430f84416bc0976fd483cf8f7a83236371798d917023296bc31e0"
+    },
+    {
+      "path": "backend/dev/examples/multi_mod/neocore_example_addon/example/neocore_example_addon/Main.py",
+      "bytes": 591,
+      "sha256": "4f8657adfd13bdfe019874d6548c9e9c227ee0f0969c574315165d847855091b"
+    },
+    {
+      "path": "backend/dev/examples/multi_mod/neocore_example_addon/META-INF/neoforge.mods.toml",
+      "bytes": 185,
+      "sha256": "3243fd72d2d55100613fd038903fd8507a4083c6b03201cc3a4782286baa95c0"
+    },
+    {
+      "path": "backend/dev/examples/multi_mod/neocore_example_base/example/neocore_example_base/Main.py",
+      "bytes": 591,
+      "sha256": "4f8657adfd13bdfe019874d6548c9e9c227ee0f0969c574315165d847855091b"
+    },
+    {
+      "path": "backend/dev/examples/multi_mod/neocore_example_base/META-INF/neoforge.mods.toml",
+      "bytes": 55,
+      "sha256": "3c7b8b5c1ee76dc30aca0d5f310f9d37ef7f278eea8dd8dd5652c89fb441200b"
+    },
+    {
+      "path": "backend/dev/examples/network_roundtrip/example/network_roundtrip/Main.py",
+      "bytes": 1983,
+      "sha256": "d5094ff47b3a9e1ddcb8fce831c1f3a278eba86094b5dcb107b93eb086d1fc57"
+    },
+    {
+      "path": "backend/dev/examples/network_roundtrip/META-INF/neoforge.mods.toml",
+      "bytes": 49,
+      "sha256": "4074fc35d0a2a633501f3f06be9361bd73ce56bace38e185bfda9f9d6fea15bf"
+    },
+    {
+      "path": "backend/dev/examples/runtime_cfr_source/cfsource/Hooks.java",
+      "bytes": 483,
+      "sha256": "1362263a734c9c6300f32e64e292f62aef0f94a8b1a02bf4e35839786c9d955f"
+    },
+    {
+      "path": "backend/dev/examples/runtime_cfr_source/cfsource/Main.java",
+      "bytes": 146,
+      "sha256": "7629f6881d7504ca2f3b743e419649cd8f673d473e7b0c76785acdb2d4a35471"
+    },
+    {
+      "path": "backend/dev/examples/runtime_cfr_source/cfsource/Target.java",
+      "bytes": 80,
+      "sha256": "a389b84066a3cb8db6bc350cd28609a6c3248f6f8e25810b69d8374bb0b25090"
+    },
+    {
+      "path": "backend/dev/examples/runtime_cfr_source/META-INF/neoforge.mods.toml",
+      "bytes": 152,
+      "sha256": "38261b1e9a430ce441558fd18d0333c01233f165349b671c5bd157d687a95ea1"
+    },
+    {
+      "path": "backend/dev/examples/runtime_cfr_source/source.mixins.json",
+      "bytes": 116,
+      "sha256": "81be12ca900f02d1229850c82b2f6fa002dd935c048cc8a07dfb65cbd64442a8"
+    },
+    {
+      "path": "backend/dev/examples/runtime_entity/entitysample/CounterEntity.java",
+      "bytes": 806,
+      "sha256": "cbbf3c05293ffc985cf7e1b1dece8a383f3ec0356eeb28fccf914ffb26f0db2f"
+    },
+    {
+      "path": "backend/dev/examples/runtime_entity/entitysample/Main.java",
+      "bytes": 563,
+      "sha256": "d896756fc1ec4c17983064c1be68c817469a3df7d42189ce294643fbdb2de90d"
+    },
+    {
+      "path": "backend/dev/examples/runtime_entity/META-INF/neoforge.mods.toml",
+      "bytes": 54,
+      "sha256": "d4590a5b615a92d58d00718431d31d9735a3114e21ff5ed9d3826c6020e23197"
+    },
+    {
+      "path": "backend/dev/examples/runtime_entity_registered/META-INF/neoforge.mods.toml",
+      "bytes": 113,
+      "sha256": "0d0b85197fb61f71bfc56edc53aaaf6eb2da68e58fdc3ab460f9cd6b82920e60"
+    },
+    {
+      "path": "backend/dev/examples/runtime_entity_registered/sample/Counter.java",
+      "bytes": 668,
+      "sha256": "70a1ef80bad5dd0602f459f8c15ede1fde2266b6c1d2091d66f694f2204b17a1"
+    },
+    {
+      "path": "backend/dev/examples/runtime_entity_registered/sample/Main.java",
+      "bytes": 603,
+      "sha256": "eeda18eb4c68211b1fbc1fe66a7a09c6801c7d8c02dfa2126e8f69291b4e179d"
+    },
+    {
+      "path": "backend/dev/examples/runtime_entity_registered_other/META-INF/neoforge.mods.toml",
+      "bytes": 106,
+      "sha256": "6e5f9d6a55ff8f2a8fb46fc5d2e0b0b092ee7254003eae8f4ba2538800d94c27"
+    },
+    {
+      "path": "backend/dev/examples/runtime_entity_registered_other/other/Counter.java",
+      "bytes": 667,
+      "sha256": "1fb95b4b6ca3e53c0de3eb7bc60e31c0f1875d76c440ab9ba1da7a844096cb22"
+    },
+    {
+      "path": "backend/dev/examples/runtime_entity_registered_other/other/Main.java",
+      "bytes": 581,
+      "sha256": "53d142bfa3cd3a46537e526f63c94168ffd0c7d2894d3aa6befc583f04d457aa"
+    },
+    {
+      "path": "backend/dev/examples/runtime_enumset/generic/flags/Main.java",
+      "bytes": 486,
+      "sha256": "88c0dea7a078f13584f7175ca6cbbb024830fc098c92a086cf574eb96e807801"
+    },
+    {
+      "path": "backend/dev/examples/runtime_enumset/generic/flags/ProbeGoal.java",
+      "bytes": 500,
+      "sha256": "e633cbf2fc467a9e5c632a67178a18070da8ad1288f5eabcae3e0ac81fecdf0f"
+    },
+    {
+      "path": "backend/dev/examples/runtime_enumset/META-INF/neoforge.mods.toml",
+      "bytes": 116,
+      "sha256": "087955d6de6b64d644c00cb47afdfa869c8a02e29428e92d0bc2f81c5367cf13"
+    },
+    {
+      "path": "backend/dev/examples/runtime_goal/generic/Main.java",
+      "bytes": 461,
+      "sha256": "5433a99d0009cfdb14d069987a8e25f59eafd131ba71169ce2e94921fc752ed6"
+    },
+    {
+      "path": "backend/dev/examples/runtime_goal/generic/ProbeGoal.java",
+      "bytes": 390,
+      "sha256": "7cd4695378f83ef4817b9bdbc18fefb9b4e74bc9a60e6ddcea922d246cfa1716"
+    },
+    {
+      "path": "backend/dev/examples/runtime_goal/META-INF/neoforge.mods.toml",
+      "bytes": 107,
+      "sha256": "3e0c87a32191c8606bc95370b29bb33f5a7016c3f935bb093867c7819479aeef"
+    },
+    {
+      "path": "backend/dev/examples/runtime_linked_map_order/generic/order/Main.java",
+      "bytes": 808,
+      "sha256": "2059a8738e51caa5df4caa81b9ac76737c2f59420685f4166ef32883950cbbbf"
+    },
+    {
+      "path": "backend/dev/examples/runtime_linked_map_order/META-INF/neoforge.mods.toml",
+      "bytes": 177,
+      "sha256": "f7860ca7c88264c9362787bec07128453c2425e841b08ac89a998951bee5497b"
+    },
+    {
+      "path": "backend/dev/examples/runtime_map_defaults/generic/remap/Main.java",
+      "bytes": 708,
+      "sha256": "7c85e57f6894c8e39327350af674e88f0b20b214295eadcaa07e19a5eabcd876"
+    },
+    {
+      "path": "backend/dev/examples/runtime_map_defaults/META-INF/neoforge.mods.toml",
+      "bytes": 176,
+      "sha256": "fda2542d76176ea106d128a4700852e86e3f7723615e8967e6a065d33a014be3"
+    },
+    {
+      "path": "backend/dev/examples/runtime_map_views/generic/maps/Main.java",
+      "bytes": 944,
+      "sha256": "a7b6aa1ed1a4d0a405d01ef3e691edd80ad1f12141decc109b5c492e42f3fec6"
+    },
+    {
+      "path": "backend/dev/examples/runtime_map_views/META-INF/neoforge.mods.toml",
+      "bytes": 159,
+      "sha256": "832eb42590b7fc71d227a13cbab24e7ffd1aef83d1f47a160e21b3773316f290"
+    },
+    {
+      "path": "backend/dev/examples/runtime_mixin_cfr/META-INF/neoforge.mods.toml",
+      "bytes": 150,
+      "sha256": "b98bef91f1bf0ff53153e5625cdc8c6f02c5eef0be93744485de6a9cf6a8eeb1"
+    },
+    {
+      "path": "backend/dev/examples/runtime_mixin_cfr/native.mixins.json",
+      "bytes": 123,
+      "sha256": "4c7cc6c06d60b8ba4410a5e05f14773a90003a8c5fd1eb44269620b8131eb198"
+    },
+    {
+      "path": "backend/dev/examples/runtime_mixin_cfr/nativecontent/Audit.java",
+      "bytes": 94,
+      "sha256": "c51952a974d86038e92fc94b0f7c3144672701254a4dc0b1f30c874518cc60f9"
+    },
+    {
+      "path": "backend/dev/examples/runtime_mixin_cfr/nativecontent/Example.java",
+      "bytes": 434,
+      "sha256": "f87ad9034766cd9354d847f1ce06de9514af5a804aff1d2c1207ca71941782b8"
+    },
+    {
+      "path": "backend/dev/examples/runtime_mixin_cfr/nativecontent/Main.java",
+      "bytes": 451,
+      "sha256": "6594095076140c739a172b39667e9c6c8b801d0667282e496f6a193de927c7f2"
+    },
+    {
+      "path": "backend/dev/examples/runtime_mixin_cfr/nativehooks/Hooks.java",
+      "bytes": 819,
+      "sha256": "9f618ae329a5709cd1093ae9a30235aca8de303403065b95c090ddec546c69d9"
+    },
+    {
+      "path": "backend/dev/examples/runtime_mixin_fields/fielddemo/Main.java",
+      "bytes": 569,
+      "sha256": "569ea0a22e36b562905a380aa38e0150db8c8604860064ae7d4360184c9a99ae"
+    },
+    {
+      "path": "backend/dev/examples/runtime_mixin_fields/fielddemo/Target.java",
+      "bytes": 186,
+      "sha256": "88c9b022995e2fe5dfc967117c33849d13f65f7a259be2e1acd542992af6346d"
+    },
+    {
+      "path": "backend/dev/examples/runtime_mixin_fields/fieldhooks/Hooks.java",
+      "bytes": 866,
+      "sha256": "59d66e39c09cf2af89234acb951b4e5e9cc0772687b9cac7711e513bb73e69f4"
+    },
+    {
+      "path": "backend/dev/examples/runtime_mixin_fields/fields.mixins.json",
+      "bytes": 92,
+      "sha256": "723200bea2625edc1e35fb6d67039374da235f02319a29fe9d09c8666166fb64"
+    },
+    {
+      "path": "backend/dev/examples/runtime_mixin_fields/META-INF/neoforge.mods.toml",
+      "bytes": 162,
+      "sha256": "652ba329821202ab25224278f6a3bcc8c1df58798dfa8c3e1aea73f30ee6e2ec"
+    },
+    {
+      "path": "backend/dev/examples/runtime_modify_arg/argdemo/Hooks.java",
+      "bytes": 452,
+      "sha256": "fee0eabe01a8a3c98c01da30cacffa3388a528031db9fdcb380d7e6529e82fe7"
+    },
+    {
+      "path": "backend/dev/examples/runtime_modify_arg/argdemo/Main.java",
+      "bytes": 409,
+      "sha256": "421039ad95ba9c6069d67349dbb4f378a4a71b05037998614106c54994157b7d"
+    },
+    {
+      "path": "backend/dev/examples/runtime_modify_arg/argdemo/Sink.java",
+      "bytes": 89,
+      "sha256": "334664d1a0ea176bf49e5f6e0953b35cf889c440a71b7a0295462dc2abc1ef1d"
+    },
+    {
+      "path": "backend/dev/examples/runtime_modify_arg/argdemo/Target.java",
+      "bytes": 113,
+      "sha256": "aa9f0532a4e702aea986bc005a6f4791bc4f0ea464074a2515d810809bd27191"
+    },
+    {
+      "path": "backend/dev/examples/runtime_modify_arg/args.mixins.json",
+      "bytes": 56,
+      "sha256": "21af20125dde65d4529234e9335477baae3b26be24385d8979ef15e5c79a48f7"
+    },
+    {
+      "path": "backend/dev/examples/runtime_modify_arg/META-INF/neoforge.mods.toml",
+      "bytes": 156,
+      "sha256": "e9e3be60d80ccbaf5d82c131f6c6b1c09afcb2270de6c4fc05d3338f5d4f8d81"
+    },
+    {
+      "path": "backend/dev/examples/runtime_native_menu/META-INF/neoforge.mods.toml",
+      "bytes": 151,
+      "sha256": "ab25860461f01147d3665cec5ef2d9aab96a7613c0604a5839b11da6a71b25f4"
+    },
+    {
+      "path": "backend/dev/examples/runtime_native_menu/native.mixins.json",
+      "bytes": 66,
+      "sha256": "b6d53c4032fda3fe8692e40c5a4eb60ea8b8513f6422b465deb742c3f1be48c5"
+    },
+    {
+      "path": "backend/dev/examples/runtime_native_menu/runtimecontent/Audit.java",
+      "bytes": 95,
+      "sha256": "7133d12e3abb0a3fd3bf9761427f58f0abdb82cda2c64027666bbd960c750799"
+    },
+    {
+      "path": "backend/dev/examples/runtime_native_menu/runtimecontent/Example.java",
+      "bytes": 435,
+      "sha256": "1f5d63bc0d5e30b1c14b45eaea44fe6c250ca0162db45dd9d3a8246d361b8a7d"
+    },
+    {
+      "path": "backend/dev/examples/runtime_native_menu/runtimecontent/Main.java",
+      "bytes": 451,
+      "sha256": "2922ab5b53404c9fe5198a643f3b3f1a5a84287f6b41a7e1772e9cae9acade48"
+    },
+    {
+      "path": "backend/dev/examples/runtime_native_menu/runtimehooks/Hooks.java",
+      "bytes": 962,
+      "sha256": "6185429d3691b28ca648adc1a3f6fa4d8b9e29ef24237884b4fd6d22e75f61ae"
+    },
+    {
+      "path": "backend/dev/examples/runtime_resources_alpha/assets/resources_alpha/lang/en_us.json",
+      "bytes": 34,
+      "sha256": "0b553b405ed22295c62fd29edf51722fe1d50ec4a719f0ae52db368e77e86a2d"
+    },
+    {
+      "path": "backend/dev/examples/runtime_resources_alpha/common/alpha/Helper.java",
+      "bytes": 90,
+      "sha256": "a1c44125e7dac87637df82ae5a34ecbbe09791983ce5a1304710f09b8780079a"
+    },
+    {
+      "path": "backend/dev/examples/runtime_resources_alpha/common/alpha/Main.java",
+      "bytes": 403,
+      "sha256": "c2f34280d78bc8ae1db2ed765c5dacee6469885b3371e6d0aa44d24e8d8e70ee"
+    },
+    {
+      "path": "backend/dev/examples/runtime_resources_alpha/META-INF/neoforge.mods.toml",
+      "bytes": 141,
+      "sha256": "d81881c5ff338199b11194c832cf41e58e7304bedee0d80668f5c427cb03ddb2"
+    },
+    {
+      "path": "backend/dev/examples/runtime_resources_beta/assets/resources_beta/lang/en_us.json",
+      "bytes": 33,
+      "sha256": "89e5438acbc5a4523fdc45359d88b0cad3c20676e441d2565eb8b1754384c219"
+    },
+    {
+      "path": "backend/dev/examples/runtime_resources_beta/common/beta/Helper.java",
+      "bytes": 89,
+      "sha256": "f424ae3b6408fdcc65bdebb3311f295dbe1c3b5b015f82ec32dbc699d1a1d10f"
+    },
+    {
+      "path": "backend/dev/examples/runtime_resources_beta/common/beta/Main.java",
+      "bytes": 401,
+      "sha256": "b9bac695dd3b06dacd61c6bd0f4aba88466ac07dc90e5fbc64a584385fec2bb9"
+    },
+    {
+      "path": "backend/dev/examples/runtime_resources_beta/META-INF/neoforge.mods.toml",
+      "bytes": 240,
+      "sha256": "a2014bc6e3e251c82ac258ab7f775549f7a1865c5bfb994f36c398ca3c134d28"
+    },
+    {
+      "path": "backend/dev/examples/runtime_selector/generic/selector/Logic.java",
+      "bytes": 478,
+      "sha256": "b541bf4b5be041b536d3d495a42fd377e469a30fef836bedaadc7c90a500418b"
+    },
+    {
+      "path": "backend/dev/examples/runtime_selector/generic/selector/Main.java",
+      "bytes": 710,
+      "sha256": "410563bbe1ac567f82adeb71833a81b759f3bae68a5f0ed4a564285d09939f0e"
+    },
+    {
+      "path": "backend/dev/examples/runtime_selector/generic/selector/ProbeGoal.java",
+      "bytes": 532,
+      "sha256": "f09af496ddfa43e56bd46e82d1959e67133f090f4e7fd2e668035847412d62aa"
+    },
+    {
+      "path": "backend/dev/examples/runtime_selector/META-INF/neoforge.mods.toml",
+      "bytes": 299,
+      "sha256": "df4ffb0c9b30bfcc8a1f6ee201f47d9d86ab32a2d7ff17aba4075435ab4359a9"
+    },
+    {
+      "path": "backend/dev/examples/runtime_set_views/generic/sets/Main.java",
+      "bytes": 871,
+      "sha256": "076704048b4f8e03ed1642379d4df6b7f878cd94c5b372aefcc6c38b4a3e5237"
+    },
+    {
+      "path": "backend/dev/examples/runtime_set_views/META-INF/neoforge.mods.toml",
+      "bytes": 166,
+      "sha256": "ff5fb865428a01416bcb8016966e74f7113061a496f2a9ce6d56be1592b9b995"
+    },
+    {
+      "path": "backend/dev/examples/runtime_source_mixin/demo/Audit.java",
+      "bytes": 245,
+      "sha256": "4cce0bfd9a6d347593bd86d2c534ed28410d826971f0f2354e097a5e731b38a2"
+    },
+    {
+      "path": "backend/dev/examples/runtime_source_mixin/demo/Hooks.java",
+      "bytes": 651,
+      "sha256": "d82689df7c9e1ff916daa0e3258d8bf90efd25ef5802ad451ad166b0f1149745"
+    },
+    {
+      "path": "backend/dev/examples/runtime_source_mixin/demo/Main.java",
+      "bytes": 413,
+      "sha256": "b4247e136bf4a32e63c059a97c934fd4645d1440a85b289cbae71d6b37a4e2b8"
+    },
+    {
+      "path": "backend/dev/examples/runtime_source_mixin/demo/Target.java",
+      "bytes": 90,
+      "sha256": "294f52a815d573277524893f8da55324a671b72bcb04611b5876f10edfaaead6"
+    },
+    {
+      "path": "backend/dev/examples/runtime_source_mixin/demo.mixins.json",
+      "bytes": 138,
+      "sha256": "243290c3b1904da5fc9224c8f17d20e43571e7fd894b5d22c1838ed9e28193d0"
+    },
+    {
+      "path": "backend/dev/examples/runtime_source_mixin/META-INF/neoforge.mods.toml",
+      "bytes": 160,
+      "sha256": "d42fdb24988f29a423dfcc438a95c50916bc8ce791ea13ed5031bfc74b3e5cc5"
+    },
+    {
+      "path": "backend/dev/examples/runtime_static_imports/META-INF/neoforge.mods.toml",
+      "bytes": 162,
+      "sha256": "a4fc1f0b49b33b94c161b73d46f3f6b24652afad62509375f20639949f675556"
+    },
+    {
+      "path": "backend/dev/examples/runtime_static_imports/staticdemo/Main.java",
+      "bytes": 520,
+      "sha256": "d85cfe6f55bc840ce463485a0ea32e82a48314fa6d164d182520983001966708"
+    },
+    {
+      "path": "backend/dev/examples/runtime_static_imports/util/Tools.java",
+      "bytes": 323,
+      "sha256": "cc60076ac2c98826d585424f42057ea4244f9c41addd6d1c5d9d78957d0cf9de"
+    },
+    {
+      "path": "backend/dev/examples/runtime_static_wildcards/META-INF/neoforge.mods.toml",
+      "bytes": 173,
+      "sha256": "5e17242b3a4534cd2ae70e68c4e8627454dbeb1671dcb828065113d51dfcbe3a"
+    },
+    {
+      "path": "backend/dev/examples/runtime_static_wildcards/wilddemo/Main.java",
+      "bytes": 583,
+      "sha256": "e1d3d61059e1c5b35567419ad1cafe4f4d4e527abbcfed5e177de09a9e7e23ae"
+    },
+    {
+      "path": "backend/dev/examples/runtime_static_wildcards/wildutil/IntTools.java",
+      "bytes": 176,
+      "sha256": "6ff22f61e32d5074fc4d9db48f6569919e63df07744aa9826270c59f7eb71988"
+    },
+    {
+      "path": "backend/dev/examples/runtime_static_wildcards/wildutil/RefTools.java",
+      "bytes": 189,
+      "sha256": "d3f8916b0ec4268422c36a4f18dcb646d8bbe7037d4ebe0cd6bacd750c8b8aaa"
+    },
+    {
+      "path": "backend/dev/examples/runtime_trade_offer/META-INF/neoforge.mods.toml",
+      "bytes": 118,
+      "sha256": "6cd48321749f3886c3b097c12b58390f1c9498060f4b467ccac9433506fc0f70"
+    },
+    {
+      "path": "backend/dev/examples/runtime_trade_offer/trades/Logic.java",
+      "bytes": 648,
+      "sha256": "b39ea4c7deb4f213215cbd15ceeadf11f1e89445ebd3c919fe5a5d7423a9fd8e"
+    },
+    {
+      "path": "backend/dev/examples/runtime_trade_offer/trades/Main.java",
+      "bytes": 759,
+      "sha256": "2e3d39c0f11645e79f259d1f8225dc8b6efe621d8db993d07e038dd5b3c263f4"
+    },
+    {
+      "path": "backend/dev/export_java_event_bus_facts.py",
+      "bytes": 3260,
+      "sha256": "3ef08afc7670c5459c838e90d92a644f325a18c8d93f5692fe12c6b938b97131"
+    },
+    {
+      "path": "backend/dev/export_java_import_index.py",
+      "bytes": 1579,
+      "sha256": "5e01c9f33d910c139ff2de55a7db0be81279c19f603f635cfd72d4a7e53ac0b9"
+    },
+    {
+      "path": "backend/dev/fix_relative_imports.py",
+      "bytes": 3560,
+      "sha256": "dfde9e5402c589789359fa67e3d0f8bbf46d70b113413ddcbf5d10f9c0479f9a"
+    },
+    {
+      "path": "backend/dev/harness.py",
+      "bytes": 28972,
+      "sha256": "543ef3857fc9a5a8ccd15c51c654100569f93ee19b6787f3fe7561591784e0ad"
+    },
+    {
+      "path": "backend/dev/item_registration_probe.py",
+      "bytes": 2696,
+      "sha256": "8d58b14b636da93bf06581038b60edcb76f238b7a9685a4d324cbff6e8a6fe84"
+    },
+    {
+      "path": "backend/dev/java_annotation_policy.py",
+      "bytes": 7610,
+      "sha256": "1a3946192565ac69d85950627566000e917984c97255ff6bedc96fd420d005ce"
+    },
+    {
+      "path": "backend/dev/java_block_tag_data.py",
+      "bytes": 9299,
+      "sha256": "08d1ff562e2c1cad20d9009eba14dbdf2723099d7dd80b9946b1472b1c3b863c"
+    },
+    {
+      "path": "backend/dev/java_class_header.py",
+      "bytes": 1166,
+      "sha256": "0aa94ebb742ad437d17821459e45c59b0ed4a090ef17a48c13af9102c09b42e0"
+    },
+    {
+      "path": "backend/dev/java_codegen.py",
+      "bytes": 187395,
+      "sha256": "47cedd52b48e0de8ccc5e88492222a93c25df71f7b63b55df282974b144192aa"
+    },
+    {
+      "path": "backend/dev/java_config_signatures.py",
+      "bytes": 1789,
+      "sha256": "b9fa626826399579b5cf713faaad13236d34eac22ba9733367807892cba187b7"
+    },
+    {
+      "path": "backend/dev/java_entity_geometry.py",
+      "bytes": 11967,
+      "sha256": "6f33b5eccfcf62ef207c0047ea9dec202d08c5bac27b96f00fa94c47a426a0ae"
+    },
+    {
+      "path": "backend/dev/java_entity_signatures.py",
+      "bytes": 7813,
+      "sha256": "66a62a78f09244601f17973bec92cb2b2b8dc8e6a37c45069e75bdd5a74fdc63"
+    },
+    {
+      "path": "backend/dev/java_event_bus_facts.py",
+      "bytes": 31181,
+      "sha256": "a4fc3df24e5ee3b77ed3ac4ad165d6ef98c083f970e0ce42a445c5b12f9eb51c"
+    },
+    {
+      "path": "backend/dev/java_event_metadata.py",
+      "bytes": 7486,
+      "sha256": "9706d8683099c3191e79225134739fca781635292c4cea8141cc1b679f30ee3d"
+    },
+    {
+      "path": "backend/dev/java_exception_signatures.py",
+      "bytes": 2304,
+      "sha256": "aa6fc013f524169c780fc464df64db98abd0222ffab87edfdcbb25dbed0d2c04"
+    },
+    {
+      "path": "backend/dev/java_existing_call_signatures.py",
+      "bytes": 5220,
+      "sha256": "5f3afc22a3910708e0603cf146061777df9155b1e37206bd68ac2c8792c35c86"
+    },
+    {
+      "path": "backend/dev/java_feature_signatures.py",
+      "bytes": 1846,
+      "sha256": "ee16459bfd273700b888757ea245c77ffc042e41234e1c097e377a4e79a73f7d"
+    },
+    {
+      "path": "backend/dev/java_frontend.py",
+      "bytes": 10825,
+      "sha256": "7021e02ac294e68b15841cf0951f5cae691f14aacbb8a921ac5a995447296363"
+    },
+    {
+      "path": "backend/dev/java_frontend_requirements.txt",
+      "bytes": 47,
+      "sha256": "ebc01918536e0bcd3b9bad97e822efffb9fc01e514767047d75d5087c8d8b3d3"
+    },
+    {
+      "path": "backend/dev/java_generic_contracts.py",
+      "bytes": 2266,
+      "sha256": "60cc40346d24cace084a6ca10269226615d9ad919192f0b63d146e4f4a788c1e"
+    },
+    {
+      "path": "backend/dev/java_grammar.py",
+      "bytes": 1941,
+      "sha256": "3c2ae32c499659b35984f69f0cf15b923160d071a50d96728017bad4592f8319"
+    },
+    {
+      "path": "backend/dev/java_guava_signatures.py",
+      "bytes": 2605,
+      "sha256": "5056d360c54dfa6e31c863060d5348cec2db46938d659884aff6acb04c337a45"
+    },
+    {
+      "path": "backend/dev/java_gui_signatures.py",
+      "bytes": 2322,
+      "sha256": "60a7db6a8f9ba6d5bca7cbb1026cb4aa824f248dd938a2da5fddc4d3ba3744aa"
+    },
+    {
+      "path": "backend/dev/java_import_index.json",
+      "bytes": 188050,
+      "sha256": "c3f7d475f64a0c1f73765e4a7b92a19698335a1f12f3ffb90f77c247108e7531"
+    },
+    {
+      "path": "backend/dev/java_inheritance.py",
+      "bytes": 18955,
+      "sha256": "f9dcd80ae3996d114b05b066ccb4d5b8b0d942e1542618f85ef4ec00fa80bf6f"
+    },
+    {
+      "path": "backend/dev/java_integer_literals.py",
+      "bytes": 1373,
+      "sha256": "6dcb0c1ca151dbc1c578b6b874a5c6c61228f92a09fec28fcc531394f9e97e41"
+    },
+    {
+      "path": "backend/dev/java_interface_oracle.py",
+      "bytes": 2577,
+      "sha256": "6a1e0aed0a0ea22d32e97f9d03b2a4f63804295ceef37ced4d31e7c0aac12864"
+    },
+    {
+      "path": "backend/dev/java_item_bridges.py",
+      "bytes": 3660,
+      "sha256": "53bc7efc339fff49ff759a60e64954594e8bd4d42d5374b60196a555fe27772e"
+    },
+    {
+      "path": "backend/dev/java_item_signatures.py",
+      "bytes": 2394,
+      "sha256": "f860f73dfb040aa56b827df78023f4550ff14f14e1f022a3da7b3270fc6bcfb9"
+    },
+    {
+      "path": "backend/dev/java_library_signatures.py",
+      "bytes": 36016,
+      "sha256": "c960dfaa70817655e7133bdf771dbe71d2b92efc13ba41638ca4a5e3f1f9c186"
+    },
+    {
+      "path": "backend/dev/java_menu_signatures.py",
+      "bytes": 2065,
+      "sha256": "e5501f57c99eb37f8c6762f5f255f20dfa61a6afe1cbc79e389f0488ad79ee9a"
+    },
+    {
+      "path": "backend/dev/java_method_generics.py",
+      "bytes": 5061,
+      "sha256": "091ef8a0edafa8b1fecc4927e3bd3470bc18dacac8f57cfb2f570defccfe4652"
+    },
+    {
+      "path": "backend/dev/java_method_overloads.py",
+      "bytes": 15438,
+      "sha256": "bfe735128adb725fd20d5c6de1861ed55bac9d53b0f1511d163ff63faf7f65cd"
+    },
+    {
+      "path": "backend/dev/java_mixin_fields.py",
+      "bytes": 7516,
+      "sha256": "05f5cf26dbd40c883a92a218134eeca1c7d75ccfb5646a9908b853c3e302c4f5"
+    },
+    {
+      "path": "backend/dev/java_mixin_modify_arg.py",
+      "bytes": 8234,
+      "sha256": "ddaded018beb8e98d533f5da87a8eb6a2fa5e55e1c3510d2fdb0b0304f559d53"
+    },
+    {
+      "path": "backend/dev/java_mixin_native.py",
+      "bytes": 6812,
+      "sha256": "ee102a511dd91dc4a58fb6aa1686064e8382c566baea43dc1f3648e849ac9eaf"
+    },
+    {
+      "path": "backend/dev/java_mixin_native_trade.py",
+      "bytes": 6326,
+      "sha256": "768ee2764a4de5eabd174b920e8c7a3b5f8574571b1961ce1a68f8c1f33fb946"
+    },
+    {
+      "path": "backend/dev/java_mixin_plan.py",
+      "bytes": 21310,
+      "sha256": "f85fd3313d2ca52a309e758f51efb75ed3eae87123c932b121575e43c3a2a63c"
+    },
+    {
+      "path": "backend/dev/java_mixin_refmap.py",
+      "bytes": 3120,
+      "sha256": "28887bfa43462ba549a9a8cf3fca322dc80ae3b52d59b6703080155ab7a5102a"
+    },
+    {
+      "path": "backend/dev/java_mixin_types.py",
+      "bytes": 3890,
+      "sha256": "d347055285d912bc8ce05a31b06535da29306176854fba1fd3a85706ab06ac53"
+    },
+    {
+      "path": "backend/dev/java_mixin_weave.py",
+      "bytes": 6577,
+      "sha256": "2f8fc7c22c1b43de627bddb8e717b645e15df9e98ff4e0191141b1586fe0a2c5"
+    },
+    {
+      "path": "backend/dev/java_mod_metadata.py",
+      "bytes": 6262,
+      "sha256": "d1bd739c0109a14b0317af305a29ab3b2763d9954dc731052b5dcf6498c6bd19"
+    },
+    {
+      "path": "backend/dev/java_model_math_signatures.py",
+      "bytes": 3569,
+      "sha256": "ee25305b8e75cad3ea7c1fe57e891076e0fa047bbc04054ba52a3d561564f56f"
+    },
+    {
+      "path": "backend/dev/java_network_signatures.py",
+      "bytes": 7320,
+      "sha256": "716e0b1c1fa999481289dde9a026d122e9ab4b2bb76714b90ff55f305bfb8cb7"
+    },
+    {
+      "path": "backend/dev/java_official_event_hierarchy.py",
+      "bytes": 53248,
+      "sha256": "103d42a4673bb210e98b7e90630eaeff3207fe63496e7203de796b2b1ea223d9"
+    },
+    {
+      "path": "backend/dev/java_official_probe.py",
+      "bytes": 3178,
+      "sha256": "b941fdabf6e081033d4783160c667c2a33dd8572806e4f242f1a543d1ebb60a4"
+    },
+    {
+      "path": "backend/dev/java_official_type_hierarchy.py",
+      "bytes": 51909,
+      "sha256": "899669b9caf251ff0d75decb6c32b2705b5f5d3b6018d949c26ad95c599bcf4f"
+    },
+    {
+      "path": "backend/dev/java_optional_transformers.py",
+      "bytes": 1383,
+      "sha256": "e5f937687643d5d05ab43eee40ea2ca96fb46c19002486e9bc886e19292091d8"
+    },
+    {
+      "path": "backend/dev/java_parse_cache.py",
+      "bytes": 2441,
+      "sha256": "ae63d2105351f07f474e3057b29da5ac2675adb9ff9e14b8c2b9f10e23395a28"
+    },
+    {
+      "path": "backend/dev/java_parser_worker.py",
+      "bytes": 6824,
+      "sha256": "dbf374a1e2b992d54dda85a2aeabf52bfe91b1815c57b4da8683b64274f1daf1"
+    },
+    {
+      "path": "backend/dev/java_platform_probe.py",
+      "bytes": 728,
+      "sha256": "3dce29580e05f20b6e7d9ca3d2efd8eabbddbee5125301f8aa007f0467b3cedb"
+    },
+    {
+      "path": "backend/dev/java_project_types.py",
+      "bytes": 3761,
+      "sha256": "e8e536ce15ba2be9313d8b87196f3c23549516965491a0cb131c541abaee1f0d"
+    },
+    {
+      "path": "backend/dev/java_scalar_literals.py",
+      "bytes": 749,
+      "sha256": "91cd4c647055f6f708bc539e4f6af54c379c92e7e72b3ec6c8bb4d5c886e3ee8"
+    },
+    {
+      "path": "backend/dev/java_source_generics.py",
+      "bytes": 3202,
+      "sha256": "385809d90884a96e8429df5c9824ebcba5f276cb75d4ba4c0c0f94c61a1f4f13"
+    },
+    {
+      "path": "backend/dev/java_source_interfaces.py",
+      "bytes": 4365,
+      "sha256": "0ac0240e73d821c538d47968f0a65a030e82f8e3b4ff4227179f215c539cd1a4"
+    },
+    {
+      "path": "backend/dev/java_source_lowering.py",
+      "bytes": 7294,
+      "sha256": "a76063298559a24030c5f9e9b1320b2042c1f761d034fec1324e48248e08be36"
+    },
+    {
+      "path": "backend/dev/java_static_imports.py",
+      "bytes": 5279,
+      "sha256": "569c443ca23266a4e5bec24542b9ad30812d14f092ea5d6e40473fbe6b628186"
+    },
+    {
+      "path": "backend/dev/java_symbols.py",
+      "bytes": 9118,
+      "sha256": "849483f83c10519f5bb1b11b4b6df7305a97a71d6eddab6a4b1b910075f2102b"
+    },
+    {
+      "path": "backend/dev/java_tool_signatures.py",
+      "bytes": 3132,
+      "sha256": "fb23a612d7520e971f077675df5a011cc4b1d1d43ceabf886bc4ca3812e0e197"
+    },
+    {
+      "path": "backend/dev/java_trading_signatures.py",
+      "bytes": 3205,
+      "sha256": "287a70ecf8ba13e9bb948a3d683a4235270d2624f8bc3929448821104d01cf97"
+    },
+    {
+      "path": "backend/dev/java_type_queries.py",
+      "bytes": 1005,
+      "sha256": "982638486324dd566a08de62eca0ac9e93a31ca26e4c33ad1ddbb9f2cc1e8bd5"
+    },
+    {
+      "path": "backend/dev/java_value_types.py",
+      "bytes": 663,
+      "sha256": "4fda7e69e9557a65ed4f08086c95524ad8f5275ec6b7d52214ddbe7b4f825518"
+    },
+    {
+      "path": "backend/dev/java_vertex_signatures.py",
+      "bytes": 3393,
+      "sha256": "d51a44ad9af2d4e821c6957632bf89bb75a60d943bd7d6e233244b627cca0d1e"
+    },
+    {
+      "path": "backend/dev/java_world_signatures.py",
+      "bytes": 3562,
+      "sha256": "f6cbffec95b32b150a339c488c04f617d9221512c640b11bd56ce2a45ac5160c"
+    },
+    {
+      "path": "backend/dev/keyword_lint.py",
+      "bytes": 7914,
+      "sha256": "0e1f504eb8ef1eb14c5ac6777fd7ddcd04b993bc0aab99d8965f6e2479015715"
+    },
+    {
+      "path": "backend/dev/layers.py",
+      "bytes": 1233,
+      "sha256": "802f84a5d14d57e3a7c082dad41fe0df33fd6131e4e2cbbb2da99c7f8bd642ec"
+    },
+    {
+      "path": "backend/dev/mining_verified_adapters098.py",
+      "bytes": 849,
+      "sha256": "696c3258be5292b0a56a56c26f71db2b334f1e58a21c351e263e82d97a70c39a"
+    },
+    {
+      "path": "backend/dev/mod_compat_audit.py",
+      "bytes": 5316,
+      "sha256": "32e3efc2a05963ba8ca501a8eb8fab132b75985814c6095d5a8d60bdf57bdde0"
+    },
+    {
+      "path": "backend/dev/mod_content_pipeline.py",
+      "bytes": 5063,
+      "sha256": "54744c396b57c3456297fe83b5fc1b44109b547081bb77276310dfc0320da631"
+    },
+    {
+      "path": "backend/dev/modrinth_benchmark.py",
+      "bytes": 9791,
+      "sha256": "d5141114637db866de830ec01da94187d3cfa2917b896014a86125da8a6d4795"
+    },
+    {
+      "path": "backend/dev/modrinth_dependencies.py",
+      "bytes": 7939,
+      "sha256": "b15d4c0d2f48cfdb433638aec36d5635e7845649d0b59e9d80254a264db41b45"
+    },
+    {
+      "path": "backend/dev/modrinth_results.py",
+      "bytes": 16040,
+      "sha256": "7e2c2c9910d495b6fb3b8f094f89ead4750f890ab2650c639720442a823e3a65"
+    },
+    {
+      "path": "backend/dev/prepare_translated_mods.py",
+      "bytes": 2811,
+      "sha256": "2b588e80abb7a58ece5bb922c440ae48b041487e65283e16e7dadd7ee85c3aea"
+    },
+    {
+      "path": "backend/dev/profiles/minecraft_1_21_1_item_tags.json",
+      "bytes": 179091,
+      "sha256": "c300f845b4223df82b262dbde64992672f3b3907203f7b265f9f6c8b95dd8b83"
+    },
+    {
+      "path": "backend/dev/profiles/netease_pc_3_9_items.json",
+      "bytes": 514461,
+      "sha256": "955b74c9c68ff2421c4049b7a164131a6d638e828e1677c25fbfaacaa4c2d68b"
+    },
+    {
+      "path": "backend/dev/py2to3lite.py",
+      "bytes": 7015,
+      "sha256": "c5272d35acdab965a3d9fbaf4cc22ecd94cbe0e9e1e5334bea0ffc2eed81a0dd"
+    },
+    {
+      "path": "backend/dev/py3only_lint.py",
+      "bytes": 8810,
+      "sha256": "8489fccc14c4e0c9efc942f89d19682b777dad41b97f711a55a282e6f46eacdd"
+    },
+    {
+      "path": "backend/dev/recipe_data094.py",
+      "bytes": 15786,
+      "sha256": "d0e9529984ec566478a2d4e27853b6e7d04406e117dafa7601db22337ff59194"
+    },
+    {
+      "path": "backend/dev/rename_cjk_paths.py",
+      "bytes": 6158,
+      "sha256": "5d750faacd3f93ab128872e58c1d5f5740a8bd0c43e06978b8062d26f12de7bf"
+    },
+    {
+      "path": "backend/dev/run_selftest.py",
+      "bytes": 11558,
+      "sha256": "8b95d30976db445641f3c683d2b8ac3064db4fb7ae730518ebb6e85eeef8979e"
+    },
+    {
+      "path": "backend/dev/run_translation_job.py",
+      "bytes": 17149,
+      "sha256": "38f46061ef750d032d36f0ceadf8ba7275be4b5edb0a363710d357e82ca24ce4"
+    },
+    {
+      "path": "backend/dev/scan_neoforge_api.py",
+      "bytes": 4279,
+      "sha256": "71eeb8f4fe4df52cca3f314cb65dbdec8cdae9bbca0f318984eeb940f32f120e"
+    },
+    {
+      "path": "backend/dev/templates/source_content_modMain.py",
+      "bytes": 3731,
+      "sha256": "eed75a806e3dc1e9146e37838ab5e445122152c29694f20bcf3336086c02054a"
+    },
+    {
+      "path": "backend/dev/templates/source_core_modMain.py",
+      "bytes": 1382,
+      "sha256": "0a9533b648ee2f3426e96ed857ae07b07633dfe1751c61799bd57e5a50a39ad0"
+    },
+    {
+      "path": "backend/dev/templates/source_resource_modMain.py",
+      "bytes": 4415,
+      "sha256": "4023e3bc5d14968bfbbae8fa8ae30e9966cdc72ed7a5b6291ab84d64d05ab59a"
+    },
+    {
+      "path": "backend/dev/tests/entity_jdk_oracle.py",
+      "bytes": 1416,
+      "sha256": "3c2db7c4aae5defaabcc9fe5d78e987780e8e6b0109edf7704cc01c0f20820ad"
+    },
+    {
+      "path": "backend/dev/tests/probe_acceptance_r50_contract.py",
+      "bytes": 4604,
+      "sha256": "c5d09994dacaab1bac3b3a6addae249c511c936fa7ed85a4d29bcf91dcd493b6"
+    },
+    {
+      "path": "backend/dev/tests/probe_acceptance_r50_python27.py",
+      "bytes": 1765,
+      "sha256": "507354ae8be293536a68a4d2d09f4a66576dbb6bc541c22c08f05207e87f6237"
+    },
+    {
+      "path": "backend/dev/tests/probe_collections_python27.py",
+      "bytes": 4578,
+      "sha256": "9600550806d963badef210352e7b358e721ae76254563f5f94ff242840e68a38"
+    },
+    {
+      "path": "backend/dev/tests/probe_entity_python27.py",
+      "bytes": 3423,
+      "sha256": "317c254f2a7aa210d966bcd9ec0c660be1f2d39a67f30e3cac07e1b8fb584d8e"
+    },
+    {
+      "path": "backend/dev/tests/probe_entity_superclass_contract.py",
+      "bytes": 2570,
+      "sha256": "c9076e11f7291456893197a066b6245711ebb5ab00f430c30283f2f37faf3114"
+    },
+    {
+      "path": "backend/dev/tests/probe_enum_sets_python27.py",
+      "bytes": 1841,
+      "sha256": "63eefc01bace35e681ae6ea0d0e5fa13d773c8a16905519a1f935477198670d4"
+    },
+    {
+      "path": "backend/dev/tests/probe_goal_delays_python27.py",
+      "bytes": 1624,
+      "sha256": "63b037b11c0f822710ba7c06508c39f753b79b32128dc4ee2bbd7ac816bd0c9d"
+    },
+    {
+      "path": "backend/dev/tests/probe_goal_selector_python27.py",
+      "bytes": 2776,
+      "sha256": "9a12fb2297ce37f4ce6ef906705b723ed9d08e461196cddb8e5462e9bfc37fc7"
+    },
+    {
+      "path": "backend/dev/tests/probe_gui084_python27.py",
+      "bytes": 1605,
+      "sha256": "06c8a7ffb81d4436d69b3326e3b5a9f8336a39a48a64e18628ab245a31e0abf9"
+    },
+    {
+      "path": "backend/dev/tests/probe_interfaces081_python27.py",
+      "bytes": 894,
+      "sha256": "16a9b02f74946ab71679d5c68c16f22d38bab720d29034426731cab9fba22ec3"
+    },
+    {
+      "path": "backend/dev/tests/probe_interfaces082_python27.py",
+      "bytes": 693,
+      "sha256": "58069fb8d5cf9b93291413897c49be20085fc82d9f091bbc9e7dd3e585fd6063"
+    },
+    {
+      "path": "backend/dev/tests/probe_map_views_python27.py",
+      "bytes": 3478,
+      "sha256": "b6b2e8ac9ee688ffadee6096f1c2968b681f76836cacb2ff3b8530388f4eb6cf"
+    },
+    {
+      "path": "backend/dev/tests/probe_mixin_cfr_079_python27.py",
+      "bytes": 4341,
+      "sha256": "be069c919d350932b47543fd9df162aa57f03187430ded63648c4f8da07774dd"
+    },
+    {
+      "path": "backend/dev/tests/probe_mixin_extended_python27.py",
+      "bytes": 2506,
+      "sha256": "d424ce6b35b66022058cd80fb6e0cc537ae8b6474a9401dfd4ac67128233ec84"
+    },
+    {
+      "path": "backend/dev/tests/probe_mixin_python27.py",
+      "bytes": 3490,
+      "sha256": "f941491612222163d92eed9ae664b4fbe801730e50feac3656b96024378e76ba"
+    },
+    {
+      "path": "backend/dev/tests/probe_network086_python27.py",
+      "bytes": 1916,
+      "sha256": "a974a1a5e8d077feeec718756a003aa2533d2fcd704b8fd2d6269720c5b8376c"
+    },
+    {
+      "path": "backend/dev/tests/probe_network_content_contract.py",
+      "bytes": 5673,
+      "sha256": "372cf678407530b1cda200adf338a4efb849003a5fb8d36efda0d1c8af8b4e4c"
+    },
+    {
+      "path": "backend/dev/tests/probe_network_fairness_contract.py",
+      "bytes": 5395,
+      "sha256": "dd6736186a430ea6d9bf1b16cb8ae2fc6a9222df8212a4cbe0ccbcb0fcd24ffb"
+    },
+    {
+      "path": "backend/dev/tests/probe_network_fairness_python27.py",
+      "bytes": 885,
+      "sha256": "2edbaf52baeefc8bfdabc554978844a9a11c9cf6dd4b0a9acca583f6c1c5dacb"
+    },
+    {
+      "path": "backend/dev/tests/probe_network_late_work_contract.py",
+      "bytes": 6908,
+      "sha256": "f64b2bbdda1f29d0e1117e8f0aa5c542b0db89c129d4a9d094682246ae100e9f"
+    },
+    {
+      "path": "backend/dev/tests/probe_network_late_work_python27.py",
+      "bytes": 982,
+      "sha256": "a3967066703547072bb550255f56efbdd696bd34cbc7055ba317983428d34bce"
+    },
+    {
+      "path": "backend/dev/tests/probe_network_python27.py",
+      "bytes": 1037,
+      "sha256": "c5d6112f6185865fd0fed6c5533de28f901552fe1357b69acb8f73b357dde406"
+    },
+    {
+      "path": "backend/dev/tests/probe_network_session_contract.py",
+      "bytes": 11845,
+      "sha256": "7fb601737d548770ba8360089c0871bca5996767f42b6a09b699165a7cc48da3"
+    },
+    {
+      "path": "backend/dev/tests/probe_profiling_python27.py",
+      "bytes": 2611,
+      "sha256": "31da4a597d5d8dd25d7c5db9652eb6e5d403b8699b13d5f99038036decaf7cbe"
+    },
+    {
+      "path": "backend/dev/tests/probe_python27_runtime.py",
+      "bytes": 1915,
+      "sha256": "33a180449567b8fe2fc587e2f83a4bf93179a25ae3cf2378ca5b5e8a2b5b6a49"
+    },
+    {
+      "path": "backend/dev/tests/probe_resources_077_python27.py",
+      "bytes": 5069,
+      "sha256": "d636be6625edb577893799297939ae32549087369356d322aa9b9c4b1f5873aa"
+    },
+    {
+      "path": "backend/dev/tests/probe_runtime_requirements_python27.py",
+      "bytes": 2911,
+      "sha256": "33b75b5d0b8746819e5fa0c2adbe9f2e4b618ed76d271d98cf6092ff3923d6db"
+    },
+    {
+      "path": "backend/dev/tests/probe_session_cleanup_r51_contract.py",
+      "bytes": 1290,
+      "sha256": "7cfa1fd2366b4bc2bf1ddfb30972a67eb4c7986e09aeeedad6f8028db4a6375e"
+    },
+    {
+      "path": "backend/dev/tests/probe_stability_r49_contract.py",
+      "bytes": 5506,
+      "sha256": "0b76dd2e42b55daa6fe30c48404c9c7f8cb6e8b7156a0d64293b855678a8a9c3"
+    },
+    {
+      "path": "backend/dev/tests/probe_stability_r49_python27.py",
+      "bytes": 950,
+      "sha256": "2840d9fd656d72007d2af1a0b4410f893622238fb670d3d55e8ad2d927475621"
+    },
+    {
+      "path": "backend/dev/tests/probe_static_imports_python27.py",
+      "bytes": 2528,
+      "sha256": "45b9c2c3f57a9b3a3f0ba86a90d3cf21f767543796b7e71f9a0ee005ad105759"
+    },
+    {
+      "path": "backend/dev/tests/probe_static_wildcards_python27.py",
+      "bytes": 1922,
+      "sha256": "923622833f91aa1610000dd06a290fea2e119f2072eff1208249572add759b2b"
+    },
+    {
+      "path": "backend/dev/tests/probe_two_java_packs_python27.py",
+      "bytes": 1562,
+      "sha256": "e548bc3cd1feff3ddcf0a0ad1c6c098c8bbcd420815ce9ca94f9c1a3d76c2181"
+    },
+    {
+      "path": "backend/dev/tests/probe_vertex085_python27.py",
+      "bytes": 2056,
+      "sha256": "09c11d7c6d43add2da3aa170d9450b4675279cc93402e37b8e1a045c7c561f85"
+    },
+    {
+      "path": "backend/dev/tests/test_abstract_classes087.py",
+      "bytes": 3011,
+      "sha256": "a5893a4d59e01707442a26be0d828bc4a7368143236433f12664f7fbca26d1d4"
+    },
+    {
+      "path": "backend/dev/tests/test_acceptance_r50.py",
+      "bytes": 1908,
+      "sha256": "2ae07079f3c4532a4da0f85d8f3da4ec77c833f7ead0d1238813dc3f89a79c2f"
+    },
+    {
+      "path": "backend/dev/tests/test_activation.py",
+      "bytes": 2172,
+      "sha256": "4f9371eafd4e690e7d1bcd660cf0e812835179356ad1d0c63f6dd8365016363b"
+    },
+    {
+      "path": "backend/dev/tests/test_alpha.py",
+      "bytes": 17664,
+      "sha256": "3917fe421035cd115742037b5870a8abe6d3e340f34030e99528d80fef46afde"
+    },
+    {
+      "path": "backend/dev/tests/test_annotation_metadata087.py",
+      "bytes": 2316,
+      "sha256": "90126e5a63b09174372a84a64b58ac4e6d9bbee3d687072a0f3a8ffd069277a6"
+    },
+    {
+      "path": "backend/dev/tests/test_api.py",
+      "bytes": 7808,
+      "sha256": "91814f16528c7e420fe4957c22b727be28ac5bf2053ae6e4a2ad2b023f6a57ab"
+    },
+    {
+      "path": "backend/dev/tests/test_array_casts087.py",
+      "bytes": 2518,
+      "sha256": "e0a335593356f88d0c8d4bc10341b0409cd145f2e84ea04d922f894f866ef322"
+    },
+    {
+      "path": "backend/dev/tests/test_attachments.py",
+      "bytes": 7770,
+      "sha256": "d81e75b9ef8520f07e12ae720a2941bc5d61d99f021cc23c1f9245aee532a471"
+    },
+    {
+      "path": "backend/dev/tests/test_block_entity_abi087.py",
+      "bytes": 5304,
+      "sha256": "db3732396edbe21536da72fa4a12c85dce97dc8c8f66b5c8892676ef08979fba"
+    },
+    {
+      "path": "backend/dev/tests/test_block_item.py",
+      "bytes": 2431,
+      "sha256": "95e35d4733dba8e264a6d1342694f077b02223d700aa720928e14c8f3fc16e85"
+    },
+    {
+      "path": "backend/dev/tests/test_block_registration_codegen095.py",
+      "bytes": 4092,
+      "sha256": "9d9b9ac63cfc076e2527aa49ecb09ca370d1bceea3c2d54be1b2c869095bce4c"
+    },
+    {
+      "path": "backend/dev/tests/test_bugfixes085.py",
+      "bytes": 3845,
+      "sha256": "70c7a2d131b5e358094665a1b868fd13794ec6706c70d0f40959e9b53c86bb6d"
+    },
+    {
+      "path": "backend/dev/tests/test_bundled_mods.py",
+      "bytes": 2456,
+      "sha256": "be5e6b44c3e24bb61460b92450e83ea30061e132d1b00d2454c288664d4f22b8"
+    },
+    {
+      "path": "backend/dev/tests/test_call_guard092.py",
+      "bytes": 2031,
+      "sha256": "90d7dbd386eebdf3d524fa8a712f04d34a5a347cbc6f99167be5412975d79d53"
+    },
+    {
+      "path": "backend/dev/tests/test_capabilities.py",
+      "bytes": 8281,
+      "sha256": "227db5c2f1ed48c3db5eceaed0701a889e81a3d8cb2997909a81a970d510db9c"
+    },
+    {
+      "path": "backend/dev/tests/test_compatibility_mining098.py",
+      "bytes": 10602,
+      "sha256": "4b67cee953d10ec350d56adede4122620f0257bfe4d511baa91851122158e725"
+    },
+    {
+      "path": "backend/dev/tests/test_config_boxing_integration087.py",
+      "bytes": 8825,
+      "sha256": "22fd0db70f55fbbf81a268651cb4b3db689eaa1bffc048ae7f3cda6f696aeb56"
+    },
+    {
+      "path": "backend/dev/tests/test_config_session.py",
+      "bytes": 2474,
+      "sha256": "6a18e824f04a9a382e663d874cd2d2e518245e8e3b35bcd655b7d75108203459"
+    },
+    {
+      "path": "backend/dev/tests/test_config_storage.py",
+      "bytes": 4616,
+      "sha256": "ba0880d1efd6f7dd9061d33689d3471929915f0cc35107dd857990cd02eb7d68"
+    },
+    {
+      "path": "backend/dev/tests/test_container.py",
+      "bytes": 14056,
+      "sha256": "9d1323546007336fa6ff16103e024c02f5241b080559decfcf7eeddcba98c80d"
+    },
+    {
+      "path": "backend/dev/tests/test_container_interfaces087.py",
+      "bytes": 4500,
+      "sha256": "1825f23fd7f777e32f4dc9c6cbb0fd3f1b0033a2f9a0d3c7cfb8248aeeabbacf"
+    },
+    {
+      "path": "backend/dev/tests/test_container_java_contract.py",
+      "bytes": 3251,
+      "sha256": "66de080ced60cff0e1975dab12f6ef441769e7d4a525aedba0be6970f7dfdf45"
+    },
+    {
+      "path": "backend/dev/tests/test_container_persistence.py",
+      "bytes": 3473,
+      "sha256": "a31d74baf01511519dd2b170f54c86b60f4db861e1279575245044a51a8de2bb"
+    },
+    {
+      "path": "backend/dev/tests/test_content_events.py",
+      "bytes": 2086,
+      "sha256": "3042c61dc04c7144d2d66e41c49c833690cd9874eeea8dd9e2f8ac0989c6ee75"
+    },
+    {
+      "path": "backend/dev/tests/test_content_pipeline087.py",
+      "bytes": 2891,
+      "sha256": "e433371a0c530785ee19162b333a5e7dc9f246609e0e3c638d239097ff6f2691"
+    },
+    {
+      "path": "backend/dev/tests/test_content_registry.py",
+      "bytes": 12866,
+      "sha256": "b931d2ead360f285bde42e970b13fe7ed6368f9d9a35d220b0823df29a391139"
+    },
+    {
+      "path": "backend/dev/tests/test_creative093.py",
+      "bytes": 2304,
+      "sha256": "91bb8c2dc5d7b53d455baad2047048286d7ef63a80a7e3e9f552f8f30e0675f0"
+    },
+    {
+      "path": "backend/dev/tests/test_data_source095.py",
+      "bytes": 5461,
+      "sha256": "81f816ea20b47151b68d5e2043eb9d646ee7cf50625f24d762ec826d7c44fff4"
+    },
+    {
+      "path": "backend/dev/tests/test_deepseek_v2_config.py",
+      "bytes": 9212,
+      "sha256": "ee7aad1fbb30211f8c33d6889054f8149dd33c112738e7adfc9d4fceec38c848"
+    },
+    {
+      "path": "backend/dev/tests/test_deepseek_v2_context_signatures.py",
+      "bytes": 4572,
+      "sha256": "2175ff8543dd58afbd5a4794c421d7977705e2daf313446b708994690451bceb"
+    },
+    {
+      "path": "backend/dev/tests/test_deepseek_v2_static_signatures.py",
+      "bytes": 2644,
+      "sha256": "b38ebb9a83c2461f2ea88284e602424732af91a0f1e0f6bd7ad657aab08cdafa"
+    },
+    {
+      "path": "backend/dev/tests/test_deepseek_values090.py",
+      "bytes": 6545,
+      "sha256": "d72ddc5fc01d0bd497412b4ceb8ed2ce95176005f59de26b897d09a141d86958"
+    },
+    {
+      "path": "backend/dev/tests/test_deferred_blocks095.py",
+      "bytes": 3521,
+      "sha256": "e7a244b9d9a0dca2f00f5e00ab8fc185207a608b52f955e7c2d001b6b018f12e"
+    },
+    {
+      "path": "backend/dev/tests/test_deferred_items093.py",
+      "bytes": 3355,
+      "sha256": "067bed589563ed213f99b925db9eb762dd1f778665746665cca7d21009a571a6"
+    },
+    {
+      "path": "backend/dev/tests/test_definite_assignment087.py",
+      "bytes": 2739,
+      "sha256": "7be064d591c6171a7c8ea897eac24ad164467f33c01ed7fa4474c79f42dcd8f6"
+    },
+    {
+      "path": "backend/dev/tests/test_dependency_abi087.py",
+      "bytes": 10185,
+      "sha256": "040bad6e5cad5ce6a472ad45d6f3943529cf710b05ae429ee080ae7f9e02d8b4"
+    },
+    {
+      "path": "backend/dev/tests/test_diagnostic_provenance092.py",
+      "bytes": 2281,
+      "sha256": "04a1c735be3cbd16e290cfae3c23459a2b5999b8eab625b0ea154303900bfb6c"
+    },
+    {
+      "path": "backend/dev/tests/test_distribution.py",
+      "bytes": 7704,
+      "sha256": "f5c84754bf692141661a8f13730b4ad2d28a7f5009d20ee7ac7e751b04715538"
+    },
+    {
+      "path": "backend/dev/tests/test_energy.py",
+      "bytes": 3725,
+      "sha256": "e0c8b375e41bc94f3f74f6b404b033c46014e803c485cd670d4dbf35022524a0"
+    },
+    {
+      "path": "backend/dev/tests/test_entity_behavior.py",
+      "bytes": 7605,
+      "sha256": "a629141f12c3e9182c8fafb6274cedff995818cd62fc89dc752f2cb7c1ccb62d"
+    },
+    {
+      "path": "backend/dev/tests/test_entity_loading_080.py",
+      "bytes": 6298,
+      "sha256": "b436a7e7c3aa8ff396b74c730a0bc868b970e869121373f97b6a43dc4000aa36"
+    },
+    {
+      "path": "backend/dev/tests/test_entity_mod.py",
+      "bytes": 11064,
+      "sha256": "3a24eced597b74271b7285de9fd543e76ee26081a60adb46ed70829d77df7753"
+    },
+    {
+      "path": "backend/dev/tests/test_entity_source_lifecycle.py",
+      "bytes": 1997,
+      "sha256": "40a80d34b9b51cf302a8df6732c57f33e9b1ff95ee80a77d8e00c88255143092"
+    },
+    {
+      "path": "backend/dev/tests/test_entity_visuals_080.py",
+      "bytes": 6643,
+      "sha256": "43e167029c7c140050bde0af17ab8f0359605028979a8ad7fb8809946a5f7cd2"
+    },
+    {
+      "path": "backend/dev/tests/test_enum_sets.py",
+      "bytes": 9329,
+      "sha256": "a2b27137c699570f1385b383cbc37a4defeab12d5dc315228d86ef90b8d7f1f9"
+    },
+    {
+      "path": "backend/dev/tests/test_event_overloads.py",
+      "bytes": 2175,
+      "sha256": "0a3e27c87fb8176acf46f46a4055e3950188244ee32144e415357bbe6f9e0eb6"
+    },
+    {
+      "path": "backend/dev/tests/test_existing_calls092.py",
+      "bytes": 3882,
+      "sha256": "9492c67274beff101047e1f0ad776eeabf5cd08c5273fb91a935be2442e99f64"
+    },
+    {
+      "path": "backend/dev/tests/test_extracted_mods.py",
+      "bytes": 6762,
+      "sha256": "b7bbaeb30f03e30b4ae46a4515cb17d7171ac18d16f991c8884c81fa63531a65"
+    },
+    {
+      "path": "backend/dev/tests/test_fallback.py",
+      "bytes": 16437,
+      "sha256": "838dcd7676077b50e5cb4445596c963ab8a280434f22dcfb9e8b54311ffc7af8"
+    },
+    {
+      "path": "backend/dev/tests/test_feature_flags087.py",
+      "bytes": 4479,
+      "sha256": "1af1030aec0805ea948b58b6d4c84cff10bb23033ccc1e7f1a5a5f4e438f5430"
+    },
+    {
+      "path": "backend/dev/tests/test_first_block096.py",
+      "bytes": 4712,
+      "sha256": "0c13c8b1a7f6443020c12e7e48ec8afb753548cbac945da0161f46432be1830e"
+    },
+    {
+      "path": "backend/dev/tests/test_fluid_handler.py",
+      "bytes": 2949,
+      "sha256": "4292515d9aa8ce91c0f161401314a56159e32ac565aa910491e3df4bc2bb82e9"
+    },
+    {
+      "path": "backend/dev/tests/test_generic_interfaces087.py",
+      "bytes": 3783,
+      "sha256": "117fab89b3ec8a1d16965455249ccac87e2a5d68c103d89ce8b7e29de2819460"
+    },
+    {
+      "path": "backend/dev/tests/test_goal_contract.py",
+      "bytes": 2964,
+      "sha256": "2b21108d1094ac8b032ea0a6ce225d0292741492b1be29d9f3475b8c655a6792"
+    },
+    {
+      "path": "backend/dev/tests/test_goal_delays.py",
+      "bytes": 7265,
+      "sha256": "cb24524e05ab804514345140a9e47ef3145bc1e33563903c363488577b4aeca1"
+    },
+    {
+      "path": "backend/dev/tests/test_goal_selector_contract.py",
+      "bytes": 13149,
+      "sha256": "1edacf9a2cfdbcb059a5e66b1f7bff0d2d4968afac5e57fbc00be214922885ad"
+    },
+    {
+      "path": "backend/dev/tests/test_gui_geometry084.py",
+      "bytes": 3954,
+      "sha256": "98d3fd98171df5d5a208d39daa13c57434b129cccc871291ea256045fee7aac9"
+    },
+    {
+      "path": "backend/dev/tests/test_gui_input087.py",
+      "bytes": 3311,
+      "sha256": "4af9c3391676eade410357696a5042c1489c8b6968bb8d1a1ebe17da0e32e349"
+    },
+    {
+      "path": "backend/dev/tests/test_holder_getter087.py",
+      "bytes": 4485,
+      "sha256": "51e1752020018421fcbd8b3154d2f44038e0dc133de811d3ed54704505b6b1f0"
+    },
+    {
+      "path": "backend/dev/tests/test_immutable_model087.py",
+      "bytes": 4771,
+      "sha256": "e28be3d2fb740bf8b9171214604b60d7973e33e4d93435858a7009eb97fd1778"
+    },
+    {
+      "path": "backend/dev/tests/test_import_chain.py",
+      "bytes": 10334,
+      "sha256": "4df86a73a0c00100ace4e7d813055043fa018924519a27ec3e59da7742c6ff91"
+    },
+    {
+      "path": "backend/dev/tests/test_inject.py",
+      "bytes": 15851,
+      "sha256": "f366945a43b601f9e8c901d9bc11217e8d0bda36f08c955f8920583a197dfa81"
+    },
+    {
+      "path": "backend/dev/tests/test_interface_hierarchy087.py",
+      "bytes": 6262,
+      "sha256": "a51310c6a6ad341dd0c2d5590f7b34dc62e90be85492a6c4366ed87929f10dd5"
+    },
+    {
+      "path": "backend/dev/tests/test_interfaces082.py",
+      "bytes": 8887,
+      "sha256": "12b1f35f8c500cb1832bf2c99432013f87a4af940b6c6cb2ec43b79167d0c0ae"
+    },
+    {
+      "path": "backend/dev/tests/test_item_behavior_proof093.py",
+      "bytes": 2193,
+      "sha256": "b606d8f5582596e532616fee3f9825e8c3aafb8c3eba07c4db71fc0d3d80523c"
+    },
+    {
+      "path": "backend/dev/tests/test_item_content093.py",
+      "bytes": 11063,
+      "sha256": "42a0dba1a1c24baf2ccff2c3501ced76345421e9e3d34a105e1906b30ed2f3da"
+    },
+    {
+      "path": "backend/dev/tests/test_item_context.py",
+      "bytes": 18544,
+      "sha256": "1f9c3df65853c100e7f6d7de30ebada4c8958582282cd804240b7589a20113a9"
+    },
+    {
+      "path": "backend/dev/tests/test_item_handler.py",
+      "bytes": 4482,
+      "sha256": "2afc71f4967a749456c321d304641c3034b13f5c495c8e709e25a9c054109b8a"
+    },
+    {
+      "path": "backend/dev/tests/test_item_registration_codegen093.py",
+      "bytes": 1801,
+      "sha256": "79a293b5b22e8ea8ff5a95011e182beb03dd558f596418d4ca392f8d9e51a9f8"
+    },
+    {
+      "path": "backend/dev/tests/test_items086.py",
+      "bytes": 4468,
+      "sha256": "b8408fe9d384452d6a176f52d50921307e0fa05431cb4a9cc470902886067514"
+    },
+    {
+      "path": "backend/dev/tests/test_java_api.py",
+      "bytes": 3716,
+      "sha256": "d09ff1cd7bb014e3c0c50fe5d387e606fcf2dc6399e065ef8b549e60d16fb968"
+    },
+    {
+      "path": "backend/dev/tests/test_java_api_invocation.py",
+      "bytes": 8959,
+      "sha256": "b5bb9aef52b02a2bdbb03e685b51d3d7a6c2736d052c4dacd7a3475ce22e510e"
+    },
+    {
+      "path": "backend/dev/tests/test_java_arrays.py",
+      "bytes": 9415,
+      "sha256": "97947a55f55ca4d6121be7623e1576770d5efd430c604608234f9ef4492aa57c"
+    },
+    {
+      "path": "backend/dev/tests/test_java_codegen.py",
+      "bytes": 16984,
+      "sha256": "f313c9b37acc87233686355c2a4dc3fdeea35660cdded9ff53b21bab725e46da"
+    },
+    {
+      "path": "backend/dev/tests/test_java_constructor_overloads.py",
+      "bytes": 4240,
+      "sha256": "fb0fa0d69e77a11c3d18121647cbb601eaeaddd4c9ce12a31b8a0c5e99b78748"
+    },
+    {
+      "path": "backend/dev/tests/test_java_coverage.py",
+      "bytes": 10687,
+      "sha256": "4f12731702f6feed8dfe0438960d724d0b92a6a05d249cb165505866cf371406"
+    },
+    {
+      "path": "backend/dev/tests/test_java_entity_superclass.py",
+      "bytes": 5997,
+      "sha256": "6732c1ab14f5c78a7f0a5479d9d88238c0bdf6d74032d679bbe4b2a5626616d6"
+    },
+    {
+      "path": "backend/dev/tests/test_java_enum_sets.py",
+      "bytes": 8693,
+      "sha256": "cf420524aef7b07137afe51fc19157a149c0145fa099f6fdb5b13e2c639552df"
+    },
+    {
+      "path": "backend/dev/tests/test_java_event_annotations.py",
+      "bytes": 10389,
+      "sha256": "a4850c99ae243c6b65ec310c02f786d61df7a1865f19a2ad0cd393dfd1d18a8d"
+    },
+    {
+      "path": "backend/dev/tests/test_java_exception_control.py",
+      "bytes": 3433,
+      "sha256": "e05777f6d95b2073c6c45f541c9d84e71dd52642854b02c66b22bd2aea3bebb7"
+    },
+    {
+      "path": "backend/dev/tests/test_java_frontend.py",
+      "bytes": 4529,
+      "sha256": "38fe2108685c0aedb79c89468c0e3622305b3bd5e6b1501a5b9191fc2a0d3f07"
+    },
+    {
+      "path": "backend/dev/tests/test_java_function.py",
+      "bytes": 1872,
+      "sha256": "55b999180af37457ec311be3eadbf36dc507db7212a0a6bd49bae10624e535d9"
+    },
+    {
+      "path": "backend/dev/tests/test_java_goal_selector.py",
+      "bytes": 5453,
+      "sha256": "9fe4be57df3abc6bb15da834dee7176933f0f40ed89dc31e76b11d26db0fe2db"
+    },
+    {
+      "path": "backend/dev/tests/test_java_inheritance.py",
+      "bytes": 6164,
+      "sha256": "5a6653d1086d4fd7a3fae6671b1cdaa7c163c45ae972d94e8a8b61af9d8e41d2"
+    },
+    {
+      "path": "backend/dev/tests/test_java_instanceof_r71.py",
+      "bytes": 1648,
+      "sha256": "980dce7062e64b337a5ccc14008f7187c9c096d699a1e7d9314bebc490e9fe7d"
+    },
+    {
+      "path": "backend/dev/tests/test_java_item_comparisons.py",
+      "bytes": 7730,
+      "sha256": "e2b847018d8b7a6825b40b0df4e23a5e521a1080142c12e072de46c32552c12a"
+    },
+    {
+      "path": "backend/dev/tests/test_java_item_stack_calls.py",
+      "bytes": 4967,
+      "sha256": "53c82d3f88ff34354bd8496db799b07b65ee8dcfeaeb0fa0c260f7770c45a498"
+    },
+    {
+      "path": "backend/dev/tests/test_java_lambdas.py",
+      "bytes": 7715,
+      "sha256": "4e1ff41a1247618731ea5c52335067918401dcc63ee107e8112d958856b11c48"
+    },
+    {
+      "path": "backend/dev/tests/test_java_lang.py",
+      "bytes": 28686,
+      "sha256": "7bd926bcf77111813c7732aa26d09fd153bd1c3e662f81fcabc2e4ce229e2a36"
+    },
+    {
+      "path": "backend/dev/tests/test_java_linked_map_order.py",
+      "bytes": 3607,
+      "sha256": "0f5d8aa58dc2ee4f132a76342fa7cbb7a3b79c8742924f6e858e0b2014914705"
+    },
+    {
+      "path": "backend/dev/tests/test_java_list_contract.py",
+      "bytes": 8876,
+      "sha256": "c8c769972dc2d122d13469d04e6ef99895a36586f9ed5535b3d1f75be53ec4cb"
+    },
+    {
+      "path": "backend/dev/tests/test_java_map_defaults.py",
+      "bytes": 6499,
+      "sha256": "c595f1b553ce9c14509206f8d85af2dec9ac20f3629ccc7084daf34b4b8a7d8a"
+    },
+    {
+      "path": "backend/dev/tests/test_java_map_views.py",
+      "bytes": 4958,
+      "sha256": "326fbd2c0061a88b7c6d40f645f1e9a0a12428f7ff6f0a6b5635f805554d1f8e"
+    },
+    {
+      "path": "backend/dev/tests/test_java_menu_calls.py",
+      "bytes": 3548,
+      "sha256": "cde1922bbd62559c7a08e22868bd67c37af0371fdee79ea15097c55c3407ae11"
+    },
+    {
+      "path": "backend/dev/tests/test_java_menu_superclass_r66.py",
+      "bytes": 3552,
+      "sha256": "6ae3cc87e9f703e1b03020ca9435c3a9d4c872b1860091f66beb0329819f6b8f"
+    },
+    {
+      "path": "backend/dev/tests/test_java_method_references.py",
+      "bytes": 6450,
+      "sha256": "5c06d42e16800fecc7888c16fa0c3694c52e7e9fc490c019f6f4addd14ec4ee7"
+    },
+    {
+      "path": "backend/dev/tests/test_java_mod_entry.py",
+      "bytes": 12111,
+      "sha256": "348554115706eefa711f1ca750d80a40d4ad4d8228787aa6c48c049f51c949ac"
+    },
+    {
+      "path": "backend/dev/tests/test_java_overloads.py",
+      "bytes": 6971,
+      "sha256": "901baf212adfcca38af393cf32caeda6594c5eda6b37c3cbab7f7b54a753016f"
+    },
+    {
+      "path": "backend/dev/tests/test_java_profiling.py",
+      "bytes": 8889,
+      "sha256": "dba7757a27fb44ee2e1a6d4c8cf8f726ec4388de088629c6ae341359a34ab95e"
+    },
+    {
+      "path": "backend/dev/tests/test_java_project_inheritance.py",
+      "bytes": 8777,
+      "sha256": "11117aac117a7de1cfc9bfce199d0531103b88ca8e85d47d6335601cac11fb19"
+    },
+    {
+      "path": "backend/dev/tests/test_java_resources.py",
+      "bytes": 5591,
+      "sha256": "05131e70a60c771c21df0a21fd67d950facaea6f858bd920ec5add31e281ac2c"
+    },
+    {
+      "path": "backend/dev/tests/test_java_runtime_inheritance.py",
+      "bytes": 12709,
+      "sha256": "041d31cc643366cbe50bfce28b1f4f13d6a1e88f7bfcefc4e0cba420460362c7"
+    },
+    {
+      "path": "backend/dev/tests/test_java_set_contracts.py",
+      "bytes": 3893,
+      "sha256": "0ed985f3561cd696f41ce8f90d113d8e4a2a3848215bb36e69f8b2e0d74b0def"
+    },
+    {
+      "path": "backend/dev/tests/test_java_symbols.py",
+      "bytes": 2104,
+      "sha256": "7b7e55f78b900ab35fe6733437d720b20155d9ac3f62ade0212b724dd4da53d4"
+    },
+    {
+      "path": "backend/dev/tests/test_java_throwable.py",
+      "bytes": 6187,
+      "sha256": "08547e1012245ea47c10a4d32997f63730f84697592c4ac0c2996fdba70647f5"
+    },
+    {
+      "path": "backend/dev/tests/test_java_util.py",
+      "bytes": 26654,
+      "sha256": "a1040f514dd1ebe22b1487b70b51d198e1a19ca474f20c030c02ae2a7fb4e2cb"
+    },
+    {
+      "path": "backend/dev/tests/test_keywords.py",
+      "bytes": 12058,
+      "sha256": "00213af1e5335e4a0bdf649a0e04cdee9a66c916a9df3467d431e3bc0738bbbe"
+    },
+    {
+      "path": "backend/dev/tests/test_launcher_skip.py",
+      "bytes": 23366,
+      "sha256": "30bcf9d5e86daa7cb1a2abae99b29cafcca8ad67a8de6a2311bc2a917ac7a51e"
+    },
+    {
+      "path": "backend/dev/tests/test_linked_map_order.py",
+      "bytes": 6216,
+      "sha256": "3d2ff5167bfc0b9fd51d482a3f09d0e0f6a174cf32881e3bd70a57bb09679c54"
+    },
+    {
+      "path": "backend/dev/tests/test_localization094.py",
+      "bytes": 2008,
+      "sha256": "6ae05a016f016103e71b43e3c950bbb726f971e37906f85971e0bd60b9b383c0"
+    },
+    {
+      "path": "backend/dev/tests/test_manifest.py",
+      "bytes": 5858,
+      "sha256": "4142cd590a4f175a558761b505377757843af0b2dbb2bb8995f750e3b12f46bc"
+    },
+    {
+      "path": "backend/dev/tests/test_map_defaults.py",
+      "bytes": 8149,
+      "sha256": "4f8ca0e3bb8c1dbedd7ebfdeaf5799b65d5e205a91f1fbdabcb5f4910d556a1f"
+    },
+    {
+      "path": "backend/dev/tests/test_map_views.py",
+      "bytes": 12221,
+      "sha256": "4236ab7316694d4bfd03ed70cd661c44dbf4e32fa593dd77b26afed2cfee2aae"
+    },
+    {
+      "path": "backend/dev/tests/test_memory_streams.py",
+      "bytes": 1747,
+      "sha256": "18553f4551c5598875afa47c584b27db0b47f22c5503290bd30589ca71ac015e"
+    },
+    {
+      "path": "backend/dev/tests/test_menu_factories087.py",
+      "bytes": 7072,
+      "sha256": "a97cb790c8b36770b6a173815590acb60ec04bb0f07b0a03f0eb8f843a3dd0c0"
+    },
+    {
+      "path": "backend/dev/tests/test_menu_remote_contract.py",
+      "bytes": 7082,
+      "sha256": "e4e39861db37b0bdc410e959163e1cabeea68c881e78158a19f569c5785f7144"
+    },
+    {
+      "path": "backend/dev/tests/test_menu_state_contract.py",
+      "bytes": 4104,
+      "sha256": "905254c7d74266fe6fe5b93848f8b9fae5ae301fbcf7fc46114d55b215b523e1"
+    },
+    {
+      "path": "backend/dev/tests/test_minecraft_block.py",
+      "bytes": 17008,
+      "sha256": "6cd3843385bd4b3f9a43bab984e2bbd99a4f2e1dd6de1359c09d2e92776a0e4c"
+    },
+    {
+      "path": "backend/dev/tests/test_minecraft_block_entity.py",
+      "bytes": 20044,
+      "sha256": "30296e86f60c002f30767cc86c5dc6323786608c389e3a887c68b61e64131424"
+    },
+    {
+      "path": "backend/dev/tests/test_minecraft_core.py",
+      "bytes": 19038,
+      "sha256": "3d30f653923548b3c54c2214f8f0a0c4b9c97e9f76497b3d5c8fa97e996a1eaf"
+    },
+    {
+      "path": "backend/dev/tests/test_minecraft_crafting.py",
+      "bytes": 16445,
+      "sha256": "00f5fe5a6c0ab489909d9b5b942912b5662fbcb8d619a2ac446960cfad9d3800"
+    },
+    {
+      "path": "backend/dev/tests/test_minecraft_data.py",
+      "bytes": 25396,
+      "sha256": "50fbaa970a416780571b8eeb6291a21cbf6760fbe33f40e8bad49450ab9e0036"
+    },
+    {
+      "path": "backend/dev/tests/test_minecraft_entity.py",
+      "bytes": 28289,
+      "sha256": "e92e22fd6a5b51298c7021ea9ecfdd5ba92245bea9a36ade435db2eece60af1a"
+    },
+    {
+      "path": "backend/dev/tests/test_minecraft_item.py",
+      "bytes": 15806,
+      "sha256": "50240aff93da99c464a8555be090615e1cb708f058cffecf2366a15f978d38b3"
+    },
+    {
+      "path": "backend/dev/tests/test_minecraft_registries.py",
+      "bytes": 17836,
+      "sha256": "655183fc7ac1dc827acffa7b0a028de49d9c6d51bc56e3011e100683a5811a8a"
+    },
+    {
+      "path": "backend/dev/tests/test_mined_optional098.py",
+      "bytes": 1390,
+      "sha256": "d7257552808900170311b6f97520ef3bc0365bf5eb5f24dcf02fffdf63a54a11"
+    },
+    {
+      "path": "backend/dev/tests/test_mixin_boolean_r58.py",
+      "bytes": 2812,
+      "sha256": "aae648c1fb799c83979026298d3896fc7f0b2eba611a62fea87da605b2e51402"
+    },
+    {
+      "path": "backend/dev/tests/test_mixin_cfr_079.py",
+      "bytes": 9367,
+      "sha256": "c4992d44d683383a392f17883cb42135788dfb2e53d7173a78e9bcd3d1637a21"
+    },
+    {
+      "path": "backend/dev/tests/test_mixin_composition_r65.py",
+      "bytes": 1698,
+      "sha256": "ca42d941f8d51b8983c83e9415815c6eab01ff5ae34e23c97bc0a3a8624ed559"
+    },
+    {
+      "path": "backend/dev/tests/test_mixin_constructor_r59.py",
+      "bytes": 3117,
+      "sha256": "21c4b67a484c2df0e55148aa1b88c07c55c644a66f78605e5b0a589604895207"
+    },
+    {
+      "path": "backend/dev/tests/test_mixin_fields_r60.py",
+      "bytes": 5757,
+      "sha256": "9381ba4d9421039c182e2550cb6932549682ae630a9cde1a29dafbab0de1c0b2"
+    },
+    {
+      "path": "backend/dev/tests/test_mixin_generic_fields_r62.py",
+      "bytes": 2015,
+      "sha256": "d3cd3514f2bd4d3c6777de6449ea522e6c50b82bbbc3e065dbd40c922fc24d0f"
+    },
+    {
+      "path": "backend/dev/tests/test_mixin_modify_arg_r64.py",
+      "bytes": 3781,
+      "sha256": "f88c83b34f35daa6b321874d806f93ec7d54663fafda0abdf12df7d72dbfd597"
+    },
+    {
+      "path": "backend/dev/tests/test_mixin_plan_r54.py",
+      "bytes": 3383,
+      "sha256": "8377a1fc3a93c5f6912dd63c81740eddd1de961e4c2af1a1fa950399d9d07235"
+    },
+    {
+      "path": "backend/dev/tests/test_mixin_runtime_hooks_r67.py",
+      "bytes": 2845,
+      "sha256": "8b344fb87ea005217cbe8ccc9246b5674eaf250f021d25a4b3e9b426466509e0"
+    },
+    {
+      "path": "backend/dev/tests/test_mixin_types_r61.py",
+      "bytes": 2125,
+      "sha256": "066b95651a3d188a18a767e9d1412c790944e4c58ffe69ec2843e4a2a664aefb"
+    },
+    {
+      "path": "backend/dev/tests/test_mixin_weave_r55.py",
+      "bytes": 9605,
+      "sha256": "674f3a26902f6564744cd787453cf0c56627de7ba4c94190299e5215af1db7fe"
+    },
+    {
+      "path": "backend/dev/tests/test_model_math087.py",
+      "bytes": 7133,
+      "sha256": "d94e715e79dddb6e7eaea409684522d4c38ced75d94f71eaa3e809ad291052bd"
+    },
+    {
+      "path": "backend/dev/tests/test_modrinth_audit_progress_r74.py",
+      "bytes": 2725,
+      "sha256": "218b6bd80e8f145806955a52d5aef4b9448d2d25b4a8f138cfb123544712afbb"
+    },
+    {
+      "path": "backend/dev/tests/test_modrinth_benchmark_r56.py",
+      "bytes": 2856,
+      "sha256": "b9e72e56a1c0e6c017c4d07cc041684b3d67672e97b2e4ad548b0c6866114782"
+    },
+    {
+      "path": "backend/dev/tests/test_modrinth_dependencies_r57.py",
+      "bytes": 2364,
+      "sha256": "a3422099773dc4c5a39c990636bbcd319a2faed8221427ae546b73a194a8fd2b"
+    },
+    {
+      "path": "backend/dev/tests/test_modrinth_results_r73.py",
+      "bytes": 5875,
+      "sha256": "4b2406157db2f9b8fb128eba8e849c14ea4cea201487c6cef2b6cd3137cf77a0"
+    },
+    {
+      "path": "backend/dev/tests/test_modsdk_container.py",
+      "bytes": 11811,
+      "sha256": "09d21d5e6c84869a184dcabfaf8357a384815f1e0867158ef4c98bc735388f42"
+    },
+    {
+      "path": "backend/dev/tests/test_modsdk_entity.py",
+      "bytes": 28066,
+      "sha256": "8fcbfd9a9f770bd402c7f718125d3cfa8f2de4e7f157b8769cdbd7a58784d504"
+    },
+    {
+      "path": "backend/dev/tests/test_modsdk_network.py",
+      "bytes": 6389,
+      "sha256": "cb7ad100689bd94e7d7ddebc55e1877df0ff79a44fd35f751867d64381b8cdad"
+    },
+    {
+      "path": "backend/dev/tests/test_modsdk_world.py",
+      "bytes": 5773,
+      "sha256": "4b04c4baef47924dbba4af1ee167e8195cf6467276657bae3ac2696f2a542260"
+    },
+    {
+      "path": "backend/dev/tests/test_multi_mod_example.py",
+      "bytes": 1744,
+      "sha256": "d47e172538b24b7bd46135634faa1a588d3a641a898ec9633a9ee085b20be275"
+    },
+    {
+      "path": "backend/dev/tests/test_native_item_codec093.py",
+      "bytes": 1370,
+      "sha256": "c418c337594877fa3301995bb650644d852fb5aa71f1de491b7cfd0200fe31d7"
+    },
+    {
+      "path": "backend/dev/tests/test_native_mixin_lowering_r69.py",
+      "bytes": 4339,
+      "sha256": "9a61f03b6e801f257f231a009f34eb9b095f0f3ebf5de72ca0d5c4b5da950202"
+    },
+    {
+      "path": "backend/dev/tests/test_native_mixin_owners_r71.py",
+      "bytes": 3701,
+      "sha256": "98bab4e8544efb8cc55bbed33e2d3302a130bef27413244a9627831392a05f6a"
+    },
+    {
+      "path": "backend/dev/tests/test_native_sam087.py",
+      "bytes": 4411,
+      "sha256": "fa79e6885a57baca9aa6ad15236b9b3d08156ecad08ef08ef55844afa7e080cb"
+    },
+    {
+      "path": "backend/dev/tests/test_native_trade_080.py",
+      "bytes": 6490,
+      "sha256": "6b72b681d593d242dad5b643e6bdfe25839790c4733be9f7cc589319f402f709"
+    },
+    {
+      "path": "backend/dev/tests/test_neoforge.py",
+      "bytes": 21508,
+      "sha256": "dc173660e230a89d04a10cf01734a2a034514d9d00eaeb49382fb8162b8bbf49"
+    },
+    {
+      "path": "backend/dev/tests/test_neoforge_config.py",
+      "bytes": 17733,
+      "sha256": "1cad5400ee3a139bf3fa683843c2043133740efd2172de9550c7eb451e6a9374"
+    },
+    {
+      "path": "backend/dev/tests/test_neoforge_network.py",
+      "bytes": 19387,
+      "sha256": "14eb7b6697789912518b0c40f9726a54ee4b2c33c33dba5ad4fd733d57627303"
+    },
+    {
+      "path": "backend/dev/tests/test_network086.py",
+      "bytes": 11975,
+      "sha256": "fb520e02ac2ea82ad25812b8e71e2acc49d1b71b95086c9da030698f71ada536"
+    },
+    {
+      "path": "backend/dev/tests/test_network_content.py",
+      "bytes": 880,
+      "sha256": "db74dcef3782c53a4c37355abbc74d846b5aa5bbf3c1aa24bbc55072f87bc808"
+    },
+    {
+      "path": "backend/dev/tests/test_network_fairness.py",
+      "bytes": 446,
+      "sha256": "585a07fe91851e04afee4c38573935a4bfd820c34aaf15826551140f6492719a"
+    },
+    {
+      "path": "backend/dev/tests/test_network_late_work.py",
+      "bytes": 423,
+      "sha256": "ea7cd941e4558a2eb23ef4e6f5cc4e0970507be6796022ad9fea5acf574f4cca"
+    },
+    {
+      "path": "backend/dev/tests/test_network_session.py",
+      "bytes": 444,
+      "sha256": "1ff8d66b01baa8f1a4219217b4dd4c1a3ad10a32943f10ecc9bfca55bedb59f1"
+    },
+    {
+      "path": "backend/dev/tests/test_nullable087.py",
+      "bytes": 2137,
+      "sha256": "a8d9e138409c5ec58fe0be79df0e531eb609328a9c325d43c13e25ce1fcb00c5"
+    },
+    {
+      "path": "backend/dev/tests/test_numeric_world_types087.py",
+      "bytes": 2145,
+      "sha256": "5a0fa8583d5de6ab3a620cf4399e7735881f547b54dcef5e8741681afabf2383"
+    },
+    {
+      "path": "backend/dev/tests/test_official_interfaces083.py",
+      "bytes": 5086,
+      "sha256": "cc3ad61cd728328ec8d96e237a15378036b97b48841a16f7c98cf02ae02d486a"
+    },
+    {
+      "path": "backend/dev/tests/test_official_interfaces086.py",
+      "bytes": 7889,
+      "sha256": "601d3a67050224d150680bc61ec0e61925948bc9c32389826aa0cfec1e6a1e88"
+    },
+    {
+      "path": "backend/dev/tests/test_parser_worker092.py",
+      "bytes": 2044,
+      "sha256": "69205c9bbf018ebc886ad91952d5d35100c9450db2fead4b271df10dfdb6e5d4"
+    },
+    {
+      "path": "backend/dev/tests/test_partial_interfaces_081.py",
+      "bytes": 7924,
+      "sha256": "df9c3578e4194bd98b9828070139c8bc66ce94703f6df9193f3c5dfbee5794e4"
+    },
+    {
+      "path": "backend/dev/tests/test_platform_interfaces087.py",
+      "bytes": 4595,
+      "sha256": "b116529e4281cb17495ebd4aaff5ca82300164c182c765a54c27d6ace10679f9"
+    },
+    {
+      "path": "backend/dev/tests/test_profiling.py",
+      "bytes": 8723,
+      "sha256": "ec88d8614da38623db71023ce5595ef9f9fda354ca062507ca3106b86be346e0"
+    },
+    {
+      "path": "backend/dev/tests/test_py2to3lite.py",
+      "bytes": 1469,
+      "sha256": "dc07805cd3f936c29ec2e8ea928e8a6e85724e065285c3861c3cc0d8c79a74b5"
+    },
+    {
+      "path": "backend/dev/tests/test_python_hooks.py",
+      "bytes": 2936,
+      "sha256": "ece450497936fffacfc85b4fdcc167f99377b93f817e42146afa022be24c2b27"
+    },
+    {
+      "path": "backend/dev/tests/test_query_cache092.py",
+      "bytes": 3146,
+      "sha256": "c358510d86f8e40b14d2feca7854cdbf66a3860872d7092a3eebf91c3a02db5f"
+    },
+    {
+      "path": "backend/dev/tests/test_recipe_data094.py",
+      "bytes": 6837,
+      "sha256": "ea8fe98718af8ee0138deab7e6af05f8e8cc357f706913276aa587536b31d482"
+    },
+    {
+      "path": "backend/dev/tests/test_records086.py",
+      "bytes": 3368,
+      "sha256": "45af00e4f6197203c0874a79fdb63d45a56899eed2803b50a773f5698b9a0dd6"
+    },
+    {
+      "path": "backend/dev/tests/test_registry_lifecycle093.py",
+      "bytes": 4464,
+      "sha256": "240d593aa207aea14fcfd66607bf933e6d4c9cf5186ed1fff63387e47b0ebcf1"
+    },
+    {
+      "path": "backend/dev/tests/test_resource_build.py",
+      "bytes": 2529,
+      "sha256": "676dd29dee14eefdea048710f57823c68d9e6930aaad6caf4c296138910910a1"
+    },
+    {
+      "path": "backend/dev/tests/test_resources_077.py",
+      "bytes": 8896,
+      "sha256": "c051449e9ced0865e0e99b3e32877246a6654f7155986f4636911da15ea2e94b"
+    },
+    {
+      "path": "backend/dev/tests/test_runtime_host.py",
+      "bytes": 5719,
+      "sha256": "d782828ec01e0f6c718b82615a663be5befe80bdeb6527de1b849493e054936d"
+    },
+    {
+      "path": "backend/dev/tests/test_runtime_requirements.py",
+      "bytes": 9147,
+      "sha256": "821e593f32b7e0bbbbbe21065af314edf1908c8f032318406a2140d9dd746c82"
+    },
+    {
+      "path": "backend/dev/tests/test_runtime_requirements_build.py",
+      "bytes": 4461,
+      "sha256": "1428e87b3b1b8cb27c20274067c32712d210c42d375b9e118569d83051851fff"
+    },
+    {
+      "path": "backend/dev/tests/test_set_contracts.py",
+      "bytes": 8834,
+      "sha256": "a76b12fa308aa949a10117bbae3230b559566c31549ef99bef72b70c11b58e44"
+    },
+    {
+      "path": "backend/dev/tests/test_shader.py",
+      "bytes": 22951,
+      "sha256": "e58b279bb5bc8247a3e5165de7605b47567d3cb728113617466c6b4fc1f90bdf"
+    },
+    {
+      "path": "backend/dev/tests/test_simple_block_items096.py",
+      "bytes": 11304,
+      "sha256": "dcb014b67980157dd35de29ef848d45a8282fb093b379042bd773611e722f290"
+    },
+    {
+      "path": "backend/dev/tests/test_source_generics087.py",
+      "bytes": 6255,
+      "sha256": "8c119b51510027c8b7236e8057f738291e7920e279f1d8f5dd81a3df21af20ad"
+    },
+    {
+      "path": "backend/dev/tests/test_source_modules.py",
+      "bytes": 4023,
+      "sha256": "3f32f1bb492ba5b30587647deacaa6f7d9f0eca7e6c2248520c6d07d5676b82a"
+    },
+    {
+      "path": "backend/dev/tests/test_stability_r49.py",
+      "bytes": 413,
+      "sha256": "3de29643ca29951f960461c5c8abd47250f7f810553ac0b9bb4a79587e3df692"
+    },
+    {
+      "path": "backend/dev/tests/test_static_access_r53.py",
+      "bytes": 6138,
+      "sha256": "c9c72432ff2d23f0ff37bce5f2e8cf5de8dd543e5514aebdbed63fabf3804349"
+    },
+    {
+      "path": "backend/dev/tests/test_static_wildcards_r52.py",
+      "bytes": 5038,
+      "sha256": "cc690be94eedbb515bd8746f18dfc443fca3c7bd80ad5c9bb0a3e2d646ddd9b6"
+    },
+    {
+      "path": "backend/dev/tests/test_string_bridge.py",
+      "bytes": 1789,
+      "sha256": "2ca62b8484f2325719e8898bf917bc7f3b47d8efdb4193da9ad5f79d14970f42"
+    },
+    {
+      "path": "backend/dev/tests/test_takeover_contract096.py",
+      "bytes": 2987,
+      "sha256": "831119c8648a93781fb80c19690e0d95a9e904e35276beae2af68bde579da649"
+    },
+    {
+      "path": "backend/dev/tests/test_tiered_item087.py",
+      "bytes": 7318,
+      "sha256": "b1d795fd36b71ae1040b9bce6b81494d13a39dbf2d1b1e647319ee8c75bd6b8b"
+    },
+    {
+      "path": "backend/dev/tests/test_tool_tier087.py",
+      "bytes": 10125,
+      "sha256": "37685317982c856ad3f3b1cc93b30b090e54273f7a78d06a82a9258b2df53c2d"
+    },
+    {
+      "path": "backend/dev/tests/test_toolchain092.py",
+      "bytes": 6827,
+      "sha256": "54c98e7d1c7b937d6a89fce5eddfff9381db1709825674b5e4949e073a3d4d95"
+    },
+    {
+      "path": "backend/dev/tests/test_trading_r76.py",
+      "bytes": 3215,
+      "sha256": "820229bd170063bbcdd026938e5610d2bb281a8bae2ef7cc7eaef420503f36ba"
+    },
+    {
+      "path": "backend/dev/tests/test_translate_java.py",
+      "bytes": 9117,
+      "sha256": "5fb3095c0c5f0825edbf58cc3433e825f65fe8dc12a86cfbe4df6067b1d45630"
+    },
+    {
+      "path": "backend/dev/tests/test_translated_diagnostics_r72.py",
+      "bytes": 1075,
+      "sha256": "ca9f2b5046524e58994f357a6b1edf013582fabd68ff40673b549840052c977c"
+    },
+    {
+      "path": "backend/dev/tests/test_translated_loader.py",
+      "bytes": 10964,
+      "sha256": "887f8edcc2195ccd2295398d5b096183973af3cb7e6083233bf9f4d17fd6b294"
+    },
+    {
+      "path": "backend/dev/tests/test_translation_job.py",
+      "bytes": 4176,
+      "sha256": "59108584b5cb3221e023ab65bf0df3b29160d7c04bde8758fe8c586b5bd408ca"
+    },
+    {
+      "path": "backend/dev/tests/test_translation_r51.py",
+      "bytes": 8479,
+      "sha256": "f82408c3e6fc3b1d7b0cb665eb744197747cba517690843ceda114b350a3ae5b"
+    },
+    {
+      "path": "backend/dev/tests/test_url_decoder.py",
+      "bytes": 2251,
+      "sha256": "1477ee8851ef7e3c4731e45c6acb502bcc68e8236e7b8eb145f4c2b975226540"
+    },
+    {
+      "path": "backend/dev/tests/test_utf8_codec087.py",
+      "bytes": 4959,
+      "sha256": "b9fe9c70eedcf9040dbcf7ed974011eee3af926893e79cc7cd2e09833506243f"
+    },
+    {
+      "path": "backend/dev/tests/test_utility_interfaces087.py",
+      "bytes": 5078,
+      "sha256": "f90b84fbfb9f103c07328267cd2716ca8249080af3662c5f487bc897ff660618"
+    },
+    {
+      "path": "backend/dev/tests/test_value_conversions090.py",
+      "bytes": 9431,
+      "sha256": "3c12c6a61a21df23900014de04cf381a1d686dbbd1612ab00dda6dc8614f25d4"
+    },
+    {
+      "path": "backend/dev/tests/test_varargs087.py",
+      "bytes": 2895,
+      "sha256": "d3e3cc19f14015aff9d485de2b86c7d37b5b3cf42c550893133cc4fdeaed2e1e"
+    },
+    {
+      "path": "backend/dev/tests/test_vertex_format085.py",
+      "bytes": 5919,
+      "sha256": "7f29ee31e18fa2a3df59aabaf60b2cac1ea1fdc7051ccc875ccdb4005ea1877c"
+    },
+    {
+      "path": "backend/dev/tests/test_vertex_sorting087.py",
+      "bytes": 3433,
+      "sha256": "ade0f9c615ca96e3533524741a203d45c0b71fc5b814e55409469d0c10a3a040"
+    },
+    {
+      "path": "backend/dev/tests/test_world_interfaces087.py",
+      "bytes": 4311,
+      "sha256": "f4d7ecfa6a7d03145d2e6309d3fdcf3ae3a5b382782dec0e18e87f05d0e82590"
+    },
+    {
+      "path": "backend/dev/tests/test_writer_tags087.py",
+      "bytes": 7774,
+      "sha256": "70b4918829335371ef490f527e6464c796a45eb8461e79f6050eb0fe4f07fb31"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_091/abi.py",
+      "bytes": 5895,
+      "sha256": "bfa7249fd833f1c071f484765087ef4b565ba7a917fc4ec72ff8846a641b99fa"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_091/analysis.py",
+      "bytes": 21657,
+      "sha256": "2b996a9ccbc6361d586a42f546c48d8419e240cea8d313710f0776c4324067c1"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_091/cfr_probe.py",
+      "bytes": 2705,
+      "sha256": "45c1575f617ec1c26beb951eaef73682420b1651e11779230e94359fd0072279"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_091/classfile.py",
+      "bytes": 15130,
+      "sha256": "54b6c4f45db892fb1eff8ed25a7753ee86d1dadbabfca875416be8b5bc80adff"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_091/cli.py",
+      "bytes": 3655,
+      "sha256": "f2ea68b16ddda6c1a23ef25fe35c391a11df14f9d60f141e446ad58585a68c72"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_091/locking.py",
+      "bytes": 11732,
+      "sha256": "30a9dddd76df2e0823da995e3bdffc930a242ba64971c5a3257869cb5d1d5ee3"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_091/ranking.py",
+      "bytes": 5535,
+      "sha256": "cfc4c85dd98aa91100e4c9fd1fed9ad69525681a9cdf61153d3a62258dd257d6"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_091/README.md",
+      "bytes": 5857,
+      "sha256": "3d6c21181c6aa409a8ff7f4cdbc77f7dce7ba0a14644dde0e565e37f575a87cf"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_091/reporting.py",
+      "bytes": 5137,
+      "sha256": "fd0d1451906e500ef175ef3ce161b8c9980f2f279fff860f815f7365de4ca148"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_091/tests.py",
+      "bytes": 12473,
+      "sha256": "b4fada8359ffd7caadfe3f488af1b4a018da0db1304eaee091eb7010fe3f46d5"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_092/bytecode_compare.py",
+      "bytes": 1179,
+      "sha256": "f6d47cac5ec1a9656bf21d086ca7d8170e9d6b7232a33f2e71d72c1321188d5a"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_092/cli.py",
+      "bytes": 4446,
+      "sha256": "6df94e56c502dcf3047781ce8dd45707fe59cc608396692b4bc9b32b7b8b6a9d"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_092/compiler_comparison.py",
+      "bytes": 6056,
+      "sha256": "be4b08f96ac968b02f55666f4c6c0c3cf2f2f3f5df4ca46e61b23c8c9fded045"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_092/minimal_mod_audit.py",
+      "bytes": 3094,
+      "sha256": "0f9aadb15e32864043cb82d98af52e39e1e8212904e6456b399af09ed7e71f23"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_092/refine.py",
+      "bytes": 4114,
+      "sha256": "96b69bd3b44fb07e4f2d1f43286eff9ec801d4eb567379d8f08c2c8199a26cb4"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_092/resolution.py",
+      "bytes": 5399,
+      "sha256": "0cba9762b8aec01bcee3057f8fdfd4a0bef89d16af5c64259a56238c92a7a10b"
+    },
+    {
+      "path": "backend/dev/tools/compat_analyzer_092/tests.py",
+      "bytes": 11098,
+      "sha256": "bea8fb41b48fc4124d1c72e0b7d06bbd6614adee325676413134f524f2f5d957"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/__init__.py",
+      "bytes": 99,
+      "sha256": "e30ef4c5a84e728f045e4018223d494e18744e47ac87f0ad1627e9b295071c61"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/capabilities.py",
+      "bytes": 7838,
+      "sha256": "7b8e87662192b8011eae5974ff079c5326acbfa6470bf90c4d9beb97a3f8573d"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/corpus.py",
+      "bytes": 5828,
+      "sha256": "76507d9b0a542d332135124ec72df11b3d4aaa53c7813152d68dd66de9615e2f"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/engine.py",
+      "bytes": 21526,
+      "sha256": "2d62bbcd0bb038ed8cde50df0397145dd3c0a601cc0875b34d9c10e89dc2de1e"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/observe.py",
+      "bytes": 2965,
+      "sha256": "563f5d22a262524d7e6d03e10918ac9c4d03e533553d2ae57aa6d880dae38fff"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/patches.py",
+      "bytes": 10951,
+      "sha256": "91a6b5ffa81e2260c926ee7fe5d4b8c3202c97c2d2d88187ac06f9e7a7797a9a"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/README.md",
+      "bytes": 6975,
+      "sha256": "02b9b691f6d9a70ad54f41259728acb2781eef7acd5f8b1d4a8a1a18a3d4148b"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/report.py",
+      "bytes": 12860,
+      "sha256": "cbbb4bc2fcd4ab0add801beaa64c1463ab6e32f5fcde9d12c298bc839abf59e2"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/snapshot.py",
+      "bytes": 3715,
+      "sha256": "355307a8f50410c3be65f8cda111478a86651f85753ce03023b7b4ccf0b4f220"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/web.py",
+      "bytes": 7481,
+      "sha256": "932599abfa04359df6f76f0731cb2f254c4d9a849f595aa31ac2315e51d86ed0"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/app.py",
+      "bytes": 20207,
+      "sha256": "3ef367b1bc77a714a8bbc8740ec596c9ace443e602138db7fa940eb527986ed0"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/cli.py",
+      "bytes": 6630,
+      "sha256": "dfbc2c85ae1fe0464f1faef628f1f1976fa3ee3b2146c6807faf96bd693966ef"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/conversion.py",
+      "bytes": 15442,
+      "sha256": "13ffa3d16444761a7601b7fe5d180065c2f58fc9e5accda70ffdb2e233876038"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/index.html",
+      "bytes": 24911,
+      "sha256": "9a80b5dbd5cc99ad61ef634f472c59dfdfa1aff4261d758b4134538e7b482200"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/jar_input.py",
+      "bytes": 6425,
+      "sha256": "0915679240c692d497d9bf79ab7b83c3271188c5c72d52e7d1ea4aeba799d2e2"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/NeoCore文字.cmd",
+      "bytes": 152,
+      "sha256": "e240ca8257a49b6b78d825c84469bddef0750d5417dfd696030dcba5553dc52d"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/pipeline_artifacts.py",
+      "bytes": 5235,
+      "sha256": "44d9855914364ec4598d42c5c659e4e4fad4d1042174bb93a7d44d83a7dae458"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/probe_native_python27.py",
+      "bytes": 2726,
+      "sha256": "a54681ba03b94ef176d0df2f80de5fa485eb4db83eff130ee8d622e5be02c0d9"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/README.md",
+      "bytes": 4485,
+      "sha256": "2ef0a2c095f5a50904677b791ab687046927556e67bc18c1589e7f9a89b2acad"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/test_backend.py",
+      "bytes": 3259,
+      "sha256": "65e0da2f41c8abe1edf8195cbe6e9bf6fbd1cf5ff7c0d984a7a112185bfb0bc9"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/test_conversion.py",
+      "bytes": 9722,
+      "sha256": "4579faa09bc6117d1fad4eb305b5201404a490e8c6c6d3a2cdb7f9e98cd8aa52"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/test_data_content.py",
+      "bytes": 3160,
+      "sha256": "f0da1b5ea907f5df3563b1713cbb8a67f8ec0730e174bb295ac987e4b043feba"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/test_toolchain.py",
+      "bytes": 7118,
+      "sha256": "4700b05cb206c7add342063eb08a18e8d877c3901c62d9b2a67a54e4c144786e"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_090/启动NeoCore.cmd",
+      "bytes": 345,
+      "sha256": "0587e7d83adc6fbe0539d29a4a1f30983ff65aa1276e9625598cc698031b4334"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/app.py",
+      "bytes": 29924,
+      "sha256": "4ab1d8a399c800d49f6fa57d6307e9bc429467b66e1bcd9dd1375eb4f862252f"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/cli.py",
+      "bytes": 6974,
+      "sha256": "8f35ebeb93b207c969dfa9f4cbca5655f33d4280ed1bb97b61606ea72f86e343"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/conversion.py",
+      "bytes": 20666,
+      "sha256": "8269fa9724f3b53a8a896d7f49af0357d2efc53e1453129756948551422a9c4d"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/decompiler_evidence.py",
+      "bytes": 3209,
+      "sha256": "e60d5c340cb09a3d68b5c581b99230cebbc8458a6da561d4957abe2f4bfdc88d"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/diagnostic_contract.py",
+      "bytes": 5172,
+      "sha256": "fe013b180860a52883a57f0ded9d088ae10ab2a498f14c65c021e59465c1e5b1"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/diagnostic_export.py",
+      "bytes": 7442,
+      "sha256": "daf12022de2ead96568f70adc56ddfd20017c10ee532bc2aedcff66f257f683f"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/index.html",
+      "bytes": 30541,
+      "sha256": "52edf4a6a1b42e23495c0ca8de42c9cb316e25935b6344866808aeb3bdb48309"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/jar_input.py",
+      "bytes": 6425,
+      "sha256": "0915679240c692d497d9bf79ab7b83c3271188c5c72d52e7d1ea4aeba799d2e2"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/NeoCore文字.cmd",
+      "bytes": 160,
+      "sha256": "8c82d27f53ce650602a86277030d5ab70bcfb01b0689c7f7e5f149f869654878"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/pipeline_artifacts.py",
+      "bytes": 5299,
+      "sha256": "55a326b6c56b2c0a5134a783431477203e4ff35de4637dfdf9568a023168e95e"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/probe_native_python27.py",
+      "bytes": 2726,
+      "sha256": "a54681ba03b94ef176d0df2f80de5fa485eb4db83eff130ee8d622e5be02c0d9"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/process_control.py",
+      "bytes": 6061,
+      "sha256": "93a187bfaeb3a97163ec6c93b7dea45b2ef7666a90750a08a2bcdfc07737e629"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/README.md",
+      "bytes": 5500,
+      "sha256": "6a0899fdd31742deab47820ce6ac2058b2f5cda0599bf50cedc1baa082b9bfd5"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/test_backend.py",
+      "bytes": 3390,
+      "sha256": "f592d113ee483e78742486fc5d654f682b14d33b3e8abae8ce64ba0dbfa5f6e0"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/test_conversion.py",
+      "bytes": 9722,
+      "sha256": "4579faa09bc6117d1fad4eb305b5201404a490e8c6c6d3a2cdb7f9e98cd8aa52"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/test_data_content.py",
+      "bytes": 3199,
+      "sha256": "b3a73f997c44d07ab71e8f9ed3ea6360ce7b6cae6ae3b33f459de8618426714c"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/test_observability.py",
+      "bytes": 9174,
+      "sha256": "52c3969a06f6715cd04d3d1d0194ff3ca9bcbdae86979a78b553c2334df17b9c"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/test_toolchain.py",
+      "bytes": 7189,
+      "sha256": "e3bbca59c55487a8e437b75770840aac937faf8db7fe172b5c0aee75f853b813"
+    },
+    {
+      "path": "backend/dev/tools/neocore_gui_092/启动NeoCore.cmd",
+      "bytes": 345,
+      "sha256": "0587e7d83adc6fbe0539d29a4a1f30983ff65aa1276e9625598cc698031b4334"
+    },
+    {
+      "path": "backend/dev/translate_java.py",
+      "bytes": 15642,
+      "sha256": "3b3200aa04418e5d6c89ed54d286717687988448aca463277731434c3e0993cc"
+    },
+    {
+      "path": "backend/dev/translation_job.example.json",
+      "bytes": 225,
+      "sha256": "1036b96706d0012907984dda5e5002cc20cf45483e068047f94fed21a56df802"
+    },
+    {
+      "path": "backend/dev/translation_job.sample.json",
+      "bytes": 223,
+      "sha256": "16055f1e5b9e85937960bb1113469f4e6faee9121078897300f8bd44429b7a0b"
+    },
+    {
+      "path": "backend/dev/translation_observer.py",
+      "bytes": 3558,
+      "sha256": "70ba4fdadc8cd9fcf74a8f5e068fe20d710296b5ea994fd19935189c483b9f70"
+    },
+    {
+      "path": "backend/dev/update_java_api_catalog.py",
+      "bytes": 1041,
+      "sha256": "9a975d61e8cb6ca0780d0e41830728c68ab14094d70318b356f51b6fa6d58e88"
+    },
+    {
+      "path": "backend/dev/validation_report.py",
+      "bytes": 1894,
+      "sha256": "51d2124fcfd61a620fa6511aefeed59ff3b64e781840558fb56bd534ddcca4eb"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/.editorconfig",
+      "bytes": 541,
+      "sha256": "90496ff136741e183308ae716913a90325bb20f5a83194b37aee5182501c81ee"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/.gitattributes",
+      "bytes": 862,
+      "sha256": "4af865e7a4e4a96e9e465794e6b112bd922c4b81bea45f8162f529c69c9fd9be"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/.github/dependabot.yml",
+      "bytes": 157,
+      "sha256": "c01afa83dc30168c1c6181aab5a764a1be055d9e8f9a47004bbdbe3e032916a5"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/.github/workflows/ci.yml",
+      "bytes": 2025,
+      "sha256": "fd1382f1be04664199659478aa56d24609db4027c9f9a39e6160b82d6ad588be"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/.github/workflows/lint.yml",
+      "bytes": 511,
+      "sha256": "b31b4fe53081449ab8e37d88b5ed9c5c154be94b5fb80694a46ad5c04fdafbb1"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/.github/workflows/publish.yml",
+      "bytes": 796,
+      "sha256": "0af81fc6243170b3e6587e76969737c71e222d322977d7e8b7e550ffeb14aad7"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/.gitignore",
+      "bytes": 324,
+      "sha256": "b3ab146577626a302df228cfdbe663020ecbed513dd0a02700b68fea1e8ce00e"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/binding.gyp",
+      "bytes": 574,
+      "sha256": "42305f7d7305fc3a6d2cee4ee5e0e73e0db708e967f351bfad04872f46c8a3ac"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/c/tree-sitter-java.h",
+      "bytes": 238,
+      "sha256": "bd561d88bb3c01f2541696f4a0a929f1751e87459a1092f390fb480ef4f7f796"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/c/tree-sitter-java.pc.in",
+      "bytes": 293,
+      "sha256": "4020ab696991c0534ec4d2d39c0f89c2e8ff80cb7b244feb3a76adffd2c4a133"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/go/binding.go",
+      "bytes": 249,
+      "sha256": "7f8468acd000849d639ca3417b955ff67d311b43bf966a48b6a4828ea0840b07"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/go/binding_test.go",
+      "bytes": 354,
+      "sha256": "7d08b5343ad3fab2541a7e1004dec63ba1ef66e59116595deef39d1f4bae287d"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/node/binding.cc",
+      "bytes": 577,
+      "sha256": "861ff9ef49c3e080dd00eebfd4d75b83f0ac64551a859caed23d4b416de88bf0"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/node/binding_test.js",
+      "bytes": 250,
+      "sha256": "c35f2aaec5d06fa42a4cea226fa4cb841a04a7506e70086c2ea5d9fd67d8c482"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/node/index.d.ts",
+      "bytes": 452,
+      "sha256": "5f593f781f7cb12a3dcdcab2f9c063a77b9965f537bb01c5c05958947f5ff8fd"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/node/index.js",
+      "bytes": 453,
+      "sha256": "ada8505e3c97f2f319cabe073c6d188a2bd5eb7092a5b637f0a701e336cd2755"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/python/tests/test_binding.py",
+      "bytes": 290,
+      "sha256": "14304aeca54457be4dd6938dc0a12f7d21b1ff489e3194fd5bc9dd478d78fe7e"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/python/tree_sitter_java/__init__.py",
+      "bytes": 819,
+      "sha256": "ef10da4947ee5567ad296494d9051d1f1a2b1abd5e40ab1720584f17ff4efac0"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/python/tree_sitter_java/__init__.pyi",
+      "bytes": 109,
+      "sha256": "a0f8fab5449fa47334f1b4e6104e63e42da66c730158d90cf0eba130673954c8"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/python/tree_sitter_java/binding.c",
+      "bytes": 679,
+      "sha256": "f62d846c352e0cc50b1c261f01b94583d5ef3b04a9c62a8ce60d60359a6ea33b"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/python/tree_sitter_java/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/rust/build.rs",
+      "bytes": 406,
+      "sha256": "f0bb2a9bab500d44db01ae3a0537c648aba9f5a2b6cda39ea22f2897e2a38441"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/rust/lib.rs",
+      "bytes": 1908,
+      "sha256": "447525e5afdc29d94ad4014c525a43c04d4193de2f4131d774ad41ac51600218"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/swift/TreeSitterJava/java.h",
+      "bytes": 238,
+      "sha256": "bd561d88bb3c01f2541696f4a0a929f1751e87459a1092f390fb480ef4f7f796"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/bindings/swift/TreeSitterJavaTests/TreeSitterJavaTests.swift",
+      "bytes": 359,
+      "sha256": "d198073daea9e9d895dc0008f67690ca8f9a73b61e58a40de4a7e8bef942ab81"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/Cargo.lock",
+      "bytes": 2482,
+      "sha256": "a33e07dfd9cc047db8bc36550c90e7facca414f22be3ce27c5ac9f4ce8a34638"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/Cargo.toml",
+      "bytes": 757,
+      "sha256": "695636a6a3e4b2db2117221574989ef1378646e766340224600a615daabc606f"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/CMakeLists.txt",
+      "bytes": 2422,
+      "sha256": "77cf97147ddc8e0ca73fbf78b4d54a294571a04ebbb2c01d82765d59c0cbbb47"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/eslint.config.mjs",
+      "bytes": 89,
+      "sha256": "e7b2dbe4f462cf890b53cc2d140aef6785fa31caabaaf6a11a38bf12a3ece091"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/go.mod",
+      "bytes": 167,
+      "sha256": "96226748d0b9b2f001be9cce49f9cedc6d68b3b36f741a18d8f18fbb7bb80552"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/go.sum",
+      "bytes": 3917,
+      "sha256": "baf206f1aa0c93bdac4bdf8c03ea55b06b0487969b9cc032a85aead1cd27c9ec"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/grammar.js",
+      "bytes": 33402,
+      "sha256": "95e168d5d64438bb0691bbc6b0dbf55c6bbe4c204169acf4cacb193ed9f8e4d2"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/grammar.upstream.js",
+      "bytes": 32038,
+      "sha256": "b89ada7566bda16a8d7a710755c27824d6097e44b8d3b1dafbb749f3c34d13e0"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/LICENSE",
+      "bytes": 1069,
+      "sha256": "52ed137b039cd9c46409bc22e89938af911c95b157feae2d040b51e6084369a7"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/Makefile",
+      "bytes": 3179,
+      "sha256": "fbd9e6b6b0e4b60402fe98552614231f7091d4ba364de68d341539f8d7c6c0a9"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/neocore_patch.json",
+      "bytes": 687,
+      "sha256": "840afc805e6c095154a7fecb121fdd8dfc6546da19fd63ca202145ce3182e00e"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/package-lock.json",
+      "bytes": 53586,
+      "sha256": "be9d1572d9868e64af87d1ebfd0575c58e173816efbd1b38da31a354ae2ad8e4"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/package.json",
+      "bytes": 1479,
+      "sha256": "c0c99e633aa28b2c1c58e61f91211391a9363d7d532aa5795bf4003f2dc14dba"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/Package.swift",
+      "bytes": 960,
+      "sha256": "605fea500583abe2f8684414b31ea84ee182749d7c6c34a214a84a25d50f0ac9"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/pyproject.toml",
+      "bytes": 939,
+      "sha256": "60c4954be86eb1a5ef8238dd7aace1f42c1764702fd1a50284784834c670c7f8"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/queries/highlights.scm",
+      "bytes": 2064,
+      "sha256": "576c0df8df0b116cd642140ddc508c01f9d3283582afd8581c1f35caf4d71386"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/queries/tags.scm",
+      "bytes": 499,
+      "sha256": "bcb22147b8582d92743fc973864cefb894a4c12b3957f16f3d472b2ec7cd4c49"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/README.md",
+      "bytes": 1005,
+      "sha256": "82250389ffc5e51aa84e0d36159c7d142d92489b5bec8784e57bbeeda966adf3"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/setup.py",
+      "bytes": 1671,
+      "sha256": "42e55e6fa7bf687e684f29a893ba151dd2a01533a3bca9467f1a095cf4e310df"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/src/grammar.json",
+      "bytes": 186599,
+      "sha256": "16eccdfa942e189a0b88e62252fdc552f7e251b90c6e2f28f4abc928c41fdabf"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/src/node-types.json",
+      "bytes": 81338,
+      "sha256": "9b59bae1d307a78d001ea5794dbe701ece9841d396b37c8827bbcdf11dd5b69d"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/src/parser.c",
+      "bytes": 2563946,
+      "sha256": "cc521ce6a257ec8560de5db3769acfff29180eca1d1a159200c11eb8c4f86e94"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/src/tree_sitter/alloc.h",
+      "bytes": 985,
+      "sha256": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/src/tree_sitter/array.h",
+      "bytes": 10431,
+      "sha256": "5bdf6ed1a78e3409fd443e085ca967a64c188a5d082aaf7f819bccd53a471c94"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/src/tree_sitter/parser.h",
+      "bytes": 7039,
+      "sha256": "a1f6ef161fbaf48a0e10fca90ef5290a062462b307b3898aa562993853b9f80a"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/test/corpus/comments.txt",
+      "bytes": 546,
+      "sha256": "56d36d11ba83f59dda06cbe76f275f3c0cea2fb126e29b3236a662f0d7cb766e"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/test/corpus/declarations.txt",
+      "bytes": 32890,
+      "sha256": "c1f27cf33257368caa9e7c6aa3906fbcf43247631f0725bb8c09cf65ef92fa20"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/test/corpus/expressions.txt",
+      "bytes": 55938,
+      "sha256": "85106c000e4bad6392b2d37973ec822e22b2cf466a9c89a7a9a23b45916ab533"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/test/corpus/literals.txt",
+      "bytes": 8469,
+      "sha256": "aa326ee6b556e3eab3e4f9d5b843f4ce6c36167dcb9dd6dbe2342fd3272e989f"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/test/corpus/precedence.txt",
+      "bytes": 1431,
+      "sha256": "91af55bd4eaa7d87989ca76d62917277b970356b21636e664d17a556d4e3c643"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/test/corpus/types.txt",
+      "bytes": 1482,
+      "sha256": "eb55fa3f45eb1bb8f94cd3ab740db2104c7ee7464cc972a0967beb8aad59b081"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/test/highlight/types.java",
+      "bytes": 623,
+      "sha256": "a0e01ba654f16ff57688b6c641f3a44461f3d137f826a77eb86c96b897b80261"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/tree-sitter.json",
+      "bytes": 889,
+      "sha256": "5b8f0cb5514a4a04720beba0e5991c48837844fe0ce2ba2d02ec7e6a44a344d8"
+    },
+    {
+      "path": "backend/dev/vendor/java_grammar_src/tree_sitter_java_qualified.dll",
+      "bytes": 590848,
+      "sha256": "e3972213e281efe09dad4f56c2ca9987b53731ffb5acf88b2c59ce1c0cb9cd2a"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter/__init__.py",
+      "bytes": 1573,
+      "sha256": "edf67e1ccbe921e10379de11e563b7b808f40439a18c9a19b8c81db49bd2dbc4"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter/__init__.pyi",
+      "bytes": 13800,
+      "sha256": "2fdf99c118f491fe2912c08b9ebd12a27450a2ff455d06e7e48ff761a7be8169"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter/_binding.cp314-win_amd64.pyd",
+      "bytes": 240640,
+      "sha256": "c276116e98520909e4941577c8ede2c6a2cebaad9fa7d115d9cf2eccc32ab0a1"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter-0.26.0.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter-0.26.0.dist-info/licenses/LICENSE",
+      "bytes": 1109,
+      "sha256": "c40a115b3d7d429c839bc51ace3464c2f37c9559bad6c6251a86281c27ea5431"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter-0.26.0.dist-info/METADATA",
+      "bytes": 10368,
+      "sha256": "9a72c5bb238ba29c33bd5bcc31287efe4191454f500728881bdf7d9489627ce6"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter-0.26.0.dist-info/RECORD",
+      "bytes": 1004,
+      "sha256": "0c207f31f308a3dcbbe07a65e3131fa7483a3344aabca45b19fa4a0254b30d82"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter-0.26.0.dist-info/REQUESTED",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter-0.26.0.dist-info/top_level.txt",
+      "bytes": 12,
+      "sha256": "a0d28314078b8ba8b7f447134d6ef90cbd12139b0c064817d1344ca497b72ebb"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter-0.26.0.dist-info/WHEEL",
+      "bytes": 101,
+      "sha256": "8e1c6b44fded7447e6eeda01d57edd979c7a7f46eee93bded9c5b021d91b2fc5"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java/__init__.py",
+      "bytes": 819,
+      "sha256": "ef10da4947ee5567ad296494d9051d1f1a2b1abd5e40ab1720584f17ff4efac0"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java/__init__.pyi",
+      "bytes": 109,
+      "sha256": "a0f8fab5449fa47334f1b4e6104e63e42da66c730158d90cf0eba130673954c8"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java/_binding.pyd",
+      "bytes": 422400,
+      "sha256": "1e2701354844067b291d9405be998d69291892fcfb75ca6b1c314fd3caa5aca9"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java/binding.c",
+      "bytes": 679,
+      "sha256": "f62d846c352e0cc50b1c261f01b94583d5ef3b04a9c62a8ce60d60359a6ea33b"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java/queries/highlights.scm",
+      "bytes": 2064,
+      "sha256": "576c0df8df0b116cd642140ddc508c01f9d3283582afd8581c1f35caf4d71386"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java/queries/tags.scm",
+      "bytes": 499,
+      "sha256": "bcb22147b8582d92743fc973864cefb894a4c12b3957f16f3d472b2ec7cd4c49"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java-0.23.5.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java-0.23.5.dist-info/LICENSE",
+      "bytes": 1069,
+      "sha256": "52ed137b039cd9c46409bc22e89938af911c95b157feae2d040b51e6084369a7"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java-0.23.5.dist-info/METADATA",
+      "bytes": 1785,
+      "sha256": "4a52664bfd04cebf3f688e3bb36f1e261f218403f2262f155c85c9c345c2c8fa"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java-0.23.5.dist-info/RECORD",
+      "bytes": 1304,
+      "sha256": "53295ccdedfe754063e8da0c172d14d073f4c5204351ca4c439657e70bbc18d2"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java-0.23.5.dist-info/REQUESTED",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java-0.23.5.dist-info/top_level.txt",
+      "bytes": 26,
+      "sha256": "fc22574047409862789078e1d2c0185ac75d8272f8087dadab02ef9c0e7800e1"
+    },
+    {
+      "path": "backend/dev/vendor/java_parser/tree_sitter_java-0.23.5.dist-info/WHEEL",
+      "bytes": 99,
+      "sha256": "ed2e495b680dd28ecaf43e4ce3130b5ed1424457f168a55bababa8296dd754dd"
+    },
+    {
+      "path": "backend/dev/whitelist_lint.py",
+      "bytes": 15330,
+      "sha256": "b03635ef79395649d238a4dfca908cac7b223120f01d1d451b95698c3d0b056b"
+    },
+    {
+      "path": "backend/dev/workspace_paths.py",
+      "bytes": 483,
+      "sha256": "a36b521ee0b465a9f9ea4d792996ee76ccd8dc76758b5bd72e8f289a8ad2700b"
+    },
+    {
+      "path": "backend/resource_pack_kFreO1qQ/entity/neocore_training_mob.entity.json",
+      "bytes": 552,
+      "sha256": "746626f1ea0f28246493516650876c1ac6f4528b95f9fff908ff28e98b32ad39"
+    },
+    {
+      "path": "backend/resource_pack_kFreO1qQ/manifest.json",
+      "bytes": 561,
+      "sha256": "14ac214d5b119c08a7d7be5e990ccffc2f96ed4d4d1b814cfb6e57a7a97bff8c"
+    },
+    {
+      "path": "backend/resource_pack_kFreO1qQ/models/entity/neocore_training_mob.geo.json",
+      "bytes": 3536,
+      "sha256": "9811749e70ad1eac51788fd36b56e8b527c73e04a26e928585deada7a29aa210"
+    },
+    {
+      "path": "backend/resource_pack_kFreO1qQ/render_controllers/neocore_training_mob.render_controllers.json",
+      "bytes": 292,
+      "sha256": "2ce325bb5d2e3301fce27f0736e5a7b03d1ef08010b0016880d426bac0c8de82"
+    },
+    {
+      "path": "backend.example.json",
+      "bytes": 123,
+      "sha256": "f9c33010b228be6593bc8afc383721e442fab6957dd2670f2236550ec388681c"
+    },
+    {
+      "path": "cli.py",
+      "bytes": 6974,
+      "sha256": "8f35ebeb93b207c969dfa9f4cbca5655f33d4280ed1bb97b61606ea72f86e343"
+    },
+    {
+      "path": "conversion.py",
+      "bytes": 20666,
+      "sha256": "b89b725b24ffaf54c89c6de812adb68db66ce6fabedf78b22c5b120deb742981"
+    },
+    {
+      "path": "decompiler_evidence.py",
+      "bytes": 3209,
+      "sha256": "e60d5c340cb09a3d68b5c581b99230cebbc8458a6da561d4957abe2f4bfdc88d"
+    },
+    {
+      "path": "diagnostic_contract.py",
+      "bytes": 5172,
+      "sha256": "fe013b180860a52883a57f0ded9d088ae10ab2a498f14c65c021e59465c1e5b1"
+    },
+    {
+      "path": "diagnostic_export.py",
+      "bytes": 7442,
+      "sha256": "daf12022de2ead96568f70adc56ddfd20017c10ee532bc2aedcff66f257f683f"
+    },
+    {
+      "path": "docs/兼容性挖掘使用说明.md",
+      "bytes": 6975,
+      "sha256": "02b9b691f6d9a70ad54f41259728acb2781eef7acd5f8b1d4a8a1a18a3d4148b"
+    },
+    {
+      "path": "docs/验证范围.md",
+      "bytes": 1228,
+      "sha256": "6ccd8f12644b1876ad154ea8afed1dfa451945f0dfd0d189b0a1d7a2349f71c3"
+    },
+    {
+      "path": "index.html",
+      "bytes": 30541,
+      "sha256": "bf26660ffcf46ff6cc0accf1d11a077c02812634effae1d431aa00e3c8d02036"
+    },
+    {
+      "path": "jar_input.py",
+      "bytes": 6425,
+      "sha256": "0915679240c692d497d9bf79ab7b83c3271188c5c72d52e7d1ea4aeba799d2e2"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 4563,
+      "sha256": "c0ea4a896d2c8c394b29f9427589996db826cd501c512279ff0ed3ef48fabbe5"
+    },
+    {
+      "path": "loader/README.md",
+      "bytes": 1016,
+      "sha256": "3147ec93339764eae8c7c3287958b7068e64dfb9423c615ffb5bce7786df0074"
+    },
+    {
+      "path": "local_env.example.cmd",
+      "bytes": 408,
+      "sha256": "b23bac62c10062a896fa05603b1b1c8a45580965c183bb0758527d20ed4a9230"
+    },
+    {
+      "path": "NeoCore文字.cmd",
+      "bytes": 240,
+      "sha256": "815b6b8915ee6c429eb149adbee81971c821f73ff42f30baab63f010ef735946"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 446,
+      "sha256": "b73c35c72dfc7663120ff0e81eaaaee062f53a8ec94d19d3b98ad3343fdecf48"
+    },
+    {
+      "path": "pipeline_artifacts.py",
+      "bytes": 5299,
+      "sha256": "55a326b6c56b2c0a5134a783431477203e4ff35de4637dfdf9568a023168e95e"
+    },
+    {
+      "path": "probe_native_python27.py",
+      "bytes": 2726,
+      "sha256": "a54681ba03b94ef176d0df2f80de5fa485eb4db83eff130ee8d622e5be02c0d9"
+    },
+    {
+      "path": "process_control.py",
+      "bytes": 6061,
+      "sha256": "93a187bfaeb3a97163ec6c93b7dea45b2ef7666a90750a08a2bcdfc07737e629"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4190,
+      "sha256": "61f974492a585a092d06039f9bb6bfa9adc85aece98d3380ff73b81486d807de"
+    },
+    {
+      "path": "run_neocore.py",
+      "bytes": 1047,
+      "sha256": "34578a361960fa2f800dd0c035d458f6204b6a6ce743d25a9ca442afd87da958"
+    },
+    {
+      "path": "scripts/build_addon.py",
+      "bytes": 558,
+      "sha256": "6b3b64180ccad8ffa35557c484786dc074d0d60cb4e1539e6ae52c7d07f86fd5"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 762,
+      "sha256": "e25f24a5d0aa1a01787275192a81e3116e6c7431e4f8264bbc2c8d690b509d00"
+    },
+    {
+      "path": "兼容性挖掘.cmd",
+      "bytes": 246,
+      "sha256": "5bf23775469e427d0acf71d0cd8c9bb03ce3d3838caa500a894022ba75ae6358"
+    },
+    {
+      "path": "启动NeoCore.cmd",
+      "bytes": 240,
+      "sha256": "ceb1c5112636f9563c9288285b2aee962b10c00614cb0bd163ad8e805a37c977"
+    }
+  ]
+}

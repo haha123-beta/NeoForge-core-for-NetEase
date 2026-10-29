@@ -1,0 +1,1 @@
+package common.beta;public class Helper {public static int compute(int n){return n*5-1;}}

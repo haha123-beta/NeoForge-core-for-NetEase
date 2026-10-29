@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "neoforge core",
+    "name": "免费党",
+    "uuid": "A6E04788-3E5B-4F03-B430-9835E4233B00",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "72d48ffa-2ae4-4448-802b-9c52d4438049",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "b43f862c-ce81-4239-baeb-2af8ec2073c4",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

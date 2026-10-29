@@ -1,0 +1,9 @@
+[[mods]]
+modId="neocore_example_addon"
+version="1.0"
+
+[[dependencies.neocore_example_addon]]
+modId="neocore_example_base"
+type="required"
+versionRange="[1,2)"
+ordering="AFTER"

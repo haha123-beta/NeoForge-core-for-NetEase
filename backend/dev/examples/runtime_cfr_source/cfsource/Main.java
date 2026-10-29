@@ -1,0 +1,1 @@
+package cfsource;import net.neoforged.fml.common.Mod;@Mod("cfr_source_example") public class Main {public int value=Target.run(3);public Main(){}}

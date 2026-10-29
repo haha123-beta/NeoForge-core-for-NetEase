@@ -1,0 +1,1 @@
+{"required":true,"package":"fieldhooks","mixins":["Hooks"],"injectors":{"defaultRequire":1}}

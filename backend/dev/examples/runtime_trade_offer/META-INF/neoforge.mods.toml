@@ -1,0 +1,6 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="runtime_trade_offer_example"
+version="1"

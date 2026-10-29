@@ -1,0 +1,13 @@
+{
+  "upstream": "https://codeload.github.com/tree-sitter/tree-sitter-java/tar.gz/refs/tags/v0.23.5",
+  "archive_sha256": "cb199e0faae4b2c08425f88cbb51c1a9319612e7b96315a174a624db9bf3d9f0",
+  "patch": "Allow scoped_type_identifier in record patterns",
+  "grammar_sha256": "95e168d5d64438bb0691bbc6b0dbf55c6bbe4c204169acf4cacb193ed9f8e4d2",
+  "revision": "0.23.5+neocore.qualified-record.1",
+  "generator_version": "0.24.7",
+  "c_compiler": "zig 0.14.1",
+  "target": "x86_64-windows-gnu",
+  "abi": 14,
+  "parser_sha256": "cc521ce6a257ec8560de5db3769acfff29180eca1d1a159200c11eb8c4f86e94",
+  "library_sha256": "e3972213e281efe09dad4f56c2ca9987b53731ffb5acf88b2c59ce1c0cb9cd2a"
+}
