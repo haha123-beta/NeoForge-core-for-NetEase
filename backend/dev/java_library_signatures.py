@@ -397,10 +397,12 @@ def resolve(receiver_type,name,arity,argument_types,canonical,enum_types=None,pr
         raise ValueError('Goal scheduler method requires an implemented public adapter: '+name)
     if base in SETS or base == 'java.util.Collection':
         abi = 3 if base in SETS else 1
-        generic = generic_arguments(raw)
+        generic = generic_arguments(raw,allow_wildcards=name=='forEach')
         if len(generic) > 1:
             raise ValueError('Collection needs one resolved generic type argument')
-        element = canonical_generic(generic[0], canonical) if generic else 'java.lang.Object'
+        element = (canonical(generic[0].replace('?extends','? extends ').replace('?super','? super ')) if name=='forEach' else canonical_generic(generic[0], canonical)) if generic else 'java.lang.Object'
+        if name=='forEach' and element.startswith('?'):
+            raise ValueError('Top-level wildcard collection capture requires lowering')
         table={'size':('int',[]),'isEmpty':('boolean',[]),'contains':('boolean',['java.lang.Object']),
                'add':('boolean',[element]),'remove':('boolean',['java.lang.Object']),'clear':('void',[]),
                'iterator':('java.util.Iterator<'+element+'>',[]),
@@ -409,7 +411,7 @@ def resolve(receiver_type,name,arity,argument_types,canonical,enum_types=None,pr
             return {'return_type': 'boolean', 'parameters': ['java.util.Collection'], 'collection_abi': 3 if base in SETS else 2}
         if name == 'removeIf' and arity == 1:
             return {'return_type': 'boolean', 'parameters': ['java.util.function.Predicate<' + element + '>'], 'collection_abi': 3 if base in SETS else 2}
-        if name == 'forEach' and arity == 1 and base in SETS:
+        if name == 'forEach' and arity == 1:
             return {'return_type': 'void', 'parameters': ['java.util.function.Consumer<' + element + '>'], 'collection_abi': abi}
         if name=='toArray':
             if arity==0:return {'return_type':'java.lang.Object[]','parameters':[], 'collection_abi': abi}

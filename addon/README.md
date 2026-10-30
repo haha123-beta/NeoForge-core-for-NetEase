@@ -2,7 +2,7 @@
 
 这里是用本仓库核心源码生成的独立网易电脑版 AddOn；不包含任何用户模组或原始第三方 JAR。
 
-- `NeoCore_behavior_pack/manifest.json`：0.9.9 行为包声明。
+- `NeoCore_behavior_pack/manifest.json`：1.0.0 行为包声明。
 - `NeoCore_behavior_pack/NeoCoreSourceScripts/modMain.py`：网易双端入口，注册和关闭核心宿主。
 - `NeoCore_behavior_pack/NeoCoreSourceScripts/runtime_host.py`：加载会话和 SDK 宿主。
 - `NeoCore_behavior_pack/NeoCoreSourceScripts/source_modules.py`：私有源码模块加载器。

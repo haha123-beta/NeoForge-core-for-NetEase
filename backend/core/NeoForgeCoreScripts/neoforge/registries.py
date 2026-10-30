@@ -513,7 +513,7 @@ class DeferredHolder(object):
         return self.location
 
     def getKey(self):
-        return self.registry_key
+        return ResourceKey.create(self.registry_key, self.location)
 
     def value(self):
         return self.get()
@@ -541,16 +541,21 @@ class DeferredHolder(object):
             return u"<DeferredHolder {} -> {!r}>".format(self.location, self._value)
         return u"<DeferredHolder {} (未求值)>".format(self.location)
 
+    def equals(self, other):
+        return self is other or (isinstance(other, DeferredHolder) and self.getKey() is other.getKey())
+
+    def hashCode(self):
+        from java_stdlib._base import hash_code
+        return hash_code(self.getKey())
+
     def __eq__(self, other):
-        if isinstance(other, DeferredHolder):
-            return self.location == other.location
-        return self.get() == other
+        return self.equals(other)
 
     def __ne__(self, other):
-        return not self.__eq__(other)
+        return not self.equals(other)
 
     def __hash__(self):
-        return hash(java_to_string(self.location))
+        return self.hashCode()
 
 
 # ============================================================
@@ -579,6 +584,9 @@ class DeferredRegister(object):
         self.modid = java_to_string(modid)
         self._entries = {}
         self._entry_order = []
+        from java_stdlib.util import JavaLinkedHashMap, UnmodifiableMap
+        self._entry_view_map = JavaLinkedHashMap()
+        self._entries_view = UnmodifiableMap(self._entry_view_map).keySet()
         self._event_bus = None
         self._frozen = False
 
@@ -637,14 +645,15 @@ class DeferredRegister(object):
         holder = self._new_holder(location, factory)
         self._entries[path] = holder
         self._entry_order.append(path)
+        self._entry_view_map.put(holder, holder)
         return holder
 
     def _new_holder(self, location, factory):
         return DeferredHolder(self.registry_key, location, factory=factory)
 
     def getEntries(self):
-        """Return holders in insertion order, as the official LinkedHashMap."""
-        return [self._entries[key] for key in self._entry_order]
+        """A stable, live, unmodifiable LinkedHashMap holder-key set."""
+        return self._entries_view
 
     def size(self):
         return len(self._entries)

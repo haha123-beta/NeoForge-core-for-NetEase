@@ -63,9 +63,9 @@ finally:s.close();r.close()
         known,_=api_index()
         bad='import net.minecraft.resources.ResourceKey;import net.minecraft.world.level.block.Block;class Run {ResourceKey<String> wrong(ResourceKey<Block> key){return key;}}'
         with self.assertRaises(NeedsLowering):generate(parse_source(bad,known_types=known))
-        # A provider method name alone is not an equivalence proof. The legacy
-        # holder returns its registry key, not the Java entry key, so keep the
-        # call blocked until a separate corrected provider is reviewed.
-        with self.assertRaises(NeedsLowering):generate(parse_source(KEY_SOURCE,known_types=known))
+        # 1.0.0 reviews the corrected entry-key provider. Its positive runtime
+        # contract is checked in test_registry_keys100/test_foundations100.
+        generate(parse_source(KEY_SOURCE,known_types=known))
+        with self.assertRaises(NeedsLowering):generate(parse_source(KEY_SOURCE.replace('h.getKey()','h.getKey(1)'),known_types=known))
 
 if __name__=='__main__':unittest.main()

@@ -89,8 +89,8 @@ class Workspace:
                 except (OSError,ValueError,KeyError):pass
                 try:job['live']=json.loads((self.runs/job['attempt']/'live.json').read_bytes())
                 except (OSError,ValueError):pass
-        return {'jobs':jobs,'output_dir':str(self.outputs),'version':'0.9.9',
-                'release_status':'DEVELOPMENT','current_release':'0.9.9',
+        return {'jobs':jobs,'output_dir':str(self.outputs),'version':'1.0.0',
+                'release_status':'DEVELOPMENT','current_release':'1.0.0',
                 'format_preview_only':False,'environment':environment(self.config)}
 
     def dependency_records(self,key,dependency_ids):
@@ -155,7 +155,7 @@ class Workspace:
                 job=self.jobs[key]
                 if self.cancellations[attempt].is_set():job.update(status='CANCELLED',message='已取消排队任务');self.save(job);return
                 job.update(status='RUNNING',message='正在准备转换',started_at=time.time());self.save(job)
-                name=job['pack']+'-0.9.9-'+attempt[:8]+'.zip'
+                name=job['pack']+'-1.0.0-'+attempt[:8]+'.zip'
             try:
                 folder.mkdir(exist_ok=True)
                 request={'jar':str(self.inputs/(key+'.jar')),'work':str(folder),
@@ -229,7 +229,7 @@ class Workspace:
         if identity.exists():
             if json.loads(identity.read_bytes())!=expected:raise ValueError('诊断任务归属不匹配')
         else:
-            # Migrate a previous 0.9.9 development record only after verifying
+            # Migrate a previous 1.0.0 development record only after verifying
             # the request points to this workspace's exact imported JAR.
             request=json.loads((folder/'request.json').read_bytes())
             source=self.inputs/(job['id']+'.jar')
@@ -300,7 +300,7 @@ def make_handler(workspace, token):
                 elif path == '/api/mining/ranking' and self.authorized():
                     self.send_bytes(mining_module(workspace).controller(workspace).artifact('ranking.json'),'application/json; charset=utf-8')
                 elif path == '/health':
-                    self.reply({'app':'neocore-converter-gui','version':'0.9.9','pid':os.getpid()})
+                    self.reply({'app':'neocore-converter-gui','version':'1.0.0','pid':os.getpid()})
                 elif path == '/api/state' and self.authorized():
                     self.reply(workspace.state())
                 elif path.startswith('/api/job/') and self.authorized():
@@ -442,7 +442,7 @@ def main():
             previous=json.loads(window_record.read_bytes())
             if urllib.parse.urlsplit(previous['url']).hostname!='127.0.0.1':raise ValueError('not local')
             with urllib.request.urlopen(previous['url']+'health',timeout=1) as response:health=json.load(response)
-            if health.get('app')=='neocore-converter-gui' and health.get('pid')==previous['pid'] and health.get('version')=='0.9.9':
+            if health.get('app')=='neocore-converter-gui' and health.get('pid')==previous['pid'] and health.get('version')=='1.0.0':
                 if not args.no_browser:webbrowser.open(previous['url'])
                 return
         except (OSError,ValueError,KeyError):pass

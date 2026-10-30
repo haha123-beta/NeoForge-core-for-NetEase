@@ -1,4 +1,4 @@
-"""NeoCore 0.9.9 compatibility mining CLI; no input JAR is executed."""
+"""NeoCore 1.0.0 compatibility mining CLI; no input JAR is executed."""
 import argparse,json,sys
 from pathlib import Path
 from tools.compat_mining098.engine import scan,compare,save,load

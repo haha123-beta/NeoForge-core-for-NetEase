@@ -22,6 +22,8 @@ def generic_parents(raw,proves):
     """Pinned NeoForge 21.1.233 ancestry; R and T remain distinct."""
     from java_library_signatures import generic_arguments
     base=raw.split('<',1)[0]
+    if base in (ITEMS,BLOCKS) and '<' not in raw:
+        return [REGISTER+'<'+(ITEM if base==ITEMS else BLOCK)+'>']
     if base not in (DEFERRED_BLOCK,DEFERRED_ITEM,HOLDER) or '<' not in raw:return []
     values=generic_arguments(raw,allow_wildcards=True)
     if any(value in ('boolean','byte','short','char','int','long','float','double','void','<null>') for value in values):return []
@@ -52,7 +54,7 @@ def resolve(raw,base,name,arity,actuals,canonical_generic,generic_arguments,cano
                 'receiver_kind':'game_api','checked_arguments':True,'poly_function_arguments':poly}
     # A zero-argument get only reads the declared value type. Preserve nested
     # wildcards as type identities; never use this to permit wildcard writes.
-    if (base in (HOLDER,DEFERRED_ITEM,DEFERRED_BLOCK) and name=='get' and arity==0) or base in (REGISTER,ITEMS,BLOCKS):
+    if (base in (HOLDER,DEFERRED_ITEM,DEFERRED_BLOCK) and name in ('get','value','getKey') and arity==0) or base in (REGISTER,ITEMS,BLOCKS):
         parameters=[canonical(v.replace('?extends','? extends ').replace('?super','? super ')) for v in generic_arguments(raw,allow_wildcards=True)]
     else:
         parameters=[canonical_generic(v,canonical) for v in generic_arguments(raw)]
@@ -71,20 +73,30 @@ def resolve(raw,base,name,arity,actuals,canonical_generic,generic_arguments,cano
         if base==REGISTER and name=='createEntities' and arity==1:row=(REGISTER+'<'+TYPE+'>',['java.lang.String']);static=REGISTER
         elif base==REGISTER and name=='createBlocks' and arity==1:row=(BLOCKS,['java.lang.String']);static=REGISTER
         elif base==REGISTER and name=='createItems' and arity==1:row=(ITEMS,['java.lang.String']);static=REGISTER
+        elif name=='getEntries' and arity==0:
+            row=('java.util.Collection<'+HOLDER+'<'+entity_type+',? extends '+entity_type+'>>',[])
         elif name=='register' and arity==1:
             if actuals!=[BUS]:raise ValueError('DeferredRegister.register requires an exact IEventBus expression')
             row=('void',[BUS]);call_name='register_event_bus'
         elif name=='register' and arity==2:
-            if base in (ITEMS,BLOCKS) and actuals[1] and actuals[1].startswith('java.util.function.Supplier<'):
+            if base in (REGISTER,ITEMS,BLOCKS) and actuals[1] and actuals[1].startswith('java.util.function.Supplier<'):
                 values=generic_arguments(actuals[1])
                 if len(values)!=1 or not proves or not proves(values[0],entity_type):raise ValueError('Registration supplier type must satisfy its declared bound')
-                return {'return_type':(DEFERRED_ITEM if base==ITEMS else DEFERRED_BLOCK)+'<'+values[0]+'>','parameters':['java.lang.String','java.util.function.Supplier<'+values[0]+'>'],'receiver_kind':'game_api','checked_arguments':True,'target_factory_bound':entity_type}
+                return {'return_type':(HOLDER+'<'+entity_type+','+values[0]+'>' if base==REGISTER else (DEFERRED_ITEM if base==ITEMS else DEFERRED_BLOCK)+'<'+values[0]+'>'),'parameters':['java.lang.String','java.util.function.Supplier<'+values[0]+'>'],'receiver_kind':'game_api','checked_arguments':True,'target_factory_bound':entity_type}
             row=((DEFERRED_ITEM+'<'+ITEM+'>' if base==ITEMS else DEFERRED_BLOCK+'<'+BLOCK+'>' if base==BLOCKS else HOLDER+'<'+entity_type+','+entity_type+'>'),['java.lang.String','java.util.function.Supplier<'+entity_type+'>'])
     elif base in (HOLDER,DEFERRED_ITEM,DEFERRED_BLOCK):
-        if name in ('get','value') and arity==0:row=(parameters[-1] if parameters else ITEM if base==DEFERRED_ITEM else BLOCK if base==DEFERRED_BLOCK else 'java.lang.Object',[])
+        if name in ('get','value') and arity==0:
+            result=parameters[-1] if parameters else ITEM if base==DEFERRED_ITEM else BLOCK if base==DEFERRED_BLOCK else 'java.lang.Object'
+            if result.startswith('? extends '):result=result[len('? extends '):]
+            elif result=='?' or result.startswith('? super '):result='java.lang.Object'
+            row=(result,[])
         elif name=='asItem' and base in (DEFERRED_ITEM,DEFERRED_BLOCK) and arity==0:row=(ITEM,[])
         elif name=='getId' and arity==0:row=('net.minecraft.resources.ResourceLocation',[])
         elif name=='isBound' and arity==0:row=('boolean',[])
+        elif name=='getKey' and arity==0:
+            registry_type=ITEM if base==DEFERRED_ITEM else BLOCK if base==DEFERRED_BLOCK else parameters[0] if len(parameters)==2 else None
+            if registry_type is None:raise ValueError('DeferredHolder.getKey requires a declared registry type')
+            row=('net.minecraft.resources.ResourceKey<'+registry_type+'>',[])
     elif base==TYPE:
         if name=='getWidth' and arity==0:row=('float',[])
         elif name=='getHeight' and arity==0:row=('float',[])
@@ -113,6 +125,23 @@ def contextual_factory_return(record,target,proves):
     actual=record.get('return_type','') if record else ''
     if not bound or target.split('<',1)[0]!=actual.split('<',1)[0]:return None
     supplied=generic_arguments(actual);wanted=generic_arguments(target)
+    if actual.split('<',1)[0]==HOLDER:
+        if len(supplied)!=2 or len(wanted)!=2 or supplied[0]!=wanted[0]:return None
+        supplied=supplied[1:];wanted=wanted[1:]
     if len(supplied)!=1 or len(wanted)!=1 or any('?' in x for x in supplied+wanted):return None
     if proves(supplied[0],wanted[0]) and proves(wanted[0],bound):return target
     return None
+
+
+def reviewed_holder_read_target(raw,proves):
+    """A holder has no writes to T; retain its wildcard identity in the lambda.
+
+    Do not generalize this to mutable generic containers or replace captures
+    with concrete invariant types. Only the pinned R/T holder contract applies.
+    """
+    from java_library_signatures import generic_arguments
+    if raw.split('<',1)[0]!=HOLDER:return False
+    args=generic_arguments(raw,allow_wildcards=True)
+    if len(args)!=2 or '?' in args[0]:return False
+    value=args[1]
+    return value.startswith('? extends ') and '?' not in value[10:] and proves(value[10:],args[0])

@@ -1,0 +1,87 @@
+{
+  "version": "1.0.0",
+  "status": "PASSED_FROZEN_COMPILER_AND_DELIVERY_CHECKS",
+  "translation": {
+    "files": 369,
+    "baseline098": 53,
+    "baseline099": 58,
+    "generated": 60,
+    "new_files": 2,
+    "file_blockers": 309,
+    "observed_blockers": 313,
+    "failed": 0,
+    "regressed_files": 0,
+    "original_artifacts": 14,
+    "original_inputs_unchanged": true
+  },
+  "source_profile": "fc0fd6bc1e46f77e4558e2c4f096f7e1c34347d5dbfd6bf53f7c58e280a3c977",
+  "regression": {
+    "files": 225,
+    "passed": 225,
+    "failed": 0,
+    "static_issues": {
+      "python2": [],
+      "whitelist": [],
+      "keywords": [],
+      "api_coverage": []
+    },
+    "source_unchanged": true
+  },
+  "value_matrix": {
+    "jdk21_python2_cases": 63,
+    "documented_nan_conversion_bit_differences": 2,
+    "contexts": 17,
+    "context_matches": 14,
+    "explicit_unsupported_boxing_contexts": 3,
+    "recovered_parameter_contexts": 4
+  },
+  "runtime_checks": {
+    "new_vectors_java_python2_python3": true,
+    "foundation_java_python2_python3": true,
+    "registry_python2_python3": true,
+    "registry_official_source_and_bytecode": true,
+    "registry_jvm_execution": false,
+    "native_zip_sdk_double_python2_python3": true,
+    "engine_verified": false
+  },
+  "packaging": {
+    "status": "PASSED",
+    "parts": 24,
+    "modules": 129,
+    "bundle_equal_to_frozen": true,
+    "python2": true,
+    "python3": true,
+    "rebuild_verified": true,
+    "engine_verified": false
+  },
+  "storage": {
+    "files": 9208,
+    "logical_bytes": 81756832,
+    "compressed_data_bytes_before": 81756832,
+    "compressed_data_bytes_after": 50141737,
+    "data_bytes_saved": 31615095,
+    "history_bytes_unchanged": true,
+    "scope": [
+      "original_retest",
+      "final_original_retest"
+    ],
+    "free_disk_delta_not_claimed": true
+  },
+  "whole_mod_candidates": {
+    "new": 0,
+    "preserved": [
+      "MiniCoal",
+      "FlintBlock vanilla"
+    ]
+  },
+  "retained_attempts": [
+    "initial 225-file run: two failures retained",
+    "second run interrupted after Integer.valueOf wiring gap was observed",
+    "final fresh 225-file run passed"
+  ],
+  "creators": [
+    "haha123-beta",
+    "ChatGPT (OpenAI AI assistant)"
+  ],
+  "license": "PolyForm-Noncommercial-1.0.0"
+}

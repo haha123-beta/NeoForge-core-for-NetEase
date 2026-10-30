@@ -1,5 +1,6 @@
-* text=auto
-*.cmd text eol=crlf
+# Preserve the published SOURCE_MANIFEST byte hashes across Git checkouts.
+* -text
+*.cmd -text
 *.pyd binary
 *.dll binary
 *.png binary

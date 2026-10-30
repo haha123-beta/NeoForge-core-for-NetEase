@@ -1557,7 +1557,8 @@ class Math(object):
 
     @staticmethod
     def sqrt(value):
-        return _math.sqrt(_to_java_float(value))
+        number = _to_java_float(value)
+        return float("nan") if number < 0.0 else _math.sqrt(number)
 
     @staticmethod
     def cbrt(value):

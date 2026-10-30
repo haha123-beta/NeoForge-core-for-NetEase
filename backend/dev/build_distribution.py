@@ -11,7 +11,7 @@ import zipfile
 from build_source_bundle import SCRIPTS, core_bundle, content_bundle
 
 DEV = Path(__file__).resolve().parent
-RELEASE_VERSION = (0, 9, 9)
+RELEASE_VERSION = (1, 0, 0)
 
 
 def copy_runtime_files(root, destination, allowed, excluded):

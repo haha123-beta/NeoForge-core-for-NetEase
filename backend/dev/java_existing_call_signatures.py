@@ -11,6 +11,12 @@ def resolve(base,name,arity,actual):
     mined=mined_signature(base,name,arity,actual)
     if mined is not None:return mined
     record=None
+    if base=='java.lang.Integer' and name=='valueOf' and arity==1 and actual[0] in ('byte','short','char','int'):
+        return dict(return_type=base,parameters=['int'],receiver_kind='game_api',checked_arguments=True,static_owner=base,type_receiver_only=True)
+    if base=='java.lang.Math' and name=='sqrt' and arity==1:
+        return dict(return_type='double',parameters=['double'],receiver_kind='game_api',checked_arguments=True,static_owner=base)
+    if base=='net.minecraft.resources.ResourceKey' and name=='location' and arity==0:
+        return dict(return_type='net.minecraft.resources.ResourceLocation',parameters=[],receiver_kind='game_api',checked_arguments=True)
     def row(result,parameters,static=False,**extra):
         value=dict(return_type=result,parameters=parameters,receiver_kind='game_api',checked_arguments=True,**extra)
         if static:value['static_owner']=base

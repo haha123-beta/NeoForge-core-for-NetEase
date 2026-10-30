@@ -1,16 +1,16 @@
 {
-  "version": "0.9.9",
+  "version": "1.0.0",
   "creators": [
     "haha123-beta",
     "ChatGPT (OpenAI AI assistant)"
   ],
   "license": "PolyForm-Noncommercial-1.0.0",
-  "scope": "Project-owned source, core AddOn, loader, tests and documentation; third-party notices retained. Excludes local configuration and this manifest itself.",
+  "scope": "Project source, current core AddOn, loader, tests and docs. Excludes local configuration, outputs, original JARs and this manifest.",
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 76,
-      "sha256": "222bd6a9168fcb55f49a10ef7c1e31de4b9c42d60aa644ecc585d0620f12942f"
+      "bytes": 140,
+      "sha256": "55c42a7d49def4ffee9e6ed0bc31ebebd1b3f6e94889878362044c3edb0cd77e"
     },
     {
       "path": ".gitignore",
@@ -40,12 +40,132 @@
     {
       "path": "addon/NeoCore_behavior_pack/manifest.json",
       "bytes": 662,
-      "sha256": "3dcea18e861d96506124f8bba64272c2ec66d4352dcd9dc53395cfca399377e2"
+      "sha256": "6868e1512a188bf2381de1f13d6ced2fc85499afa18256eb623db1e5e6c5b387"
     },
     {
       "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/__init__.py",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_000.py",
+      "bytes": 69543,
+      "sha256": "0c337c0b2c0dbc16970f5d6e32c2aaea863490ff1284619ce19e5846a2bec37b"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_001.py",
+      "bytes": 68883,
+      "sha256": "130f63c779ae07e1ddecd3171e4c9af8c846aba1b09fe3c1142e0b3697af32be"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_002.py",
+      "bytes": 70052,
+      "sha256": "0d38f4055f8f1c4d9b69bbc577af858970780bbc988ece22a3d136b58fdb418a"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_003.py",
+      "bytes": 70403,
+      "sha256": "9658fbea36f6e5ec58d27bc19a30c632accbd0cd55a5390ee1a115ab626ccc34"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_004.py",
+      "bytes": 71301,
+      "sha256": "3388d02501af0cba3b58ca658e954e9abf522896e19488a63039752fe67e67a2"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_005.py",
+      "bytes": 69464,
+      "sha256": "3d9d19780477ea558e10f092165acdab8d58406779ef758e9004bfdd71e37980"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_006.py",
+      "bytes": 70046,
+      "sha256": "327e20cfc0c55ed7329ccf6379138e3722e1c47089fb5d7593665dc38d681115"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_007.py",
+      "bytes": 71459,
+      "sha256": "73510ed1b9ee50ab1a7a5c862766755e6c6373a4b02b08aa7e9c5a830691920e"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_008.py",
+      "bytes": 71430,
+      "sha256": "4bd6b73f5e9cbe34f48b0fc8e4d81f4af862612dc49dd43927d11155d5530668"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_009.py",
+      "bytes": 70785,
+      "sha256": "41635c5b4ecf6fa14b1fa26b4214f98ca01d0175b1bf614ae3f656b1493fc195"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_010.py",
+      "bytes": 71915,
+      "sha256": "98a9a6deb353dd0add1739ccb2507f2712e2345a604a530b54852b4ccc1339ab"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_011.py",
+      "bytes": 69837,
+      "sha256": "ae9cdcec0f645f4af5b57e93875b00dc395691aa598f774bab9972116153260e"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_012.py",
+      "bytes": 72082,
+      "sha256": "f75b845225af22aff5c1c30d5a15edeea66877df2356ffa7d753f38243248191"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_013.py",
+      "bytes": 71780,
+      "sha256": "c4a681701060ec6f9ebddef81a09ac67a2590a5687f51c338e58dc6ae64ce02c"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_014.py",
+      "bytes": 68947,
+      "sha256": "5b6e88f9eca5d8111c5e0ef2fdc6d66605e996fb0b8c83b4451c4289de3dfd98"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_015.py",
+      "bytes": 70730,
+      "sha256": "f1b0c0fddbe2e50ff357cf8a7ed45c5a164636353958b89e914786a7135c0322"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_016.py",
+      "bytes": 70723,
+      "sha256": "d409057e368df37595cb1ad05973f75a0be4456b41caa0a03b5b21af0cbc08ac"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_017.py",
+      "bytes": 69476,
+      "sha256": "5d802b52cc7ee62fe4f3aa1bb718e6f45f3c556774ed47af75074d620871d039"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_018.py",
+      "bytes": 70584,
+      "sha256": "67a0f368defc2ca7c7a85f70d00c6874617679b7be52dd9d448d59498f747866"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_019.py",
+      "bytes": 71921,
+      "sha256": "27e4cbab325f0d5fc3b3a4f273deb6b309bf33001ed341f55643633899b47e3e"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_020.py",
+      "bytes": 72262,
+      "sha256": "fa7926326b5bb7e202845b246dc32f9a77cb6392f33d142ad67448c646d30ca9"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_021.py",
+      "bytes": 70682,
+      "sha256": "9015bfcd3b4e97c436bffee4f744380f45fe27d23a87ad87a333e67d8983d4bd"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_022.py",
+      "bytes": 71355,
+      "sha256": "29f5a44d90a2b810fc9a37bdced118d8907a0ca9395708fac525ee3f7532b4c0"
+    },
+    {
+      "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/_snapshot_data_023.py",
+      "bytes": 49994,
+      "sha256": "60f3fcb44f42516096eb37133e0e1ec665932d726d28ad17c16e127acb99204c"
     },
     {
       "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/modMain.py",
@@ -64,8 +184,8 @@
     },
     {
       "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/source_snapshot.py",
-      "bytes": 1673629,
-      "sha256": "5ad99fb10eed18ead56b1c27a1af5207c571bc75016ccec2809aba66bf719fce"
+      "bytes": 1492,
+      "sha256": "aca66c23dcd24eecc489d7860245a7b1dd7cf3ea153c1e5a0bc7e53e29cb4bc2"
     },
     {
       "path": "addon/NeoCore_resource_pack/entity/neocore_training_mob.entity.json",
@@ -90,17 +210,17 @@
     {
       "path": "addon/NOTICE",
       "bytes": 446,
-      "sha256": "09697ab39b2e0d80c0b6ecfa9a7f1f1a24a84c1d3b8c541fa70bc5afd77cf252"
+      "sha256": "50ce54fd79cd12d880e8a19e578559b8b9da34002d518f1dac9056e2252e15f4"
     },
     {
       "path": "addon/README.md",
       "bytes": 1447,
-      "sha256": "ba1306cdab107d5632ad885ea3dbb28e87172a8f8f4e5c465f12ea0d746fc697"
+      "sha256": "be6d6dc2b960491dc0c55fb79881645da4861d5e1569e1b274e3481051f12297"
     },
     {
       "path": "app.py",
       "bytes": 29924,
-      "sha256": "dce47b7fbdb0217caab431f99f51f0f8a1e639471197dade5cb112a9f6dee850"
+      "sha256": "ad4a4ff07bcd19ff239e2ad5443f9b75b891ddfd9c0a9b5c0ef3a06b6e4c6fcc"
     },
     {
       "path": "AUTHORS.md",
@@ -329,8 +449,8 @@
     },
     {
       "path": "backend/core/NeoForgeCoreScripts/java_stdlib/lang.py",
-      "bytes": 66935,
-      "sha256": "66778708715a8cf3f357f863d70dd14722759f41123417e728c76f87cbcb3d55"
+      "bytes": 66994,
+      "sha256": "391149de07952ee92f33619321137a6638ad43c67d59a78accd51cc38be73726"
     },
     {
       "path": "backend/core/NeoForgeCoreScripts/java_stdlib/logging.py",
@@ -884,8 +1004,8 @@
     },
     {
       "path": "backend/core/NeoForgeCoreScripts/neoforge/registries.py",
-      "bytes": 35002,
-      "sha256": "3264535e2b18c04e62c5b8d29287a0f4b206d66e4428c442155351aedab4368a"
+      "bytes": 35385,
+      "sha256": "f1b09478f4b0d09be6a468708de94209f60cb2cb456a7770b09dfd100c2345fd"
     },
     {
       "path": "backend/core/NeoForgeCoreScripts/prepared_mods.py",
@@ -955,7 +1075,7 @@
     {
       "path": "backend/dev/build_distribution.py",
       "bytes": 21707,
-      "sha256": "7e491468b0b3c5dc4e2870ac0d56bf029f7381d289338a48a7515a842483dabb"
+      "sha256": "693f43628423a9d81cd245cba032ff87b499a7c6ea83df1e2aee79f57d5b8a2c"
     },
     {
       "path": "backend/dev/build_entity_visuals.py",
@@ -995,7 +1115,7 @@
     {
       "path": "backend/dev/compatibility_mining.py",
       "bytes": 3134,
-      "sha256": "084fa0198e2e6f4d4d4e9e8f6998f341d60e376da9c10e63d933fc04698a9408"
+      "sha256": "beafbc9ffa9d2cbdca0ca812aa27061dbbee35f805543d21201e53b39e6b50d1"
     },
     {
       "path": "backend/dev/conversion_benchmark.py",
@@ -1519,8 +1639,8 @@
     },
     {
       "path": "backend/dev/java_codegen.py",
-      "bytes": 189229,
-      "sha256": "49744d202dbee94ba408a76bad2bc920a6bd781272c1c18d19a620cf3b07e7f0"
+      "bytes": 189698,
+      "sha256": "36cf6c784ebe9c8b9a25083a4df79599b95e515c26d2034f7d610f68d952324f"
     },
     {
       "path": "backend/dev/java_config_signatures.py",
@@ -1534,8 +1654,8 @@
     },
     {
       "path": "backend/dev/java_entity_signatures.py",
-      "bytes": 8694,
-      "sha256": "d3c0bbfdc5d6c69cd631150b1a3fa100d2d0d7a90fcae77b947abd96ef34c622"
+      "bytes": 10439,
+      "sha256": "f10cd151873675cdfa91e9fc537944cf2bb33225c53fe875104dc9ee69abc629"
     },
     {
       "path": "backend/dev/java_event_bus_facts.py",
@@ -1554,8 +1674,8 @@
     },
     {
       "path": "backend/dev/java_existing_call_signatures.py",
-      "bytes": 5386,
-      "sha256": "d46d866d4a98a46e2aaaada21a921feff0bc7c8be18f60483fb04c0d8e02385c"
+      "bytes": 6068,
+      "sha256": "89d8bbeb59192f3d58a4339b36015092a04015ca47faf851475f8bbd8a6def0c"
     },
     {
       "path": "backend/dev/java_feature_signatures.py",
@@ -1595,7 +1715,7 @@
     {
       "path": "backend/dev/java_import_index.json",
       "bytes": 188050,
-      "sha256": "c3f7d475f64a0c1f73765e4a7b92a19698335a1f12f3ffb90f77c247108e7531"
+      "sha256": "ad14df9c2063d5a5fc079a707182590ea8bf65530b8d5df552892ade88596a19"
     },
     {
       "path": "backend/dev/java_inheritance.py",
@@ -1624,8 +1744,8 @@
     },
     {
       "path": "backend/dev/java_library_signatures.py",
-      "bytes": 36295,
-      "sha256": "f9c953e98ecfa129d38c56a6885c674d191d3a1645685b076c298fb0ac556a35"
+      "bytes": 36566,
+      "sha256": "0dff835cd6eb9350ba9b486c4613a1f930130a338cb8eb17c1fe46edcf0a53fc"
     },
     {
       "path": "backend/dev/java_menu_signatures.py",
@@ -1694,8 +1814,8 @@
     },
     {
       "path": "backend/dev/java_network_signatures.py",
-      "bytes": 7320,
-      "sha256": "716e0b1c1fa999481289dde9a026d122e9ab4b2bb76714b90ff55f305bfb8cb7"
+      "bytes": 7454,
+      "sha256": "4dbdbde2d8403d14f21549c661c6fdd1a4d3cdb9108463082dca8b5623ae609d"
     },
     {
       "path": "backend/dev/java_official_event_hierarchy.py",
@@ -2189,8 +2309,8 @@
     },
     {
       "path": "backend/dev/tests/test_config_wiring099.py",
-      "bytes": 4656,
-      "sha256": "76124a30a0a7892694be782470ccddfe0f20fcdd4360e78561a5dcff7d3252f4"
+      "bytes": 4678,
+      "sha256": "b50aea4c6f801c26b9278268675cc2558a3c678f04e5bd4107754dd9c85a0839"
     },
     {
       "path": "backend/dev/tests/test_container.py",
@@ -2361,6 +2481,11 @@
       "path": "backend/dev/tests/test_fluid_handler.py",
       "bytes": 2949,
       "sha256": "4292515d9aa8ce91c0f161401314a56159e32ac565aa910491e3df4bc2bb82e9"
+    },
+    {
+      "path": "backend/dev/tests/test_foundations100.py",
+      "bytes": 5672,
+      "sha256": "7b057fc788f2afa0f69cc8e2c03cc3306bb337cceb3f104dd68af542bd4e0b01"
     },
     {
       "path": "backend/dev/tests/test_generic_interfaces087.py",
@@ -2968,9 +3093,19 @@
       "sha256": "45af00e4f6197203c0874a79fdb63d45a56899eed2803b50a773f5698b9a0dd6"
     },
     {
+      "path": "backend/dev/tests/test_register_factory100.py",
+      "bytes": 2148,
+      "sha256": "c9c45bdde8fbe35e6b0270cf2a104654823897614522d945a11c9d5597b433ea"
+    },
+    {
+      "path": "backend/dev/tests/test_registry_keys100.py",
+      "bytes": 2857,
+      "sha256": "2f9e4f4958b3d01e4cbc1a3167c6d813b607a1f6e4057277e90e190113b0f805"
+    },
+    {
       "path": "backend/dev/tests/test_registry_lifecycle093.py",
-      "bytes": 4464,
-      "sha256": "240d593aa207aea14fcfd66607bf933e6d4c9cf5186ed1fff63387e47b0ebcf1"
+      "bytes": 4470,
+      "sha256": "7c1a99bad6e965d5dca46a4b6696d6c5acc9a63d34d7d85ad2c06b24723dbcc5"
     },
     {
       "path": "backend/dev/tests/test_resource_build.py",
@@ -2984,8 +3119,8 @@
     },
     {
       "path": "backend/dev/tests/test_reviewed_batch099.py",
-      "bytes": 3213,
-      "sha256": "c1ec4167be5e51f321efd7d2942fcb79493ac77a84f759e209df1d6527f7cbf9"
+      "bytes": 3692,
+      "sha256": "70eed5625b792d59086cc04a9d8b890105ab7dcee6d3ffc883ebb71e439f3e6f"
     },
     {
       "path": "backend/dev/tests/test_runtime_host.py",
@@ -3240,7 +3375,7 @@
     {
       "path": "backend/dev/tools/compat_mining098/__init__.py",
       "bytes": 99,
-      "sha256": "2bfb0118efe412e33cea5e9765d0f3ffd012959f17a2326e66a117e170fdce7f"
+      "sha256": "cb883fe898ee3672b4dc040378825d7adeb89d01e5089c08558aab3fc3986552"
     },
     {
       "path": "backend/dev/tools/compat_mining098/capabilities.py",
@@ -3370,7 +3505,7 @@
     {
       "path": "backend/dev/tools/neocore_gui_092/app.py",
       "bytes": 29924,
-      "sha256": "dce47b7fbdb0217caab431f99f51f0f8a1e639471197dade5cb112a9f6dee850"
+      "sha256": "ad4a4ff07bcd19ff239e2ad5443f9b75b891ddfd9c0a9b5c0ef3a06b6e4c6fcc"
     },
     {
       "path": "backend/dev/tools/neocore_gui_092/cli.py",
@@ -3380,7 +3515,7 @@
     {
       "path": "backend/dev/tools/neocore_gui_092/conversion.py",
       "bytes": 20666,
-      "sha256": "8f1851784f26868bdc9ca688baec8168c36022ab3fb86457d0023469b5c8f5fe"
+      "sha256": "a85d0b94f1ca1e4e3b2723a74c7a6d1bfe0aaf2bd8262944deefc7cff09cf129"
     },
     {
       "path": "backend/dev/tools/neocore_gui_092/decompiler_evidence.py",
@@ -3400,7 +3535,7 @@
     {
       "path": "backend/dev/tools/neocore_gui_092/index.html",
       "bytes": 30541,
-      "sha256": "657aed5b1870ad05b64718282c42a73edff3987f02468731e79cf87cbcc2dd08"
+      "sha256": "db15d0bf68bd6abf7da15d0adfa97e7df9cca33ee9441923b307359679b16ba7"
     },
     {
       "path": "backend/dev/tools/neocore_gui_092/jar_input.py",
@@ -3955,7 +4090,7 @@
     {
       "path": "conversion.py",
       "bytes": 20666,
-      "sha256": "8f1851784f26868bdc9ca688baec8168c36022ab3fb86457d0023469b5c8f5fe"
+      "sha256": "a85d0b94f1ca1e4e3b2723a74c7a6d1bfe0aaf2bd8262944deefc7cff09cf129"
     },
     {
       "path": "decompiler_evidence.py",
@@ -3983,6 +4118,21 @@
       "sha256": "a608922c32becdb42df56da46d635c25daa8da640931791c9691bd12c69e645e"
     },
     {
+      "path": "docs/1.0.0方针.md",
+      "bytes": 2204,
+      "sha256": "40d71c01357d60c3a420bf2ec665e1fdbc67779272f5427fa0263341e6084993"
+    },
+    {
+      "path": "docs/1.0.0验收.md",
+      "bytes": 7076,
+      "sha256": "cbea5d4254df8cd6331176b85b0dd868835531bebdd6a0fceadc1129ef13ecdb"
+    },
+    {
+      "path": "docs/1.0.0验收摘要.json",
+      "bytes": 2348,
+      "sha256": "7fde5a29a61b3c4da5499087ab1682757f7a0a03c6757d5452bfc9958f0578a4"
+    },
+    {
       "path": "docs/兼容性挖掘使用说明.md",
       "bytes": 6975,
       "sha256": "02b9b691f6d9a70ad54f41259728acb2781eef7acd5f8b1d4a8a1a18a3d4148b"
@@ -3995,7 +4145,7 @@
     {
       "path": "index.html",
       "bytes": 30541,
-      "sha256": "657aed5b1870ad05b64718282c42a73edff3987f02468731e79cf87cbcc2dd08"
+      "sha256": "db15d0bf68bd6abf7da15d0adfa97e7df9cca33ee9441923b307359679b16ba7"
     },
     {
       "path": "jar_input.py",
@@ -4025,7 +4175,7 @@
     {
       "path": "NOTICE",
       "bytes": 446,
-      "sha256": "09697ab39b2e0d80c0b6ecfa9a7f1f1a24a84c1d3b8c541fa70bc5afd77cf252"
+      "sha256": "50ce54fd79cd12d880e8a19e578559b8b9da34002d518f1dac9056e2252e15f4"
     },
     {
       "path": "pipeline_artifacts.py",
@@ -4044,8 +4194,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4693,
-      "sha256": "ad706a64955aaa9a409403aee4773a0a2deb61c4e25e432190ec2639ce4e5c82"
+      "bytes": 5396,
+      "sha256": "9dfb916af04e586a4019083fa2d32a73c681c4b7229b2374cf763a3ecedfd555"
     },
     {
       "path": "run_neocore.py",
@@ -4054,13 +4204,23 @@
     },
     {
       "path": "scripts/build_addon.py",
-      "bytes": 663,
-      "sha256": "b011b7c40ba01030287d242391d24b389d339d3f41fd5397f56bb293acbdf235"
+      "bytes": 826,
+      "sha256": "4b77fb10cea047a4d3f30a87e67a8a449c10dbcfad08ef6ae8f85970d915f6fc"
+    },
+    {
+      "path": "snapshot_chunks.py",
+      "bytes": 1736,
+      "sha256": "717fa188cc4c4f44d890075a1195b04f8b52de5a2d7afb58b65c299fbd0d41f9"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
       "bytes": 762,
       "sha256": "e25f24a5d0aa1a01787275192a81e3116e6c7431e4f8264bbc2c8d690b509d00"
+    },
+    {
+      "path": "verify_release.py",
+      "bytes": 2691,
+      "sha256": "2662c01c0b20a12f410612420e67c0b6e70e7f5d292b4371381d5f6aefbc996b"
     },
     {
       "path": "兼容性挖掘.cmd",

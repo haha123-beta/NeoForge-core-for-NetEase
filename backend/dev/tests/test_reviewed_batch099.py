@@ -5,12 +5,20 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from tools.compat_mining098 import reviewed099 as reviewed
 
 class ReviewedBatch099(unittest.TestCase):
+    def setUp(self):
+        # Exercise a pinned, self-contained catalogue rule, rather than assume
+        # all current compiler files still equal the historical 0.9.9 outputs.
+        rules=reviewed.catalog()
+        self.rules=dict(rules,files=[r for r in rules['files'] if r['file']=='java_unicode_prelex.py'])
+        self.catalog_patch=patch.object(reviewed,'catalog',return_value=self.rules)
+        self.catalog_patch.start();self.addCleanup(self.catalog_patch.stop)
+
     def fixture(self,root,missing=False):
         dev=root/'dev';dev.mkdir();rules=reviewed.catalog()
         for row in rules['files']:
             if missing and row['file']=='java_unicode_prelex.py':continue
             target=dev/row['file'];target.parent.mkdir(parents=True,exist_ok=True)
-            shutil.copyfile(reviewed.DEV/row['file'],target)
+            target.write_bytes(reviewed.materialize(row,None))
         run=root/'run';run.mkdir();(run/'ranking.json').write_text(json.dumps({'profile':'historical','groups':[{'key':'java.unicode_prelexing','observed_blocked_mods':2}]}))
         return dev,run
 

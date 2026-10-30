@@ -60,6 +60,8 @@ def resolve(raw,base,name,arity,actual,canonical_generic,generic_arguments,canon
         if a in buffers and f in buffers and a!=BUFFER:raise ValueError('FriendlyByteBuf cannot enter a native byte codec before its byte-backed adapter exists')
         raise ValueError('Network API argument type mismatch: '+name+' '+str(a)+' -> '+str(f))
     result={'return_type':target,'parameters':formals,'receiver_kind':'game_api'}
+    if base=='net.minecraft.resources.ResourceLocation' and target=='java.lang.String':
+        result['native_string_return']=True
     if base==CODEC:result['erased_bridge_arguments']=[i for i,(a,f) in enumerate(zip(actual,formals)) if a=='java.lang.Object' and f!='java.lang.Object']
     if base=='net.neoforged.neoforge.network.handling.IPayloadContext' and name=='enqueueWork':result['statement_only']=True
     if static:result['static_owner']=base

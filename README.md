@@ -1,4 +1,13 @@
-# NeoCore 0.9.9
+# NeoCore 1.0.0
+
+## 1.0.0：可信转换内核
+
+本版修复注册条目 key、实时只读注册集合、受约束的通配符读取与工厂泛型推断，接通并修正 Math.sqrt，Integer.valueOf(int) 的装箱与参数接线，以及 ResourceLocation 的 Java String 返回值。固定样本实际生成 **58/369 → 60/369**；新增 YUNG’s API 两个向量类的执行能力，不宣称整个 YUNG’s API 或新的完整模组已经可运行。
+
+[开发方针](docs/1.0.0方针.md) · [本版验收](docs/1.0.0验收.md)
+
+源码包可执行 `py -3 verify_release.py` 核对清单；有独立清单哈希时加 `--manifest-sha256 HASH`。此工具核对源码字节，不证明网易实机通过。
+
 
 共同创建：**haha123-beta 与 ChatGPT（OpenAI AI 助手）**。贡献说明见 [AUTHORS.md](AUTHORS.md)。
 

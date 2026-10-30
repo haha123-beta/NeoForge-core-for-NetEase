@@ -28,7 +28,7 @@ class RegistryLifecycle093Tests(unittest.TestCase):
         seen=[];reg=r.DeferredRegister.create(r.ResourceKey('minecraft:item'), 'sample')
         first=reg.register('z',lambda:seen.append('z') or object())
         second=reg.register('a',lambda:seen.append('a') or first.get())
-        self.assertEqual(reg.getEntries(),[first,second])
+        self.assertEqual(list(reg.getEntries()),[first,second])
         reg.freeze_and_register(r.BUILT_IN_REGISTRIES.ITEM)
         self.assertEqual(seen,['z','a']);self.assertIs(first.get(),second.get())
     def test_forward_reference_fails_without_recursive_creation(self):

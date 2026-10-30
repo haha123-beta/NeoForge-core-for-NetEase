@@ -326,7 +326,7 @@ def generate(ir, project_types=None, dependency_index=None, defer_external_symbo
             except ValueError as error:raise NeedsLowering(args[0],str(error))
             if len(parameters)!=1 or not proves_bound(canonical_method_type(parameters[0],current,overload_unit),'net.minecraft.world.inventory.AbstractContainerMenu',overload_unit,project_types):raise NeedsLowering(args[0],'Menu factory type argument requires a proven AbstractContainerMenu subtype')
         try:
-            if canonical_method_type(receiver_type.split('<',1)[0],current,overload_unit) in ('net.neoforged.neoforge.registries.DeferredRegister.Blocks','net.neoforged.neoforge.registries.DeferredRegister.Items') and text(field(node,'name'))=='register' and len(args)==2 and args[1]['kind']=='lambda_expression':
+            if canonical_method_type(receiver_type.split('<',1)[0],current,overload_unit) in ('net.neoforged.neoforge.registries.DeferredRegister','net.neoforged.neoforge.registries.DeferredRegister.Blocks','net.neoforged.neoforge.registries.DeferredRegister.Items') and text(field(node,'name'))=='register' and len(args)==2 and args[1]['kind']=='lambda_expression':
                 inferred=infer_supplier(args[1])
                 if inferred:argument_types[1]=inferred
             result=library_signature(receiver_type,text(field(node,'name')),len(args),argument_types,lambda value:canonical_method_type(value,current,overload_unit),ir.get('runtime_enum_types',{}),proves=lambda a,b:overload_subtype(a,b,parents,overload_unit))
@@ -1024,8 +1024,13 @@ def generate(ir, project_types=None, dependency_index=None, defer_external_symbo
             inferred = next(m['parameters'] for m in kind['methods'] if m['abstract'] and not m['static'])[index] if isinstance(kind,dict) else type_args[index] if kind in ('Function', 'Consumer', 'Predicate', 'BiFunction', 'BiConsumer') and index < len(type_args) else None
             if declared_type and inferred and canonical_method_type(declared_type,current,overload_unit)!=canonical_method_type(inferred,current,overload_unit):raise NeedsLowering(node,'Explicit lambda parameter differs from reviewed functional target')
             declared_type = declared_type or inferred
-            if declared_type is None or '?' in declared_type:
+            if declared_type is None:
                 raise NeedsLowering(node, 'Lambda argument type requires contextual resolution')
+            if '?' in declared_type:
+                from java_entity_signatures import reviewed_holder_read_target
+                resolved=canonical_method_type(declared_type,current,overload_unit)
+                if not reviewed_holder_read_target(resolved,lambda a,b:overload_subtype(a,b,parents,overload_unit)):
+                    raise NeedsLowering(node, 'Lambda wildcard target requires a reviewed read-only holder contract')
             typed_args.append((name, declared_type))
         used = {text(child) for child in walk(body) if child['kind'] == 'identifier' and child.get('field') not in ('name', 'field')}
         captures = {name: alias for name, alias in locals_map.items() if name in used}
