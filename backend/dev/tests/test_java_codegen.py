@@ -346,7 +346,7 @@ class Box {
         cases = [
             'class A { static void f(int x){} void f(String x){} }',
             'class A extends B {}',
-            'class A { int f(){return 1;} int f; }',
+            'class A { int f(){return 1;} static int f; }',
             'class A { void __init__() {} }',
         ]
         for source in cases:

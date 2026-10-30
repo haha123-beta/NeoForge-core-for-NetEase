@@ -25,6 +25,12 @@ class MixinPlanError(ValueError):
         self.source=source;self.reason=reason
         super().__init__(source+': '+reason)
 
+def parse_weave_source(source,origin,known):
+    ir=isolated_parse(source,origin,known)
+    if ir.get('unicode_preprocessing'):
+        raise MixinPlanError(origin,'Unicode preprocessing with Mixin source edits requires composed byte-span mapping')
+    return ir
+
 def digest(value):return hashlib.sha256(value).hexdigest()
 def field(node,name):return next((c for c in node.get('children',[]) if c.get('field')==name),None)
 def walk(node):
@@ -112,7 +118,7 @@ def plan(root,project_types=None,requirements=None):
     if project_types is None:
         from java_project_types import add_unit
         project_types={}
-        for path in sorted(root.rglob('*.java')):add_unit(project_types,isolated_parse(path.read_bytes(),path.relative_to(root).as_posix(),[]))
+        for path in sorted(root.rglob('*.java')):add_unit(project_types,parse_weave_source(path.read_bytes(),path.relative_to(root).as_posix(),[]))
     if any(name in (MIXIN,INJECT,AT,MODIFY_ARG,'org.spongepowered.asm.mixin.Shadow','org.spongepowered.asm.mixin.Final','org.spongepowered.asm.mixin.Mutable') or name.startswith(CALLBACK) for name in project_types):raise MixinPlanError('source','Mixin API identity is shadowed by source')
     cached={}
     def load(java):
@@ -120,7 +126,7 @@ def plan(root,project_types=None,requirements=None):
         if len(rows)!=1 or not rows[0]['layout_matches_package'] or len(rows[0]['attribute_chain'])!=1:raise MixinPlanError(java,'Unique project source target with canonical layout required')
         record=rows[0];file=record['file']
         if file not in cached:
-            ir=isolated_parse((root/file).read_bytes(),file,[])
+            ir=parse_weave_source((root/file).read_bytes(),file,[])
             classes=declarations(ir)['classes']
             cls=next((c for c in classes if c['java_name']==java),None)
             if len(classes)!=1:raise MixinPlanError(file,'One top-level source class per file required')
@@ -240,7 +246,7 @@ def plan(root,project_types=None,requirements=None):
     for path in sorted(root.rglob('*.java')):
         file=path.relative_to(root).as_posix()
         if file in mixin_files:continue
-        ir=cached[file][0] if file in cached else isolated_parse(path.read_bytes(),file,[])
+        ir=cached[file][0] if file in cached else parse_weave_source(path.read_bytes(),file,[])
         if any(n['kind'] in ('type_identifier','identifier') and text(ir,n) in {j.rsplit('.',1)[-1] for _,j,_ in listed} for n in walk(ir['tree'])):raise MixinPlanError(file,'Mixin class used as a normal source type')
     files={p.relative_to(root).as_posix():digest(p.read_bytes()) for p in root.rglob('*.java')}
     return {'schema_version':1,'scope':'same_content_source_callbacks','configs':configs,'source_sha256':files,'mixin_files':mixin_files,'field_bindings':field_bindings,'native_bindings':native_bindings,'injections':entries}

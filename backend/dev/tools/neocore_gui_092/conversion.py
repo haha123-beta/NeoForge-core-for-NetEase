@@ -17,7 +17,7 @@ from decompiler_evidence import register as register_decompiler,recover as recov
 from jar_input import digest, inspect_jar, valid_entries
 from pipeline_artifacts import dependency_artifact,verify_dependency,review_archive
 
-VERSION = '0.9.2'
+VERSION = '0.9.9'
 
 
 def write_json(path, data):

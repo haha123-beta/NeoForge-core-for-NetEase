@@ -51,6 +51,9 @@ def canonical_generic(raw, canonical):
 def resolve_field(receiver_type,name,canonical):
     if not receiver_type:return None
     owner=canonical(receiver_type.split('<',1)[0])
+    if owner=='net.neoforged.fml.config.ModConfig.Type':
+        if name not in ('COMMON','CLIENT','SERVER','STARTUP'):raise ValueError('Unreviewed config type constant: '+name)
+        return {'return_type':owner,'static_owner':owner,'final':True,'receiver_kind':'game_api'}
     if owner=='net.minecraft.world.item.CreativeModeTabs':
         if name not in ('INGREDIENTS','BUILDING_BLOCKS'):raise ValueError('Unreviewed creative tab field: '+name)
         return {'return_type':'net.minecraft.resources.ResourceKey','static_owner':owner,'final':True,'receiver_kind':'game_api'}

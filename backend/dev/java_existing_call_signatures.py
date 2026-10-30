@@ -4,6 +4,9 @@ No new runtime classes. Unreviewed overloads still fall through to the strict
 central guard. Origins: Java21 javap, FML4.0.42, bus8.0.5, NeoForge21.1.233.
 """
 def resolve(base,name,arity,actual):
+    from mining_verified_adapters099 import resolve as reviewed099
+    candidate=reviewed099(base,name,arity,actual)
+    if candidate is not None:return candidate
     from mining_verified_adapters098 import resolve as mined_signature
     mined=mined_signature(base,name,arity,actual)
     if mined is not None:return mined

@@ -1,10 +1,16 @@
-# NeoCore 0.9.8
+# NeoCore 0.9.9
 
 共同创建：**haha123-beta 与 ChatGPT（OpenAI AI 助手）**。贡献说明见 [AUTHORS.md](AUTHORS.md)。
 
 Java / NeoForge 模组到网易目标内容的实验性转换器，包含 NeoCore Compatibility Mining Engine（兼容性挖掘引擎）。当前固定参考 Minecraft 1.21.1 / NeoForge 21.1.233，网易运行行为由实机验收确认。
 
-## 本版功能
+## 0.9.9 修复重点
+
+本版将 0.9.8 的真实首阻断用于受审查的批量修复。新增 Java Unicode 预处理和物理行号映射、公开字段与同名方法的分离存储、已审查继承关系在重载/泛型边界中的复用、注册工厂的目标类型推断，以及现有文本、配置注册 API 的严格接线。外部 GUI/渲染泛型父类、Mixin 与耐久事件仍保留阻断。
+
+详细验证与固定分母对照见 [0.9.9 验收](docs/0.9.9验收.md)。
+
+## 沿用的挖掘功能
 
 - 批量读取 JAR 字节码，按 API 合同和语言语义聚类，按潜在受益模组/源文件数排序。
 - 区分静态疑点、真实转换首阻断和实际生成增量；内容副本与同模组多个版本去重。
@@ -34,7 +40,7 @@ python run_neocore.py cli --help
 
 ## AddOn 与加载器
 
-核心行为包、资源包及加载入口随源码提供，见 [addon](addon/README.md) 和 [加载器说明](loader/README.md)。重新生成核心 AddOn：`python scripts/build_addon.py`。生成目录默认为 `outputs/addon-0.9.8`。
+核心行为包、资源包及加载入口随源码提供，见 [addon](addon/README.md) 和 [加载器说明](loader/README.md)。重新生成核心 AddOn：`python scripts/build_addon.py`。生成目录默认为 `outputs/addon-0.9.9`。
 
 ## 上传 GitHub
 

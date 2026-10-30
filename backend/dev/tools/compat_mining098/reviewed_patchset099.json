@@ -1,0 +1,456 @@
+{
+  "schema_version": 1,
+  "recipe": "reviewed_foundations099_v1",
+  "tier": "A_REVIEWED_EXACT_BATCH",
+  "capabilities": [
+    "java.unicode_prelexing",
+    "java.field_method_namespaces",
+    "java.reviewed_ancestry_wiring",
+    "java.target_typed_registration_factory",
+    "java.invariant_generic_assignment",
+    "api.existing_text_config_and_holder_calls"
+  ],
+  "files": [
+    {
+      "file": "java_frontend.py",
+      "before_sha256": "7021e02ac294e68b15841cf0951f5cae691f14aacbb8a921ac5a995447296363",
+      "after_sha256": "ee408928cc8a90c547508d3813774f9cf8d6978918b9100524b9ed1d9898bc7c",
+      "edits": [
+        {
+          "start": 43,
+          "end": 44,
+          "replacement": [
+            "def parse_source(source, origin='<memory>', known_types=(), unicode_preprocessed=False):\r\n"
+          ]
+        },
+        {
+          "start": 46,
+          "end": 46,
+          "replacement": [
+            "    original_text=text\r\n",
+            "    from java_unicode_prelex import translate as unicode_translate,UnicodeInputError,line_at\r\n",
+            "    positions=None;escape_count=0\r\n",
+            "    if not unicode_preprocessed and '\\\\u' in text:\r\n",
+            "        try:text,positions,escape_count=unicode_translate(text)\r\n",
+            "        except UnicodeInputError as error:\r\n",
+            "            line=line_at(original_text.encode('utf-8'),error.offset)\r\n",
+            "            return {'origin':origin,'source_sha256':hashlib.sha256(raw).hexdigest(),\r\n",
+            "                'source_utf8':original_text,'parse_status':'SYNTAX_ERRORS','features':[],\r\n",
+            "                'package':None,'imports':[],'known_api_types':sorted(known_types),\r\n",
+            "                'tree':{'kind':'program','children':[],'line':1,'span':[0,len(raw)]},\r\n",
+            "                'syntax_errors':[{'kind':'unicode_prelexing','line':line,'column':1,'source':str(error),'span':[error.offset,error.offset]}]}\r\n"
+          ]
+        },
+        {
+          "start": 67,
+          "end": 68,
+          "replacement": [
+            "        return (line_at(original_text.encode('utf-8'),positions[offset]) if escape_count else row+1), offset - previous\r\n"
+          ]
+        },
+        {
+          "start": 119,
+          "end": 119,
+          "replacement": [
+            "        'unicode_preprocessing':({'escape_count':escape_count,'byte_origins':positions,'original_source_utf8':original_text} if escape_count else None),\r\n"
+          ]
+        },
+        {
+          "start": 120,
+          "end": 121,
+          "replacement": [
+            "        'known_api_types': sorted(known_types), 'source_utf8': text, 'offsets': 'UTF-8 bytes after BOM removal and Unicode preprocessing; diagnostic lines map to original physical source',\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "java_codegen.py",
+      "before_sha256": "47cedd52b48e0de8ccc5e88492222a93c25df71f7b63b55df282974b144192aa",
+      "after_sha256": "49744d202dbee94ba408a76bad2bc920a6bd781272c1c18d19a620cf3b07e7f0",
+      "edits": [
+        {
+          "start": 209,
+          "end": 209,
+          "replacement": [
+            "            if alias in types and name.startswith(identity+'.') and name in ir.get('known_nested_api_types',[]) and name not in project_types:\r\n",
+            "                reference=types[alias]\r\n",
+            "                for member in name[len(identity)+1:].split('.'):\r\n",
+            "                    reference='getattr('+reference+', '+repr(member)+')'\r\n",
+            "                required_api_types.add(name)\r\n",
+            "                types[name]=reference\r\n",
+            "                return reference\r\n"
+          ]
+        },
+        {
+          "start": 1114,
+          "end": 1114,
+          "replacement": [
+            "            if '<' in target:\r\n",
+            "                diamond=kind=='object_creation_expression' and text(field(node,'type')).replace(' ','').endswith('<>')\r\n",
+            "                # A diamond has no standalone instantiation: its arguments\r\n",
+            "                # come from this target. Constructor checks still run below.\r\n",
+            "                actual_reference=target if diamond else invocation_type(node)\r\n",
+            "                if kind=='method_invocation' and not any(c['kind']=='type_arguments' for c in node.get('children',[])):\r\n",
+            "                    from java_entity_signatures import contextual_factory_return\r\n",
+            "                    contextual=contextual_factory_return(library_method(node),target,lambda a,b:overload_subtype(a,b,parents,overload_unit))\r\n",
+            "                    if contextual is not None:actual_reference=contextual\r\n",
+            "                if actual_reference and '<' in actual_reference and actual_reference.split('<',1)[0]==target.split('<',1)[0] and not overload_subtype(actual_reference,target,parents,overload_unit):\r\n",
+            "                    raise NeedsLowering(node,'Generic assignment does not satisfy invariant target: '+actual_reference+' -> '+target)\r\n"
+          ]
+        },
+        {
+          "start": 1303,
+          "end": 1310,
+          "replacement": [
+            "            from java_scalar_literals import string_value\r\n",
+            "            value=string_value(raw,node,NeedsLowering)\r\n",
+            "            return '_nc_String(u' + json.dumps(value, ensure_ascii=True) + ')'\r\n"
+          ]
+        },
+        {
+          "start": 1352,
+          "end": 1353,
+          "replacement": [
+            "                    if 'private' in member.get('modifiers',[]) and current['java_name']!=declaring['java_name'] and (current.get('anonymous_codec') or {}).get('owner')!=declaring['java_name']:raise NeedsLowering(node,'Renamed field is private; use its accessor')\r\n"
+          ]
+        },
+        {
+          "start": 1441,
+          "end": 1441,
+          "replacement": [
+            "                    if library.get('type_receiver_only') and not is_type_receiver:\r\n",
+            "                        raise NeedsLowering(node,'Interface static API method requires a type qualifier: '+name)\r\n"
+          ]
+        },
+        {
+          "start": 1491,
+          "end": 1491,
+          "replacement": [
+            "                if library.get('native_string_return'):\r\n",
+            "                    target='(lambda _nc_native_value: None if _nc_native_value is None else _nc_String(_nc_native_value))('+target+')'\r\n"
+          ]
+        },
+        {
+          "start": 1711,
+          "end": 1712,
+          "replacement": [
+            "            if member and member.get('storage_name') and 'private' in member.get('modifiers',[]) and current['java_name']!=declaring['java_name'] and (current.get('anonymous_codec') or {}).get('owner')!=declaring['java_name']:\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "java_scalar_literals.py",
+      "before_sha256": "91cd4c647055f6f708bc539e4f6af54c379c92e7e72b3ec6c8bb4d5c886e3ee8",
+      "after_sha256": "d51501d07cf0f00468249d4bfda4d1af37b2a29b642fddc91026ba32795a6211",
+      "edits": [
+        {
+          "start": 0,
+          "end": 1,
+          "replacement": [
+            "\"\"\"Java string and character escapes after JLS Unicode preprocessing.\"\"\"\n"
+          ]
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "replacement": [
+            "\n",
+            "def string_value(raw,node,error):\n",
+            "    token=raw[1:-1];result=[];index=0\n",
+            "    escapes={'b':'\\b','t':'\\t','n':'\\n','f':'\\f','r':'\\r','s':' ','\"':'\"',\"'\":\"'\",'\\\\':'\\\\'}\n",
+            "    while index<len(token):\n",
+            "        char=token[index];index+=1\n",
+            "        if char in '\\r\\n':raise error(node,'Line terminator is invalid in a Java string literal')\n",
+            "        if char=='\\\\':\n",
+            "            if index==len(token):raise error(node,'Incomplete Java string escape')\n",
+            "            char=token[index];index+=1\n",
+            "            if char in escapes:char=escapes[char]\n",
+            "            elif char in '01234567':\n",
+            "                digits=char;limit=3 if char in '0123' else 2\n",
+            "                while index<len(token) and len(digits)<limit and token[index] in '01234567':\n",
+            "                    digits+=token[index];index+=1\n",
+            "                char=chr(int(digits,8))\n",
+            "            else:raise error(node,'Invalid Java literal escape after Unicode preprocessing')\n",
+            "        result.append(char)\n",
+            "    return ''.join(result)\n"
+          ]
+        },
+        {
+          "start": 5,
+          "end": 6,
+          "replacement": []
+        }
+      ]
+    },
+    {
+      "file": "java_source_lowering.py",
+      "before_sha256": "a76063298559a24030c5f9e9b1320b2042c1f761d034fec1324e48248e08be36",
+      "after_sha256": "c64a2f516d8e1a8cadaf1ccf1c1e3e1727f53780a887040887c462e38e2da23a",
+      "edits": [
+        {
+          "start": 70,
+          "end": 71,
+          "replacement": [
+            "    lowered=parse_source(raw,ir['origin'],ir.get('known_api_types',[]),unicode_preprocessed=True)\r\n"
+          ]
+        },
+        {
+          "start": 76,
+          "end": 77,
+          "replacement": [
+            "        mapped=positions[offset] if offset<len(positions) else len(original)\r\n",
+            "        unicode_info=ir.get('unicode_preprocessing')\r\n",
+            "        if unicode_info:\r\n",
+            "            from java_unicode_prelex import line_at\r\n",
+            "            original_offset=unicode_info['byte_origins'][mapped]\r\n",
+            "            node['line']=line_at(unicode_info['original_source_utf8'].encode('utf-8'),original_offset)\r\n",
+            "        else:node['line']=bisect_left(newlines,mapped)+1\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "java_mixin_plan.py",
+      "before_sha256": "f85fd3313d2ca52a309e758f51efb75ed3eae87123c932b121575e43c3a2a63c",
+      "after_sha256": "d8b58e935baba325c1cc0cc10b80d6f536caeb8c79c58b20287bb9416a0d1228",
+      "edits": [
+        {
+          "start": 26,
+          "end": 26,
+          "replacement": [
+            "\r\n",
+            "def parse_weave_source(source,origin,known):\r\n",
+            "    ir=isolated_parse(source,origin,known)\r\n",
+            "    if ir.get('unicode_preprocessing'):\r\n",
+            "        raise MixinPlanError(origin,'Unicode preprocessing with Mixin source edits requires composed byte-span mapping')\r\n",
+            "    return ir\r\n"
+          ]
+        },
+        {
+          "start": 114,
+          "end": 115,
+          "replacement": [
+            "        for path in sorted(root.rglob('*.java')):add_unit(project_types,parse_weave_source(path.read_bytes(),path.relative_to(root).as_posix(),[]))\r\n"
+          ]
+        },
+        {
+          "start": 122,
+          "end": 123,
+          "replacement": [
+            "            ir=parse_weave_source((root/file).read_bytes(),file,[])\r\n"
+          ]
+        },
+        {
+          "start": 242,
+          "end": 243,
+          "replacement": [
+            "        ir=cached[file][0] if file in cached else parse_weave_source(path.read_bytes(),file,[])\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "java_symbols.py",
+      "before_sha256": "849483f83c10519f5bb1b11b4b6df7305a97a71d6eddab6a4b1b910075f2102b",
+      "after_sha256": "a4989ee7036ca30b7c9168cb4cd0bdfca9a0509f72ad8424dd916d5e25896036",
+      "edits": [
+        {
+          "start": 106,
+          "end": 108,
+          "replacement": [
+            "        # Java field and method namespaces are distinct. Rename source-owned\r\n",
+            "        # instance storage consistently in declaration metadata and generation.\r\n"
+          ]
+        },
+        {
+          "start": 110,
+          "end": 111,
+          "replacement": [
+            "            if member['name'] not in method_groups or member.get('storage_name') or member['static']:continue\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "java_existing_call_signatures.py",
+      "before_sha256": "5f3afc22a3910708e0603cf146061777df9155b1e37206bd68ac2c8792c35c86",
+      "after_sha256": "d46d866d4a98a46e2aaaada21a921feff0bc7c8be18f60483fb04c0d8e02385c",
+      "edits": [
+        {
+          "start": 6,
+          "end": 6,
+          "replacement": [
+            "    from mining_verified_adapters099 import resolve as reviewed099\r\n",
+            "    candidate=reviewed099(base,name,arity,actual)\r\n",
+            "    if candidate is not None:return candidate\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "java_entity_signatures.py",
+      "before_sha256": "66a62a78f09244601f17973bec92cb2b2b8dc8e6a37c45069e75bdd5a74fdc63",
+      "after_sha256": "d3c0bbfdc5d6c69cd631150b1a3fa100d2d0d7a90fcae77b947abd96ef34c622",
+      "edits": [
+        {
+          "start": 80,
+          "end": 81,
+          "replacement": [
+            "                return {'return_type':(DEFERRED_ITEM if base==ITEMS else DEFERRED_BLOCK)+'<'+values[0]+'>','parameters':['java.lang.String','java.util.function.Supplier<'+values[0]+'>'],'receiver_kind':'game_api','checked_arguments':True,'target_factory_bound':entity_type}\r\n"
+          ]
+        },
+        {
+          "start": 103,
+          "end": 103,
+          "replacement": [
+            "\r\n",
+            "def contextual_factory_return(record,target,proves):\r\n",
+            "    \"\"\"Instantiate the reviewed <I extends Item/Block> factory against its target.\r\n",
+            "\r\n",
+            "    This is inference for a method invocation, never covariance for an existing\r\n",
+            "    DeferredItem/DeferredBlock reference. Supplier result <: I <: declared bound.\r\n",
+            "    \"\"\"\r\n",
+            "    from java_library_signatures import generic_arguments\r\n",
+            "    bound=record.get('target_factory_bound') if record else None\r\n",
+            "    actual=record.get('return_type','') if record else ''\r\n",
+            "    if not bound or target.split('<',1)[0]!=actual.split('<',1)[0]:return None\r\n",
+            "    supplied=generic_arguments(actual);wanted=generic_arguments(target)\r\n",
+            "    if len(supplied)!=1 or len(wanted)!=1 or any('?' in x for x in supplied+wanted):return None\r\n",
+            "    if proves(supplied[0],wanted[0]) and proves(wanted[0],bound):return target\r\n",
+            "    return None\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "java_library_signatures.py",
+      "before_sha256": "c960dfaa70817655e7133bdf771dbe71d2b92efc13ba41638ca4a5e3f1f9c186",
+      "after_sha256": "f9c953e98ecfa129d38c56a6885c674d191d3a1645685b076c298fb0ac556a35",
+      "edits": [
+        {
+          "start": 53,
+          "end": 53,
+          "replacement": [
+            "    if owner=='net.neoforged.fml.config.ModConfig.Type':\r\n",
+            "        if name not in ('COMMON','CLIENT','SERVER','STARTUP'):raise ValueError('Unreviewed config type constant: '+name)\r\n",
+            "        return {'return_type':owner,'static_owner':owner,'final':True,'receiver_kind':'game_api'}\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "java_method_overloads.py",
+      "before_sha256": "bfe735128adb725fd20d5c6de1861ed55bac9d53b0f1511d163ff63faf7f65cd",
+      "after_sha256": "7b6db8da5e749384777eda37c0dbd91372c05783727ff82b144f7b6c35c53756",
+      "edits": [
+        {
+          "start": 144,
+          "end": 144,
+          "replacement": [
+            "    from java_library_signatures import REVIEWED_PARENTS\r\n"
+          ]
+        },
+        {
+          "start": 149,
+          "end": 150,
+          "replacement": [
+            "        for parent in tuple(OFFICIAL_PARENTS.get(identity,()))+tuple(EVENT_PARENTS.get(identity,()))+tuple(REGISTRY_PARENTS.get(identity,()))+tuple(REVIEWED_PARENTS.get(identity,())):\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "java_generic_contracts.py",
+      "before_sha256": "60cc40346d24cace084a6ca10269226615d9ad919192f0b63d146e4f4a788c1e",
+      "after_sha256": "2bacdf48ecdae4fcfd200efcadb9679988cc1dad1d7f303fa5bfa56ac55f57e0",
+      "edits": [
+        {
+          "start": 10,
+          "end": 10,
+          "replacement": [
+            "    from java_library_signatures import REVIEWED_PARENTS\n",
+            "    from java_entity_signatures import PARENTS as REGISTRY_PARENTS\n"
+          ]
+        },
+        {
+          "start": 15,
+          "end": 16,
+          "replacement": [
+            "        seen.add(identity);pending.extend(PARENTS.get(identity,[]));pending.extend(EVENT_PARENTS.get(identity,[]));pending.extend(REVIEWED_PARENTS.get(identity,[]));pending.extend(REGISTRY_PARENTS.get(identity,[]))\n"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "java_unicode_prelex.py",
+      "before_sha256": null,
+      "after_sha256": "6f98b3f72fd39dbaf54cf7f22238f12c8fa9d34664c7b00cd76f52e0ba0f6a9d",
+      "content": "\"\"\"JLS 21 3.3 Unicode translation, with original UTF-8 byte provenance.\"\"\"\nimport string\n\nclass UnicodeInputError(ValueError):\n    def __init__(self,offset,message):\n        self.offset=offset\n        super().__init__(message)\n\ndef translate(text):\n    units=[];offset=0;index=0;slashes=0;last_escape=False;count=0\n    while index<len(text):\n        char=text[index];start=offset;consumed=1;escaped=False\n        if char=='\\\\' and (last_escape or slashes%2==0) and text[index+1:index+2]=='u':\n            end=index+2\n            while text[end:end+1]=='u':end+=1\n            digits=text[end:end+4]\n            if len(digits)!=4 or any(c not in string.hexdigits for c in digits):\n                raise UnicodeInputError(start,'Invalid eligible Java Unicode escape')\n            char=chr(int(digits,16));consumed=end+4-index;escaped=True;count+=1\n        units.append((char,start))\n        offset+=len(text[index:index+consumed].encode('utf-8'));index+=consumed\n        slashes=slashes+1 if char=='\\\\' else 0\n        last_escape=escaped\n    result=[];positions=[];index=0\n    while index<len(units):\n        char,start=units[index];code=ord(char)\n        if 0xD800<=code<=0xDBFF and index+1<len(units) and 0xDC00<=ord(units[index+1][0])<=0xDFFF:\n            char=chr(0x10000+((code-0xD800)<<10)+ord(units[index+1][0])-0xDC00);index+=1\n        elif 0xD800<=code<=0xDFFF:\n            raise UnicodeInputError(start,'Unpaired Unicode surrogate requires UTF-16 token lowering')\n        result.append(char);positions.extend([start]*len(char.encode('utf-8')));index+=1\n    positions.append(len(text.encode('utf-8')))\n    return ''.join(result),positions,count\n\ndef line_at(raw,offset):\n    prefix=raw[:offset].replace(b'\\r\\n',b'\\n').replace(b'\\r',b'\\n')\n    return prefix.count(b'\\n')+1\n"
+    },
+    {
+      "file": "mining_verified_adapters099.py",
+      "before_sha256": null,
+      "after_sha256": "5a85f3ceed70ce80485ccd751410d2a98b5560f0ae51d5a7068c3fffb1133712",
+      "content": "\"\"\"Reviewed wiring for existing text providers; no substitute runtime APIs.\"\"\"\nCOMPONENT='net.minecraft.network.chat.Component'\nMUTABLE='net.minecraft.network.chat.MutableComponent'\n\ndef resolve(base,name,arity,actual):\n    record=None\n    if base==COMPONENT:\n        if name=='literal' and arity==1:\n            record=dict(return_type=MUTABLE,parameters=['java.lang.String'],static_owner=COMPONENT,nonnull_arguments=[0])\n        elif name=='empty' and arity==0:\n            record=dict(return_type=MUTABLE,parameters=[],static_owner=COMPONENT)\n    if base in (COMPONENT,MUTABLE) and name=='getString' and arity==0:\n        record=dict(return_type='java.lang.String',parameters=[],native_string_return=True)\n    if base in ('net.neoforged.fml.ModContainer','net.neoforged.fml.javafmlmod.FMLModContainer') and name=='registerConfig' and arity in (2,3):\n        record=dict(return_type='void',parameters=['net.neoforged.fml.config.ModConfig.Type','net.neoforged.fml.config.IConfigSpec']+(['java.lang.String'] if arity==3 else []))\n    if record is not None:\n        record.update(receiver_kind='game_api',checked_arguments=True)\n        if record.get('static_owner')==COMPONENT:record['type_receiver_only']=True\n    return record\n"
+    },
+    {
+      "file": "tests/test_java_codegen.py",
+      "before_sha256": "f313c9b37acc87233686355c2a4dc3fdeea35660cdded9ff53b21bab725e46da",
+      "after_sha256": "34a2eec200cd15c2bf08f8fbc1aea369f6c74c2902e41933969439d175022cb9",
+      "edits": [
+        {
+          "start": 348,
+          "end": 349,
+          "replacement": [
+            "            'class A { int f(){return 1;} static int f; }',\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "tests/test_unicode099.py",
+      "before_sha256": null,
+      "after_sha256": "24c8bfa8ddd69f0537ba104d57b5731b12ef361fe9168ca05c4237452ee9fb58",
+      "content": "import sys,unittest,tempfile,subprocess,json\nfrom pathlib import Path\nsys.path.insert(0,str(Path(__file__).resolve().parents[1]))\nimport test_interfaces082 as oracle\nfrom java_unicode_prelex import translate as prelex,UnicodeInputError\nfrom java_frontend import parse_source\nfrom translate_java import translate\n\nclass Unicode099(unittest.TestCase):\n    def test_strings_chars_comments_and_eligibility_execute_three_runtimes(self):\n        source=r'''package use;public class Run {public int run(){\nString a=\"\\u043c\\u043e\\u0434\";String b=\"\\\\u005a\";\nString c=\"\\u005c\\u005c\\u006e\";String d=\"\\uuuu0041\\101\\s\";\n// ignored\\u000a int value=7;\nchar x='\\u0041';return a.length()+b.length()+c.length()+d.length()+value+x;}}'''\n        oracle.Interfaces082().compare({'use/Run.java':source},'86')\n\n    def test_escaped_keyword_and_nonrecursive_translation(self):\n        oracle.Interfaces082().compare({'use/Run.java':r'package use;public cl\\u0061ss Run {public int run(){return 7;}}'},'7')\n        for source,expected in [(r'\\u005cu005a','\\\\u005a'),(r'\\\\u005a',r'\\\\u005a'),(r'\\u005c\\u005a','\\\\Z'),(r'\\\\\\u006e','\\\\\\\\n')]:\n            self.assertEqual(prelex(source)[0],expected)\n\n    def test_invalid_escapes_rejected_like_javac(self):\n        for literal in [r'\"\\u00xz\"',r'\"\\u005cu005a\"',r'\"\\u000a\"',r'\"\\u005c\"',r'\"\\q\"']:\n            with self.subTest(literal=literal),tempfile.TemporaryDirectory() as tmp:\n                root=Path(tmp);p=root/'Run.java';p.write_text('class Run {String s='+literal+';}')\n                report=translate(root,dry_run=True)\n                self.assertEqual((report['generated_for_review'],report['manual_review'],report['failed']),(0,1,0),report)\n                result=subprocess.run([str(oracle.JDK/'javac.exe'),str(p)],capture_output=True)\n                self.assertNotEqual(result.returncode,0)\n\n    def test_original_line_mapping_and_immutable_input(self):\n        source=r'// x\\u000a class Run {void value(){missing();}}'+'\\n'\n        ir=parse_source(source)\n        self.assertIsNotNone(ir['unicode_preprocessing'])\n        def walk(n):\n            yield n\n            for c in n.get('children',[]):yield from walk(c)\n        self.assertTrue(all(n['line']==1 for n in walk(ir['tree']) if n['kind']=='method_invocation'))\n        with tempfile.TemporaryDirectory() as tmp:\n            root=Path(tmp);p=root/'Run.java';p.write_text(source);before=p.read_bytes()\n            report=translate(root,dry_run=True)\n            self.assertEqual(report['results'][0]['line'],1)\n            self.assertEqual(p.read_bytes(),before)\n\n    def test_unicode_record_lowering_does_not_translate_twice(self):\n        oracle.Interfaces082().compare({'use/Run.java':r'package use;record Value(String s){} public class Run {public int run(){Value v=new Value(\"\\\\u0041\");return v.s().length();}}'},'6')\n\n    def test_surrogate_pair_utf16_length_three_runtimes(self):\n        oracle.Interfaces082().compare({'use/Run.java':r'package use;public class Run {public int run(){return \"\\uD83D\\uDE00\".length();}}'},'2')\n\n    def test_unpaired_surrogate_and_mixin_composition_remain_explicit(self):\n        with self.assertRaises(UnicodeInputError):prelex(r'\\uD800')\n        from java_mixin_plan import parse_weave_source,MixinPlanError\n        with self.assertRaises(MixinPlanError):parse_weave_source(br'class Run {String s=\"\\u0041\";}','Run.java',[])\n\nif __name__=='__main__':unittest.main()\n"
+    },
+    {
+      "file": "tests/test_field_names099.py",
+      "before_sha256": null,
+      "after_sha256": "528bf7f7571083e56ae7f007444323d25eb3bc09ed5c831615e8e92a882d93db",
+      "content": "import sys,unittest,tempfile\nfrom pathlib import Path\nsys.path.insert(0,str(Path(__file__).resolve().parents[1]))\nimport test_interfaces082 as oracle\nfrom translate_java import translate\n\nclass FieldNames099(unittest.TestCase):\n    def test_public_field_and_accessor_cross_file_read_write_three_runtimes(self):\n        oracle.Interfaces082().compare({'api/Entry.java':'package api;public class Entry {public int value;public boolean processed;public Entry(int n){value=n;}public int value(){return value;}public boolean processed(){return processed;}public void mark(){processed=true;}}','use/Run.java':'package use;import api.Entry;public class Run {public int run(){Entry x=new Entry(2);x.value=7;x.mark();if(!x.processed)return -1;return x.value+x.value();}}'},'14')\n\n    def test_same_unit_public_field_and_final_initialization_three_runtimes(self):\n        oracle.Interfaces082().compare({'use/Run.java':'package use;public class Run {public final int value=4;public int value(){return value;}public int run(){return this.value+value();}}'},'8')\n\n    def test_private_field_access_and_static_collision_remain_blocked(self):\n        for files in [ {'use/A.java':'package use;public class A {private int n;public int n(){return n;}}','use/Run.java':'package use;public class Run {int run(){A a=new A();return a.n;}}'}, {'use/Run.java':'package use;class Run {static int n;static int n(){return n;}}'}]:\n            with tempfile.TemporaryDirectory() as tmp:\n                root=Path(tmp)\n                for name,source in files.items():p=root/name;p.parent.mkdir(exist_ok=True);p.write_text(source)\n                r=translate(root,dry_run=True);self.assertGreater(r['manual_review'],0,r)\n\nif __name__=='__main__':unittest.main()\n"
+    },
+    {
+      "file": "tests/test_api_wiring099.py",
+      "before_sha256": null,
+      "after_sha256": "9c55218b86d2c1247862d31917155ebce0cd98a3ee13f5cefdaba11e2120d88d",
+      "content": "import sys,unittest,tempfile,subprocess,json,hashlib,os\nfrom pathlib import Path\nsys.path.insert(0,str(Path(__file__).resolve().parents[1]))\nfrom translate_java import translate\nfrom build_source_bundle import core_bundle,collect_sources\nfrom workspace_paths import SCRIPTS_ROOT\nfrom java_official_probe import REF,jars,run_with_dependencies\nfrom harness import Package\n\nclass ApiWiring099(unittest.TestCase):\n    def original(self,source):\n        dependencies=jars(())\n        version=json.loads((REF/'version.json').read_bytes())\n        for lib in version['libraries']:\n            artifact=lib.get('downloads',{}).get('artifact')\n            if not artifact:continue\n            path=Path('F:/PCL/.minecraft/libraries')/artifact['path']\n            if path.is_file():\n                self.assertEqual(hashlib.sha1(path.read_bytes()).hexdigest(),artifact['sha1'])\n                dependencies.append(path)\n        source=source.replace('import net.minecraft.network.chat.Component;','').replace('Component.literal','wz.b').replace('Component.empty','wz.i').replace('Component c','wz c')\n        source=source.replace('public class Run','class Run')\n        return run_with_dependencies(source+' public class Probe {public static void main(String[] a){System.out.print(new Run().run());}}',dependencies)\n\n    def compare(self,source,expected):\n        self.assertEqual(self.original(source),expected)\n        with tempfile.TemporaryDirectory() as tmp:\n            root=Path(tmp);input=root/'input';input.mkdir();(input/'Run.java').write_text(source)\n            report=translate(input,root/'out');self.assertEqual((report['generated_for_review'],report['manual_review'],report['failed']),(1,0,0),report)\n            sources=core_bundle()['sources'];sources.update(collect_sources(root/'out/input'))\n            pkg=Package();runtime=pkg.load('core.source_modules').SourceModuleLoader(sources)\n            api=runtime.load('core.java_api');scope=api.JavaApiImports(runtime).install(api.collect_java_api())\n            try:self.assertEqual(str(runtime.load('Run').Run().run()),expected)\n            finally:scope.close();runtime.close()\n            payload={'sources':sources,'loader_source':(SCRIPTS_ROOT/'core/source_modules.py').read_text(encoding='utf-8'),'module':'Run','class_name':'Run','expected':expected}\n            p=root/'probe.json';p.write_text(json.dumps(payload),encoding='utf-8')\n            run=subprocess.run([r'D:\\NeoCore\u5de5\u5177\\python27_validation\\runtime\\python.exe','-B',str(Path(__file__).with_name('probe_interfaces082_python27.py')),str(p)],capture_output=True,text=True)\n            self.assertEqual(run.returncode,0,run.stdout+run.stderr)\n\n    def test_literal_empty_get_string_java_original_python2_python3(self):\n        self.compare('import net.minecraft.network.chat.Component;public class Run {public int run(){Component c=Component.literal(\"abc\");return c.getString().length()+Component.empty().getString().length();}}','3')\n\n    def test_literal_null_and_receiver_null_match_original(self):\n        self.compare('import net.minecraft.network.chat.Component;public class Run {public int run(){int n=0;try{Component.literal(null);}catch(NullPointerException e){n++;}Component c=null;try{c.getString();}catch(NullPointerException e){n+=2;}return n;}}','3')\n\n    def test_unreviewed_overloads_and_translatable_remain_blocked(self):\n        for body in ['Component.literal(7);','Component.literal(\"a\",\"b\");','Component.empty(1);','Component.translatable(\"x\");','Component.nullToEmpty(\"x\");','Component c=null;c.literal(\"x\");','Component c=null;c.empty();']:\n            with tempfile.TemporaryDirectory() as tmp:\n                root=Path(tmp);(root/'Run.java').write_text('import net.minecraft.network.chat.Component;class Run {void run(){'+body+'}}')\n                report=translate(root,dry_run=True);self.assertEqual(report['manual_review'],1,report)\n\nif __name__=='__main__':unittest.main()\n"
+    },
+    {
+      "file": "tests/test_config_wiring099.py",
+      "before_sha256": null,
+      "after_sha256": "76124a30a0a7892694be782470ccddfe0f20fcdd4360e78561a5dcff7d3252f4",
+      "content": "import sys,unittest,tempfile,subprocess,json\nfrom pathlib import Path\nsys.path.insert(0,str(Path(__file__).resolve().parents[1]))\nfrom java_frontend import parse_source,api_index\nfrom java_codegen import generate,NeedsLowering\nfrom build_source_bundle import core_bundle\nfrom workspace_paths import SCRIPTS_ROOT\n\nSOURCE='''import net.neoforged.fml.ModContainer;import net.neoforged.fml.config.ModConfig;\nimport net.neoforged.neoforge.common.ModConfigSpec;\npublic class Run {public static void register(ModContainer c,ModConfigSpec s){\nc.registerConfig(ModConfig.Type.COMMON,s);c.registerConfig(ModConfig.Type.CLIENT,s,\"custom.toml\");}}'''\n\nKEY_SOURCE='''import net.neoforged.neoforge.registries.DeferredHolder;\nimport net.minecraft.world.level.block.Block;import net.minecraft.resources.ResourceKey;\npublic class KeyRun {public static ResourceKey<Block> key(DeferredHolder<Block,Block> h){return h.getKey();}}'''\n\nclass ConfigWiring099(unittest.TestCase):\n    def test_typed_config_registration_generated_python2_python3(self):\n        known,stale=api_index();self.assertFalse(stale)\n        code=generate(parse_source(SOURCE,known_types=known))['python_source']\n        sources=core_bundle()['sources'];sources['Run']={'source':code,'origin':'Run.java'}\n        probe='''from __future__ import print_function\nimport io,json,sys\nwith io.open(sys.argv[1],encoding='utf-8') as f:d=json.load(f)\nscope={};eval(compile(d['loader'].encode('utf-8'),'loader.py','exec'),scope)\nr=scope['SourceModuleLoader'](d['sources']);api=r.load('core.java_api');s=api.JavaApiImports(r).install(api.collect_java_api())\ntry:\n c=r.load('neoforge.config');b=c.ModConfigSpec.Builder();b.define('enabled',True);spec=b.build();container=c.ModContainer('sample')\n r.load('Run').Run.register(container,spec)\n assert len(container.getConfigs())==2\n assert container.getConfig(c.ModConfig.Type.COMMON).getFileName()=='sample-common.toml'\n assert container.getConfig(c.ModConfig.Type.CLIENT).getFileName()=='custom.toml'\n container.close();assert container.getConfigs()==[]\n print('CONFIG_WIRING099_PASS')\nfinally:s.close();r.close()\n'''\n        with tempfile.TemporaryDirectory() as tmp:\n            root=Path(tmp);p=root/'input.json';p.write_text(json.dumps(dict(sources=sources,loader=(SCRIPTS_ROOT/'core/source_modules.py').read_text(encoding='utf-8'))),encoding='utf-8');f=root/'probe.py';f.write_text(probe)\n            for exe in (sys.executable,r'D:\\NeoCore\u5de5\u5177\\python27_validation\\runtime\\python.exe'):\n                r=subprocess.run([exe,'-B',str(f),str(p)],capture_output=True,text=True);self.assertEqual(r.returncode,0,r.stdout+r.stderr)\n\n    def test_invalid_config_spec_type_and_unreviewed_constants_rejected(self):\n        known,_=api_index()\n        for source in (SOURCE.replace('Type.COMMON','Type.NOT_REAL'),SOURCE.replace('Type.COMMON,s','Type.COMMON,7'),SOURCE.replace('\"custom.toml\"','false')):\n            with self.subTest(source=source),self.assertRaises(NeedsLowering):generate(parse_source(source,known_types=known))\n\n    def test_fully_qualified_nested_identity_reuses_only_known_export(self):\n        known,_=api_index()\n        ir=parse_source(SOURCE,known_types=known)\n        self.assertIn('net.neoforged.fml.config.ModConfig.Type',generate(ir)['required_api_types'])\n        bad=SOURCE.replace('ModConfig.Type.COMMON','ModConfig.Unknown.COMMON')\n        with self.assertRaises(NeedsLowering):generate(parse_source(bad,known_types=known))\n\n    def test_reviewed_ancestry_shared_by_overloads_and_generic_bounds(self):\n        from java_generic_contracts import proves_bound\n        from java_method_overloads import subtype\n        spec='net.neoforged.neoforge.common.ModConfigSpec';contract='net.neoforged.fml.config.IConfigSpec'\n        self.assertTrue(subtype(spec,contract,{},{}))\n        self.assertTrue(proves_bound(spec,contract,{},{}))\n        self.assertFalse(subtype('java.lang.String',contract,{},{}))\n        self.assertFalse(proves_bound('java.lang.String',contract,{},{}))\n        known,_=api_index()\n        bad='import net.minecraft.resources.ResourceKey;import net.minecraft.world.level.block.Block;class Run {ResourceKey<String> wrong(ResourceKey<Block> key){return key;}}'\n        with self.assertRaises(NeedsLowering):generate(parse_source(bad,known_types=known))\n        # A provider method name alone is not an equivalence proof. The legacy\n        # holder returns its registry key, not the Java entry key, so keep the\n        # call blocked until a separate corrected provider is reviewed.\n        with self.assertRaises(NeedsLowering):generate(parse_source(KEY_SOURCE,known_types=known))\n\nif __name__=='__main__':unittest.main()\n"
+    },
+    {
+      "file": "tests/test_target_factory099.py",
+      "before_sha256": null,
+      "after_sha256": "ee9f09b2d1a5656a4c2cbdfefad98392e8880e475afcd62acd224ab1356bd203",
+      "content": "import sys,tempfile,unittest\nfrom pathlib import Path\nsys.path.insert(0,str(Path(__file__).resolve().parents[1]))\nfrom translate_java import translate\nfrom java_entity_signatures import contextual_factory_return,DEFERRED_ITEM,ITEM\n\nclass TargetFactory099(unittest.TestCase):\n    def probe(self,body):\n        with tempfile.TemporaryDirectory() as tmp:\n            root=Path(tmp)\n            (root/'Child.java').write_text('import net.minecraft.world.item.Item;public class Child extends Item {public Child(){super(new Item.Properties());}}')\n            (root/'Run.java').write_text('import net.minecraft.world.item.Item;import net.neoforged.neoforge.registries.DeferredItem;import net.neoforged.neoforge.registries.DeferredRegister;class Run {static DeferredRegister.Items ITEMS=DeferredRegister.createItems(\"test\");'+body+'}')\n            result=translate(root,dry_run=True)\n            return next(r for r in result['results'] if r['file']=='Run.java')\n\n    def test_target_infers_parent_item_without_erasing_holder(self):\n        row=self.probe('static DeferredItem<Item> VALUE=ITEMS.register(\"one\",()->new Child());')\n        self.assertEqual(row['status'],'GENERATED_REVIEW_REQUIRED',row)\n\n    def test_existing_invariant_holder_does_not_become_covariant(self):\n        row=self.probe('static DeferredItem<Item> wrong(DeferredItem<Child> old){return old;}')\n        self.assertEqual(row['status'],'MANUAL_REVIEW',row)\n        self.assertIn('invariant',row['reason'])\n\n    def test_factory_cannot_narrow_or_cross_the_declared_bound(self):\n        for body in ['static DeferredItem<Child> VALUE=ITEMS.register(\"one\",()->new Item(new Item.Properties()));',\n                     'static DeferredItem<String> VALUE=ITEMS.register(\"one\",()->\"bad\");']:\n            self.assertEqual(self.probe(body)['status'],'MANUAL_REVIEW')\n        record=dict(return_type=DEFERRED_ITEM+'<Child>',target_factory_bound=ITEM)\n        self.assertIsNone(contextual_factory_return(record,DEFERRED_ITEM+'<String>',lambda a,b:a==b))\n        self.assertIsNone(contextual_factory_return({},DEFERRED_ITEM+'<'+ITEM+'>',lambda a,b:True))\n\n    def test_diamond_keeps_context_and_explicit_arguments_remain_invariant(self):\n        import test_interfaces082 as oracle\n        oracle.Interfaces082().compare({'use/Run.java':'package use;import java.util.Map;import java.util.HashMap;public class Run {public int run(){Map<String,String> m=new HashMap<>();m.put(\"k\",\"abc\");return m.get(\"k\").length();}}'},'3')\n        for body in ['java.util.List<String> a=new java.util.ArrayList<Integer>();','java.util.Map<String,String> a=new java.util.HashMap<Integer,String>();']:\n            with tempfile.TemporaryDirectory() as tmp:\n                root=Path(tmp);(root/'Run.java').write_text('class Run {void run(){'+body+'}}')\n                # Different erased implementation/interface names continue to\n                # use the existing strict collection constructor contracts.\n                report=translate(root,dry_run=True)\n                self.assertEqual(report['manual_review'],1,report)\n\nif __name__=='__main__':unittest.main()\n"
+    }
+  ],
+  "targeted_tests": [
+    "tests/test_unicode099.py",
+    "tests/test_field_names099.py",
+    "tests/test_api_wiring099.py",
+    "tests/test_config_wiring099.py",
+    "tests/test_target_factory099.py"
+  ],
+  "guards": [
+    "Exact before/after SHA256, no unreviewed edits",
+    "Historical observed blockers required; frequency alone cannot propose",
+    "Java/Python2/Python3 oracles and a fresh full regression before apply",
+    "API and generic invariant guards retained; no external renderer/Mixin superclass erasure"
+  ]
+}

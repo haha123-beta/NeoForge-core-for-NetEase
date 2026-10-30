@@ -104,11 +104,11 @@ def declarations(ir):
             if not method['constructor']:
                 method_groups.setdefault(method['name'], []).append(method)
         row['method_overloaded_names'] = sorted(name for name, methods in method_groups.items() if len(methods) > 1)
-        # Java permits a private field and a method to share a spelling. Give
-        # private instance storage a stable name in both indexing and generation.
+        # Java field and method namespaces are distinct. Rename source-owned
+        # instance storage consistently in declaration metadata and generation.
         reserved={f['name'] for f in row['fields']}|set(method_groups)
         for index,member in enumerate(row['fields']):
-            if member['name'] not in method_groups or member.get('storage_name') or member['static'] or 'private' not in member['modifiers']:continue
+            if member['name'] not in method_groups or member.get('storage_name') or member['static']:continue
             storage='_nc_field_'+row['java_name'].encode('utf-8').hex()+'_'+str(index)
             while storage in reserved:storage+='_' 
             member['storage_name']=storage;reserved.add(storage)

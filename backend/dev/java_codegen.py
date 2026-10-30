@@ -207,6 +207,13 @@ def generate(ir, project_types=None, dependency_index=None, defer_external_symbo
         for alias, identity in api_identities.items():
             if name == identity and alias in types:
                 return types[alias]
+            if alias in types and name.startswith(identity+'.') and name in ir.get('known_nested_api_types',[]) and name not in project_types:
+                reference=types[alias]
+                for member in name[len(identity)+1:].split('.'):
+                    reference='getattr('+reference+', '+repr(member)+')'
+                required_api_types.add(name)
+                types[name]=reference
+                return reference
         parts = name.split('.')
         if parts[0] in api_identities and len(parts) > 1:
             identity = api_identities[parts[0]] + '.' + '.'.join(parts[1:])
@@ -1112,6 +1119,17 @@ def generate(ir, project_types=None, dependency_index=None, defer_external_symbo
         # Convert the complete expression, including checked casts, exactly once.
         if expected is not None and kind not in ('lambda_expression','method_reference'):
             target=canonical_method_type(expected,current,overload_unit)
+            if '<' in target:
+                diamond=kind=='object_creation_expression' and text(field(node,'type')).replace(' ','').endswith('<>')
+                # A diamond has no standalone instantiation: its arguments
+                # come from this target. Constructor checks still run below.
+                actual_reference=target if diamond else invocation_type(node)
+                if kind=='method_invocation' and not any(c['kind']=='type_arguments' for c in node.get('children',[])):
+                    from java_entity_signatures import contextual_factory_return
+                    contextual=contextual_factory_return(library_method(node),target,lambda a,b:overload_subtype(a,b,parents,overload_unit))
+                    if contextual is not None:actual_reference=contextual
+                if actual_reference and '<' in actual_reference and actual_reference.split('<',1)[0]==target.split('<',1)[0] and not overload_subtype(actual_reference,target,parents,overload_unit):
+                    raise NeedsLowering(node,'Generic assignment does not satisfy invariant target: '+actual_reference+' -> '+target)
             if target in BOXES or target in UNBOXES or target in ('java.lang.Object','java.lang.Number'):
                 actual=scalar_type(node)
                 if actual in UNBOXES and target in BOXES:
@@ -1301,13 +1319,9 @@ def generate(ir, project_types=None, dependency_index=None, defer_external_symbo
             number, _ = literal_value(node, raw, NeedsLowering)
             return str(number)
         if kind == 'string_literal':
-            if '\\u' in raw:
-                raise NeedsLowering(node, 'Java Unicode pre-lexing requires source mapping', {'category':'unicode_prelexing'})
-            try:
-                value = json.loads(raw)
-            except ValueError:
-                raise NeedsLowering(node, 'Java string escape requires literal lowering')
-            return '_nc_String(u' + json.dumps(value, ensure_ascii=False) + ')'
+            from java_scalar_literals import string_value
+            value=string_value(raw,node,NeedsLowering)
+            return '_nc_String(u' + json.dumps(value, ensure_ascii=True) + ')'
         if kind == 'parenthesized_expression':
             return '(' + expr(named(node)[0]) + ')'
         if kind == 'field_access' and field(node, 'object')['kind'] in ('this', 'super'):
@@ -1350,7 +1364,7 @@ def generate(ir, project_types=None, dependency_index=None, defer_external_symbo
                 declaring,member=find_member(name,'fields',owner)
                 if member and member.get('storage_name'):
                     if type_qualifier(receiver):raise NeedsLowering(node,'Record component requires an instance receiver')
-                    if current['java_name']!=declaring['java_name'] and (current.get('anonymous_codec') or {}).get('owner')!=declaring['java_name']:raise NeedsLowering(node,'Renamed field is private; use its accessor')
+                    if 'private' in member.get('modifiers',[]) and current['java_name']!=declaring['java_name'] and (current.get('anonymous_codec') or {}).get('owner')!=declaring['java_name']:raise NeedsLowering(node,'Renamed field is private; use its accessor')
                     name=member['storage_name']
                     intrinsics.add('neocore.runtime.Functional@3')
                     return get_attr('_nc_Functional.requireNonNull('+expr(receiver)+')',name)
@@ -1439,6 +1453,8 @@ def generate(ir, project_types=None, dependency_index=None, defer_external_symbo
                 is_type_receiver = type_qualifier(receiver)
                 api_static_owner=library.get('static_owner')
                 if api_static_owner:
+                    if library.get('type_receiver_only') and not is_type_receiver:
+                        raise NeedsLowering(node,'Interface static API method requires a type qualifier: '+name)
                     # Only reviewed static declarations select the owner; never dispatch through the qualifier value.
                     alias=next((types[short] for short,identity in api_identities.items()
                                 if identity==api_static_owner and short in types),None)
@@ -1489,6 +1505,8 @@ def generate(ir, project_types=None, dependency_index=None, defer_external_symbo
                 keywords=', **'+repr({'_nc_remove_mode':library['remove_mode']}) if 'remove_mode' in library else ''
                 # Java evaluates the receiver and every argument before null checking and virtual dispatch.
                 target=get_attr(checked,library.get('call_name',name))+'(*_nc_call_args'+keywords+')'
+                if library.get('native_string_return'):
+                    target='(lambda _nc_native_value: None if _nc_native_value is None else _nc_String(_nc_native_value))('+target+')'
                 if library.get('boxed_native_return'):
                     intrinsics.add('neocore.runtime.Functional@9')
                     target='_nc_Functional.box('+repr(library['boxed_native_return'])+', '+target+')'
@@ -1709,7 +1727,7 @@ def generate(ir, project_types=None, dependency_index=None, defer_external_symbo
         raise NeedsLowering(node, 'Expression semantics not lowered: ' + kind)
     def record_write_target(node):
         def checked(declaring,member):
-            if member and member.get('storage_name') and current['java_name']!=declaring['java_name'] and (current.get('anonymous_codec') or {}).get('owner')!=declaring['java_name']:
+            if member and member.get('storage_name') and 'private' in member.get('modifiers',[]) and current['java_name']!=declaring['java_name'] and (current.get('anonymous_codec') or {}).get('owner')!=declaring['java_name']:
                 raise NeedsLowering(node,'Renamed field is private; use its accessor')
             return member
         if node['kind']=='identifier':

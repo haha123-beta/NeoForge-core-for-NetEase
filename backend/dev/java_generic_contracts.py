@@ -8,12 +8,14 @@ def substitute(kind,bindings):
     return re.sub(r'\b(?:'+ '|'.join(re.escape(k) for k in bindings)+r')\b',lambda match:bindings[match[0]],kind)
 
 def proves_bound(argument,bound,unit,project_types):
+    from java_library_signatures import REVIEWED_PARENTS
+    from java_entity_signatures import PARENTS as REGISTRY_PARENTS
     bound=bound.split('<',1)[0];pending=[argument];seen=set()
     while pending:
         identity=pending.pop()
         if identity==bound or bound=='java.lang.Object':return True
         if identity in seen:continue
-        seen.add(identity);pending.extend(PARENTS.get(identity,[]));pending.extend(EVENT_PARENTS.get(identity,[]))
+        seen.add(identity);pending.extend(PARENTS.get(identity,[]));pending.extend(EVENT_PARENTS.get(identity,[]));pending.extend(REVIEWED_PARENTS.get(identity,[]));pending.extend(REGISTRY_PARENTS.get(identity,[]))
         declarations=[r for r in unit.get('_classes',[]) if r['java_name']==identity]
         declarations.extend(r['inheritance_metadata'] for r in project_types.get(identity,[]) if r.get('inheritance_metadata'))
         for row in declarations:

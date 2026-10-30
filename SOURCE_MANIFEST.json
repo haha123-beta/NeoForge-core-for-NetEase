@@ -1,11 +1,11 @@
 {
-  "version": "0.9.8",
+  "version": "0.9.9",
   "creators": [
     "haha123-beta",
     "ChatGPT (OpenAI AI assistant)"
   ],
   "license": "PolyForm-Noncommercial-1.0.0",
-  "scope": "Necessary source, core AddOn, loader and documentation. Third-party licenses retained. Manifest excludes itself.",
+  "scope": "Project-owned source, core AddOn, loader, tests and documentation; third-party notices retained. Excludes local configuration and this manifest itself.",
   "files": [
     {
       "path": ".gitattributes",
@@ -28,6 +28,11 @@
       "sha256": "c0ea4a896d2c8c394b29f9427589996db826cd501c512279ff0ed3ef48fabbe5"
     },
     {
+      "path": "addon/NeoCore_behavior_pack/entities/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "addon/NeoCore_behavior_pack/entities/neocore_training_mob.json",
       "bytes": 859,
       "sha256": "ad4acd6ea9e26268116c1050d9502dd8ff0a14fdd72b36777d876aa91e52457b"
@@ -35,7 +40,7 @@
     {
       "path": "addon/NeoCore_behavior_pack/manifest.json",
       "bytes": 662,
-      "sha256": "78417a659e86352462fe4805e806977e9fec4af7e3130169335e93f7480e281a"
+      "sha256": "3dcea18e861d96506124f8bba64272c2ec66d4352dcd9dc53395cfca399377e2"
     },
     {
       "path": "addon/NeoCore_behavior_pack/NeoCoreSourceScripts/__init__.py",
@@ -85,17 +90,17 @@
     {
       "path": "addon/NOTICE",
       "bytes": 446,
-      "sha256": "b73c35c72dfc7663120ff0e81eaaaee062f53a8ec94d19d3b98ad3343fdecf48"
+      "sha256": "09697ab39b2e0d80c0b6ecfa9a7f1f1a24a84c1d3b8c541fa70bc5afd77cf252"
     },
     {
       "path": "addon/README.md",
       "bytes": 1447,
-      "sha256": "a2b251ce1f83c8c7c77883078e7be5b0fb55abfaf16ba92a5eb9f9a835e54bf5"
+      "sha256": "ba1306cdab107d5632ad885ea3dbb28e87172a8f8f4e5c465f12ea0d746fc697"
     },
     {
       "path": "app.py",
       "bytes": 29924,
-      "sha256": "c0a1b060e0c8fdcd9c245c06d2985a8bd83908e0bfbe68e270052cb625c6e257"
+      "sha256": "dce47b7fbdb0217caab431f99f51f0f8a1e639471197dade5cb112a9f6dee850"
     },
     {
       "path": "AUTHORS.md",
@@ -950,7 +955,7 @@
     {
       "path": "backend/dev/build_distribution.py",
       "bytes": 21707,
-      "sha256": "4c235cb5697be0760bd0b41bafc00c01ffb4b9a2f3fe48eebe5c1972e35c70db"
+      "sha256": "7e491468b0b3c5dc4e2870ac0d56bf029f7381d289338a48a7515a842483dabb"
     },
     {
       "path": "backend/dev/build_entity_visuals.py",
@@ -989,8 +994,8 @@
     },
     {
       "path": "backend/dev/compatibility_mining.py",
-      "bytes": 2727,
-      "sha256": "859da7ed52deaf61117a4fc54dce5058f7693b7e821e185dad43315cd99de48e"
+      "bytes": 3134,
+      "sha256": "084fa0198e2e6f4d4d4e9e8f6998f341d60e376da9c10e63d933fc04698a9408"
     },
     {
       "path": "backend/dev/conversion_benchmark.py",
@@ -1514,8 +1519,8 @@
     },
     {
       "path": "backend/dev/java_codegen.py",
-      "bytes": 187395,
-      "sha256": "47cedd52b48e0de8ccc5e88492222a93c25df71f7b63b55df282974b144192aa"
+      "bytes": 189229,
+      "sha256": "49744d202dbee94ba408a76bad2bc920a6bd781272c1c18d19a620cf3b07e7f0"
     },
     {
       "path": "backend/dev/java_config_signatures.py",
@@ -1529,8 +1534,8 @@
     },
     {
       "path": "backend/dev/java_entity_signatures.py",
-      "bytes": 7813,
-      "sha256": "66a62a78f09244601f17973bec92cb2b2b8dc8e6a37c45069e75bdd5a74fdc63"
+      "bytes": 8694,
+      "sha256": "d3c0bbfdc5d6c69cd631150b1a3fa100d2d0d7a90fcae77b947abd96ef34c622"
     },
     {
       "path": "backend/dev/java_event_bus_facts.py",
@@ -1549,8 +1554,8 @@
     },
     {
       "path": "backend/dev/java_existing_call_signatures.py",
-      "bytes": 5220,
-      "sha256": "5f3afc22a3910708e0603cf146061777df9155b1e37206bd68ac2c8792c35c86"
+      "bytes": 5386,
+      "sha256": "d46d866d4a98a46e2aaaada21a921feff0bc7c8be18f60483fb04c0d8e02385c"
     },
     {
       "path": "backend/dev/java_feature_signatures.py",
@@ -1559,8 +1564,8 @@
     },
     {
       "path": "backend/dev/java_frontend.py",
-      "bytes": 10825,
-      "sha256": "7021e02ac294e68b15841cf0951f5cae691f14aacbb8a921ac5a995447296363"
+      "bytes": 12027,
+      "sha256": "ee408928cc8a90c547508d3813774f9cf8d6978918b9100524b9ed1d9898bc7c"
     },
     {
       "path": "backend/dev/java_frontend_requirements.txt",
@@ -1569,8 +1574,8 @@
     },
     {
       "path": "backend/dev/java_generic_contracts.py",
-      "bytes": 2266,
-      "sha256": "60cc40346d24cace084a6ca10269226615d9ad919192f0b63d146e4f4a788c1e"
+      "bytes": 2490,
+      "sha256": "2bacdf48ecdae4fcfd200efcadb9679988cc1dad1d7f303fa5bfa56ac55f57e0"
     },
     {
       "path": "backend/dev/java_grammar.py",
@@ -1619,8 +1624,8 @@
     },
     {
       "path": "backend/dev/java_library_signatures.py",
-      "bytes": 36016,
-      "sha256": "c960dfaa70817655e7133bdf771dbe71d2b92efc13ba41638ca4a5e3f1f9c186"
+      "bytes": 36295,
+      "sha256": "f9c953e98ecfa129d38c56a6885c674d191d3a1645685b076c298fb0ac556a35"
     },
     {
       "path": "backend/dev/java_menu_signatures.py",
@@ -1634,8 +1639,8 @@
     },
     {
       "path": "backend/dev/java_method_overloads.py",
-      "bytes": 15438,
-      "sha256": "bfe735128adb725fd20d5c6de1861ed55bac9d53b0f1511d163ff63faf7f65cd"
+      "bytes": 15537,
+      "sha256": "7b6db8da5e749384777eda37c0dbd91372c05783727ff82b144f7b6c35c53756"
     },
     {
       "path": "backend/dev/java_mixin_fields.py",
@@ -1659,8 +1664,8 @@
     },
     {
       "path": "backend/dev/java_mixin_plan.py",
-      "bytes": 21310,
-      "sha256": "f85fd3313d2ca52a309e758f51efb75ed3eae87123c932b121575e43c3a2a63c"
+      "bytes": 21592,
+      "sha256": "d8b58e935baba325c1cc0cc10b80d6f536caeb8c79c58b20287bb9416a0d1228"
     },
     {
       "path": "backend/dev/java_mixin_refmap.py",
@@ -1734,8 +1739,8 @@
     },
     {
       "path": "backend/dev/java_scalar_literals.py",
-      "bytes": 749,
-      "sha256": "91cd4c647055f6f708bc539e4f6af54c379c92e7e72b3ec6c8bb4d5c886e3ee8"
+      "bytes": 1604,
+      "sha256": "d51501d07cf0f00468249d4bfda4d1af37b2a29b642fddc91026ba32795a6211"
     },
     {
       "path": "backend/dev/java_source_generics.py",
@@ -1749,8 +1754,8 @@
     },
     {
       "path": "backend/dev/java_source_lowering.py",
-      "bytes": 7294,
-      "sha256": "a76063298559a24030c5f9e9b1320b2042c1f761d034fec1324e48248e08be36"
+      "bytes": 7651,
+      "sha256": "c64a2f516d8e1a8cadaf1ccf1c1e3e1727f53780a887040887c462e38e2da23a"
     },
     {
       "path": "backend/dev/java_static_imports.py",
@@ -1759,8 +1764,8 @@
     },
     {
       "path": "backend/dev/java_symbols.py",
-      "bytes": 9118,
-      "sha256": "849483f83c10519f5bb1b11b4b6df7305a97a71d6eddab6a4b1b910075f2102b"
+      "bytes": 9075,
+      "sha256": "a4989ee7036ca30b7c9168cb4cd0bdfca9a0509f72ad8424dd916d5e25896036"
     },
     {
       "path": "backend/dev/java_tool_signatures.py",
@@ -1776,6 +1781,11 @@
       "path": "backend/dev/java_type_queries.py",
       "bytes": 1005,
       "sha256": "982638486324dd566a08de62eca0ac9e93a31ca26e4c33ad1ddbb9f2cc1e8bd5"
+    },
+    {
+      "path": "backend/dev/java_unicode_prelex.py",
+      "bytes": 1778,
+      "sha256": "6f98b3f72fd39dbaf54cf7f22238f12c8fa9d34664c7b00cd76f52e0ba0f6a9d"
     },
     {
       "path": "backend/dev/java_value_types.py",
@@ -1806,6 +1816,11 @@
       "path": "backend/dev/mining_verified_adapters098.py",
       "bytes": 849,
       "sha256": "696c3258be5292b0a56a56c26f71db2b334f1e58a21c351e263e82d97a70c39a"
+    },
+    {
+      "path": "backend/dev/mining_verified_adapters099.py",
+      "bytes": 1229,
+      "sha256": "5a85f3ceed70ce80485ccd751410d2a98b5560f0ae51d5a7068c3fffb1133712"
     },
     {
       "path": "backend/dev/mod_compat_audit.py",
@@ -2103,6 +2118,11 @@
       "sha256": "91814f16528c7e420fe4957c22b727be28ac5bf2053ae6e4a2ad2b023f6a57ab"
     },
     {
+      "path": "backend/dev/tests/test_api_wiring099.py",
+      "bytes": 3928,
+      "sha256": "9c55218b86d2c1247862d31917155ebce0cd98a3ee13f5cefdaba11e2120d88d"
+    },
+    {
       "path": "backend/dev/tests/test_array_casts087.py",
       "bytes": 2518,
       "sha256": "e0a335593356f88d0c8d4bc10341b0409cd145f2e84ea04d922f894f866ef322"
@@ -2166,6 +2186,11 @@
       "path": "backend/dev/tests/test_config_storage.py",
       "bytes": 4616,
       "sha256": "ba0880d1efd6f7dd9061d33689d3471929915f0cc35107dd857990cd02eb7d68"
+    },
+    {
+      "path": "backend/dev/tests/test_config_wiring099.py",
+      "bytes": 4656,
+      "sha256": "76124a30a0a7892694be782470ccddfe0f20fcdd4360e78561a5dcff7d3252f4"
     },
     {
       "path": "backend/dev/tests/test_container.py",
@@ -2323,6 +2348,11 @@
       "sha256": "1af1030aec0805ea948b58b6d4c84cff10bb23033ccc1e7f1a5a5f4e438f5430"
     },
     {
+      "path": "backend/dev/tests/test_field_names099.py",
+      "bytes": 1735,
+      "sha256": "528bf7f7571083e56ae7f007444323d25eb3bc09ed5c831615e8e92a882d93db"
+    },
+    {
       "path": "backend/dev/tests/test_first_block096.py",
       "bytes": 4712,
       "sha256": "0c13c8b1a7f6443020c12e7e48ec8afb753548cbac945da0161f46432be1830e"
@@ -2439,8 +2469,8 @@
     },
     {
       "path": "backend/dev/tests/test_java_codegen.py",
-      "bytes": 16984,
-      "sha256": "f313c9b37acc87233686355c2a4dc3fdeea35660cdded9ff53b21bab725e46da"
+      "bytes": 16991,
+      "sha256": "34a2eec200cd15c2bf08f8fbc1aea369f6c74c2902e41933969439d175022cb9"
     },
     {
       "path": "backend/dev/tests/test_java_constructor_overloads.py",
@@ -2953,6 +2983,11 @@
       "sha256": "c051449e9ced0865e0e99b3e32877246a6654f7155986f4636911da15ea2e94b"
     },
     {
+      "path": "backend/dev/tests/test_reviewed_batch099.py",
+      "bytes": 3213,
+      "sha256": "c1ec4167be5e51f321efd7d2942fcb79493ac77a84f759e209df1d6527f7cbf9"
+    },
+    {
       "path": "backend/dev/tests/test_runtime_host.py",
       "bytes": 5719,
       "sha256": "d782828ec01e0f6c718b82615a663be5befe80bdeb6527de1b849493e054936d"
@@ -3018,6 +3053,11 @@
       "sha256": "831119c8648a93781fb80c19690e0d95a9e904e35276beae2af68bde579da649"
     },
     {
+      "path": "backend/dev/tests/test_target_factory099.py",
+      "bytes": 3102,
+      "sha256": "ee9f09b2d1a5656a4c2cbdfefad98392e8880e475afcd62acd224ab1356bd203"
+    },
+    {
       "path": "backend/dev/tests/test_tiered_item087.py",
       "bytes": 7318,
       "sha256": "b1d795fd36b71ae1040b9bce6b81494d13a39dbf2d1b1e647319ee8c75bd6b8b"
@@ -3061,6 +3101,11 @@
       "path": "backend/dev/tests/test_translation_r51.py",
       "bytes": 8479,
       "sha256": "f82408c3e6fc3b1d7b0cb665eb744197747cba517690843ceda114b350a3ae5b"
+    },
+    {
+      "path": "backend/dev/tests/test_unicode099.py",
+      "bytes": 3396,
+      "sha256": "24c8bfa8ddd69f0537ba104d57b5731b12ef361fe9168ca05c4237452ee9fb58"
     },
     {
       "path": "backend/dev/tests/test_url_decoder.py",
@@ -3195,7 +3240,7 @@
     {
       "path": "backend/dev/tools/compat_mining098/__init__.py",
       "bytes": 99,
-      "sha256": "e30ef4c5a84e728f045e4018223d494e18744e47ac87f0ad1627e9b295071c61"
+      "sha256": "2bfb0118efe412e33cea5e9765d0f3ffd012959f17a2326e66a117e170fdce7f"
     },
     {
       "path": "backend/dev/tools/compat_mining098/capabilities.py",
@@ -3209,8 +3254,8 @@
     },
     {
       "path": "backend/dev/tools/compat_mining098/engine.py",
-      "bytes": 21526,
-      "sha256": "2d62bbcd0bb038ed8cde50df0397145dd3c0a601cc0875b34d9c10e89dc2de1e"
+      "bytes": 21627,
+      "sha256": "9481e53d4bee6427e5c674afbdc652950438818e4a132c5ebe1491c8cd98cc4a"
     },
     {
       "path": "backend/dev/tools/compat_mining098/observe.py",
@@ -3230,17 +3275,27 @@
     {
       "path": "backend/dev/tools/compat_mining098/report.py",
       "bytes": 12860,
-      "sha256": "cbbb4bc2fcd4ab0add801beaa64c1463ab6e32f5fcde9d12c298bc839abf59e2"
+      "sha256": "b711e36e83a7b25749f9755de5e9d13db34ae60eb2be6c44183721629526fa69"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/reviewed099.py",
+      "bytes": 7854,
+      "sha256": "7b4318725d00f9affded8ff8b85b35f20dc372d2081ea970e5fb6350f35bc941"
+    },
+    {
+      "path": "backend/dev/tools/compat_mining098/reviewed_patchset099.json",
+      "bytes": 39711,
+      "sha256": "6ba83d2158981d19b9b0ee2019fd321d149ec4169c84faff1d0d6e631c7ce08e"
     },
     {
       "path": "backend/dev/tools/compat_mining098/snapshot.py",
-      "bytes": 3715,
-      "sha256": "355307a8f50410c3be65f8cda111478a86651f85753ce03023b7b4ccf0b4f220"
+      "bytes": 5239,
+      "sha256": "4723317b38bb87fb6313d1b2757f30e583bf5832ab7e43bd998bec180e0ae4a6"
     },
     {
       "path": "backend/dev/tools/compat_mining098/web.py",
       "bytes": 7481,
-      "sha256": "932599abfa04359df6f76f0731cb2f254c4d9a849f595aa31ac2315e51d86ed0"
+      "sha256": "eba18c392854f8147670d3f51ecd1e95a0343c9950eb27d4e382c9b624cdae52"
     },
     {
       "path": "backend/dev/tools/neocore_gui_090/app.py",
@@ -3315,7 +3370,7 @@
     {
       "path": "backend/dev/tools/neocore_gui_092/app.py",
       "bytes": 29924,
-      "sha256": "4ab1d8a399c800d49f6fa57d6307e9bc429467b66e1bcd9dd1375eb4f862252f"
+      "sha256": "dce47b7fbdb0217caab431f99f51f0f8a1e639471197dade5cb112a9f6dee850"
     },
     {
       "path": "backend/dev/tools/neocore_gui_092/cli.py",
@@ -3325,7 +3380,7 @@
     {
       "path": "backend/dev/tools/neocore_gui_092/conversion.py",
       "bytes": 20666,
-      "sha256": "8269fa9724f3b53a8a896d7f49af0357d2efc53e1453129756948551422a9c4d"
+      "sha256": "8f1851784f26868bdc9ca688baec8168c36022ab3fb86457d0023469b5c8f5fe"
     },
     {
       "path": "backend/dev/tools/neocore_gui_092/decompiler_evidence.py",
@@ -3345,7 +3400,7 @@
     {
       "path": "backend/dev/tools/neocore_gui_092/index.html",
       "bytes": 30541,
-      "sha256": "52edf4a6a1b42e23495c0ca8de42c9cb316e25935b6344866808aeb3bdb48309"
+      "sha256": "657aed5b1870ad05b64718282c42a73edff3987f02468731e79cf87cbcc2dd08"
     },
     {
       "path": "backend/dev/tools/neocore_gui_092/jar_input.py",
@@ -3900,7 +3955,7 @@
     {
       "path": "conversion.py",
       "bytes": 20666,
-      "sha256": "b89b725b24ffaf54c89c6de812adb68db66ce6fabedf78b22c5b120deb742981"
+      "sha256": "8f1851784f26868bdc9ca688baec8168c36022ab3fb86457d0023469b5c8f5fe"
     },
     {
       "path": "decompiler_evidence.py",
@@ -3918,19 +3973,29 @@
       "sha256": "daf12022de2ead96568f70adc56ddfd20017c10ee532bc2aedcff66f257f683f"
     },
     {
+      "path": "docs/0.9.9验收.md",
+      "bytes": 5284,
+      "sha256": "39488df6156f93a1e3c1ca375060b9f92278447961a5205632dfea9c1e377ea9"
+    },
+    {
+      "path": "docs/0.9.9验收摘要.json",
+      "bytes": 1625,
+      "sha256": "a608922c32becdb42df56da46d635c25daa8da640931791c9691bd12c69e645e"
+    },
+    {
       "path": "docs/兼容性挖掘使用说明.md",
       "bytes": 6975,
       "sha256": "02b9b691f6d9a70ad54f41259728acb2781eef7acd5f8b1d4a8a1a18a3d4148b"
     },
     {
       "path": "docs/验证范围.md",
-      "bytes": 1228,
-      "sha256": "6ccd8f12644b1876ad154ea8afed1dfa451945f0dfd0d189b0a1d7a2349f71c3"
+      "bytes": 1313,
+      "sha256": "b42579fdc75ef1718ad6bfbbcd3af39ea379c34cb12f1a6bd635f170280e59c8"
     },
     {
       "path": "index.html",
       "bytes": 30541,
-      "sha256": "bf26660ffcf46ff6cc0accf1d11a077c02812634effae1d431aa00e3c8d02036"
+      "sha256": "657aed5b1870ad05b64718282c42a73edff3987f02468731e79cf87cbcc2dd08"
     },
     {
       "path": "jar_input.py",
@@ -3960,7 +4025,7 @@
     {
       "path": "NOTICE",
       "bytes": 446,
-      "sha256": "b73c35c72dfc7663120ff0e81eaaaee062f53a8ec94d19d3b98ad3343fdecf48"
+      "sha256": "09697ab39b2e0d80c0b6ecfa9a7f1f1a24a84c1d3b8c541fa70bc5afd77cf252"
     },
     {
       "path": "pipeline_artifacts.py",
@@ -3979,8 +4044,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4190,
-      "sha256": "61f974492a585a092d06039f9bb6bfa9adc85aece98d3380ff73b81486d807de"
+      "bytes": 4693,
+      "sha256": "ad706a64955aaa9a409403aee4773a0a2deb61c4e25e432190ec2639ce4e5c82"
     },
     {
       "path": "run_neocore.py",
@@ -3989,8 +4054,8 @@
     },
     {
       "path": "scripts/build_addon.py",
-      "bytes": 558,
-      "sha256": "6b3b64180ccad8ffa35557c484786dc074d0d60cb4e1539e6ae52c7d07f86fd5"
+      "bytes": 663,
+      "sha256": "b011b7c40ba01030287d242391d24b389d339d3f41fd5397f56bb293acbdf235"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",

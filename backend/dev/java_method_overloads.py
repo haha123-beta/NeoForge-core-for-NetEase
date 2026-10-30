@@ -142,12 +142,13 @@ def subtype(left,right,parents,unit):
     from java_official_type_hierarchy import PARENTS as OFFICIAL_PARENTS
     from java_official_event_hierarchy import PARENTS as EVENT_PARENTS
     from java_entity_signatures import PARENTS as REGISTRY_PARENTS
+    from java_library_signatures import REVIEWED_PARENTS
     pending=[left.split('<',1)[0] if left and '<' not in right else left];seen=set()
     while pending:
         identity=pending.pop()
         if identity in seen:continue
         seen.add(identity)
-        for parent in tuple(OFFICIAL_PARENTS.get(identity,()))+tuple(EVENT_PARENTS.get(identity,()))+tuple(REGISTRY_PARENTS.get(identity,())):
+        for parent in tuple(OFFICIAL_PARENTS.get(identity,()))+tuple(EVENT_PARENTS.get(identity,()))+tuple(REGISTRY_PARENTS.get(identity,()))+tuple(REVIEWED_PARENTS.get(identity,())):
             if parent==right:return True
             pending.append(parent)
     rows=list(unit.get('_classes',[]))+list(unit.get('_external_classes',[]))

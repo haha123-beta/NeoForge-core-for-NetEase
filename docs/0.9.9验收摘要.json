@@ -1,0 +1,63 @@
+{
+  "version": "0.9.9",
+  "date": "2026-10-30",
+  "status": "PASSED_FINAL_FROZEN_CANDIDATE",
+  "translation": {
+    "files": 369,
+    "before": 53,
+    "after": 58,
+    "delta": 5,
+    "file_blockers_before": 316,
+    "file_blockers_after": 311,
+    "package_blockers": 4,
+    "observed_blockers_before": 320,
+    "observed_blockers_after": 315,
+    "exceptions": 0,
+    "regressed_files": 0
+  },
+  "regression": {
+    "final_full_run_files": 222,
+    "passed": 222,
+    "failed": 0,
+    "static_issues": {
+      "python2": [],
+      "whitelist": [],
+      "keywords": [],
+      "api_coverage": []
+    },
+    "source_unchanged": true,
+    "earlier_attempts_retained": true
+  },
+  "reviewed_batch": {
+    "status": "PASSED_APPLIED",
+    "files": 19,
+    "catalog_sha256": "6ba83d2158981d19b9b0ee2019fd321d149ec4169c84faff1d0d6e631c7ce08e",
+    "targeted_test_files": 5,
+    "targeted_cases": 21
+  },
+  "runtime_checks": {
+    "java_python2_python3_feature_oracles": true,
+    "actual_generated_config_and_field_modules_python2_python3": true,
+    "final_zip_sdk_probes": true,
+    "sdk_is_test_double": true,
+    "engine_verified": false
+  },
+  "whole_mod_candidates": {
+    "new": 0,
+    "preserved": [
+      "MiniCoal",
+      "FlintBlock vanilla"
+    ]
+  },
+  "storage": {
+    "dependencies_reused": true,
+    "ecosystem_raw_benchmark_not_duplicated": true,
+    "intermediate_evidence_compressed": true,
+    "history_deleted": false
+  },
+  "creators": [
+    "haha123-beta",
+    "ChatGPT (OpenAI AI assistant)"
+  ],
+  "license": "PolyForm-Noncommercial-1.0.0"
+}

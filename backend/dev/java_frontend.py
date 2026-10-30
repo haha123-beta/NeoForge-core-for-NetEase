@@ -41,9 +41,21 @@ def api_index(path=None):
     return {name.replace('$', '.') for name in report['java_types']}, recorded != current
 
 
-def parse_source(source, origin='<memory>', known_types=()):
+def parse_source(source, origin='<memory>', known_types=(), unicode_preprocessed=False):
     raw = source if isinstance(source, bytes) else source.encode('utf-8')
     text = raw.decode('utf-8-sig')
+    original_text=text
+    from java_unicode_prelex import translate as unicode_translate,UnicodeInputError,line_at
+    positions=None;escape_count=0
+    if not unicode_preprocessed and '\\u' in text:
+        try:text,positions,escape_count=unicode_translate(text)
+        except UnicodeInputError as error:
+            line=line_at(original_text.encode('utf-8'),error.offset)
+            return {'origin':origin,'source_sha256':hashlib.sha256(raw).hexdigest(),
+                'source_utf8':original_text,'parse_status':'SYNTAX_ERRORS','features':[],
+                'package':None,'imports':[],'known_api_types':sorted(known_types),
+                'tree':{'kind':'program','children':[],'line':1,'span':[0,len(raw)]},
+                'syntax_errors':[{'kind':'unicode_prelexing','line':line,'column':1,'source':str(error),'span':[error.offset,error.offset]}]}
     data = text.encode('utf-8')
     language, parser_info = parser_language()
     parser = Parser(language)
@@ -65,7 +77,7 @@ def parse_source(source, origin='<memory>', known_types=()):
         offset = node.start_byte
         row = bisect_left(newlines, offset)
         previous = newlines[row - 1] if row else -1
-        return row + 1, offset - previous
+        return (line_at(original_text.encode('utf-8'),positions[offset]) if escape_count else row+1), offset - previous
     errors, features, keywords = [], set(), []
     def convert(node):
         record = {'kind': node.type, 'span': [node.start_byte, node.end_byte],
@@ -117,8 +129,9 @@ def parse_source(source, origin='<memory>', known_types=()):
             'known_static_owner': static and owner in known_types,
             'requires_semantic_resolution': static or wildcard or name not in known_types})
     return {'schema_version': 1, 'parser': parser_info, 'origin': origin, 'source_sha256': hashlib.sha256(raw).hexdigest(),
+        'unicode_preprocessing':({'escape_count':escape_count,'byte_origins':positions,'original_source_utf8':original_text} if escape_count else None),
         'runtime_generic_interfaces':generic_interfaces, 'runtime_superclasses': runtime_contracts, 'runtime_enum_types': runtime_enums, 'runtime_interface_contracts':interface_contracts,
-        'known_api_types': sorted(known_types), 'source_utf8': text, 'offsets': 'UTF-8 bytes after optional BOM removal',
+        'known_api_types': sorted(known_types), 'source_utf8': text, 'offsets': 'UTF-8 bytes after BOM removal and Unicode preprocessing; diagnostic lines map to original physical source',
         'package': package, 'imports': imports, 'features': sorted(features),
         'known_java_lang_api_types': sorted(name for name in known_types if name.startswith('java.lang.') and name.count('.') == 2),
         'known_nested_api_types': sorted(name for name in known_types if any(

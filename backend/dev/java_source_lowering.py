@@ -68,13 +68,19 @@ def lower(ir):
         raw=raw[:a]+replacement+raw[b:]
         positions=positions[:a]+[a]*len(replacement)+positions[b:]
     from java_frontend import parse_source
-    lowered=parse_source(raw,ir['origin'],ir.get('known_api_types',[]))
+    lowered=parse_source(raw,ir['origin'],ir.get('known_api_types',[]),unicode_preprocessed=True)
     if lowered['parse_status']!='PARSED':reject(ir['tree'],'Generated record/codec lowering failed to parse')
     from bisect import bisect_left
     newlines=[i for i,b in enumerate(original) if b==10]
     def restore_lines(node):
         offset=node['span'][0]
-        node['line']=bisect_left(newlines,positions[offset] if offset<len(positions) else len(original))+1
+        mapped=positions[offset] if offset<len(positions) else len(original)
+        unicode_info=ir.get('unicode_preprocessing')
+        if unicode_info:
+            from java_unicode_prelex import line_at
+            original_offset=unicode_info['byte_origins'][mapped]
+            node['line']=line_at(unicode_info['original_source_utf8'].encode('utf-8'),original_offset)
+        else:node['line']=bisect_left(newlines,mapped)+1
         for c in node.get('children',[]):restore_lines(c)
     restore_lines(lowered['tree'])
     lowered.update(source_sha256=ir['source_sha256'],original_source_utf8=ir['source_utf8'],source_lowerings={'records':records,'anonymous_codecs':anonymous})

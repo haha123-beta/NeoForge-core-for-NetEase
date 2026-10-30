@@ -34,6 +34,7 @@ def profile():
     for p in (DEV/'profiles').glob('*.json'):files['profiles/'+p.name]=digest(p)
     for p in (DEV/'tools/neocore_gui_092').glob('*.py'):files['workbench/'+p.name]=digest(p)
     for p in Path(__file__).parent.glob('*.py'):files['mining/'+p.name]=digest(p)
+    for p in Path(__file__).parent.glob('reviewed_patchset*.json'):files['mining/'+p.name]=digest(p)
     files['reader/classfile.py']=digest(DEV/'tools/compat_analyzer_091/classfile.py')
     index=load(DEV/'java_import_index.json')
     core=Path(PACK_ROOT)/'NeoForgeCoreScripts'

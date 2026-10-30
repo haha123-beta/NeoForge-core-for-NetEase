@@ -78,7 +78,7 @@ def resolve(raw,base,name,arity,actuals,canonical_generic,generic_arguments,cano
             if base in (ITEMS,BLOCKS) and actuals[1] and actuals[1].startswith('java.util.function.Supplier<'):
                 values=generic_arguments(actuals[1])
                 if len(values)!=1 or not proves or not proves(values[0],entity_type):raise ValueError('Registration supplier type must satisfy its declared bound')
-                return {'return_type':(DEFERRED_ITEM if base==ITEMS else DEFERRED_BLOCK)+'<'+values[0]+'>','parameters':['java.lang.String','java.util.function.Supplier<'+values[0]+'>'],'receiver_kind':'game_api','checked_arguments':True}
+                return {'return_type':(DEFERRED_ITEM if base==ITEMS else DEFERRED_BLOCK)+'<'+values[0]+'>','parameters':['java.lang.String','java.util.function.Supplier<'+values[0]+'>'],'receiver_kind':'game_api','checked_arguments':True,'target_factory_bound':entity_type}
             row=((DEFERRED_ITEM+'<'+ITEM+'>' if base==ITEMS else DEFERRED_BLOCK+'<'+BLOCK+'>' if base==BLOCKS else HOLDER+'<'+entity_type+','+entity_type+'>'),['java.lang.String','java.util.function.Supplier<'+entity_type+'>'])
     elif base in (HOLDER,DEFERRED_ITEM,DEFERRED_BLOCK):
         if name in ('get','value') and arity==0:row=(parameters[-1] if parameters else ITEM if base==DEFERRED_ITEM else BLOCK if base==DEFERRED_BLOCK else 'java.lang.Object',[])
@@ -101,3 +101,18 @@ def resolve(raw,base,name,arity,actuals,canonical_generic,generic_arguments,cano
     result={'return_type':row[0],'parameters':row[1],'receiver_kind':'game_api','call_name':call_name}
     if static:result['static_owner']=static
     return result
+
+def contextual_factory_return(record,target,proves):
+    """Instantiate the reviewed <I extends Item/Block> factory against its target.
+
+    This is inference for a method invocation, never covariance for an existing
+    DeferredItem/DeferredBlock reference. Supplier result <: I <: declared bound.
+    """
+    from java_library_signatures import generic_arguments
+    bound=record.get('target_factory_bound') if record else None
+    actual=record.get('return_type','') if record else ''
+    if not bound or target.split('<',1)[0]!=actual.split('<',1)[0]:return None
+    supplied=generic_arguments(actual);wanted=generic_arguments(target)
+    if len(supplied)!=1 or len(wanted)!=1 or any('?' in x for x in supplied+wanted):return None
+    if proves(supplied[0],wanted[0]) and proves(wanted[0],bound):return target
+    return None
